@@ -15,7 +15,7 @@ module.exports = {
 	// options ex. below for user pages deploy
 	// remoteUrl: https://github.com/kiriaze/kiriaze.github.io.git
 	// branch: master
-	'remoteUrl'	: 'https://github.com/kiriaze/kiriaze.github.io.git',
+	'remoteUrl'	: 'git@github.com:kiriaze/kiriaze.github.io.git',
     'branch'	: 'master',
 
 	'styles': {

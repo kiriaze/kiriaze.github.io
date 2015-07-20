@@ -8,6 +8,6 @@ var options = {
 };
 
 gulp.task('gh-pages', function() {
-	return gulp.src(config.dist.root + '/**/*.*')
+	return gulp.src(config.dist.root + '/**/*')
 		.pipe(ghPages(options));
 });
