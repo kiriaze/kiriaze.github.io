@@ -1,0 +1,35 @@
+---
+layout: default
+title: Words
+bodyClass: blog-page
+heroText: true
+---
+
+{% for post in site.posts limit:1 %}
+	{% include hero.html %}
+{% endfor %}
+
+<div class="post-list">
+
+{% for post in site.posts offset:1 %}
+	{% if post.categories contains 'work' or post.categories contains 'labs' %}
+	<!-- do nothing -->
+	{% else %}
+	<article class="post dark">
+		<a href="{{ post.url | prepend: site.baseurl }}">
+			<div class="post-bg" style="background-image: url({{ post.image }});"></div>
+			<div class="container">
+				<h2>{{ post.title }}</h2>
+				<div class="post-meta">
+					<!-- 1.30.2015 -->
+					<span class="date">{{ post.date | date: "%m.%d.%Y" }}</span>
+					{% if post.categories.size > 0 %}<span class="categories">{{ page.categories | join:" / " }}</span>{% endif %}
+				</div>
+				<p>{{ post.description }}</p>
+			</div>
+		</a>
+	</article>
+	{% endif %}
+{% endfor %}
+
+</div>
