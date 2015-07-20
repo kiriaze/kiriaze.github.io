@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+{% include hero.html %}
+
+<section class="post-content">
+	<div class="container">
+
+		{% if site.reading_time %}
+			{% capture reading_time %}
+			<p class="entry-reading-time">
+				{% assign readtime = content | number_of_words | divided_by:site.words_per_minute %}
+				Reading time ~{% if readtime <= 1 %}1 minute{% else %}{{ readtime }} minutes{% endif %}
+			</p>
+			{% endcapture %}
+		{% endif %}
+
+		{{ reading_time }}
+
+		{{ content }}
+
+		<hr>
+
+		{% include disqus.html disqus_identifier=page.disqus_identifier %}
+
+	</div>
+</section>
+
+{% if page.next.url %}
+	<a href="{{page.next.url | prepend: site.baseurl }}" title="next Post:{{page.next.title}}" class="next-post-alt js-ajax-link">
+		<div class="container">
+			<h6>Explore Another Post</h6>
+			<h2>{{page.next.title}}</h2>
+		</div>
+		<div class="hero-bg" style="background-image: url({{ page.next.image }}); background-position: center center;"></div>
+	</a>
+{% endif %}

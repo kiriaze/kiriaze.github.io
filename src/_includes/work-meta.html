@@ -1,0 +1,32 @@
+<section class="text-align-center post-content" style="background-image: url(/assets/images/other/sketch-bg.svg); background-size: cover;" data-midnight="default">
+	<div class="container">
+
+		<h6>The Brief</h6>
+
+		<h2>{{ page.blurb }}</h2>
+
+		<p class="lead">{{ page.lead }}</p>
+
+		<ul class="project-details">
+			<li>
+				<h6>My Role</h6>
+				<span>
+					{% for tag in page.tags %}
+						<span class="term">{{ tag | capitalize }}</span>{% unless forloop.last %}/{% endunless %}
+					{% endfor %}
+				</span>
+			</li>
+			<li>
+				<h6>Employer</h6>
+				<span>{{ page.employer }}</span>
+			</li>
+			<li>
+				<h6>Client</h6>
+				<span>{{ page.client }}</span>
+			</li>
+		</ul>
+
+		<a href="{{ page.projectURL }}" class="btn project-link">Launch Website</a>
+
+	</div>
+</section>

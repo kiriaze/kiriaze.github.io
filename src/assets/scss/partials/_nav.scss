@@ -1,0 +1,180 @@
+#nav {
+
+}
+
+.menu-overlay {
+	.container {
+		height: 100%;
+		overflow: visible;
+	}
+	nav {
+		position: absolute;
+		bottom: 2vw;
+		ul {
+			margin: 0;
+			li {
+				margin: 0;
+				line-height: 1;
+				// transform: translateX(-500px);
+				opacity: 0;
+				@for $i from 1 through 6 {
+					&:nth-child(#{$i}) {
+						transition: all 0.3s ease (0.075s * $i);
+					}
+				}
+
+				a {
+					color: white;
+					font-size: 8vw;
+					font-family: $header-font;
+					font-weight: 800;
+					letter-spacing: -0.5vw;
+					position: relative;
+
+					// bg red anim width
+					&:before {
+						content: '';
+						position: absolute;
+						z-index: -1;
+						top: 0;
+						left: -105%;
+						bottom: 0;
+						width: 0px;
+						background: $white;
+						transition: $transition;
+					}
+					&:hover {
+						color: $primary-color;
+						&:before {
+							width: 215%;
+						}
+					}
+					&.current {
+						text-decoration: line-through;
+					}
+
+				}
+			}
+		}
+	}
+	// open
+	&.nav-open {
+		li {
+			// transform: translateX(0);
+			opacity: 1;
+		}
+	}
+}
+
+
+// hamburger design
+#navicon {
+	position: absolute;
+	top: 34px;
+	right: 1.5%; // .container padding
+	width: 28px;
+	height: 24px;
+	z-index: 3;
+	border: none;
+	.line {
+		transition: all .2s;
+		height: 2px;
+		background-color: #000;
+		position: absolute;
+	}
+	.line-one {
+		width: 22px;
+		top: 5px;
+		left: 3px;
+	}
+	.line-two {
+		width: 22px;
+		top: 11px;
+		left: 3px;
+	}
+	.line-three {
+		width: 22px;
+		bottom: 5px;
+		left: 3px;
+	}
+}
+
+@keyframes one {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+// checkbox placement
+#drawer-toggle {
+	position: absolute;
+	z-index: 4;
+	opacity: 0;
+	top: 34px;
+	right: 1.5%; // .container padding
+	width: 28px;
+	height: 24px;
+	margin: 0;
+	cursor: pointer;
+
+	// hamburger animation
+	&:hover {
+		.line-one {
+			animation: one .2s 1;
+		}
+		.line-two {
+			animation: one .2s 1;
+			animation-delay: .05s;
+		}
+		.line-three {
+			animation: one .2s 1;
+			animation-delay: .1s;
+		}
+	}
+
+	&:checked {
+		~ #navicon {
+			.line {
+				height: 2px;
+				background-color: white;
+			}
+			.line-one {
+				transform: rotate(45deg);
+				top: 11px;
+			}
+			.line-two {
+				opacity: 0;
+			}
+			.line-three {
+				transform: rotate(-45deg);
+				bottom: 11px;
+			}
+		}
+	}
+}
+
+
+// overlay
+.menu-overlay {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: $primary-color;
+	opacity: 0;
+	transition: $transition;
+}
+#drawer-toggle:checked ~ .menu-overlay,
+.menu-overlay.nav-open {
+	opacity: 1;
+	z-index: 2;
+}
+
+
+body.nav-open {
+	overflow: hidden;
+}

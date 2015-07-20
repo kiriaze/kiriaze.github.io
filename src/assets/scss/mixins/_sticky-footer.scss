@@ -1,0 +1,44 @@
+/*	Sticky Footer
+============================================ */
+@mixin sticky-footer(
+	$height,
+	$main-selector:   unquote('#main'),
+	$footer-selector: unquote('#footer'),
+	$push-selector:   unquote('#push-footer')
+) {
+	@include breakpoint($small) {
+		body > #{$main-selector} {
+			margin-bottom: -$height;
+			min-height:    100%;
+			#{$push-selector} {
+				clear:  both;
+				height: $height;
+			}
+		}
+		#{$footer-selector} {
+			clear:    both;
+			height:   $height;
+			position: relative;
+		}
+	}
+}
+
+// A CSS-based sticky footer.
+//
+// Sticky footer markup:
+//
+//    <body>
+//      <div id="main">
+//        <header>...</header>
+//        <article>...</article>
+//        <div id="push-footer"></div>
+//      </div>
+//      <div id="footer">
+//        <footer>...</footer>
+//      </div>
+//    </body>
+//
+// Example usage:
+//
+//    @include sticky-footer(100px)
+//    @include sticky-footer(100px, "#wrapper")
