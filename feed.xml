@@ -5,9 +5,53 @@
     <description>The online portfolio of Constantine Kiriaze.</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 20 Jul 2015 22:48:14 -0400</pubDate>
-    <lastBuildDate>Mon, 20 Jul 2015 22:48:14 -0400</lastBuildDate>
+    <pubDate>Mon, 20 Jul 2015 23:09:54 -0400</pubDate>
+    <lastBuildDate>Mon, 20 Jul 2015 23:09:54 -0400</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Hello World!</title>
+        <description>&lt;p&gt;
+	Opportunity relief micro-finance equity 501(c)(3) proper resources; vaccine; shifting landscape, fundraise public sector Oxfam. Experience in the field; catalytic effect John Lennon growth cross-agency coordination rights-based approach disruption political The Elders grantees promising development. Foster donate solve; best practices equality; involvement dignity civic engagement care citizens of change.
+&lt;/p&gt;
+&lt;blockquote&gt;
+	&lt;p&gt;
+		This is a simple example of a styled blockquote. A blockquote tag typically specifies a section that is quoted from another source of some sort, or highlighting text in your post.
+		&lt;cite&gt;Ansel Adams&lt;/cite&gt;
+	&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+	Dialogue, many voices convener humanitarian frontline respect donation treatment; outcomes; communities, Cesar Chavez committed emergent. Inclusive capitalism participatory monitoring justice Martin Luther King Jr. cross-cultural, leverage; support future assistance protect efficient save lives. Overcome injustice, change lives, plumpy nut poverty aid network storytelling women&#39;s rights agency Jane Jacobs catalyst sanitation cornerstone. Working alongside; social innovation; pride results public service. Change-makers, Bloomberg developing change, accessibility global citizens employment worldwide indicator, courageous; focus on impact progressive development minority. Provide microloans sustainable strengthen democracy; collaborative innovation youth connect nonviolent resistance; refugee invest significant complexity. Metrics citizenry catalyze; equal opportunity, prevention action.
+&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/p1.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;
+	Vaccines harness engage think tank; measures new approaches, socio-economic divide Peace Corps developing nations. Open source, smart cities, free expression dedicated gender contribution clean water. Stakeholders fairness theory of social change collaborative consumption nonprofit recognize potential truth.
+&lt;/p&gt;
+&lt;p&gt;
+	Design thinking; globalization vulnerable population activist, advancement sharing economy education, shift, fellows social analysis progress Medecins du Monde. Benefit raise awareness economic independence UNHCR expanding community ownership criteria. Transform the world global; our grantees and partners end hunger economic security. Educate; gender equality resourceful, planned giving underprivileged carbon emissions reductions.
+&lt;/p&gt;
+&lt;pre&gt;
+code {
+	display: block;
+	border-style: none;
+	font: 15px/22px &#39;Courier New&#39;;
+	margin: 30px 0 45px 55px;
+	overflow: auto;
+}&lt;/pre&gt;
+&lt;p&gt;
+	Policy challenges altruism, social movement enable. Reduce carbon emissions; assessment expert, Bill and Melinda Gates collaborative cities transformative Nelson Mandela social responsibility safety rural. Tackling change movements; countries pursue these aspirations sustainable future climate change inclusive billionaire philanthropy human being. Economic development accelerate replicable beneficiaries empower social environmental activism. Bono, resolve; legitimize Gandhi, peaceful organization. Incubation emergency response nutrition local solutions, long-term public-private partnerships generosity international human rights governance empowerment combat HIV/AIDS turmoil Rosa Parks. Revitalize; meaningful, innovate meaningful work Action Against Hunger; social challenges local disrupt philanthropy volunteer pathway to a better life Rockefeller global leaders.
+&lt;/p&gt;
+</description>
+        <pubDate>Thu, 24 Dec 2015 00:00:00 -0500</pubDate>
+        <link>/blog/hello-world</link>
+        <guid isPermaLink="true">/blog/hello-world</guid>
+        
+        <category>sample post</category>
+        
+        
+        <category></category>
+        
+      </item>
     
       <item>
         <title>Introducing Juice.</title>
@@ -177,50 +221,6 @@ end&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
         
         
         <category>code</category>
-        
-        <category></category>
-        
-      </item>
-    
-      <item>
-        <title>Hello World!</title>
-        <description>&lt;p&gt;
-	Opportunity relief micro-finance equity 501(c)(3) proper resources; vaccine; shifting landscape, fundraise public sector Oxfam. Experience in the field; catalytic effect John Lennon growth cross-agency coordination rights-based approach disruption political The Elders grantees promising development. Foster donate solve; best practices equality; involvement dignity civic engagement care citizens of change.
-&lt;/p&gt;
-&lt;blockquote&gt;
-	&lt;p&gt;
-		This is a simple example of a styled blockquote. A blockquote tag typically specifies a section that is quoted from another source of some sort, or highlighting text in your post.
-		&lt;cite&gt;Ansel Adams&lt;/cite&gt;
-	&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;
-	Dialogue, many voices convener humanitarian frontline respect donation treatment; outcomes; communities, Cesar Chavez committed emergent. Inclusive capitalism participatory monitoring justice Martin Luther King Jr. cross-cultural, leverage; support future assistance protect efficient save lives. Overcome injustice, change lives, plumpy nut poverty aid network storytelling women&#39;s rights agency Jane Jacobs catalyst sanitation cornerstone. Working alongside; social innovation; pride results public service. Change-makers, Bloomberg developing change, accessibility global citizens employment worldwide indicator, courageous; focus on impact progressive development minority. Provide microloans sustainable strengthen democracy; collaborative innovation youth connect nonviolent resistance; refugee invest significant complexity. Metrics citizenry catalyze; equal opportunity, prevention action.
-&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/images/posts/p1.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;
-	Vaccines harness engage think tank; measures new approaches, socio-economic divide Peace Corps developing nations. Open source, smart cities, free expression dedicated gender contribution clean water. Stakeholders fairness theory of social change collaborative consumption nonprofit recognize potential truth.
-&lt;/p&gt;
-&lt;p&gt;
-	Design thinking; globalization vulnerable population activist, advancement sharing economy education, shift, fellows social analysis progress Medecins du Monde. Benefit raise awareness economic independence UNHCR expanding community ownership criteria. Transform the world global; our grantees and partners end hunger economic security. Educate; gender equality resourceful, planned giving underprivileged carbon emissions reductions.
-&lt;/p&gt;
-&lt;pre&gt;
-code {
-	display: block;
-	border-style: none;
-	font: 15px/22px &#39;Courier New&#39;;
-	margin: 30px 0 45px 55px;
-	overflow: auto;
-}&lt;/pre&gt;
-&lt;p&gt;
-	Policy challenges altruism, social movement enable. Reduce carbon emissions; assessment expert, Bill and Melinda Gates collaborative cities transformative Nelson Mandela social responsibility safety rural. Tackling change movements; countries pursue these aspirations sustainable future climate change inclusive billionaire philanthropy human being. Economic development accelerate replicable beneficiaries empower social environmental activism. Bono, resolve; legitimize Gandhi, peaceful organization. Incubation emergency response nutrition local solutions, long-term public-private partnerships generosity international human rights governance empowerment combat HIV/AIDS turmoil Rosa Parks. Revitalize; meaningful, innovate meaningful work Action Against Hunger; social challenges local disrupt philanthropy volunteer pathway to a better life Rockefeller global leaders.
-&lt;/p&gt;
-</description>
-        <pubDate>Fri, 06 Mar 2015 00:00:00 -0500</pubDate>
-        <link>/blog/hello-world</link>
-        <guid isPermaLink="true">/blog/hello-world</guid>
-        
-        <category>sample post</category>
-        
         
         <category></category>
         
