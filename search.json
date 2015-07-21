@@ -1,6 +1,24 @@
 [
   
     {
+      "title"    : "Introducing Juice.",
+      "category" : "labs",
+      "tags"     : "code",
+      "url"      : "/labs/juice/",
+      "date"     : "2015-07-20 00:00:00 -0400",
+      "desc"     : ""
+    } ,
+  
+    {
+      "title"    : "Anchors.",
+      "category" : "labs",
+      "tags"     : "code",
+      "url"      : "/labs/anchors/",
+      "date"     : "2015-07-20 00:00:00 -0400",
+      "desc"     : ""
+    } ,
+  
+    {
       "title"    : "Code Markup",
       "category" : "code",
       "tags"     : "sample post, code, highlighting, and random",
@@ -123,15 +141,6 @@
       "tags"     : "",
       "url"      : "/work/cake/",
       "date"     : "2015-02-23 00:00:00 -0500",
-      "desc"     : ""
-    } ,
-  
-    {
-      "title"    : "Anchors.",
-      "category" : "labs",
-      "tags"     : "code",
-      "url"      : "/labs/anchors/",
-      "date"     : "2015-02-02 00:00:00 -0500",
       "desc"     : ""
     } ,
   
