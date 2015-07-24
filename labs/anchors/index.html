@@ -18,7 +18,7 @@
 	<meta property="og:locale" content="en_US">
 	<meta property="og:type" content="article">
 	<meta property="og:title" content="Anchors.">
-	<meta property="og:description" content="The online portfolio of Constantine Kiriaze.">
+	<meta property="og:description" content="Data atrribute driven scroll-to anchors, simplified.">
 	<meta property="og:url" content="/labs/anchors/">
 	<meta property="og:site_name" content="Kiriaze">
 
@@ -29,7 +29,7 @@
 			<meta name="twitter:image" content="/assets/images/">
 		
 		<meta name="twitter:title" content="Anchors.">
-		<meta name="twitter:description" content="The online portfolio of Constantine Kiriaze.">
+		<meta name="twitter:description" content="Data atrribute driven scroll-to anchors, simplified.">
 		<meta name="twitter:creator" content="@kiriaze">
 	
 
@@ -86,12 +86,6 @@
 		<nav>
 			<ul class="site-nav">
 
-			    
-			        
-			        
-			        <li class="site-nav-item">
-						<a href="/index.html" class=" js-ajax-link">Home</a>
-					</li>
 			    
 			        
 			        
@@ -169,6 +163,13 @@
 
 
 
+
+
+
+	
+
+
+
 <!-- if heroText is set to true -->
 
 <section class="hero hero-mod grey-bg  "  data-midnight="default" >
@@ -177,10 +178,10 @@
 
 <div class="container hero-blurb">
 	<h1 class="title" data-sr="enter bottom">Anchors.</h1>
-	<h6 class="subtitle" data-sr="enter bottom">Using post template for cleaner markup.</h6>
+	<h6 class="subtitle" data-sr="enter bottom">Data atrribute driven scroll-to anchors, simplified.</h6>
 	<div class="post-meta">
 		
-		<span class="date">07.19.2015</span>
+		<span class="date">07.20.2015</span>
 		
 		
 
@@ -202,6 +203,13 @@
 </span>
 
 
+		
+	<span class="entry-reading-time">
+		<i class="fa fa-clock-o"></i>
+		
+		 1 minute
+	</span>
+	
 	</div>
 </div>
 
@@ -212,20 +220,30 @@
 <section class="post-content">
 	<div class="container">
 
-		
-			
-		
+		<p>SimpleAnchors takes a different approach to page scrolling utilizing data attributes. Packed with options, including custom autoBuild function for quick TOC style pages. Just under 2k minified. <a href="http://github.com/kiriaze/simpleAnchors">Get it here!</a></p>
 
-		
-			<p class="entry-reading-time">
-				
-				Reading time ~1 minute
-			</p>
-			
+<div class="highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span class="comment">// Example Usage</span>
+<span class="tag">&lt;a</span> <span class="attribute-name">href</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">#</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">data-scroll-to</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">example-container</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">data-scroll-offset</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">100</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>Go to Section<span class="tag">&lt;/a&gt;</span>
+<span class="tag">&lt;div</span> <span class="attribute-name">data-scroll-target</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">example-container</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span><span class="tag">&lt;/div&gt;</span>
 
-		<p>Lorem ipsum <a href="http://www.google.com">dolor</a> sit amet, consectetur adipisicing elit. Id quos iste exercitationem doloribus aut quasi quia reiciendis deserunt saepe voluptate rerum ipsum ad itaque, dignissimos ex, animi atque nemo doloremque!</p>
+<span class="comment">// Can be called with default selector $.simpleAnchors();</span>
+<span class="comment">// or set to one $('[data-scroll-to]').simpleAnchors();</span>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores laudantium magni dicta nulla dolor, rerum necessitatibus in adipisci nihil, consequatur sapiente eum quae beatae eligendi. Velit quibusdam aliquid itaque quisquam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis porro architecto, libero delectus fugiat accusantium. Minus, est cumque numquam repudiandae sapiente fuga quidem consectetur error debitis, laboriosam, earum, id iure.</p>
+<span class="comment">// Options</span>
+
+duration: <span class="integer">800</span>,                      <span class="comment">// vary the speed depending the distance in future update</span>
+<span class="key">easing</span>: <span class="string"><span class="delimiter">'</span><span class="content">swing</span><span class="delimiter">'</span></span>,                    <span class="comment">// the easing function for animation; expo, cubic, circ, swing (if jquery easing included)</span>
+<span class="key">activeClass</span>: <span class="string"><span class="delimiter">'</span><span class="content">active</span><span class="delimiter">'</span></span>,              <span class="comment">// class given to the active nav element</span>
+<span class="key">offset</span>: <span class="integer">0</span>,
+
+<span class="key">autoBuild</span>: <span class="predefined-constant">false</span>,                   <span class="comment">// if true, auto wraps elements to create TOC style</span>
+<span class="key">sections</span>: <span class="string"><span class="delimiter">'</span><span class="content">h2</span><span class="delimiter">'</span></span>,                     <span class="comment">// defaults to &lt;h2&gt; headings, can be anything</span>
+<span class="key">sectionEl</span>: <span class="string"><span class="delimiter">'</span><span class="content">section</span><span class="delimiter">'</span></span>,               <span class="comment">// scroll target, defaults to &lt;section&gt;</span>
+<span class="key">wrapper</span>: <span class="string"><span class="delimiter">'</span><span class="content">article[role=&quot;article&quot;]</span><span class="delimiter">'</span></span>, <span class="comment">// outer wrapper, defaults to &lt;article role=&quot;article&quot;&gt;</span>
+</pre></div>
+</div>
+</div>
 
 
 		<hr>
@@ -263,12 +281,12 @@
 
 
 	
-		<a href="/blog/code/code-markup" title="next Post:Code Markup" class="next-post-alt js-ajax-link">
+		<a href="/labs/s-animate/" title="next Post:S-Animate." class="next-post-alt js-ajax-link">
 			<div class="container">
 				<h6>Explore Another Post</h6>
-				<h2>Code Markup</h2>
+				<h2>S-Animate.</h2>
 			</div>
-			<div class="hero-bg" style="background-image: url(/assets/images/projects/p2.jpg); background-position: center center;"></div>
+			<div class="hero-bg" style="background-image: url(); background-position: center center;"></div>
 		</a>
 	
 
@@ -276,11 +294,6 @@
 				
 <footer role="contentinfo" id="footer">
 	<div class="container">
-		<div class="row">
-			<p class="made-with">
-				Made with <i class="fa fa-heart red"></i> in San Diego.
-			</p>
-		</div>
 		<div class="row">
 			<a href="/" class="logo js-ajax-link">K</a>
 			<ul class="social-list">

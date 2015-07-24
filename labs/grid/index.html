@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>The Grid.</title>
-	<meta name="description" content="A lightweight semantic grid framework for Sass.">
+	<meta name="description" content="			What's this all about?					The Grid is a semantic grid framework built on top of Sass. Simply include it in your project and that's it!				Why another gri...">
 
 	
 	<meta name="keywords" content="code">
@@ -18,7 +18,7 @@
 	<meta property="og:locale" content="en_US">
 	<meta property="og:type" content="article">
 	<meta property="og:title" content="The Grid.">
-	<meta property="og:description" content="The online portfolio of Constantine Kiriaze.">
+	<meta property="og:description" content="A lightweight semantic grid framework for Sass.">
 	<meta property="og:url" content="/labs/grid/">
 	<meta property="og:site_name" content="Kiriaze">
 
@@ -29,7 +29,7 @@
 			<meta name="twitter:image" content="/assets/images/">
 		
 		<meta name="twitter:title" content="The Grid.">
-		<meta name="twitter:description" content="The online portfolio of Constantine Kiriaze.">
+		<meta name="twitter:description" content="A lightweight semantic grid framework for Sass.">
 		<meta name="twitter:creator" content="@kiriaze">
 	
 
@@ -86,12 +86,6 @@
 		<nav>
 			<ul class="site-nav">
 
-			    
-			        
-			        
-			        <li class="site-nav-item">
-						<a href="/index.html" class=" js-ajax-link">Home</a>
-					</li>
 			    
 			        
 			        
@@ -169,6 +163,13 @@
 
 
 
+
+
+
+	
+
+
+
 <!-- if heroText is set to true -->
 
 <section class="hero hero-mod   "  data-midnight="default" >
@@ -177,10 +178,10 @@
 
 <div class="container hero-blurb">
 	<h1 class="title" data-sr="enter bottom">The Grid.</h1>
-	<h6 class="subtitle" data-sr="enter bottom">Using labs default template for custom html structure.</h6>
+	<h6 class="subtitle" data-sr="enter bottom">A lightweight semantic grid framework for Sass.</h6>
 	<div class="post-meta">
 		
-		<span class="date">03.1.2015</span>
+		<span class="date">07.19.2015</span>
 		
 		
 
@@ -202,6 +203,13 @@
 </span>
 
 
+		
+	<span class="entry-reading-time">
+		<i class="fa fa-clock-o"></i>
+		
+		 2 minutes
+	</span>
+	
 	</div>
 </div>
 
@@ -213,22 +221,21 @@
 
 <section class="stripe">
 	<div class="container island">
-		<h5>What is it about?</h5>
+		<h5>What's this all about?</h5>
 		<p>
-			The Grid is a semantic grid framework built on top of Sass and Bourbon. It is simple enough to get you up and running in minutes, and powerful enough to handle any responsive layout you can dream of.
+			The Grid is a semantic grid framework built on top of Sass. Simply include it in your project and that's it!
 		</p>
 		<h5>Why another grid framework?</h5>
 		<p>
-			Because we are not happy with other frameworks. We built The Grid with the aim of promoting clean and semantic markup; it relies entirely on Sass mixins and does not pollute your HTML with presentation classes and extra wrapping div's.
-			It also aims to stay as lightweight as possible; just enough to handle the most common grid uses in modern Web design.
+			Because every other framework is bloated. The Grid is simple, intuitive, extendable and lightweight. It was built to promote clean and semantic markup, with the option to use your own custom classes - you can even use data attributes.
 		</p>
 		<h5>Is it responsive?</h5>
 		<p>
-			Yes. You can even change the grid settings in a specific breakpoint.
+			Yes. You can specify your breakpoints with the included elegant breakpoint mixin.
 		</p>
-		<h5>Alright. How do I get started?</h5>
+		<h5>How do I get started?</h5>
 		<p>
-			Install The Grid and its dependencies, read the documentation and check the examples page if you get lost. If you want to use The Grid on your Rails app, there is a gem for that.
+			Install _grid.scss and _breakpoint.scss files and simply reference them in your project. Get them on <a href="https://github.com/kiriaze/s-grid">Github</a>, or clone it: git@github.com:kiriaze/s-grid.git. If you're using <a href="/labs/juice">Juice</a>, its already included in there.
 		</p>
 	</div>
 </section>
@@ -380,9 +387,7 @@
 		</li>
 	</ul>
 
-</section>
-
-<section class="example-grid stripe">
+	<hr />
 
 	<div class="container">
 		<h3>Full Width. No Gutter. Crazy.</h3>
@@ -408,6 +413,13 @@
 			<h2>Columns 3</h2>
 		</li>
 	</ul>
+</section>
+
+<section class="stripe">
+	<div class="container">
+		<h2>Example Usage</h2>
+		<script src="https://gist.github.com/kiriaze/2797fcba02a15200e89c.js"></script>
+	</div>
 </section>
 
 
@@ -446,11 +458,6 @@
 				
 <footer role="contentinfo" id="footer">
 	<div class="container">
-		<div class="row">
-			<p class="made-with">
-				Made with <i class="fa fa-heart red"></i> in San Diego.
-			</p>
-		</div>
 		<div class="row">
 			<a href="/" class="logo js-ajax-link">K</a>
 			<ul class="social-list">

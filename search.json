@@ -1,12 +1,12 @@
 [
   
     {
-      "title"    : "DOTW 07.20.15",
-      "category" : "dope-of-the-week",
-      "tags"     : "",
-      "url"      : "/blog/dope-of-the-week/dotw-001",
-      "date"     : "2015-07-20 00:00:00 -0400",
-      "desc"     : "This week I look at stuff from Mr. Robot, Nike, Yamaha, sites, themes, songs, dribbble shots and more! Check out the whole selection, share with me what you think and stay tuned for the next installment!"
+      "title"    : "OSX Development Environment.",
+      "category" : "labs",
+      "tags"     : "code",
+      "url"      : "/labs/osx-development-environment/",
+      "date"     : "2015-07-23 00:00:00 -0400",
+      "desc"     : "Set up an ideal mac development environment on a fresh install of OSX yosemite"
     } ,
   
     {
@@ -14,17 +14,17 @@
       "category" : "labs",
       "tags"     : "code",
       "url"      : "/labs/juice/",
-      "date"     : "2015-07-19 00:00:00 -0400",
-      "desc"     : ""
+      "date"     : "2015-07-22 00:00:00 -0400",
+      "desc"     : "A gulp, jekyll, bower & sass powered front-end static site framework."
     } ,
   
     {
-      "title"    : "Code Markup",
-      "category" : "code",
-      "tags"     : "sample post, code, highlighting, and random",
-      "url"      : "/blog/code/code-markup",
-      "date"     : "2015-07-19 00:00:00 -0400",
-      "desc"     : "Demo post displaying the various ways of highlighting code in Markdown."
+      "title"    : "S-Animate.",
+      "category" : "labs",
+      "tags"     : "code",
+      "url"      : "/labs/s-animate/",
+      "date"     : "2015-07-21 00:00:00 -0400",
+      "desc"     : "A sass version of Dan Edens Animate.css library."
     } ,
   
     {
@@ -32,8 +32,26 @@
       "category" : "labs",
       "tags"     : "code",
       "url"      : "/labs/anchors/",
+      "date"     : "2015-07-20 00:00:00 -0400",
+      "desc"     : "Data atrribute driven scroll-to anchors, simplified."
+    } ,
+  
+    {
+      "title"    : "Help! Sass errors crash Gulp!",
+      "category" : "code",
+      "tags"     : "sass, gulp, and help",
+      "url"      : "/blog/code/sass-errors-crash-gulp",
       "date"     : "2015-07-19 00:00:00 -0400",
-      "desc"     : ""
+      "desc"     : "Prevent gulp from crashing when an scss error pops up."
+    } ,
+  
+    {
+      "title"    : "The Grid.",
+      "category" : "labs",
+      "tags"     : "code",
+      "url"      : "/labs/grid/",
+      "date"     : "2015-07-19 00:00:00 -0400",
+      "desc"     : "A lightweight semantic grid framework for Sass."
     } ,
   
     {
@@ -132,15 +150,6 @@
       "tags"     : "",
       "url"      : "/work/donately/",
       "date"     : "2015-03-03 00:00:00 -0500",
-      "desc"     : ""
-    } ,
-  
-    {
-      "title"    : "The Grid.",
-      "category" : "labs",
-      "tags"     : "code",
-      "url"      : "/labs/grid/",
-      "date"     : "2015-03-01 00:00:00 -0500",
       "desc"     : ""
     } ,
   
@@ -306,6 +315,17 @@
         "category" : "",
         "tags"     : "",
         "url"      : "/blog/page4/index.html",
+        "date"     : "",
+        "desc"     : ""
+     
+   } ,
+  
+   {
+     
+        "title"    : "Blog",
+        "category" : "",
+        "tags"     : "",
+        "url"      : "/blog/page5/index.html",
         "date"     : "",
         "desc"     : ""
      

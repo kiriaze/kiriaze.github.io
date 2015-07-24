@@ -1,0 +1,372 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Help! Sass errors crash Gulp!</title>
+	<meta name="description" content="Gulp is awesome, obviously. However there are some issues, and the one which drove me nuts from the get-go is that syntax issues in your sass break your buil...">
+
+	
+	<meta name="keywords" content="sass, gulp, help">
+	
+
+	<!--Mobile Meta-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Open Graph -->
+	<meta property="og:locale" content="en_US">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Help! Sass errors crash Gulp!">
+	<meta property="og:description" content="Prevent gulp from crashing when an scss error pops up.">
+	<meta property="og:url" content="/blog/code/sass-errors-crash-gulp">
+	<meta property="og:site_name" content="Kiriaze">
+
+	<!-- Twitter Cards -->
+	
+		
+			<meta name="twitter:card" content="summary">
+			<meta name="twitter:image" content="/assets/images/">
+		
+		<meta name="twitter:title" content="Help! Sass errors crash Gulp!">
+		<meta name="twitter:description" content="Prevent gulp from crashing when an scss error pops up.">
+		<meta name="twitter:creator" content="@kiriaze">
+	
+
+	
+	
+
+	<!--Favicon-->
+	<link rel="icon" type="image/png" href="/favicon.ico">
+
+	<!--[if (gte IE 6)&(lte IE 8)]>
+		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+	<![endif]-->
+
+	<!-- <script type="text/javascript" src="//use.typekit.net/dmh1abo.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+ -->
+
+	<!-- google fonts -->
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,300">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="/assets/css/main.min.css">
+
+	<link rel="canonical" href="/blog/code/sass-errors-crash-gulp">
+	<link rel="alternate" type="application/rss+xml" title="Kiriaze" href="/feed.xml" />
+
+</head>
+
+	<body class="">
+		<main id="main">
+			<div id="ajax-container">
+				<header role="banner" id="header">
+
+	<div class="container">
+
+		<a href="/" class="logo js-ajax-link" data-body-class="home-page">
+			Kiriaze
+		</a>
+
+		<input type="checkbox" id="drawer-toggle" name="drawer-toggle" class="nav-trigger" />
+		<a href="#navicon" id="navicon">
+			<div class="line line-one"></div>
+			<div class="line line-two"></div>
+			<div class="line line-three"></div>
+		</a>
+
+	</div>
+
+</header>
+
+<div class="menu-overlay">
+	<div class="container">
+		<nav>
+			<ul class="site-nav">
+
+			    
+			        
+			        
+			        <li class="site-nav-item">
+						<a href="/about" class=" js-ajax-link">Bio</a>
+					</li>
+			    
+			        
+			        
+			        <li class="site-nav-item">
+						<a href="/work" class=" js-ajax-link">Work</a>
+					</li>
+			    
+			        
+			        
+			        <li class="site-nav-item">
+						<a href="/labs" class=" js-ajax-link">Labs</a>
+					</li>
+			    
+			        
+			        
+			            
+			        
+			        <li class="site-nav-item">
+						<a href="/blog" class="current js-ajax-link">Blog</a>
+					</li>
+			    
+
+			</ul>
+		</nav>
+		<div class="contact-details">
+			<ul class="social-list">
+				<li><a href="http://github.com/kiriaze" target="new"><i class="fa fa-github"></i></a></li>
+				<li><a href="http://dribbble.com/kiriaze" target="new"><i class="fa fa-dribbble"></i></a></li>
+				<li><a href="http://twitter.com/kiriaze" target="new"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="https://www.linkedin.com/in/constantinekiriaze"><i class="fa fa-linkedin"></i></a></li>
+				<li><a href="mailto:hello@kiriaze.com"><i class="fi fi-mail"></i></a></li>
+			</ul>
+			<address>
+				<ul class="contact-info">
+					<li><a href="mailto:hello@kiriaze.com">hello@kiriaze.com</a></li>
+					<li><a href="javascript:;">Resume</a></li>
+					<li>
+						<span>Little Italy</span>
+						<span>San Diego, CA</span>
+					</li>
+				</ul>
+			</address>
+		</div>
+	</div>
+</div>
+
+				<!-- set ITEM var to either posts or pages to simplify conditionals, keeping page open for comparing -->
+
+	
+
+
+
+
+
+	
+
+
+
+
+<!-- Mar 30th, 2015, %b %-d, %Y -->
+<!-- dont show date for work -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+<!-- if heroText is set to true -->
+
+<section class="hero hero-mod grey-bg  "  data-midnight="default" >
+
+
+
+<div class="container hero-blurb">
+	<h1 class="title" data-sr="enter bottom">Help! Sass errors crash Gulp!</h1>
+	<h6 class="subtitle" data-sr="enter bottom"></h6>
+	<div class="post-meta">
+		
+		<span class="date">07.19.2015</span>
+		
+		
+
+<span class="categories">
+
+	<a href="/categories/#code" title="Pages categorized in code" class="cat"><span class="term">code</span></a>
+
+	<a href="/categories/#" title="Pages categorized in " class="cat"><span class="term"></span></a>
+
+</span>
+
+
+		
+
+<span class="tags">
+
+	<a href="/tags/#sass" title="Pages tagged sass" class="tag"><span class="term">sass</span></a>,
+
+	<a href="/tags/#gulp" title="Pages tagged gulp" class="tag"><span class="term">gulp</span></a>,
+
+	<a href="/tags/#help" title="Pages tagged help" class="tag"><span class="term">help</span></a>.
+
+</span>
+
+
+		
+	<span class="entry-reading-time">
+		<i class="fa fa-clock-o"></i>
+		
+		 1 minute
+	</span>
+	
+	</div>
+</div>
+
+</section>
+
+
+
+<section class="post-content">
+	<div class="container">
+
+		<p>Gulp is awesome, obviously. However there are some issues, and the one which drove me nuts from the get-go is that syntax issues in your sass break your build stream. Unfortunately, the advice on the internetz didn’t help much. In this article, we’ll look at a quick and easy fix for this problem.</p>
+
+<h3 id="lets-break-things">Let’s Break Things</h3>
+<p>First, traverse into your project directory, open the project in sublime, and start gulp. ( Default task is run )</p>
+
+<div class="highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre>$ cd Project
+$ subl .
+$ gulp
+</pre></div>
+</div>
+</div>
+
+<p>With the server now running, we can start to edit our files and make any changes we want. For our example, we’re going to break gulp. We’ll include a mixin that has yet to be defined inside our body tag.</p>
+
+<div class="highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span class="tag">body</span> {
+    <span class="directive">@include</span> <span class="error">r</span><span class="error">a</span><span class="error">n</span><span class="error">d</span><span class="error">o</span><span class="error">m</span><span class="error">M</span><span class="error">i</span><span class="error">x</span><span class="error">i</span><span class="error">n</span>();
+}
+</pre></div>
+</div>
+</div>
+
+<p>We’ve forgotten to define the mixin above, which will cause a syntax error and print out this error in our console.</p>
+
+<div class="highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre>stream.js:<span class="integer">94</span>
+      <span class="keyword">throw</span> er; <span class="comment">// Unhandled stream error in pipe.</span>
+            ^
+Error: mixin randomMixin <span class="predefined-constant">undefined</span>.
+</pre></div>
+</div>
+</div>
+
+<p>So let’s go back and define that mixin. Once we have, we can save the file and expect gulp to compile the Sass, but in this case, it won’t compile. The syntax error will completely break the gulp build stream. This can be a huge time waster and cause massive headaches when developing your website.</p>
+
+<h3 id="luckily-theres-an-easy-fix">Luckily, there’s an easy fix.</h3>
+<p>To fix the problem, we can open up our gulpfile CSS task and pass in an option.</p>
+
+<div class="highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre>gulp.task(<span class="string"><span class="delimiter">'</span><span class="content">css</span><span class="delimiter">'</span></span>, <span class="keyword">function</span>(){
+    <span class="keyword">return</span> gulp.src(<span class="string"><span class="delimiter">'</span><span class="content">PATH/TO/SRC</span><span class="delimiter">'</span></span>)
+            .pipe(sass({
+                <span class="key">errLogToConsole</span>: <span class="predefined-constant">true</span> <span class="comment">// this doesnt seem to work</span>
+            }))
+            .on(<span class="string"><span class="delimiter">'</span><span class="content">error</span><span class="delimiter">'</span></span>, onError)
+        .pipe(gulp.dest(<span class="string"><span class="delimiter">'</span><span class="content">PATH/TO/DEST</span><span class="delimiter">'</span></span>))
+});
+
+<span class="keyword">function</span> <span class="function">onError</span>(err) {
+    console.log(err);
+    <span class="local-variable">this</span>.emit(<span class="string"><span class="delimiter">'</span><span class="content">end</span><span class="delimiter">'</span></span>);
+}
+</pre></div>
+</div>
+</div>
+
+<p><code>{errLogToConsole: true}</code> didnt seem to prevent gulp from crashing our build stream, as advised by others. However, adding <code>.on('error', onError)</code> to the CSS method allowed us to continue working with our SASS files, be notified of any syntax errors, and keep our server from breaking. Hopefully this helps anybody out there that encounters a similar issue!</p>
+
+
+		<hr>
+
+		
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'kiriaze';
+    var disqus_identifier = "/blog/code/sass-errors-crash-gulp";
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+
+	</div>
+</section>
+
+
+
+
+	
+		<a href="/labs/anchors/" title="next Post:Anchors." class="next-post-alt js-ajax-link">
+			<div class="container">
+				<h6>Explore Another Post</h6>
+				<h2>Anchors.</h2>
+			</div>
+			<div class="hero-bg" style="background-image: url(); background-position: center center;"></div>
+		</a>
+	
+
+
+				
+<footer role="contentinfo" id="footer">
+	<div class="container">
+		<div class="row">
+			<a href="/" class="logo js-ajax-link">K</a>
+			<ul class="social-list">
+				<li><a href="http://github.com/kiriaze" target="new"><i class="fa fa-github"></i></a></li>
+				<li><a href="http://dribbble.com/kiriaze" target="new"><i class="fa fa-dribbble"></i></a></li>
+				<li><a href="http://twitter.com/kiriaze" target="new"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="mailto:hello@kiriaze.com"><i class="fi fi-mail"></i></a></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+
+				<script src="/assets/js/app.min.js"></script>
+
+
+<script type="text/javascript">
+	var searchInput = document.getElementById('search-input');
+	if ( typeof(searchInput) != 'undefined' && searchInput != null ) {
+		SimpleJekyllSearch({
+			searchInput: document.getElementById('search-input'),
+			resultsContainer: document.getElementById('results-container'),
+			json: '/search.json',
+			searchResultTemplate: '<li><a href="{url}" title="{title}"><span>{category}</span>{title}<span>{desc}</span></a></li>',
+			noResultsText: 'No results found',
+			limit: 10,
+			fuzzy: true,
+			exclude: []
+		});
+	}
+</script>
+
+
+
+
+			</div>
+		</main>
+	</body>
+</html>
