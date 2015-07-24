@@ -2,10 +2,13 @@
 <html class="no-js" lang="en">
 	<head>
 
+	<!-- google fonts, loaded as the first element in the <head> of your HTML document as stated at google.com/fonts -->
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,300">
+
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>The Grid.</title>
-	<meta name="description" content="			What's this all about?					The Grid is a semantic grid framework built on top of Sass. Simply include it in your project and that's it!				Why another gri...">
+	<meta name="description" content="	">
 
 	
 	<meta name="keywords" content="code">
@@ -48,11 +51,9 @@
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
  -->
 
-	<!-- google fonts -->
-	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,300">
-
 	<!-- CSS -->
 	<link rel="stylesheet" href="/assets/css/main.min.css">
+	<!-- inlining uncss'd css file below if uncss actually worked -->
 
 	<link rel="canonical" href="/labs/grid/">
 	<link rel="alternate" type="application/rss+xml" title="Kiriaze" href="/feed.xml" />
@@ -179,7 +180,7 @@
 <div class="container hero-blurb">
 	<h1 class="title" data-sr="enter bottom">The Grid.</h1>
 	<h6 class="subtitle" data-sr="enter bottom">A lightweight semantic grid framework for Sass.</h6>
-	<div class="post-meta">
+	<div class="post-meta" data-sr="enter bottom">
 		
 		<span class="date">07.19.2015</span>
 		
@@ -207,7 +208,7 @@
 	<span class="entry-reading-time">
 		<i class="fa fa-clock-o"></i>
 		
-		 2 minutes
+		 3 minutes
 	</span>
 	
 	</div>
@@ -221,22 +222,35 @@
 
 <section class="stripe">
 	<div class="container island">
-		<h5>What's this all about?</h5>
-		<p>
-			The Grid is a semantic grid framework built on top of Sass. Simply include it in your project and that's it!
-		</p>
-		<h5>Why another grid framework?</h5>
-		<p>
-			Because every other framework is bloated. The Grid is simple, intuitive, extendable and lightweight. It was built to promote clean and semantic markup, with the option to use your own custom classes - you can even use data attributes.
-		</p>
-		<h5>Is it responsive?</h5>
-		<p>
-			Yes. You can specify your breakpoints with the included elegant breakpoint mixin.
-		</p>
-		<h5>How do I get started?</h5>
-		<p>
-			Install _grid.scss and _breakpoint.scss files and simply reference them in your project. Get them on <a href="https://github.com/kiriaze/s-grid">Github</a>, or clone it: git@github.com:kiriaze/s-grid.git. If you're using <a href="/labs/juice">Juice</a>, its already included in there.
-		</p>
+
+<div>
+      <h5 id="whats-this-all-about">What’s this all about?</h5>
+
+      <p>The Grid is a semantic grid framework built on top of Sass. Simply include it in your project and that’s it!</p>
+
+      <h5 id="why-another-grid-framework">Why another grid framework?</h5>
+
+      <p>Because every other framework is bloated. The Grid is simple, intuitive, extendable and lightweight. It was built to promote clean and semantic markup, with the option to use your own custom classes - you can even use data attributes.</p>
+
+      <h5 id="is-it-responsive">Is it responsive?</h5>
+
+      <p>Yes. You can specify your breakpoints with the included elegant breakpoint mixin.</p>
+
+      <div class="highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span class="class">.element</span> {
+    <span class="directive">@include</span> <span class="predefined">breakpoint</span>(<span class="variable">$small</span>) {
+        <span class="directive">@include</span> <span class="predefined">columns</span>(<span class="float">2</span>);
+    }
+}
+</pre></div>
+</div>
+      </div>
+
+      <h5 id="how-do-i-get-started">How do I get started?</h5>
+
+      <p>Install _grid.scss and _breakpoint.scss files and simply reference them in your project. Get them on <a href="https://github.com/kiriaze/s-grid">Github</a>, or clone it <span><code>git@github.com:kiriaze/s-grid.git</code></span>. If you’re using <a href="/labs/juice">Juice</a>, its already included in there.</p>
+    </div>
+
 	</div>
 </section>
 
