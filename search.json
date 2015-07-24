@@ -1,6 +1,15 @@
 [
   
     {
+      "title"    : "Help! Sass errors crash Gulp!",
+      "category" : "code",
+      "tags"     : "sass, gulp, and help",
+      "url"      : "/blog/code/sass-errors-crash-gulp",
+      "date"     : "2015-07-23 00:00:00 -0400",
+      "desc"     : "Prevent gulp from crashing when an scss error pops up."
+    } ,
+  
+    {
       "title"    : "OSX Development Environment.",
       "category" : "labs",
       "tags"     : "code",
@@ -34,15 +43,6 @@
       "url"      : "/labs/anchors/",
       "date"     : "2015-07-20 00:00:00 -0400",
       "desc"     : "Data atrribute driven scroll-to anchors, simplified."
-    } ,
-  
-    {
-      "title"    : "Help! Sass errors crash Gulp!",
-      "category" : "code",
-      "tags"     : "sass, gulp, and help",
-      "url"      : "/blog/code/sass-errors-crash-gulp",
-      "date"     : "2015-07-19 00:00:00 -0400",
-      "desc"     : "Prevent gulp from crashing when an scss error pops up."
     } ,
   
     {

@@ -5,9 +5,87 @@
     <description>The online portfolio of Constantine Kiriaze.</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 23 Jul 2015 20:07:35 -0400</pubDate>
-    <lastBuildDate>Thu, 23 Jul 2015 20:07:35 -0400</lastBuildDate>
+    <pubDate>Thu, 23 Jul 2015 20:19:12 -0400</pubDate>
+    <lastBuildDate>Thu, 23 Jul 2015 20:19:12 -0400</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Help! Sass errors crash Gulp!</title>
+        <description>&lt;p&gt;Gulp is awesome, obviously. However there are some issues, and the one which drove me nuts from the get-go is that syntax issues in your sass break your build stream. Unfortunately, the advice on the internetz didn’t help much. In this article, we’ll look at a quick and easy fix for this problem.&lt;/p&gt;
+
+&lt;h3 id=&quot;lets-break-things&quot;&gt;Let’s Break Things&lt;/h3&gt;
+&lt;p&gt;First, traverse into your project directory, open the project in sublime, and start gulp. ( Default task is run )&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;$ cd Project
+$ subl .
+$ gulp
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;With the server now running, we can start to edit our files and make any changes we want. For our example, we’re going to break gulp. We’ll include a mixin that has yet to be defined inside our body tag.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;tag&quot;&gt;body&lt;/span&gt; {
+    &lt;span class=&quot;directive&quot;&gt;@include&lt;/span&gt; &lt;span class=&quot;error&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;error&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;error&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;error&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;error&quot;&gt;o&lt;/span&gt;&lt;span class=&quot;error&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;error&quot;&gt;M&lt;/span&gt;&lt;span class=&quot;error&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;error&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;error&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;error&quot;&gt;n&lt;/span&gt;();
+}
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;We’ve forgotten to define the mixin above, which will cause a syntax error and print out this error in our console.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;stream.js:&lt;span class=&quot;integer&quot;&gt;94&lt;/span&gt;
+      &lt;span class=&quot;keyword&quot;&gt;throw&lt;/span&gt; er; &lt;span class=&quot;comment&quot;&gt;// Unhandled stream error in pipe.&lt;/span&gt;
+            ^
+Error: mixin randomMixin &lt;span class=&quot;predefined-constant&quot;&gt;undefined&lt;/span&gt;.
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;So let’s go back and define that mixin. Once we have, we can save the file and expect gulp to compile the Sass, but in this case, it won’t compile. The syntax error will completely break the gulp build stream. This can be a huge time waster and cause massive headaches when developing your website.&lt;/p&gt;
+
+&lt;h3 id=&quot;luckily-theres-an-easy-fix&quot;&gt;Luckily, there’s an easy fix.&lt;/h3&gt;
+&lt;p&gt;To fix the problem, we can open up our gulpfile CSS task and pass in an option.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;gulp.task(&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;css&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(){
+    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; gulp.src(&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;PATH/TO/SRC&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;)
+            .pipe(sass({
+                &lt;span class=&quot;key&quot;&gt;errLogToConsole&lt;/span&gt;: &lt;span class=&quot;predefined-constant&quot;&gt;true&lt;/span&gt; &lt;span class=&quot;comment&quot;&gt;// this doesnt seem to work&lt;/span&gt;
+            }))
+            .on(&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;, onError)
+        .pipe(gulp.dest(&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;PATH/TO/DEST&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;))
+});
+
+&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;function&quot;&gt;onError&lt;/span&gt;(err) {
+    console.log(err);
+    &lt;span class=&quot;local-variable&quot;&gt;this&lt;/span&gt;.emit(&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;end&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;);
+}
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;code&gt;{errLogToConsole: true}&lt;/code&gt; didnt seem to prevent gulp from crashing our build stream, as advised by others. However, adding &lt;code&gt;.on(&#39;error&#39;, onError)&lt;/code&gt; to the CSS method allowed us to continue working with our SASS files, be notified of any syntax errors, and keep our server from breaking. Hopefully this helps anybody out there that encounters a similar issue!&lt;/p&gt;
+</description>
+        <pubDate>Thu, 23 Jul 2015 00:00:00 -0400</pubDate>
+        <link>/blog/code/sass-errors-crash-gulp</link>
+        <guid isPermaLink="true">/blog/code/sass-errors-crash-gulp</guid>
+        
+        <category>sass</category>
+        
+        <category>gulp</category>
+        
+        <category>help</category>
+        
+        
+        <category>code</category>
+        
+        <category></category>
+        
+      </item>
     
       <item>
         <title>OSX Development Environment.</title>
@@ -205,84 +283,6 @@ duration: &lt;span class=&quot;integer&quot;&gt;800&lt;/span&gt;,               
         
         
         <category>labs</category>
-        
-        <category></category>
-        
-      </item>
-    
-      <item>
-        <title>Help! Sass errors crash Gulp!</title>
-        <description>&lt;p&gt;Gulp is awesome, obviously. However there are some issues, and the one which drove me nuts from the get-go is that syntax issues in your sass break your build stream. Unfortunately, the advice on the internetz didn’t help much. In this article, we’ll look at a quick and easy fix for this problem.&lt;/p&gt;
-
-&lt;h3 id=&quot;lets-break-things&quot;&gt;Let’s Break Things&lt;/h3&gt;
-&lt;p&gt;First, traverse into your project directory, open the project in sublime, and start gulp. ( Default task is run )&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;$ cd Project
-$ subl .
-$ gulp
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;With the server now running, we can start to edit our files and make any changes we want. For our example, we’re going to break gulp. We’ll include a mixin that has yet to be defined inside our body tag.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;tag&quot;&gt;body&lt;/span&gt; {
-    &lt;span class=&quot;directive&quot;&gt;@include&lt;/span&gt; &lt;span class=&quot;error&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;error&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;error&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;error&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;error&quot;&gt;o&lt;/span&gt;&lt;span class=&quot;error&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;error&quot;&gt;M&lt;/span&gt;&lt;span class=&quot;error&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;error&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;error&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;error&quot;&gt;n&lt;/span&gt;();
-}
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;We’ve forgotten to define the mixin above, which will cause a syntax error and print out this error in our console.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;stream.js:&lt;span class=&quot;integer&quot;&gt;94&lt;/span&gt;
-      &lt;span class=&quot;keyword&quot;&gt;throw&lt;/span&gt; er; &lt;span class=&quot;comment&quot;&gt;// Unhandled stream error in pipe.&lt;/span&gt;
-            ^
-Error: mixin randomMixin &lt;span class=&quot;predefined-constant&quot;&gt;undefined&lt;/span&gt;.
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;So let’s go back and define that mixin. Once we have, we can save the file and expect gulp to compile the Sass, but in this case, it won’t compile. The syntax error will completely break the gulp build stream. This can be a huge time waster and cause massive headaches when developing your website.&lt;/p&gt;
-
-&lt;h3 id=&quot;luckily-theres-an-easy-fix&quot;&gt;Luckily, there’s an easy fix.&lt;/h3&gt;
-&lt;p&gt;To fix the problem, we can open up our gulpfile CSS task and pass in an option.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;gulp.task(&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;css&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(){
-    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; gulp.src(&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;PATH/TO/SRC&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;)
-            .pipe(sass({
-                &lt;span class=&quot;key&quot;&gt;errLogToConsole&lt;/span&gt;: &lt;span class=&quot;predefined-constant&quot;&gt;true&lt;/span&gt; &lt;span class=&quot;comment&quot;&gt;// this doesnt seem to work&lt;/span&gt;
-            }))
-            .on(&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;, onError)
-        .pipe(gulp.dest(&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;PATH/TO/DEST&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;))
-});
-
-&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;function&quot;&gt;onError&lt;/span&gt;(err) {
-    console.log(err);
-    &lt;span class=&quot;local-variable&quot;&gt;this&lt;/span&gt;.emit(&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;end&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;);
-}
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;code&gt;{errLogToConsole: true}&lt;/code&gt; didnt seem to prevent gulp from crashing our build stream, as advised by others. However, adding &lt;code&gt;.on(&#39;error&#39;, onError)&lt;/code&gt; to the CSS method allowed us to continue working with our SASS files, be notified of any syntax errors, and keep our server from breaking. Hopefully this helps anybody out there that encounters a similar issue!&lt;/p&gt;
-</description>
-        <pubDate>Sun, 19 Jul 2015 00:00:00 -0400</pubDate>
-        <link>/blog/code/sass-errors-crash-gulp</link>
-        <guid isPermaLink="true">/blog/code/sass-errors-crash-gulp</guid>
-        
-        <category>sass</category>
-        
-        <category>gulp</category>
-        
-        <category>help</category>
-        
-        
-        <category>code</category>
         
         <category></category>
         
