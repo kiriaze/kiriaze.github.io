@@ -7,12 +7,12 @@
 
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Help! Sass errors crash Gulp! | Kiriaze</title>
+	<title>Ghosts. | Kiriaze</title>
 
-	<meta name="description" content="Gulp is awesome, obviously. However there are some issues, and the one which drove me nuts from the get-go is that syntax issues in your sass break your buil...">
+	<meta name="description" content="Does 3 things, sometimes 4.">
 
 	
-	<meta name="keywords" content="sass, gulp, help">
+	<meta name="keywords" content="code">
 	
 
 	<!--Mobile Meta-->
@@ -21,9 +21,9 @@
 	<!-- Open Graph -->
 	<meta property="og:locale" content="en_US">
 	<meta property="og:type" content="article">
-	<meta property="og:title" content="Help! Sass errors crash Gulp!">
-	<meta property="og:description" content="Prevent gulp from crashing when an scss error pops up.">
-	<meta property="og:url" content="/blog/code/sass-errors-crash-gulp">
+	<meta property="og:title" content="Ghosts.">
+	<meta property="og:description" content="Setup your hosts/httpd-vhosts file through cli, create project dir, and restart apache.">
+	<meta property="og:url" content="/labs/ghosts/">
 	<meta property="og:site_name" content="Kiriaze">
 
 	<!-- Twitter Cards -->
@@ -32,8 +32,8 @@
 			<meta name="twitter:card" content="summary">
 			<meta name="twitter:image" content="/assets/images/">
 		
-		<meta name="twitter:title" content="Help! Sass errors crash Gulp!">
-		<meta name="twitter:description" content="Prevent gulp from crashing when an scss error pops up.">
+		<meta name="twitter:title" content="Ghosts.">
+		<meta name="twitter:description" content="Setup your hosts/httpd-vhosts file through cli, create project dir, and restart apache.">
 		<meta name="twitter:creator" content="@kiriaze">
 	
 
@@ -56,7 +56,7 @@
 	<link rel="stylesheet" href="/assets/css/main.min.css">
 	<!-- inlining uncss'd css file below if uncss actually worked -->
 
-	<link rel="canonical" href="/blog/code/sass-errors-crash-gulp">
+	<link rel="canonical" href="/labs/ghosts/">
 	<link rel="alternate" type="application/rss+xml" title="Kiriaze" href="/feed.xml" />
 
 </head>
@@ -103,16 +103,16 @@
 			    
 			        
 			        
+			            
+			        
 			        <li class="site-nav-item">
-						<a href="/labs" class=" js-ajax-link">Labs</a>
+						<a href="/labs" class="current js-ajax-link">Labs</a>
 					</li>
 			    
 			        
 			        
-			            
-			        
 			        <li class="site-nav-item">
-						<a href="/blog" class="current js-ajax-link">Blog</a>
+						<a href="/blog" class=" js-ajax-link">Blog</a>
 					</li>
 			    
 
@@ -174,24 +174,22 @@
 
 <!-- if heroText is set to true -->
 
-<section class="hero hero-mod grey-bg has-hero "  data-midnight="default" >
+<section class="hero hero-mod grey-bg  "  data-midnight="default" >
 
-
-	<div class="hero-bg" style="background-image: url(/assets/images/projects/p2.jpg);"></div>
 
 
 <div class="container hero-blurb">
-	<h1 class="title" data-sr="enter bottom">Help! Sass errors crash Gulp!</h1>
-	<h6 class="subtitle" data-sr="enter bottom"></h6>
+	<h1 class="title" data-sr="enter bottom">Ghosts.</h1>
+	<h6 class="subtitle" data-sr="enter bottom">Setup your hosts/httpd-vhosts file through cli, create project dir, and restart apache.</h6>
 	<div class="post-meta" data-sr="enter bottom">
 		
-		<span class="date">07.23.2015</span>
+		<span class="date">07.25.2015</span>
 		
 		
 
 <span class="categories">
 
-	<a href="/categories/#code" title="Pages categorized in code" class="cat"><span class="term">code</span></a>
+	<a href="/categories/#labs" title="Pages categorized in labs" class="cat"><span class="term">labs</span></a>
 
 	<a href="/categories/#" title="Pages categorized in " class="cat"><span class="term"></span></a>
 
@@ -202,11 +200,7 @@
 
 <span class="tags">
 
-	<a href="/tags/#sass" title="Pages tagged sass" class="tag"><span class="term">sass</span></a>,
-
-	<a href="/tags/#gulp" title="Pages tagged gulp" class="tag"><span class="term">gulp</span></a>,
-
-	<a href="/tags/#help" title="Pages tagged help" class="tag"><span class="term">help</span></a>.
+	<a href="/tags/#code" title="Pages tagged code" class="tag"><span class="term">code</span></a>.
 
 </span>
 
@@ -228,64 +222,27 @@
 <section class="post-content">
 	<div class="container">
 
-		<p>Gulp is awesome, obviously. However there are some issues, and the one which drove me nuts from the get-go is that syntax issues in your sass break your build stream. Unfortunately, the advice on the internetz didn’t help much. In this article, we’ll look at a quick and easy fix for this problem.</p>
+		<h3 id="does-3-things-sometimes-4">Does 3 things, sometimes 4.</h3>
 
-<h3 id="lets-break-things">Let’s Break Things</h3>
-<p>First, traverse into your project directory, open the project in sublime, and start gulp. ( Default task is run )</p>
+<ul>
+  <li>Creates an instance of your project within your hosts file, e.g. project.dev 127.0.0.1.</li>
+  <li>Creates a reference to the hosts/project within httpd-vhosts.conf by referencing your desired path to project.</li>
+  <li>Creates directory for you project. (Optional)</li>
+  <li>Restarts Apache.</li>
+</ul>
 
-<div class="highlighter-coderay"><div class="CodeRay">
-  <div class="code"><pre>$ cd Project
-$ subl .
-$ gulp
-</pre></div>
-</div>
-</div>
+<p><code>bash &lt;(curl -s https://raw.githubusercontent.com/kiriaze/ghost/master/ghosts.sh)</code></p>
 
-<p>With the server now running, we can start to edit our files and make any changes we want. For our example, we’re going to break gulp. We’ll include a mixin that has yet to be defined inside our body tag.</p>
+<h3 id="preferred-method-would-be-to">Preferred method would be to:</h3>
 
-<div class="highlighter-coderay"><div class="CodeRay">
-  <div class="code"><pre><span class="tag">body</span> {
-    <span class="directive">@include</span> <span class="error">r</span><span class="error">a</span><span class="error">n</span><span class="error">d</span><span class="error">o</span><span class="error">m</span><span class="error">M</span><span class="error">i</span><span class="error">x</span><span class="error">i</span><span class="error">n</span>();
-}
-</pre></div>
-</div>
-</div>
+<p>Download it and place it with your other scripts, e.g. <code>/Users/{username}/Documents/ghosts.sh</code><br />
+Make it executable <code>chmod u+x ghosts.sh</code><br />
+Create an alias: <code>nano .bash_profile</code><br />
+Add alias <code>{path/to/ghosts.sh}='ghosts'</code><br />
+Run it: <code>ghosts</code><br />
+And follow the inline instructions through CLI!</p>
 
-<p>We’ve forgotten to define the mixin above, which will cause a syntax error and print out this error in our console.</p>
-
-<div class="highlighter-coderay"><div class="CodeRay">
-  <div class="code"><pre>stream.js:<span class="integer">94</span>
-      <span class="keyword">throw</span> er; <span class="comment">// Unhandled stream error in pipe.</span>
-            ^
-Error: mixin randomMixin <span class="predefined-constant">undefined</span>.
-</pre></div>
-</div>
-</div>
-
-<p>So let’s go back and define that mixin. Once we have, we can save the file and expect gulp to compile the Sass, but in this case, it won’t compile. The syntax error will completely break the gulp build stream. This can be a huge time waster and cause massive headaches when developing your website.</p>
-
-<h3 id="luckily-theres-an-easy-fix">Luckily, there’s an easy fix.</h3>
-<p>To fix the problem, we can open up our gulpfile CSS task and pass in an option.</p>
-
-<div class="highlighter-coderay"><div class="CodeRay">
-  <div class="code"><pre>gulp.task(<span class="string"><span class="delimiter">'</span><span class="content">css</span><span class="delimiter">'</span></span>, <span class="keyword">function</span>(){
-    <span class="keyword">return</span> gulp.src(<span class="string"><span class="delimiter">'</span><span class="content">PATH/TO/SRC</span><span class="delimiter">'</span></span>)
-            .pipe(sass({
-                <span class="key">errLogToConsole</span>: <span class="predefined-constant">true</span> <span class="comment">// this doesnt seem to work</span>
-            }))
-            .on(<span class="string"><span class="delimiter">'</span><span class="content">error</span><span class="delimiter">'</span></span>, onError)
-        .pipe(gulp.dest(<span class="string"><span class="delimiter">'</span><span class="content">PATH/TO/DEST</span><span class="delimiter">'</span></span>))
-});
-
-<span class="keyword">function</span> <span class="function">onError</span>(err) {
-    console.log(err);
-    <span class="local-variable">this</span>.emit(<span class="string"><span class="delimiter">'</span><span class="content">end</span><span class="delimiter">'</span></span>);
-}
-</pre></div>
-</div>
-</div>
-
-<p><code>{errLogToConsole: true}</code> didnt seem to prevent gulp from crashing our build stream, as advised by others. However, adding <code>.on('error', onError)</code> to the CSS method allowed us to continue working with our SASS files, be notified of any syntax errors, and keep our server from breaking. Hopefully this helps anybody out there that encounters a similar issue!</p>
+<p><a href="http://github.com/kiriaze/ghosts">Get it here!</a> or clone it <code>git@github.com:kiriaze/ghosts.git</code></p>
 
 
 		<hr>
@@ -295,7 +252,7 @@ Error: mixin randomMixin <span class="predefined-constant">undefined</span>.
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES * * */
     var disqus_shortname = 'kiriaze';
-    var disqus_identifier = "/blog/code/sass-errors-crash-gulp";
+    var disqus_identifier = "/labs/ghosts/";
 
     /* * * DON'T EDIT BELOW THIS LINE * * */
     (function() {
@@ -322,14 +279,6 @@ Error: mixin randomMixin <span class="predefined-constant">undefined</span>.
 
 
 
-	
-		<a href="/labs/ghosts/" title="next Post:Ghosts." class="next-post-alt js-ajax-link">
-			<div class="container">
-				<h6>Explore Another Post</h6>
-				<h2>Ghosts.</h2>
-			</div>
-			<div class="hero-bg" style="background-image: url(); background-position: center center;"></div>
-		</a>
 	
 
 

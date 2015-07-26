@@ -1,6 +1,15 @@
 [
   
     {
+      "title"    : "Ghosts.",
+      "category" : "labs",
+      "tags"     : "code",
+      "url"      : "/labs/ghosts/",
+      "date"     : "2015-07-25 00:00:00 -0400",
+      "desc"     : "Setup your hosts/httpd-vhosts file through cli, create project dir, and restart apache."
+    } ,
+  
+    {
       "title"    : "Help! Sass errors crash Gulp!",
       "category" : "code",
       "tags"     : "sass, gulp, and help",
