@@ -119,7 +119,7 @@ defaults:
 
 exclude: ['node_modules', 'gulpfile.js', 'package.json', 'assets']
 # keep jekyll from removing compiled css dir
-keep_files: ['assets']
+keep_files: ['assets', 'sitemap.xml']
 
 # Src/Dest are also outlined in config.js
 source: ./src

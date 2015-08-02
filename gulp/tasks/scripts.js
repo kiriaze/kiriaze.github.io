@@ -17,11 +17,7 @@ gulp.task('js', function(){
 
 	return gulp.src(files)
 		.pipe(plugins.sourcemaps.init())
-			.pipe(plugins.order([
-				'**/**/modernizr.js',
-				'**/**/jquery.js',
-		        '**/**/*.js'
-			]))
+			.pipe(plugins.order(config.scripts.order))
 			.pipe(plugins.uglify())
 			.pipe(plugins.concat('app.js'))
 			.pipe(plugins.rename({suffix: '.min'}))
