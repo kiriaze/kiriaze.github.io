@@ -12,14 +12,16 @@ permalink: /work/
 		{% assign sorted_pages = site.categories.work | sort:'order' %}
 
 		{% for project in sorted_pages %}
-			{% capture counter %}{{ counter | plus:'0.1' }}{% endcapture %}
-			<a href="{{ project.url | prepend: site.baseurl }}" class="js-ajax-link {{ project.status }}" data-sr='enter left wait {{ counter }}s'>{{ project.title }}.</a>
-			{% if project.video %}
-				<video class="work-title-bg work-title-video" preload="auto" poster="{{ project.image }}" autoplay="" loop="" muted="">
-					<source src="{{ project.video }}" type="video/mp4">
-				</video>
-			{% else %}
-				<div class="work-title-bg" style="background-image:url({{ project.image }})"></div>
+			{% capture counter %}{{ counter | plus:'0.125' }}{% endcapture %}
+			<a href="{{ project.url | prepend: site.baseurl }}" class="js-ajax-link wow fadeIn {{ project.status }}" data-wow-delay='{{ counter }}s'>{{ project.title }}.</a>
+			{% if project.status == 'completed' %}
+				{% if project.video %}
+					<video class="work-title-bg work-title-video" preload="auto" poster="{{ project.image }}" autoplay="" loop="" muted="">
+						<source src="{{ project.video }}" type="video/mp4">
+					</video>
+				{% else %}
+					<div class="work-title-bg" style="background-image:url({{ project.image }})"></div>
+				{% endif %}
 			{% endif %}
 		{% endfor %}
 

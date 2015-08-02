@@ -1,19 +1,18 @@
-'use strict';
-
-var gulp 	= require('gulp'),
+var config  = require('../config'),
+	gulp 	= require('gulp'),
 	rsync	= require('gulp-rsync');
 
 gulp.task('deploy', ['prod'], function() {
 
-	return gulp.src(['./src/**'])
+	return gulp.src([config.dist.root + '/**/*'])
 		.pipe(rsync({
-			root: './src',
-			hostname: '',
-			username: '',
-			password: '',
-			destination: 'public_html',
+			root: config.dist.root,
+			hostname: config.hostname,
+			username: config.username,
+			password: config.password,
+			destination: config.destination,
 			incremental: true,
-			exclude: []
+			exclude: config.exclude
 		}));
 
 });

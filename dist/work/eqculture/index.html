@@ -2,9 +2,13 @@
 <html class="no-js" lang="en">
 	<head>
 
+	<!-- google fonts, loaded as the first element in the <head> of your HTML document as stated at google.com/fonts -->
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,300">
+
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>EQ Culture</title>
+	<title>EQ Culture | Kiriaze</title>
+
 	<meta name="description" content="	">
 
 	
@@ -15,12 +19,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- Open Graph -->
-	<meta property="og:locale" content="en_US">
-	<meta property="og:type" content="article">
-	<meta property="og:title" content="EQ Culture">
-	<meta property="og:description" content="The online portfolio of Constantine Kiriaze.">
-	<meta property="og:url" content="/work/eqculture/">
-	<meta property="og:site_name" content="Kiriaze">
+	
 
 	<!-- Twitter Cards -->
 	
@@ -48,8 +47,10 @@
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
  -->
 
-	<!-- CSS -->
+	<!-- CSS - comment out when production build is ran -->
 	<link rel="stylesheet" href="/assets/css/main.min.css">
+	<!-- uncss'd stylesheet below, uncomment when prod build is run -->
+	
 
 	<link rel="canonical" href="/work/eqculture/">
 	<link rel="alternate" type="application/rss+xml" title="Kiriaze" href="/feed.xml" />
@@ -58,8 +59,7 @@
 
 	<body class="">
 		<main id="main">
-			<div id="ajax-container">
-				<header role="banner" id="header">
+			<header role="banner" id="header" class="wow fadeIn" data-wow-delay=".4s">
 
 	<div class="container">
 
@@ -87,13 +87,13 @@
 			        
 			        
 			        <li class="site-nav-item">
-						<a href="/index.html" class=" js-ajax-link">Home</a>
+						<a href="/about" class=" js-ajax-link">Bio.</a>
 					</li>
 			    
 			        
 			        
 			        <li class="site-nav-item">
-						<a href="/about" class=" js-ajax-link">Bio</a>
+						<a href="/labs" class=" js-ajax-link">Labs.</a>
 					</li>
 			    
 			        
@@ -101,19 +101,13 @@
 			            
 			        
 			        <li class="site-nav-item">
-						<a href="/work" class="current js-ajax-link">Work</a>
+						<a href="/work" class="current js-ajax-link">Work.</a>
 					</li>
 			    
 			        
 			        
 			        <li class="site-nav-item">
-						<a href="/labs" class=" js-ajax-link">Labs</a>
-					</li>
-			    
-			        
-			        
-			        <li class="site-nav-item">
-						<a href="/blog" class=" js-ajax-link">Blog</a>
+						<a href="/blog" class=" js-ajax-link">Words.</a>
 					</li>
 			    
 
@@ -124,15 +118,16 @@
 				<li><a href="http://github.com/kiriaze" target="new"><i class="fa fa-github"></i></a></li>
 				<li><a href="http://dribbble.com/kiriaze" target="new"><i class="fa fa-dribbble"></i></a></li>
 				<li><a href="http://twitter.com/kiriaze" target="new"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="https://www.linkedin.com/in/constantinekiriaze"><i class="fa fa-linkedin"></i></a></li>
 				<li><a href="mailto:hello@kiriaze.com"><i class="fi fi-mail"></i></a></li>
 			</ul>
 			<address>
 				<ul class="contact-info">
 					<li><a href="mailto:hello@kiriaze.com">hello@kiriaze.com</a></li>
-					<!-- <li>619.453.5478</li> -->
+					<li><a href="javascript:;">Resume</a></li>
 					<li>
 						<span>Little Italy</span>
-						<span>San Diego, Ca</span>
+						<span>San Diego, CA</span>
 					</li>
 				</ul>
 			</address>
@@ -140,7 +135,7 @@
 	</div>
 </div>
 
-				<!-- set ITEM var to either posts or pages to simplify conditionals, keeping page open for comparing -->
+			<!-- set ITEM var to either posts or pages to simplify conditionals, keeping page open for comparing -->
 
 	
 
@@ -164,20 +159,24 @@
 
 
 
+
+	
+
+
 <!-- if heroText is set to true -->
 
 <section class="hero hero-mod dark has-hero video-bg"  data-midnight="dark-bg" >
 
 
 	<video class="work-title-bg work-title-video" preload="auto" poster="" autoplay="" loop="" muted="">
-		<source src="http://andershede.com/wp-content/uploads/2014/08/VoxHall.mp4" type="video/mp4">
+		<source src="/assets/video/eq-promo.mp4" type="video/mp4">
 	</video>
 
 
 <div class="container hero-blurb">
-	<h1 class="title" data-sr="enter bottom">heading</h1>
-	<h6 class="subtitle" data-sr="enter bottom">subheading</h6>
-	<div class="post-meta">
+	<h1 class="title wow fadeIn" data-wow-delay=".6s">heading</h1>
+	<h6 class="subtitle wow fadeIn" data-wow-delay=".8s">subheading</h6>
+	<div class="post-meta wow fadeIn" data-wow-delay="1s">
 		
 		
 
@@ -193,6 +192,13 @@
 		
 
 
+		
+	<span class="entry-reading-time">
+		<i class="fa fa-clock-o"></i>
+		
+		 3 minutes
+	</span>
+	
 	</div>
 </div>
 
@@ -204,30 +210,30 @@
 	<section class="text-align-center post-content" style="background-image: url(/assets/images/other/sketch-bg.svg); background-size: cover;" data-midnight="default">
 	<div class="container">
 
-		<h6>The Brief</h6>
+		<h6 class="wow fadeInDown" data-wow-delay=".2s" data-wow-offset="50">The Brief</h6>
 
-		<h2>A complete rebranding.</h2>
+		<h2 class="wow fadeInDown" data-wow-delay=".4s" data-wow-offset="50">A complete rebranding.</h2>
 
-		<p class="lead">Hello, IT. Have you tried turning it off and on again? Uh... okay, well, the button on the side, is it glowing? Yeah, you need to turn it on... uh, the button turns it on... yeah, you do know how a button works don't you? No, not on clothes.</p>
+		<p class="lead wow fadeIn" data-wow-delay=".6s">Hello, IT. Have you tried turning it off and on again? Uh... okay, well, the button on the side, is it glowing? Yeah, you need to turn it on... uh, the button turns it on... yeah, you do know how a button works don't you? No, not on clothes.</p>
 
 		<ul class="project-details">
-			<li>
+			<li class="wow fadeIn" data-wow-delay=".2s">
 				<h6>My Role</h6>
 				<span>
 					
 				</span>
 			</li>
-			<li>
+			<li class="wow fadeIn" data-wow-delay=".4s">
 				<h6>Employer</h6>
 				<span>Google</span>
 			</li>
-			<li>
+			<li class="wow fadeIn" data-wow-delay=".6s">
 				<h6>Client</h6>
 				<span>Invisible Children</span>
 			</li>
 		</ul>
 
-		<a href="http://google.com" class="btn project-link">Launch Website</a>
+		<a href="http://google.com" class="btn project-link wow fadeInUp" data-wow-delay=".6s">Launch Website</a>
 
 	</div>
 </section>
@@ -271,10 +277,10 @@
 
 <section class="dark text-align-center post-content" data-midnight="dark-bg">
 	<div class="container">
-		<h6>The Concept</h6>
-		<h2>Transform the world global; our grantees and partners end hunger economic security.</h2>
+		<h6>Subheading</h6>
+		<h2>Heading</h2>
 		<p style="visibility: visible; ">
-			The challenge was clear. Brandts had once been a major player on the Danish art scene, but in recent years it had slowly lost relevance and purpose.
+			Design thinking; globalization vulnerable population activist, advancement sharing economy education, shift, fellows social analysis progress Medecins du Monde.
 		</p>
 		<a href="javascript:;" class="btn">Learn more about our&nbsp;approach</a>
 	</div>
@@ -286,8 +292,8 @@
 			<img src="https://983a19dd0c368a4b1e57-0cb7d1946e41dc50c3f11b74195916fd.ssl.cf1.rackcdn.com/img/tour/all-in-one-events-oxfam-usa2.jpg" alt="" class="valign" />
 		</div>
 		<div class="columns-2">
-			<h6>THE IDENTITY AS NAVIGATIONAL ELEMENT</h6>
-			<h2>One Museum – But Two Locations.</h2>
+			<h6>Subheading</h6>
+			<h2>Heading</h2>
 			<p>
 				Design thinking; globalization vulnerable population activist, advancement sharing economy education, shift, fellows social analysis progress Medecins du Monde. Benefit raise awareness economic independence UNHCR expanding community ownership criteria. Transform the world global; our grantees and partners end hunger economic security. Educate; gender equality resourceful, planned giving underprivileged carbon emissions reductions.
 			</p>
@@ -300,10 +306,10 @@
 background-image: url(/assets/images/projects/p24.jpg);
 ">
 	<div class="container">
-		<h6>The Concept</h6>
-		<h2>Transform the world global; our grantees and partners end hunger economic security.</h2>
+		<h6>Subheading</h6>
+		<h2>Heading</h2>
 		<p style="visibility: visible; ">
-			The challenge was clear. Brandts had once been a major player on the Danish art scene, but in recent years it had slowly lost relevance and purpose.
+			Design thinking; globalization vulnerable population activist, advancement sharing economy education, shift, fellows social analysis progress Medecins du Monde.
 		</p>
 		<a href="javascript:;" class="btn">Learn more about our&nbsp;approach</a>
 	</div>
@@ -312,8 +318,8 @@ background-image: url(/assets/images/projects/p24.jpg);
 <section>
 	<div class="container valign">
 		<div class="columns-2">
-			<h6>HOW TO BRAND A MUSEUM</h6>
-			<h2>The Artist Or The Museum?</h2>
+			<h6>Subheading</h6>
+			<h2>Heading</h2>
 			<p>
 				Design thinking; globalization vulnerable population activist, advancement sharing economy education, shift, fellows social analysis progress Medecins du Monde. Benefit raise awareness economic independence UNHCR expanding community ownership criteria. Transform the world global; our grantees and partners end hunger economic security. Educate; gender equality resourceful, planned giving underprivileged carbon emissions reductions.
 			</p>
@@ -329,18 +335,18 @@ background-image: url(/assets/images/projects/p24.jpg);
 background-image: url(/assets/images/other/graph.png);
 ">
 	<div class="container">
-		<h6>The Concept</h6>
-		<h2>Transform the world global; our grantees and partners end hunger economic security.</h2>
+		<h6>Subheading</h6>
+		<h2>Heading</h2>
 		<p>
-			The challenge was clear. Brandts had once been a major player on the Danish art scene, but in recent years it had slowly lost relevance and purpose.
+			Design thinking; globalization vulnerable population activist, advancement sharing economy education, shift, fellows social analysis progress Medecins du Monde.
 		</p>
 	</div>
 </section>
 
 <section class="secondary-bg text-align-center post-content" data-midnight="dark-bg">
 	<div class="container">
-		<h6>TAKING THE BRAND BACK</h6>
-		<h2>Coherent Branding And Increased Ownership.</h2>
+		<h6>Subheading</h6>
+		<h2>Heading</h2>
 		<p>
 			Design thinking; globalization vulnerable population activist, advancement sharing economy education, shift, fellows social analysis progress Medecins du Monde. Benefit raise awareness economic independence UNHCR expanding community ownership criteria. Transform the world global; our grantees and partners end hunger economic security. Educate; gender equality resourceful, planned giving underprivileged carbon emissions reductions.
 		</p>
@@ -367,8 +373,8 @@ background-image: url(/assets/images/other/graph.png);
 
 <section class="valign theme-bg text-align-center post-content full-height" data-midnight="dark-bg">
 	<div class="container">
-		<h6>LET'S CUT SOME CORNERS</h6>
-		<h2>A New Poster Concept.</h2>
+		<h6>Subheading</h6>
+		<h2>Heading</h2>
 		<p>
 			Design thinking; globalization vulnerable population activist, advancement sharing economy education, shift, fellows social analysis progress Medecins du Monde. Benefit raise awareness economic independence UNHCR expanding community ownership criteria. Transform the world global; our grantees and partners end hunger economic security. Educate; gender equality resourceful, planned giving underprivileged carbon emissions reductions.
 		</p>
@@ -378,18 +384,18 @@ background-image: url(/assets/images/other/graph.png);
 
 <section class="post-content no-padding-bottom">
 	<div class="container">
-		<h6>Outcome</h6>
-		<h2>Measurable Success.</h2>
+		<h6>Subheading</h6>
+		<h2>Heading</h2>
 		<p class="lead">
-			Since the website’s launch in October 2012, it’s processed more than 10,000 orders and counting.
+			Design thinking; globalization vulnerable population activist, advancement sharing economy education, shift, fellows social analysis progress Medecins du Monde.
 		</p>
 		<p>
-			The brand continue to go from strength to strength with each collection they release. Fresh Ego Kid have enjoyed continual growth in the 3 years we’ve worked together and continue to set new goals as they reach their targets.
+			Design thinking; globalization vulnerable population activist, advancement sharing economy education, shift, fellows social analysis progress Medecins du Monde.
 		</p>
 		<blockquote>
 			<p>
-				I’ve been working with We Are Empire for over 3 years. In addition to helping me maintain brand awareness &amp; authority they manage all aspects of my Magento e-commerce platform &amp; have been instrumental with their guidance &amp; support.
-				<cite>Marvin Morgan - Managing Director</cite>
+				Design thinking; globalization vulnerable population activist, advancement sharing economy education, shift, fellows social analysis progress Medecins du Monde.
+				<cite>John Doe - Managing Director</cite>
 			</p>
 		</blockquote>
 		<ul class="stats">
@@ -424,7 +430,7 @@ background-image: url(/assets/images/other/graph.png);
 <div id="disqus_thread"></div>
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES * * */
-    var disqus_shortname = 'webconfs';
+    var disqus_shortname = 'kiriaze';
     var disqus_identifier = "/work/eqculture/";
 
     /* * * DON'T EDIT BELOW THIS LINE * * */
@@ -449,25 +455,10 @@ background-image: url(/assets/images/other/graph.png);
 </section>
 
 
-<div>
-	<a href="/work/donately/" title="next case:Donately" class="next-post-alt js-ajax-link">
-		<div class="container">
-			<h6>Explore Another Case</h6>
-			<h2>Donately</h2>
-		</div>
-		<div class="hero-bg" style="background-image: url(/assets/images/projects/dntly/dntly-iphone-bg-2.png); background-position: center center;"></div>
-	</a>
-</div>
 
-
-				
+			
 <footer role="contentinfo" id="footer">
 	<div class="container">
-		<div class="row">
-			<p class="made-with">
-				Made with <i class="fa fa-heart red"></i> in San Diego.
-			</p>
-		</div>
 		<div class="row">
 			<a href="/" class="logo js-ajax-link">K</a>
 			<ul class="social-list">
@@ -480,7 +471,7 @@ background-image: url(/assets/images/other/graph.png);
 	</div>
 </footer>
 
-				<script src="/assets/js/app.min.js"></script>
+			<script src="/assets/js/app.min.js"></script>
 
 
 <script type="text/javascript">
@@ -501,8 +492,19 @@ background-image: url(/assets/images/other/graph.png);
 
 
 
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-			</div>
+  ga('create', 'UA-65559123-1', 'auto');
+  ga('require', 'linkid', 'linkid.js');
+  ga('send', 'pageview');
+</script>
+
+
 		</main>
 	</body>
 </html>

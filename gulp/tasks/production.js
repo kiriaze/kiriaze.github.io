@@ -1,20 +1,19 @@
+// use gulp first, then run gulp prod for quick min/uncss/gzip
+
 'use strict';
 
 var gulp        = require('gulp'),
 	runSequence = require('run-sequence');
 
-gulp.task('prod', ['clean', 'browser-sync'], function(cb) {
+gulp.task('prod', function(cb) {
 
 	cb = cb || function() {};
 
 	global.isProd = true;
 
 	runSequence(
-		// 'uncss', // currently disabled due to lack of dynamically generated classes through js, too many to manually upkeep in ignore array
-		'js',
-		'images',
-		'fonts',
-		'sitemap',
+		'html',
+		'uncss',
 		'gzip',
 		'info',
 		cb

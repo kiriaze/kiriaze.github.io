@@ -1,7 +1,3 @@
-.container {
-	transition: $transition;
-}
-
 .social-icons {
 	text-align: center;
 	margin: 2rem 0 0;
@@ -15,11 +11,13 @@
 	}
 }
 
-.padding-top-small {
-	padding-top: 10rem;
-}
-.padding-bottom-small {
-	padding-bottom: 10rem;
+@include breakpoint($small) {
+	.padding-top-small {
+		padding-top: 10rem;
+	}
+	.padding-bottom-small {
+		padding-bottom: 10rem;
+	}
 }
 
 // Juice gh-pages styles

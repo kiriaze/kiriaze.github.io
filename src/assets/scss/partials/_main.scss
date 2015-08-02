@@ -10,18 +10,54 @@ html {
 body {
 	// for fade transitions off of anchor links in app.js
 	// background-color: black;
-	transition: $transition;
-	opacity: 0;
+	// transition: $transition;
+	// opacity: 0;
 }
 
 #main {
 
 }
 
+// custom for wow animations, header issue fix and custom speed overwrite
+#header { visibility: hidden; }
+.wow { visibility: hidden; }
+.animated {
+	animation-duration: 1s;
+	animation-timing-function: ease;
+}
+
+// giflinks - manually added a class to the generated div within giflinks.js
+.giflinks {
+	@extend a;
+}
+.giflinks-overlay {
+	z-index: 0 !important;
+	.about-page & {
+		opacity: .5;
+	}
+}
+
+// js class for random on load
+.random {
+	display: none; // hiding both versions by default, js picks one at random to show
+}
+
+section {
+	overflow: hidden; // prevent mobile browsers from horiz scrolling
+}
+
 body,
-#main,
-#ajax-container {
+#main {
 	height: 100%; // for full height sections, like work list
+}
+
+// override grid padding for more breathable mobile experience
+.container {
+	transition: $transition;
+	padding: 0 8%;
+	@include breakpoint($small) {
+		padding: 0 1.5%;
+	}
 }
 
 .pagination {
@@ -36,10 +72,8 @@ body,
 		max-height: 350px;
 		text-align: center;
 		li {
-		    margin: 0;
-		    &:nth-child(odd) a {
-			    background: #f5f5f5;
-			}
+		    margin: 0 auto;
+		    max-width: 80%;
 			a {
 			    display: block;
 			    border-bottom: 1px solid #eee;
@@ -47,6 +81,10 @@ body,
 			    padding-top: 1rem;
 			    padding-left: 1rem;
 			    font-weight: 600;
+			    color: #888;
+			    &:hover {
+			    	color: $primary-color;
+			    }
 			    span {
 			    	display: block;
 					&:first-letter {
@@ -74,8 +112,9 @@ body,
 		svg {
 			position: absolute;
 			bottom: -3px; // really shitty svg
-			left: 0;
+			left: 50%;
 			right: 0;
+			transform: translateX(-50%);
 			path,
 			rect,
 			polygon,
@@ -90,16 +129,24 @@ body,
 
 // home page headline
 .cd-intro {
+	.lead {
+		margin: 0;
+	}
 	.cd-headline {
-		@extend .fadeInUp;
-		animation-delay: .7s;
 		line-height: 1;
 	}
 	.cd-words-wrapper {
 		color: $highlight;
 		padding-bottom: .5rem;
+		width: 100% !important;
 	}
 	.lead {
+		@include breakpoint($small) {
+			max-width: 80%;
+		}
+		@include breakpoint($large) {
+			max-width: 60%;
+		}
 		span {
 			@include fadeIn(.35s, .2s, ease-in-out, $fill, $visibility);
 			&:nth-child(1) {
@@ -115,16 +162,15 @@ body,
 				animation-delay: 1.5s;
 			}
 		}
+		a {
+			padding-bottom: 0;
+		}
 	}
 }
 
 // full height sections
 .full-height {
 	min-height: 100%;
-}
-
-.container {
-	transition: $transition;
 }
 
 // also used for equal heights within app.js
@@ -135,8 +181,12 @@ body,
 }
 
 .padded {
-	padding-top: 5vw;
-	padding-bottom: 5vw;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	@include breakpoint($small) {
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+	}
 }
 
 .btn {
@@ -151,9 +201,6 @@ body,
 	font-size: 12px;
 	margin-top: 1.5rem;
 	.dark &,
-	.theme-bg &,
-	.accent-bg &,
-	.secondary-bg &,
 	.cover-bg & {
 		color: white;
 		border-color: white;
@@ -163,9 +210,6 @@ body,
 		background: $dark;
 		color: white;
 		.dark &,
-		.theme-bg &,
-		.accent-bg &,
-		.secondary-bg &,
 		.cover-bg & {
 			background-color: white;
 			border-color: white;
@@ -174,27 +218,6 @@ body,
 	}
 	&.project-link {
 		margin-top: 2rem;
-	}
-}
-
-.contact-details {
-	position: absolute;
-	bottom: 2vw;
-	right: 1.5%; // container padding
-	font-family: $header-font;
-	font-weight: 800;
-	color: white;
-	text-align: right;
-	a {
-		color: white;
-	}
-	.contact-info {
-		li {
-			margin-bottom: 0;
-		}
-		span {
-			display: block;
-		}
 	}
 }
 
@@ -357,6 +380,7 @@ body,
 	border-bottom: 1px solid $tertiary-color;
 	border-right: 1px solid $tertiary-color;
 	text-align: center;
+	transition: $transition;
 	@include breakpoint($small) {
 		@include columns(2);
 		text-align: left;
@@ -377,11 +401,12 @@ body,
 		display: flex;
 		justify-content: center;
 		align-items: top;
+		position: relative;
 	}
 	h2 {
 		max-width: 600px;
-		letter-spacing: -.35vmin;
 		line-height: 1;
+		letter-spacing: -.1rem;
 	}
 	&:before {
 		content: '';
@@ -433,6 +458,7 @@ body,
 		// display: none;
 	}
 	&:hover {
+		border-color: $dark;
 		&:before {
 			opacity: 1;
 		}
@@ -483,7 +509,7 @@ body,
 	text-decoration: underline;
 }
 
-section.hero {
+.hero {
 	padding-top: 40%;
 	&.cover-bg {
 		background-color: $dark;
@@ -491,17 +517,16 @@ section.hero {
 	@include breakpoint($small) {
 		background-position: top center;
 		background-size: cover;
-		.container {
+		.hero-blurb {
 			position: absolute;
 			transform: translate(-50%, -50%);
 			top: 50%;
 			left: 50%;
-			padding: 0 1.5%;
 		}
 	}
 	.hero-bg {
-		@extend .fadeIn;
-		animation-delay: .5s;
+		// @extend .fadeIn;
+		// animation-delay: 1s;
 		background-position: top center;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -552,19 +577,34 @@ section.hero {
 			opacity: .3;
 		}
 	}
+	.hero-blurb {
+
+	}
 	h1 {
-		font-size: 5vw;
-		letter-spacing: -.35vw;
-		line-height: 1.2;
-		@extend .fadeIn;
-		animation-delay: .7s;
+		font-size: 1.7rem;
+		letter-spacing: -.1rem;
+		// line-height: 1.2;
+		line-height: 1;
+
+		@include breakpoint($tiny) {
+			font-size: 1.9rem;
+		}
 		@include breakpoint($small) {
 			max-width: 80%;
+			font-size: 3.5rem;
+			letter-spacing: -.3rem;
 		}
+		@include breakpoint($medium) {
+			font-size: 4.2rem;
+		}
+		@include breakpoint($large) {
+			font-size: 4.75rem;
+		}
+
 		a {
-			color: white;
+			color: $dark;
 			&:hover {
-				color: #333;
+				color: $primary-color;
 			}
 		}
 	}
@@ -572,14 +612,9 @@ section.hero {
 		a {
 			color: white;
 			&:hover {
-				color: #333;
+				color: $dark;
 			}
 		}
-	}
-	.lead,
-	h6 {
-		@extend .fadeIn;
-		animation-delay: 1s;
 	}
 	h6 {
 		margin-top: 1rem;
@@ -631,20 +666,6 @@ section.hero {
 	}
 }
 
-.home-page {
-	height: 100%; // overwrite _medium.scss body height auto
-	#ajax-container {
-		height: 100%;
-	}
-	.hero {
-		padding-top: 30%;
-		min-height: 100%;
-		.lead {
-			margin: 0;
-		}
-	}
-}
-
 .work-title-bg {
 	position: absolute;
 	top: 0;
@@ -679,24 +700,33 @@ section.hero {
 
 	a {
 		color: rgba(255,255,255,.3);
-		font-size: 8vmin;
+		font-size: 1.7rem;
+		letter-spacing: -.1rem;
 		line-height: 1;
 		font-weight: 800;
-		letter-spacing: -0.7vmin;
 		font-family: $header-font;
 		position: relative;
 		z-index: 1;
 
-		margin-right: 1rem;
 		cursor: default;
 		pointer-events: none;
+		margin-right: .25rem;
+		display: inline-block;
 
 		@include breakpoint($tiny) {
-			font-size: 10vmin;
-			float: left;
-			&:nth-of-type(1){
-				clear: right;
-			}
+			font-size: 1.9rem;
+		}
+
+		@include breakpoint($small) {
+			font-size: 3.5rem;
+			letter-spacing: -.3rem;
+		}
+		@include breakpoint($medium) {
+			font-size: 4.2rem;
+		}
+		@include breakpoint($large) {
+			margin-right: 1rem;
+			font-size: 4.75rem;
 		}
 
 		// completed projects
@@ -722,12 +752,6 @@ section.hero {
 
 		}
 
-		// js triggered class
-		&.hover {
-			color: rgba(0,0,0,.1);
-			background-color: transparent;
-		}
-
 	}
 }
 
@@ -740,7 +764,7 @@ section.hero {
 		margin-bottom: 4rem;
 	}
 	h6 {
-		text-transform: uppercase;
+		// text-transform: uppercase;
 	}
 }
 
@@ -752,17 +776,14 @@ section.hero {
 
 .secondary-bg {
 	background-color: $secondary-color;
-	color: $white;
 }
 
 .accent-bg {
 	background-color: $accent-color;
-	color: $white;
 }
 
 .theme-bg {
 	background-color: $primary-color;
-	color: $white;
 }
 
 //  if body has class has-sidebar
@@ -783,4 +804,30 @@ section.hero {
 // e.g. .columns-2 .content {}
 .valign {
 	@extend %valign;
+}
+
+.no-flick {
+    @extend %no-flick;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+/* -- Use this wrapper if you want to block-out a column with padding
+Taken from http://csswizardry.com/2011/10/the-island-object/) -- */
+.island {
+	@include breakpoint($small) {
+		padding: 3rem 5rem;
+	}
+	@include breakpoint($medium) {
+		padding: 3rem 7rem;
+	}
+	@include breakpoint($large) {
+		padding: 3rem 15rem;
+	}
 }

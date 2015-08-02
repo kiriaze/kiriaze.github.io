@@ -16,7 +16,7 @@ layout: default
 	</div>
 </section>
 
-{% if page.next_in_category.url %}
+{% if page.next_in_category.url and page.next_in_category.status == 'completed' %}
 <div>
 	<a href="{{ page.next_in_category.url | prepend: site.baseurl }}" title="next case:{{ page.next_in_category.title }}" class="next-post-alt js-ajax-link">
 		<div class="container">

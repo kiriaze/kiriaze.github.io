@@ -18,10 +18,9 @@ gulp.task('css', function(){
 
 	return gulp.src(files)
 		.pipe(plugins.sourcemaps.init())
-			.pipe(plugins.sass({
-				outputStyle: 'compressed',
-				errLogToConsole: true
-			}))
+			.pipe(plugins.sass())
+			.on('error', onError)
+			.pipe(plugins.csso())
 			.pipe(plugins.autoprefixer('last 2 versions'))
 			.pipe(plugins.concat('main.css'))
 			.pipe(plugins.rename({suffix: '.min'}))
@@ -29,5 +28,9 @@ gulp.task('css', function(){
 		.pipe(gulp.dest(config.styles.dest))
 		.pipe(plugins.filter('**/*.css')) // filters out css so browsersync css injection can work with sourcemaps
 		.pipe(browserSync.reload({stream:true}))
-		.on('error', plugins.util.log)
 });
+
+function onError(err) {
+	console.log(err);
+	this.emit('end');
+}

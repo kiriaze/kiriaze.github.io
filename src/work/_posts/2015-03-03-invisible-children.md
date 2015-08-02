@@ -58,10 +58,10 @@ tags: []
 
 <section class="dark text-align-center post-content" data-midnight="dark-bg">
 	<div class="container">
-		<h6>The Concept</h6>
-		<h2>Transform the world global; our grantees and partners end hunger economic security.</h2>
-		<p style="visibility: visible; ">
-			The challenge was clear. Brandts had once been a major player on the Danish art scene, but in recent years it had slowly lost relevance and purpose.
+		<h6>Subheading</h6>
+		<h2>Heading</h2>
+		<p>
+			Design thinking; globalization vulnerable population activist, advancement sharing economy education, shift, fellows social analysis progress Medecins du Monde.
 		</p>
 		<a href="javascript:;" class="btn">Learn more about our&nbsp;approach</a>
 	</div>
@@ -73,8 +73,8 @@ tags: []
 			<img src="https://983a19dd0c368a4b1e57-0cb7d1946e41dc50c3f11b74195916fd.ssl.cf1.rackcdn.com/img/tour/all-in-one-events-oxfam-usa2.jpg" alt="" class="valign">
 		</div>
 		<div class="columns-2">
-			<h6>THE IDENTITY AS NAVIGATIONAL ELEMENT</h6>
-			<h2>One Museum – But Two Locations.</h2>
+			<h6>Subheading</h6>
+			<h2>Heading</h2>
 			<p>
 				Design thinking; globalization vulnerable population activist, advancement sharing economy education, shift, fellows social analysis progress Medecins du Monde. Benefit raise awareness economic independence UNHCR expanding community ownership criteria. Transform the world global; our grantees and partners end hunger economic security. Educate; gender equality resourceful, planned giving underprivileged carbon emissions reductions.
 			</p>
@@ -88,8 +88,8 @@ tags: []
 <section>
 	<div class="container valign">
 		<div class="columns-2">
-			<h6>HOW TO BRAND A MUSEUM</h6>
-			<h2>The Artist Or The Museum?</h2>
+			<h6>Subheading</h6>
+			<h2>Heading</h2>
 			<p>
 				Design thinking; globalization vulnerable population activist, advancement sharing economy education, shift, fellows social analysis progress Medecins du Monde. Benefit raise awareness economic independence UNHCR expanding community ownership criteria. Transform the world global; our grantees and partners end hunger economic security. Educate; gender equality resourceful, planned giving underprivileged carbon emissions reductions.
 			</p>
@@ -107,18 +107,18 @@ background-image: url(/assets/images/other/graph.png);
 "
 >
 	<div class="container">
-		<h6>The Concept</h6>
-		<h2>Transform the world global; our grantees and partners end hunger economic security.</h2>
+		<h6>Subheading</h6>
+		<h2>Heading</h2>
 		<p>
-			The challenge was clear. Brandts had once been a major player on the Danish art scene, but in recent years it had slowly lost relevance and purpose.
+			Design thinking; globalization vulnerable population activist, advancement sharing economy education, shift, fellows social analysis progress Medecins du Monde.
 		</p>
 	</div>
 </section>
 
 <section class="secondary-bg text-align-center post-content" data-midnight="dark-bg">
 	<div class="container">
-		<h6>TAKING THE BRAND BACK</h6>
-		<h2>Coherent Branding And Increased Ownership.</h2>
+		<h6>Subheading</h6>
+		<h2>Heading</h2>
 		<p>
 			Design thinking; globalization vulnerable population activist, advancement sharing economy education, shift, fellows social analysis progress Medecins du Monde. Benefit raise awareness economic independence UNHCR expanding community ownership criteria. Transform the world global; our grantees and partners end hunger economic security. Educate; gender equality resourceful, planned giving underprivileged carbon emissions reductions.
 		</p>
@@ -145,8 +145,8 @@ background-image: url(/assets/images/other/graph.png);
 
 <section class="valign theme-bg text-align-center post-content full-height" data-midnight="dark-bg">
 	<div class="container">
-		<h6>LET'S CUT SOME CORNERS</h6>
-		<h2>A New Poster Concept.</h2>
+		<h6>Subheading</h6>
+		<h2>Heading</h2>
 		<p>
 			Design thinking; globalization vulnerable population activist, advancement sharing economy education, shift, fellows social analysis progress Medecins du Monde. Benefit raise awareness economic independence UNHCR expanding community ownership criteria. Transform the world global; our grantees and partners end hunger economic security. Educate; gender equality resourceful, planned giving underprivileged carbon emissions reductions.
 		</p>
@@ -156,18 +156,18 @@ background-image: url(/assets/images/other/graph.png);
 
 <section class="post-content no-padding-bottom">
 	<div class="container">
-		<h6>Outcome</h6>
-		<h2>Measurable Success.</h2>
+		<h6>Subheading</h6>
+		<h2>Heading</h2>
 		<p class="lead">
-			Since the website’s launch in October 2012, it’s processed more than 10,000 orders and counting.
+			Design thinking; globalization vulnerable population activist, advancement sharing economy education, shift, fellows social analysis progress Medecins du Monde.
 		</p>
 		<p>
-			The brand continue to go from strength to strength with each collection they release. Fresh Ego Kid have enjoyed continual growth in the 3 years we’ve worked together and continue to set new goals as they reach their targets.
+			Design thinking; globalization vulnerable population activist, advancement sharing economy education, shift, fellows social analysis progress Medecins du Monde.
 		</p>
 		<blockquote>
 			<p>
-				I’ve been working with We Are Empire for over 3 years. In addition to helping me maintain brand awareness & authority they manage all aspects of my Magento e-commerce platform & have been instrumental with their guidance & support.
-				<cite>Marvin Morgan - Managing Director</cite>
+				Design thinking; globalization vulnerable population activist, advancement sharing economy education, shift, fellows social analysis progress Medecins du Monde.
+				<cite>John Doe - Managing Director</cite>
 			</p>
 		</blockquote>
 		<ul class="stats">

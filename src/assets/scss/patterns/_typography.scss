@@ -1,6 +1,6 @@
 // file for overriding type styles easily
 body {
-	font-family: "proxima-nova", sans-serif;
+	// font-family: "proxima nova", sans-serif;
 	font-weight: 400;
 	text-rendering: optimizeLegibility;
 	overflow-x: hidden;
@@ -12,6 +12,10 @@ body {
 		font-weight: 800;
 		letter-spacing: -.07em;
     }
+}
+
+h6 {
+	letter-spacing: -0.04rem;
 }
 
 p {
@@ -27,7 +31,11 @@ p {
 	}
 	&.lead {
 		display: block;
-		font-size: 1.3em;
+		@include font-size(16);
+		@include breakpoint($small) {
+			@include font-size(21);
+			line-height: 1.5;
+		}
 		font-weight: 400;
 		line-height: 200%;
 		margin: 0 0 3rem;

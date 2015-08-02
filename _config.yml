@@ -2,7 +2,7 @@
 title: Kiriaze
 description: The online portfolio of Constantine Kiriaze.
 
-disqus_shortname: webconfs
+disqus_shortname: kiriaze
 
 reading_time:     true
 words_per_minute: 200
@@ -70,31 +70,22 @@ kramdown:
     coderay_css: class
 
 # Analytics and webmaster tools stuff goes here
-google_analytics:
+google_analytics: UA-65559123-1
 google_verify:
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify:
 
 navigation:
- - title: Home
-   url: /index.html
- - title: Bio
+ # - title: Home
+ #   url: /index.html
+ - title: Bio.
    url: /about
- - title: Work
-   url: /work
- - title: Labs
+ - title: Labs.
    url: /labs
- - title: Blog
+ - title: Work.
+   url: /work
+ - title: Words.
    url: /blog
-
-collections:
-    work: # name of collection
-        output: true
-        permalink: /work/:path/
-        # That way, _my-collection/item.md is outputted as my-collection/item/index.html when the site is built and would be accessable as example.com/my-collection/item/. The other advantage, is, because the data is now structured and machine readable (rather than in plain text), you could also use the jsonify filter to output that same information as an API for use elsewhere.
-    labs: # name of collection
-        output: true
-        permalink: /labs/:path/
 
 # Default settings
 defaults:
@@ -115,11 +106,13 @@ defaults:
       author: ""
       layout: "post"
       heroText: true
+      image:  /assets/images/projects/p2.jpg
       midnight: default
+      is_post: true # automatically set is_post=true for all posts, for simple conditional checks
 
 exclude: ['node_modules', 'gulpfile.js', 'package.json', 'assets']
 # keep jekyll from removing compiled css dir
-keep_files: ['assets']
+keep_files: ['assets', 'sitemap.xml']
 
 # Src/Dest are also outlined in config.js
 source: ./src

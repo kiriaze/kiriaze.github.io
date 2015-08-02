@@ -17,16 +17,11 @@ gulp.task('js', function(){
 
 	return gulp.src(files)
 		.pipe(plugins.sourcemaps.init())
-			.pipe(plugins.order([
-				'**/**/modernizr.js',
-				'**/**/jquery.js',
-		        '**/**/*.js'
-			]))
+			.pipe(plugins.order(config.scripts.order))
 			.pipe(plugins.uglify())
 			.pipe(plugins.concat('app.js'))
 			.pipe(plugins.rename({suffix: '.min'}))
 		.pipe(plugins.sourcemaps.write('./')) // writing relative to gulp.dest path
 		.pipe(gulp.dest(config.scripts.dest))
 		.pipe(browserSync.reload({stream:true}))
-		.on('error', plugins.util.log)
 });

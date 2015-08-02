@@ -25,8 +25,8 @@ tags: [wordpress, front-end, magento, ecommerce]
 
 <section class="stickybumps-bg text-align-center post-content" data-midnight="dark-bg">
 	<div class="container">
-		<h6>TAKING THE BRAND BACK</h6>
-		<h2>Coherent Branding And Increased Ownership.</h2>
+		<h6>Seamless Integration</h6>
+		<h2>Custom WordPress/Magento Experience.</h2>
 		<p>
 			We built an intuitive custom website running on Wordpress and an enterprise web store running on Magento. The WP marketing site was integrated into the shop through the Magento API, and the whole experience was customized for Sticky Bumps' ease of use.
 		</p>
@@ -36,17 +36,17 @@ tags: [wordpress, front-end, magento, ecommerce]
 <section class="text-align-center grey-bg">
 	<div class="container">
 
-		<img src="/assets/images/projects/stickybumps/featured-goods.png" alt="">
+		<img src="/assets/images/projects/stickybumps/featured-goods.png" alt="" class="wow fadeIn">
 
 		<br>
 		<br>
 
-		<img src="/assets/images/projects/stickybumps/product-grid.png" alt="">
+		<img src="/assets/images/projects/stickybumps/product-grid.jpg" alt="" class="wow fadeIn">
 
 		<br>
 		<br>
 
-		<img src="/assets/images/projects/stickybumps/cart.png" alt="">
+		<img src="/assets/images/projects/stickybumps/cart.png" alt="" class="wow fadeIn">
 
 	</div>
 </section>
@@ -96,7 +96,7 @@ background-image: url(/assets/images/projects/stickybumps/scent.jpg);
 
 <section class="svg stickybumps-bg text-align-center post-content bg-bottom-center full-height padding-top-small" data-midnight="dark-bg">
 	<div class="container">
-		<h6>SNAG &amp; GRAB</h6>
+		<h6>Snag &amp; Grab</h6>
 		<h2>A New Wax Concept.</h2>
 		<p>
 			Every handcrafted bar of high quality surf and ski wax is poured and processed in their 10,000 square foot California factory.
@@ -108,24 +108,24 @@ background-image: url(/assets/images/projects/stickybumps/scent.jpg);
 
 <section class="no-padding-bottom">
 	<div class="container">
-		<div class="island text-align-center">
+		<div class="island padded text-align-center">
 			<img src="/assets/images/projects/stickybumps/ipad.png" alt="">
 			<h6>Stickybumps Online Presence</h6>
-			<h2>Simple &amp; Accessible</h2>
+			<h2>Wax on. Wax off.</h2>
 			<p>
 				StickyBumps new online presence is focused on the visitors’ experience. From gorgeous photography to an elegant shop, fast page loads and social networks blended in, we aimed to create a more cohesive representation of their brand.
 			</p>
-			<a href="javascript:;" class="btn">Visit Stickybumps</a>
+			<a href="{{ page.projectURL }}" class="btn">Visit Stickybumps</a>
 		</div>
 		<div class="row padded">
 			<div class="columns-60">
 				<img src="/assets/images/projects/stickybumps/iphones.png" alt="">
 			</div>
 			<div class="columns-40">
-				<h6>User Centered Design</h6>
-				<h2>Always on the Go</h2>
+				<h6>Device Agnostic</h6>
+				<h2>Lookin' Good Bud.</h2>
 				<p>
-				We made sure the StickyBumps site not only worked on all platforms and devices, but looked and functioned great.
+				We made sure the StickyBumps site not only worked on all platforms and devices, but that it looked and functioned great.
 				Our research showed that the StickyBumps competitors websites were often slow and unusable, let alone accessible on other devices. Analytics showed that 80% of their traffic was from mobile devices. So we made certain StickyBumps mobile experience was pleasant and fast on every device.
 				</p>
 			</div>
@@ -133,7 +133,7 @@ background-image: url(/assets/images/projects/stickybumps/scent.jpg);
 		<div class="row padded">
 			<div class="columns-40">
 				<h6>Let's not forget</h6>
-				<h2>The Shop</h2>
+				<h2>The Shop.</h2>
 				<p>
 				While user context is important, leaving the right impression about the surf and wax culture is crucial.
 
@@ -146,7 +146,7 @@ background-image: url(/assets/images/projects/stickybumps/scent.jpg);
 				</p>
 			</div>
 			<div class="columns-60">
-				<img src="/assets/images/projects/stickybumps/devices.png" alt="">
+				<img src="/assets/images/projects/stickybumps/devices.jpg" alt="">
 			</div>
 		</div>
 	</div>

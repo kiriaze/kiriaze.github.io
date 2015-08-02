@@ -1,19 +1,31 @@
 ---
 layout: default
-title: Words
+title: Words.
+subheading: Random thoughts, code and more.
 bodyClass: blog-page
 heroText: true
+<!-- heroClasses: dark -->
+<!-- midnight: dark-bg -->
+image: /assets/images/projects/p1.jpg
 ---
 
+<!-- commenting out for now -->
+{% comment %}
+<!-- exclude work/labs posts, but needs either more than 2 posts or a more recent post than the other categories -->
 {% for post in site.posts limit:1 %}
+	{% if post.categories contains 'work' or post.categories contains 'labs' %}
+	{% else %}
 	{% include hero.html %}
+	{% endif %}
 {% endfor %}
+{% endcomment %}
+
+{% include hero.html %}
 
 <div class="post-list">
 
 {% for post in site.posts offset:1 %}
 	{% if post.categories contains 'work' or post.categories contains 'labs' %}
-	<!-- do nothing -->
 	{% else %}
 	<article class="post dark">
 		<a href="{{ post.url | prepend: site.baseurl }}">
@@ -23,7 +35,8 @@ heroText: true
 				<div class="post-meta">
 					<!-- 1.30.2015 -->
 					<span class="date">{{ post.date | date: "%m.%d.%Y" }}</span>
-					{% if post.categories.size > 0 %}<span class="categories">{{ page.categories | join:" / " }}</span>{% endif %}
+					{% if post.categories.size > 0 %}<span class="categories">{{ post.categories | join:" " }}</span>{% endif %}
+					{% if post.tags.size > 0 %}<span class="tags">{{ post.tags | join:" / " }}</span>{% endif %}
 				</div>
 				<p>{{ post.description }}</p>
 			</div>

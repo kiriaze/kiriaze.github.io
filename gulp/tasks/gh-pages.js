@@ -3,11 +3,11 @@ var config  = require('../config'),
 	ghPages = require('gulp-gh-pages');
 
 var options = {
-    remoteUrl: config.remoteUrl,
-    branch: config.branch
+    remoteUrl: config.githubPages.remoteUrl,
+    branch: config.githubPages.branch
 };
 
 gulp.task('gh-pages', function() {
-	return gulp.src(config.dist.root + '/**/*')
+	return gulp.src(config.githubPages.source)
 		.pipe(ghPages(options));
 });

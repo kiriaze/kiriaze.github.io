@@ -59,16 +59,6 @@
 
 	SHORTNAME.basics = function() {
 
-		if ( window.back_to_top ) {
-			$window.scroll(function(){
-				if ( $(this).scrollTop() > 300 ) {
-					SHORTNAME.elems.scrollToTop.addClass('fadeIn');
-				} else {
-					SHORTNAME.elems.scrollToTop.removeClass('fadeIn');
-				}
-			});
-		}
-
 		// Fastclick.js - Polyfill to remove click delays on browsers with touch UIs
 		$(function() {
 			window.FastClick.attach(document.body);
@@ -80,18 +70,22 @@
 			easing: 'easeInOutCubic'
 		});
 
-		// work titles hover
-		SHORTNAME.elems.main.on({
-			mouseenter: function () {
-				$('.work-title-list a').not($(this)).addClass('hover');
-			},
-			mouseleave: function () {
-				$('.work-title-list a').not($(this)).removeClass('hover');
-			}
-		},'.work-title-list a.completed');
-
 		// alternate header colors for bg on scroll
-		SHORTNAME.elems.main.find('#header').midnight();
+		SHORTNAME.elems.header.midnight();
+		SHORTNAME.elems.header.headroom({
+			classes : {
+				// when element is initialised
+				initial : "headroom",
+				// when scrolling up
+				pinned : "header-pinned",
+				// when scrolling down
+				unpinned : "header-unpinned",
+				// when above offset
+				top : "header-top",
+				// when below offset
+				notTop : "header-not-top"
+			}
+		});
 
 		// split columns equal height, valign
 		SHORTNAME.elems.main.find('.split-content .columns-50').matchHeight();
@@ -99,11 +93,26 @@
 		// post list
 		SHORTNAME.elems.main.find('.post-list .post').matchHeight();
 
-		// attach scrollReveals to each paragraph
-		SHORTNAME.elems.main.find('.post-content p').attr('data-sr', 'enter bottom');
+		// wow
+		SHORTNAME.elems.main.find('.post-content .container > *, img, h6, h5, h4, h3, h2, p, .btn').addClass('wow fadeIn');
 
 		// shoutouts
 		console.log('psst..i give a shit. =)');
+
+		// wow
+		new WOW().init({
+			offset: Math.min($(window).height() * 0.1, 80)
+		});
+
+		// randomly display one of the home page hero intro versions
+		var random = Math.floor(Math.random() * SHORTNAME.elems.main.find('.random').length);
+		SHORTNAME.elems.main.find('.random').eq(random).show();
+
+		// $('[data-preload-bg]').each(function(){
+		// 	var $holder = $(this)
+		// 	var src = $holder.data('preload-bg');
+		// 	$holder.css('background-image', 'url("'+ src +'")');
+		// });
 
 	};
 
@@ -123,140 +132,15 @@
 		});
 	};
 
-	SHORTNAME.ajax = function() {
-
-		/* ============================================================ */
-		/* Ajax Loading */
-		/* ============================================================ */
-
-		var History = window.History,
-			loading        = false,
-			showIndex      = false,
-			$ajaxContainer = $('#ajax-container'),
-			$latestPost    = $('#latest-post'),
-			$postIndex     = $('#post-index');
-
-		// Initially hide the index and show the latest post
-		$latestPost.show();
-		$postIndex.hide();
-
-		// Show the index if the url has "page" in it (a simple
-		// way of checking if we're on a paginated page.)
-		if ( window.location.pathname.indexOf('page') === 1 || window.location.pathname.indexOf('tag') === 1 ) {
-			$latestPost.hide();
-			$postIndex.show();
-		}
-
-		// Check if history is enabled for the browser
-		if ( ! History.enabled) {
-			return false;
-		}
-
-		History.Adapter.bind(window, 'statechange', function() {
-
-			var State = History.getState();
-
-			// Get the requested url and replace the current content
-			// with the loaded content
-			$.get( State.url, function(result) {
-
-				var $html = $(result);
-				var $newContent = $('#ajax-container', $html).contents();
-
-				// Set the title to the requested urls document title
-				document.title = $html.filter('title').text();
-
-				$ajaxContainer.fadeOut(500, function() {
-
-					$('html, body').animate({'scrollTop': 0});
-
-					$latestPost = $newContent.filter('#latest-post');
-					$postIndex = $newContent.filter('#post-index');
-
-					if ( showIndex === true ) {
-						$latestPost.hide();
-					} else {
-						$latestPost.show();
-						$postIndex.hide();
-					}
-
-					// $newContent.fitVids();
-
-					$ajaxContainer.html($newContent).promise().done(function(){
-
-						// Re run any other js here that targets dynamic content
-						$('#header').midnight();
-
-						SHORTNAME.medium();
-
-						// setTimeout(function() {
-						// 	$.fn.matchHeight._apply('.split-content .columns-50');
-						// }, 300);
-
-						sr.init();
-
-						$ajaxContainer.fadeIn(500);
-
-					});
-
-					NProgress.done();
-
-					loading = false;
-					showIndex = false;
-
-				});
-
-			}).fail(function() {
-				// Request fail
-				NProgress.done();
-				location.reload();
-			});
-
-		});
-
-		$('body').on('click', '.js-ajax-link, .pagination a', function(e) {
-
-			e.preventDefault();
-
-			if ( loading === false ) {
-
-				var currentState = History.getState(),
-					url   = $(this).attr('href'),
-					title = $(this).attr('title') || null;
-
-				// If the requested url is not the current states url push
-				// the new state and make the ajax call.
-				// and that the same page link isnt pushed
-				if ( url !== currentState.url.replace(/\/$/, "") && url !== currentState.hash ) {
-
-					loading = true;
-
-					// Check if we need to show the post index after we've
-					// loaded the new content
-					if ( $(this).hasClass('js-show-index') || $(this).parent('.pagination').length > 0 ) {
-						showIndex = true;
-					}
-
-					NProgress.start();
-
-					History.pushState({}, title, url);
-
-				}
-
-			}
-
-		});
-
-	};
-
 	$window.load(function() {
-		// scrollReveal
-		var config = {
-			// reset: true
-		};
-		window.sr = new scrollReveal(config);
 
-		SHORTNAME.elems.body.addClass('fadeIn');
+		SHORTNAME.elems.header.css('visibility', 'visible');
+
+		var elements = $( '.giflinks' );
+		if ( elements.length ) {
+    		GifLinks( elements );
+		}
+
 	});
 
 	$window.resize(function(event) {
@@ -266,7 +150,6 @@
 	$(document).ready(function(){
 
 		SHORTNAME.init();
-		// SHORTNAME.ajax();
 
 	});
 

@@ -48,6 +48,16 @@
 {% endif %}
 {% endcapture %}
 
+{% if site.reading_time and page.is_post %}
+	{% capture reading_time %}
+	<span class="entry-reading-time">
+		<i class="fa fa-clock-o"></i>
+		{% assign readtime = content | number_of_words | divided_by:site.words_per_minute %}
+		 {% if readtime <= 1 %}1 minute{% else %}{{ readtime }} minutes{% endif %}
+	</span>
+	{% endcapture %}
+{% endif %}
+
 <!-- if heroText is set to true -->
 {% if ITEM.heroText %}
 <section class="hero hero-mod {{ ITEM.heroClasses }} {% if image %}has-hero{% endif %} {% if ITEM.video %}video-bg{% endif %}" {% if ITEM.midnight %} data-midnight="{{ ITEM.midnight }}" {% endif %}>
@@ -57,18 +67,19 @@
 		<source src="{{ ITEM.video }}" type="video/mp4">
 	</video>
 {% elsif image %}
-	<div class="hero-bg" style="background-image: url({{ image }});"></div>
+	<div class="hero-bg wow fadeIn" style="background-image: url({{ image }});"></div>
 {% endif %}
 
 <div class="container hero-blurb">
-	<h1 class="title" data-sr="enter bottom">{{ heading }}</h1>
-	<h6 class="subtitle" data-sr="enter bottom">{{ subheading }}</h6>
-	<div class="post-meta">
+	<h1 class="title wow fadeIn" data-wow-delay=".6s">{{ heading }}</h1>
+	<h6 class="subtitle wow fadeIn" data-wow-delay=".8s">{{ subheading }}</h6>
+	<div class="post-meta wow fadeIn" data-wow-delay="1s">
 		{% if date %}
 		<span class="date">{{ date }}</span>
 		{% endif %}
 		{{ categories }}
 		{{ tags }}
+		{{ reading_time }}
 	</div>
 </div>
 

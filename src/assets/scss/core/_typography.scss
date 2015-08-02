@@ -153,22 +153,6 @@ body {
 	text-size-adjust: none;
 }
 
-.no-flick {
-    @extend %no-flick;
-}
-
-.valign {
-    @extend %valign;
-}
-
-.float-left {
-    float: left;
-}
-
-.float-right {
-    float: right;
-}
-
 // added by flexible content
 [class*='text-align-'] {
     text-align: center;
@@ -186,20 +170,6 @@ body {
     }
 }
 
-/* -- Use this wrapper if you want to block-out a column with padding
-Taken from http://csswizardry.com/2011/10/the-island-object/) -- */
-.island {
-	// padding: 1.5vw 5vw;
-	@include breakpoint($small) {
-		padding: 3vw 10vw;
-	}
-	@include breakpoint($medium) {
-		padding: 3vw 13vw;
-	}
-	@include breakpoint($large) {
-		padding: 3vw 18vw;
-	}
-}
 
 /*=====================================================
 

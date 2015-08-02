@@ -1,8 +1,12 @@
 <head>
 
+	<!-- google fonts, loaded as the first element in the <head> of your HTML document as stated at google.com/fonts -->
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,300">
+
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+	<title>{% if page.title != 'Home' %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }} | {{ site.description }}{% endif %}</title>
+
 	<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
 	{% if page.tags %}
@@ -13,12 +17,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- Open Graph -->
+	{% if site.owner.facebook %}
 	<meta property="og:locale" content="en_US">
 	<meta property="og:type" content="article">
 	<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
 	<meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 	<meta property="og:url" content="{{ site.url }}{{ page.url }}">
 	<meta property="og:site_name" content="{{ site.title }}">
+	{% endif %}
 
 	<!-- Twitter Cards -->
 	{% if site.owner.twitter %}
@@ -51,8 +57,12 @@
 
 	<!-- {% include typekit.html %} -->
 
-	<!-- CSS -->
+	<!-- CSS - comment out when production build is ran -->
 	<link rel="stylesheet" href="{{ "/assets/css/main.min.css" | prepend: site.baseurl }}">
+	<!-- uncss'd stylesheet below, uncomment when prod build is run -->
+	{% comment %}
+	<style>{% include main.min.css %}</style>
+	{% endcomment %}
 
 	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 	<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
