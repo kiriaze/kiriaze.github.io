@@ -5,223 +5,244 @@
     <description>The online portfolio of Constantine Kiriaze.</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 01 Aug 2015 03:53:40 -0400</pubDate>
-    <lastBuildDate>Sat, 01 Aug 2015 03:53:40 -0400</lastBuildDate>
+    <pubDate>Sun, 02 Aug 2015 21:58:18 -0400</pubDate>
+    <lastBuildDate>Sun, 02 Aug 2015 21:58:18 -0400</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
-        <title>Ghosts.</title>
-        <description>&lt;h3 id=&quot;does-3-things-sometimes-4&quot;&gt;Does 3 things, sometimes 4.&lt;/h3&gt;
+        <title>Press Play.</title>
+        <description>&lt;p&gt;Composer backed project for easy WordPress sites using the &lt;a href=&quot;http://github.com/kiriaze/simple-framework&quot;&gt;Simple Framework&lt;/a&gt;. Aimed at making efficient sites, that are as sexy on the outside as they are inside. And hella fast. Hella.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://github.com/kiriaze/PressPlay&quot;&gt;Get it here!&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Learn more about Simple and its components&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Creates an instance of your project within your hosts file, e.g. project.dev 127.0.0.1.&lt;/li&gt;
-  &lt;li&gt;Creates a reference to the hosts/project within httpd-vhosts.conf by referencing your desired path to project.&lt;/li&gt;
-  &lt;li&gt;Creates directory for you project. (Optional)&lt;/li&gt;
-  &lt;li&gt;Restarts Apache.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/kiriaze/simple-framework&quot;&gt;Simple Framework&lt;/a&gt; ( parent framework )&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/kiriaze/simple-child&quot;&gt;Simple Child&lt;/a&gt; ( child framework )&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/kiriaze/vvv-simple&quot;&gt;VVV Simple&lt;/a&gt; ( an alternative to PressPlay, if you have vagrant setup, run this instead, a one click solution so to speak )&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/kiriaze/Simple-Grid&quot;&gt;Simple Grid&lt;/a&gt; ( and stupid simple grid thats semantic, extendable, and actually makes sense )&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/kiriaze/SimpleAnchors&quot;&gt;Simple Anchors&lt;/a&gt; ( a data attr scrolling plugin with some awesomeness baked in )&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/kiriaze/animate.scss&quot;&gt;Animate Scss&lt;/a&gt; ( fork of Dan Edens Animate.css )&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;p&gt;&lt;code&gt;bash &amp;lt;(curl -s https://raw.githubusercontent.com/kiriaze/ghost/master/ghosts.sh)&lt;/code&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;preferred-method-would-be-to&quot;&gt;Preferred method would be to:&lt;/h3&gt;
-
-&lt;p&gt;Download it and place it with your other scripts, e.g. &lt;code&gt;/Users/{username}/Documents/Scripts/ghosts.sh&lt;/code&gt;&lt;br /&gt;
-Make it executable &lt;code&gt;chmod u+x ghosts.sh&lt;/code&gt;&lt;br /&gt;
-Create an alias: &lt;code&gt;nano .bash_profile&lt;/code&gt;&lt;br /&gt;
-Add alias &lt;code&gt;alias ghosts=&quot;/Users/kiriaze/Documents/scripts/ghosts.sh&quot;&lt;/code&gt;&lt;br /&gt;
-Run it: &lt;code&gt;ghosts&lt;/code&gt;&lt;br /&gt;
-Apply changes to bash file: source ~/.bash_profile&lt;br /&gt;
-And follow the inline instructions through CLI!&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://github.com/kiriaze/ghosts&quot;&gt;Get it here!&lt;/a&gt; or clone it &lt;code&gt;git@github.com:kiriaze/ghosts.git&lt;/code&gt;&lt;/p&gt;
-</description>
-        <pubDate>Sat, 25 Jul 2015 00:00:00 -0400</pubDate>
-        <link>/labs/ghosts/</link>
-        <guid isPermaLink="true">/labs/ghosts/</guid>
-        
-        <category>code</category>
-        
-        
-        <category>labs</category>
-        
-        <category></category>
-        
-      </item>
-    
-      <item>
-        <title>Help! Sass errors crash Gulp!</title>
-        <description>&lt;p&gt;Gulp is awesome, obviously. However there are some issues, and the one which drove me &lt;span class=&quot;giflinks&quot; data-src=&quot;/assets/images/gifs/monkey-bars-crazy-dance.gif&quot;&gt;nuts&lt;/span&gt; from the get-go is that syntax issues in your sass break your build stream. Unfortunately, the advice on the internetz didn’t help much. In this article, we’ll look at a &lt;span class=&quot;giflinks&quot; data-src=&quot;/assets/images/gifs/popcorn_the_it_crowd.gif&quot;&gt;quick and easy fix&lt;/span&gt; for this problem.&lt;/p&gt;
-
-&lt;h3 id=&quot;lets-break-things&quot;&gt;Let’s Break Things&lt;/h3&gt;
-&lt;p&gt;First, traverse into your project directory, open the project in sublime, and start gulp. ( Default task is run )&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;$ cd Project
-$ subl .
-$ gulp
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;With the server now running, we can start to edit our files and make any changes we want. For our example, we’re going to break gulp. We’ll include a mixin that has yet to be defined inside our body tag.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;tag&quot;&gt;body&lt;/span&gt; {
-    &lt;span class=&quot;directive&quot;&gt;@include&lt;/span&gt; &lt;span class=&quot;error&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;error&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;error&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;error&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;error&quot;&gt;o&lt;/span&gt;&lt;span class=&quot;error&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;error&quot;&gt;M&lt;/span&gt;&lt;span class=&quot;error&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;error&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;error&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;error&quot;&gt;n&lt;/span&gt;();
-}
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;We’ve forgotten to define the mixin above, which will cause a syntax error and print out this error in our console.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;stream.js:&lt;span class=&quot;integer&quot;&gt;94&lt;/span&gt;
-      &lt;span class=&quot;keyword&quot;&gt;throw&lt;/span&gt; er; &lt;span class=&quot;comment&quot;&gt;// Unhandled stream error in pipe.&lt;/span&gt;
-            ^
-Error: mixin randomMixin &lt;span class=&quot;predefined-constant&quot;&gt;undefined&lt;/span&gt;.
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;So let’s go back and define that mixin. Once we have, we can save the file and expect gulp to compile the Sass, but in this case, it won’t compile. The syntax error will completely break the gulp build stream. This can be a huge time waster and cause massive headaches when developing your website.&lt;/p&gt;
-
-&lt;h3 id=&quot;luckily-theres-an-easy-fix&quot;&gt;Luckily, there’s an easy fix.&lt;/h3&gt;
-&lt;p&gt;To fix the problem, we can open up our gulpfile CSS task and pass in an option.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;gulp.task(&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;css&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(){
-    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; gulp.src(&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;PATH/TO/SRC&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;)
-            .pipe(sass({
-                &lt;span class=&quot;key&quot;&gt;errLogToConsole&lt;/span&gt;: &lt;span class=&quot;predefined-constant&quot;&gt;true&lt;/span&gt; &lt;span class=&quot;comment&quot;&gt;// this doesnt seem to work&lt;/span&gt;
-            }))
-            .on(&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;, onError)
-        .pipe(gulp.dest(&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;PATH/TO/DEST&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;))
-});
-
-&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;function&quot;&gt;onError&lt;/span&gt;(err) {
-    console.log(err);
-    &lt;span class=&quot;local-variable&quot;&gt;this&lt;/span&gt;.emit(&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;end&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;);
-}
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;code&gt;{errLogToConsole: true}&lt;/code&gt; didnt seem to prevent gulp from crashing our build stream, as advised by others. However, adding &lt;code&gt;.on(&#39;error&#39;, onError)&lt;/code&gt; to the CSS method allowed us to continue working with our SASS files, be notified of any syntax errors, and keep our server from breaking. Hopefully this helps anybody out there that encounters a similar issue!&lt;/p&gt;
-</description>
-        <pubDate>Thu, 23 Jul 2015 00:00:00 -0400</pubDate>
-        <link>/blog/code/sass-errors-crash-gulp</link>
-        <guid isPermaLink="true">/blog/code/sass-errors-crash-gulp</guid>
-        
-        <category>sass</category>
-        
-        <category>gulp</category>
-        
-        <category>help</category>
-        
-        
-        <category>code</category>
-        
-        <category></category>
-        
-      </item>
-    
-      <item>
-        <title>OSX Development Environment.</title>
-        <description>&lt;p&gt;Get your development game on point with this automated script, or cherry pick through readme and script.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;ideal for fresh installs of OSX yosemite&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://github.com/kiriaze/mac-dev-env&quot;&gt;Get it here!&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;self-executing-script-v1&quot;&gt;Self executing script v.1.&lt;/h3&gt;
-
-&lt;h5 id=&quot;please-read-through-script&quot;&gt;&lt;em&gt;Please read through script.&lt;/em&gt;&lt;/h5&gt;
-
-&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;$ sh ./init.sh # wherever you&#39;ve placed your script.
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&quot;general-notes&quot;&gt;General Notes&lt;/h3&gt;
-
-&lt;p&gt;Assumes this is on a fresh install of Yosemite. If you already have an environment setup, dont run the init.sh script, rather comb through this and cherry pick. Hopefully you’re not using mamp or the like.&lt;/p&gt;
-
-&lt;p&gt;All references to subl is for opening files within the Sublime Text editor, if you haven’t heard of it, no worries, this setup will install it for you and set up an alias to use it with.&lt;/p&gt;
-
-&lt;p&gt;Make sure your bash scripts have had &lt;code&gt;chmod +x&lt;/code&gt; ran on them; e.g. &lt;code&gt;chmod +x script.sh&lt;/code&gt;, making the file executable by everyone.&lt;/p&gt;
-
-&lt;p&gt;Mac Dev Env Setup consists of:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;homebrew
-php 5.6
-update mac unix tools
-correct paths
-git
-ruby
-mysql/mariadb
-bash/zsh
-node
-nginx
-composer
-bower
-bundler
-grunt
-gulp
-cask - pretty much all your apps
-mackup - keep your app settings in sync. wHAT?! word.
-SublimeText3 / Chrome extensions
-iTerm settings
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Thu, 23 Jul 2015 00:00:00 -0400</pubDate>
-        <link>/labs/osx-development-environment/</link>
-        <guid isPermaLink="true">/labs/osx-development-environment/</guid>
-        
-        <category>code</category>
-        
-        
-        <category>labs</category>
-        
-        <category></category>
-        
-      </item>
-    
-      <item>
-        <title>Introducing Juice.</title>
-        <description>&lt;p&gt;Juice was made to simplify the production of websites by automating tasks such as minification, compression, live reloading, cross device syncing, and more all built with the simplest asset package manager, the best css preprocessor, and the fastest streaming build system.&lt;/p&gt;
-
-&lt;p&gt;Juice is the best place to start your next static web project. Amazing features without the unessecary bloat other frameworks have. A responsive framework optimized for the multi-screen web, with a high PageSpeed performance score. Simple, clean, and fast.&lt;/p&gt;
-
-&lt;p&gt;It has recently been updated to utilize Jekyll, and thus no longer optimal for non static sites. If you’re looking for a CMS solution, try &lt;a href=&quot;http://github.com/kiriaze/PressPlay&quot;&gt;PressPlay&lt;/a&gt;, &lt;a href=&quot;http://github.com/kiriaze/simple-framework&quot;&gt;simple-framework&lt;/a&gt;, or &lt;a href=&quot;http://github.com/kiriaze/simple-child&quot;&gt;simple-child&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Get &lt;a href=&quot;/juice&quot;&gt;Juice&lt;/a&gt;!&lt;/p&gt;
 
 &lt;hr /&gt;
 
-&lt;h2 id=&quot;setting-up-cloudflare-with-github-pages&quot;&gt;Setting up cloudflare with Github Pages.&lt;/h2&gt;
-&lt;div class=&quot;text-align-center&quot;&gt;
-	&lt;img src=&quot;/assets/images/posts/juice/a-records.png&quot; alt=&quot;&quot; class=&quot;center&quot; /&gt;
+&lt;h2 id=&quot;requirements&quot;&gt;Requirements&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://getcomposer.org/&quot;&gt;Composer&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://brew.sh/&quot;&gt;Git/Brews&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://bringvictory.com/&quot;&gt;Skills&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Open Mind. It’s hella opinionated, cuz its awesome. Get with it already.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;optional--but-highly-encouraged-&quot;&gt;Optional ( But highly encouraged.. )&lt;/h2&gt;
+&lt;p&gt;Want your mac to dev fly shit all day? &lt;a href=&quot;https://github.com/kiriaze/mac-dev-env&quot;&gt;check it homie.&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;assumptions&quot;&gt;Assumptions&lt;/h2&gt;
+
+&lt;p&gt;You have a similar setup to the link above. OSX. Codekit. SequelPro.&lt;/p&gt;
+
+&lt;p&gt;Currently depends on Codekit for theme dev right out the box, cuz it just works like butter. Its possible to work with guard if you dont wanna deal with having a carefree life, but gets messy if both are used in a team environment. Guard shits on grunt, gulps alright too - but codekit takes the gold.&lt;/p&gt;
+
+&lt;p&gt;And if you’re using a wysiwyg editor or mamp or a bloated ide like coda, &lt;strong&gt;&lt;em&gt;go back to school, kid.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;consists-of&quot;&gt;Consists of&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Latest WP from&lt;/li&gt;
+  &lt;li&gt;Composer
+    &lt;ol&gt;
+      &lt;li&gt;themes
+        &lt;ol&gt;
+          &lt;li&gt;simple framework&lt;/li&gt;
+          &lt;li&gt;simple parent framework&lt;/li&gt;
+          &lt;li&gt;simple child theme&lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+      &lt;li&gt;plugins
+        &lt;ol&gt;
+          &lt;li&gt;See full list within composer.json file.&lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://gist.github.com/kiriaze/89799d8a31a8084920bc&quot;&gt;.htaccess&lt;/a&gt; ( Currently ignored from repo )
+        &lt;ol&gt;
+          &lt;li&gt;permalinks&lt;/li&gt;
+          &lt;li&gt;media redirection to remote&lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+      &lt;li&gt;project repo should also house a db dump&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;installation&quot;&gt;Installation&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Clone repo and run composer.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;$ git clone https://raw.github.com/kiriaze/PressPlay {Project-Name}
+$ cd {Project-Name}
+$ composer install
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;h2 id=&quot;page-speed-insights-desktop&quot;&gt;Page Speed Insights Desktop&lt;/h2&gt;
-&lt;div class=&quot;text-align-center&quot;&gt;
-	&lt;img src=&quot;/assets/images/posts/juice/pagespeed-desktop.png&quot; alt=&quot;&quot; /&gt;
+&lt;ol&gt;
+  &lt;li&gt;Run &lt;a href=&quot;https://github.com/kiriaze/ghost&quot;&gt;ghost&lt;/a&gt;. ( Follow instructions through cli )&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;curl -s https://raw.githubusercontent.com/kiriaze/ghost/master/ghost.sh &amp;gt; /tmp; bash /tmp/ghost
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;h2 id=&quot;page-speed-insights-mobile&quot;&gt;Page Speed Insights Mobile&lt;/h2&gt;
-&lt;div class=&quot;text-align-center&quot;&gt;
-	&lt;img src=&quot;/assets/images/posts/juice/pagespeed-mobile.png&quot; alt=&quot;&quot; /&gt;
+&lt;ol&gt;
+  &lt;li&gt;Create your database. ( Will move this into ghost.sh soon )&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;# Default
+$ mysql -u {username} -p {password} -e &amp;quot;create database {databasename};&amp;quot;
+# If dev env setup with mac-dev-env/homebrew, use the line below instead
+$ mysql -u root -p  -e &amp;quot;create database foo;&amp;quot;
+&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Update git remote in root of project and subsequent files.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;# Remove git from root of your project
+$ rm -rf {Project-Name}/.git
+# Add your new remote to the root of your project
+$ git remote add origin https://path-to-repo.com/repo.git
+# Remove git from project theme
+$ rm -rf {Project-Name}/wp-content/themes/{project-theme}/.git
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Update Naming Conventions&lt;/p&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;Rename Simple-child to {Project-Name} ( Or Simple-Framwork depending on which you choose to use )&lt;/li&gt;
+      &lt;li&gt;Update wp-content/themes/{Project-Name}/style.css naming refs, and should reflect the code block below.&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;comment&quot;&gt;/*
+Theme Name:   Project Name
+Theme URI:    http://projectname.com
+Author:       Project Author
+Author URI:   http://projectauthor.com
+Description:      An awesome description.
+Template:       simple
+Version:          1.0.0
+License:      GNU General Public License v2 or later
+License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain:  simple
+*/&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;pre&gt;&lt;code&gt;3. Update wp-content/themes/{Project-Name}/assets/js/app.js naming refs
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;error&quot;&gt;#&lt;/span&gt; Update all THEMENAME/SHORTNAME refs within file
+&lt;span class=&quot;error&quot;&gt;#&lt;/span&gt; THEMENAME is the full name of your project, e.g. MyAwesomeProject
+&lt;span class=&quot;error&quot;&gt;#&lt;/span&gt; SHORTNAME is the acronym of the THEMENAME, e.g. MAP
+&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; SHORTNAME = window.THEMENAME; &lt;span class=&quot;comment&quot;&gt;// example before&lt;/span&gt;
+&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; MAP = window.MyAwesomeProject; &lt;span class=&quot;comment&quot;&gt;// example after&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Set permissions to project directory ( WP Updates Specific )&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;$ sudo chown -R _www {Project-Name}
+$ sudo chmod -R g+w {Project-Name}
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Update wp-config.php credentials to connect to your db.&lt;/li&gt;
+  &lt;li&gt;Direct browser to {Project-Name}.dev/wp/wp-admin&lt;/li&gt;
+  &lt;li&gt;Activate Project Theme.&lt;/li&gt;
+  &lt;li&gt;Update Site URL in WP Admin. ( And other settings through theme options )&lt;/li&gt;
+  &lt;li&gt;Drag your project Theme into codekit. ( comes with preconfigured codekit.conf )&lt;/li&gt;
+  &lt;li&gt;Make dope shit yo.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;notes&quot;&gt;Notes:&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;When updating gitignore, run &lt;code&gt;$ git rm -r --cached .&lt;/code&gt; then re add/commit&lt;/li&gt;
+  &lt;li&gt;Add acf-pro license into wp admin.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;If you add other plugins to your project, you have two options to keep them in sync.&lt;/p&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;Exclude from .gitignore with &lt;code&gt;!wp-content/plugins/{plugin-name}&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;Add plugin to composer.json and run &lt;code&gt;composer update&lt;/code&gt;&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;DB search/replace mysql query { When importing/exporting local/remote dbs }&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;class&quot;&gt;update&lt;/span&gt; wp_posts &lt;span class=&quot;class&quot;&gt;set&lt;/span&gt; guid = &lt;span class=&quot;class&quot;&gt;replace&lt;/span&gt;(guid, &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;OLD&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;NEW&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;);
+&lt;span class=&quot;class&quot;&gt;update&lt;/span&gt; wp_options &lt;span class=&quot;class&quot;&gt;set&lt;/span&gt; option_value = &lt;span class=&quot;class&quot;&gt;replace&lt;/span&gt;(option_value, &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;OLD&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;NEW&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;);
+&lt;span class=&quot;class&quot;&gt;update&lt;/span&gt; wp_posts &lt;span class=&quot;class&quot;&gt;set&lt;/span&gt; post_content = &lt;span class=&quot;class&quot;&gt;replace&lt;/span&gt;(post_content, &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;OLD&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;NEW&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;);
+&lt;span class=&quot;class&quot;&gt;update&lt;/span&gt; wp_postmeta &lt;span class=&quot;class&quot;&gt;set&lt;/span&gt; meta_value = &lt;span class=&quot;class&quot;&gt;replace&lt;/span&gt;(meta_value, &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;OLD&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;NEW&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;);
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;to-do&quot;&gt;To Do:&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Add mysql db creation to ghost.sh&lt;/li&gt;
+  &lt;li&gt;Write db creds to wp-config.php from ghost.sh&lt;/li&gt;
+  &lt;li&gt;Convert ghost.sh to ruby script&lt;/li&gt;
+  &lt;li&gt;Integrate bower within simple-html&lt;/li&gt;
+  &lt;li&gt;Debug wp-setup within theme options on activation&lt;/li&gt;
+&lt;/ol&gt;
 </description>
-        <pubDate>Wed, 22 Jul 2015 00:00:00 -0400</pubDate>
-        <link>/labs/juice/</link>
-        <guid isPermaLink="true">/labs/juice/</guid>
+        <pubDate>Mon, 03 Aug 2015 00:00:00 -0400</pubDate>
+        <link>/labs/press-play/</link>
+        <guid isPermaLink="true">/labs/press-play/</guid>
         
         <category>code</category>
+        
+        <category>wordpress</category>
         
         
         <category>labs</category>
@@ -231,758 +252,344 @@ iTerm settings
       </item>
     
       <item>
-        <title>S-Animate.</title>
-        <description>&lt;h3 id=&quot;installation&quot;&gt;Installation&lt;/h3&gt;
+        <title>Simple Child.</title>
+        <description>&lt;p&gt;Simple Child Theme - requires Simple Framework. &lt;a href=&quot;http://github.com/kiriaze/simple-child&quot;&gt;Get it here!&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 02 Aug 2015 00:00:00 -0400</pubDate>
+        <link>/labs/simple-child/</link>
+        <guid isPermaLink="true">/labs/simple-child/</guid>
+        
+        <category>code</category>
+        
+        <category>wordpress</category>
+        
+        
+        <category>labs</category>
+        
+        <category></category>
+        
+      </item>
+    
+      <item>
+        <title>Simple Tweets.</title>
+        <description>&lt;p&gt;A simple twitter plugin that pulls in your twitter feed as a shortcode. Requires twitter username.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://github.com/kiriaze/s-animate&quot;&gt;Download it&lt;/a&gt;&lt;br /&gt;
-Clone it &lt;code&gt;git@github.com:kiriaze/s-animate.git&lt;/code&gt;&lt;br /&gt;
-Install with bower &lt;code&gt;bower install s-animate&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://github.com/kiriaze/simple-tweets&quot;&gt;Get it here!&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Import into project &lt;code&gt;@import &#39;animate/animate&#39;;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Shortcode Params: &lt;code&gt;[tweets before=&#39;&#39; after=&#39;&#39; wrapper=&#39;&#39; class=&#39;&#39; attr=&#39;&#39;]&lt;/code&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 01 Aug 2015 00:00:00 -0400</pubDate>
+        <link>/labs/simple-tweets/</link>
+        <guid isPermaLink="true">/labs/simple-tweets/</guid>
+        
+        <category>code</category>
+        
+        <category>wordpress</category>
+        
+        
+        <category>labs</category>
+        
+        <category></category>
+        
+      </item>
+    
+      <item>
+        <title>Simple Shots.</title>
+        <description>&lt;p&gt;A simple dribbble plugin that pulls in your dribbble feed as a widget and a shortcode. Requires dribbble username.&lt;/p&gt;
 
-&lt;p&gt;• Animation are imported with default variables set in &lt;code&gt;_animate.scss&lt;/code&gt;.&lt;br /&gt;
-• Properties are defined within &lt;code&gt;_properties.scss&lt;/code&gt;.&lt;br /&gt;
-• Comment / Uncomment the animations you’d like to use.&lt;br /&gt;
-• Set your own values in your &lt;code&gt;_base.scss&lt;/code&gt; or wherever your variables are defined to override the default properties:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://github.com/kiriaze/simple-shots&quot;&gt;Get it here!&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;settings&quot;&gt;Settings&lt;/h3&gt;
+&lt;p&gt;Widget options: Title, username, count, and cache.&lt;/p&gt;
+
+&lt;p&gt;Shortcode Params: [shots player=’’ shots=’’]&lt;/p&gt;
+</description>
+        <pubDate>Sat, 01 Aug 2015 00:00:00 -0400</pubDate>
+        <link>/labs/simple-shots/</link>
+        <guid isPermaLink="true">/labs/simple-shots/</guid>
+        
+        <category>code</category>
+        
+        <category>wordpress</category>
+        
+        
+        <category>labs</category>
+        
+        <category></category>
+        
+      </item>
+    
+      <item>
+        <title>Simple Shortcodes.</title>
+        <description>&lt;p&gt;Just the best damn shortcodes out there.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://github.com/kiriaze/simple-shortcodes&quot;&gt;Get it here!&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 01 Aug 2015 00:00:00 -0400</pubDate>
+        <link>/labs/simple-shortcodes/</link>
+        <guid isPermaLink="true">/labs/simple-shortcodes/</guid>
+        
+        <category>code</category>
+        
+        <category>wordpress</category>
+        
+        
+        <category>labs</category>
+        
+        <category></category>
+        
+      </item>
+    
+      <item>
+        <title>Simple Newsletter.</title>
+        <description>&lt;p&gt;A simple mailchimp newsletter plugin that hooks up to your mailchimp list and displays a newsletter form as a widget and a shortcode.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://github.com/kiriaze/simple-newsletter&quot;&gt;Get it here!&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Widget options: Title, Intro, Placeholder text, api key and list ID.&lt;/p&gt;
+
+&lt;p&gt;Shortcode Params: &lt;code&gt;[newsletter before=&#39;&#39; after=&#39;&#39; wrapper=&#39;&#39; class=&#39;&#39;]&lt;/code&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 01 Aug 2015 00:00:00 -0400</pubDate>
+        <link>/labs/simple-newsletter/</link>
+        <guid isPermaLink="true">/labs/simple-newsletter/</guid>
+        
+        <category>code</category>
+        
+        <category>wordpress</category>
+        
+        
+        <category>labs</category>
+        
+        <category></category>
+        
+      </item>
+    
+      <item>
+        <title>Simple Framework.</title>
+        <description>&lt;p&gt;A revolutionary wordpress theme framework. Needs Simple-Child. &lt;a href=&quot;http://github.com/kiriaze/simple-framework&quot;&gt;Get it here!&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 01 Aug 2015 00:00:00 -0400</pubDate>
+        <link>/labs/simple-framework/</link>
+        <guid isPermaLink="true">/labs/simple-framework/</guid>
+        
+        <category>code</category>
+        
+        <category>wordpress</category>
+        
+        
+        <category>labs</category>
+        
+        <category></category>
+        
+      </item>
+    
+      <item>
+        <title>Simple Flickr.</title>
+        <description>&lt;p&gt;A simple flickr plugin that pulls in your flickr feed as a widget and a shortcode. Requires flickr ID. &lt;a href=&quot;http://github.com/kiriaze/simple-flickr&quot;&gt;Get it here!&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Widget options: Title, id ( idgettr ), type ( user/group ), and display ( random/latest ).&lt;/p&gt;
+
+&lt;p&gt;Shortcode Params: &lt;code&gt;[flickr before=&#39;&#39; after=&#39;&#39; wrapper=&#39;&#39; class=&#39;&#39;]&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;todo&quot;&gt;Todo:&lt;/h2&gt;
+
+&lt;p&gt;Add &lt;code&gt;Simple_Flickr_Widget::display_cached_content();&lt;/code&gt; function for shortcode to pull from.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 01 Aug 2015 00:00:00 -0400</pubDate>
+        <link>/labs/simple-flickr/</link>
+        <guid isPermaLink="true">/labs/simple-flickr/</guid>
+        
+        <category>code</category>
+        
+        <category>wordpress</category>
+        
+        
+        <category>labs</category>
+        
+        <category></category>
+        
+      </item>
+    
+      <item>
+        <title>S-Grams.</title>
+        <description>&lt;p&gt;A simple instagram plugin that pulls in your instagram feed as a widget and a shortcode. Requires instagram username. &lt;a href=&quot;http://github.com/kiriaze/s-grams&quot;&gt;Get it here!&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Widget options: Title, username, count, and cache.&lt;/p&gt;
+
+&lt;p&gt;Shortcode Params: &lt;code&gt;[grams account=&#39;&#39; count=&#39;&#39; tag=&#39;&#39; class=&#39;&#39; effects=&#39;&#39;]&lt;/code&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 01 Aug 2015 00:00:00 -0400</pubDate>
+        <link>/labs/s-grams/</link>
+        <guid isPermaLink="true">/labs/s-grams/</guid>
+        
+        <category>code</category>
+        
+        <category>wordpress</category>
+        
+        
+        <category>labs</category>
+        
+        <category></category>
+        
+      </item>
+    
+      <item>
+        <title>Simple Multi CPT&#39;s.</title>
+        <description>&lt;p&gt;Simple Multi Custom Post Types - A plugin that can handle multiple custom post types at once through an array, theme hookable yo. &lt;a href=&quot;http://github.com/kiriaze/simple-multi-cpts&quot;&gt;Get it here!&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;updates-galore&quot;&gt;Updates Galore!&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Multiple taxonomies can now be passed to each cpt, supports arrays.&lt;/li&gt;
+  &lt;li&gt;Ability to filter/sort them, as well as post type term count.&lt;/li&gt;
+  &lt;li&gt;Hide taxonomies backend table row header and filter/sort dropdowns through $hide[];&lt;/li&gt;
+  &lt;li&gt;Custom post type icons from FontAwesome!&lt;/li&gt;
+  &lt;li&gt;ACF Settings integration, now managable from wp admin instead of through functions file, or both if desired! Woot woot!&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;what&quot;&gt;What?&lt;/h2&gt;
+
+&lt;p&gt;A plugin that can handle multiple custom post types at once, requires atleast the singular and plural name of each cpt you would like to add, and optionally a custom taxonomy, slug rewrite, hide options, and icon.&lt;/p&gt;
+
+&lt;p&gt;Following the philosophy of keeping custom post types theme agnostic, this plugin is lightweight and efficient and allows for adding infinite custom post types/taxonomies through wp admin ( Requires ACF ) or by hooking into the function within your theme, look at example below. This chunk is small enough to be easily placed within any theme - and is preferred over having multiple cpt plugins cluttering and slowing down your project.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;why&quot;&gt;Why?&lt;/h2&gt;
+
+&lt;p&gt;Came across a project requiring a ridiculous amount of custom post types, and didn’t think that having over 10 separate plugins for handling those post types were ideal - so I made one to rule them all. ba-dum-dum-tshh.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;how&quot;&gt;How?&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Download/Clone/Composer that ish, install and activate plugin.&lt;/li&gt;
+  &lt;li&gt;ACF active? ( And it should be guys! )&lt;/li&gt;
+  &lt;li&gt;Skip the rest and head to the plugin settings page, else continue.&lt;/li&gt;
+  &lt;li&gt;If not, place hook into theme functions. ( Preferably into abstracted module, look @ simple. ) Note: Capitalise first letter.&lt;/li&gt;
+  &lt;li&gt;Notice how not every post type needs a tax or rewrite, however since this plugin works in array association, you will need to add an empty string for that relation. Allows for an array of multiple taxonomies to be passed to each cpt.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
 &lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;variable&quot;&gt;$duration&lt;/span&gt;: &lt;span class=&quot;class&quot;&gt;.35s&lt;/span&gt;;
-&lt;span class=&quot;variable&quot;&gt;$delay&lt;/span&gt;: &lt;span class=&quot;class&quot;&gt;.2s&lt;/span&gt;;
-&lt;span class=&quot;variable&quot;&gt;$delay&lt;/span&gt;: &lt;span class=&quot;float&quot;&gt;0s&lt;/span&gt;;
-&lt;span class=&quot;variable&quot;&gt;$function&lt;/span&gt;: &lt;span class=&quot;value&quot;&gt;ease&lt;/span&gt;;
-&lt;span class=&quot;variable&quot;&gt;$fill&lt;/span&gt;: &lt;span class=&quot;value&quot;&gt;both&lt;/span&gt;;
-&lt;span class=&quot;variable&quot;&gt;$visibility&lt;/span&gt;: &lt;span class=&quot;value&quot;&gt;visible&lt;/span&gt;;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;comment&quot;&gt;// hook into simple multi cpts&lt;/span&gt;
+add_filter( &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;simple_multi_cpts_plugin_init&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;simple_child_cpts&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt; );
+&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;function&quot;&gt;simple_child_cpts&lt;/span&gt;() {
 
-&lt;p&gt;Set the animations you’d like to use by defining them in your base.scss or similar.&lt;/p&gt;
+    &lt;span class=&quot;keyword&quot;&gt;global&lt;/span&gt; &lt;span class=&quot;local-variable&quot;&gt;$child_cpts&lt;/span&gt;;
 
-&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;variable&quot;&gt;$fadeIn&lt;/span&gt;: &lt;span class=&quot;value&quot;&gt;true&lt;/span&gt;;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
+    &lt;span class=&quot;comment&quot;&gt;// Required&lt;/span&gt;
+    &lt;span class=&quot;local-variable&quot;&gt;$cpt_name&lt;/span&gt; = &lt;span class=&quot;predefined&quot;&gt;array&lt;/span&gt;(
+        &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;Agency&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;,
+        &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;Client&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;,
+        &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;Project&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;
+    );
 
-&lt;h3 id=&quot;attach-animations&quot;&gt;Attach animations&lt;/h3&gt;
+    &lt;span class=&quot;comment&quot;&gt;// Required&lt;/span&gt;
+    &lt;span class=&quot;local-variable&quot;&gt;$cpt_plural&lt;/span&gt; = &lt;span class=&quot;predefined&quot;&gt;array&lt;/span&gt;(
+        &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;Agencies&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;,
+        &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;Clients&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;,
+        &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;Projects&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;
+    );
 
-&lt;h5 id=&quot;within-markup&quot;&gt;Within markup&lt;/h5&gt;
+    &lt;span class=&quot;comment&quot;&gt;// Optional&lt;/span&gt;
+    &lt;span class=&quot;local-variable&quot;&gt;$cpt_tax&lt;/span&gt; = &lt;span class=&quot;predefined&quot;&gt;array&lt;/span&gt;(
+        &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;Locations&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;,
+        &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;,
+        &lt;span class=&quot;predefined&quot;&gt;array&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;Type&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;Url&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;Skills&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;)
+    );
 
-&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;attribute-name&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;fadeIn&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
+    &lt;span class=&quot;comment&quot;&gt;// Optional&lt;/span&gt;
+    &lt;span class=&quot;local-variable&quot;&gt;$rewriteUrl&lt;/span&gt; = &lt;span class=&quot;predefined&quot;&gt;array&lt;/span&gt;(
+        &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;Agencies&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;,
+        &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;,
+        &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;Work&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;
+    );
 
-&lt;h5 id=&quot;within-styles&quot;&gt;Within styles&lt;/h5&gt;
+    &lt;span class=&quot;comment&quot;&gt;// Optional - set to true to hide from backend&lt;/span&gt;
+    &lt;span class=&quot;local-variable&quot;&gt;$hide&lt;/span&gt; = &lt;span class=&quot;predefined&quot;&gt;array&lt;/span&gt;(
+        &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;,
+        &lt;span class=&quot;predefined-constant&quot;&gt;true&lt;/span&gt;,
+        &lt;span class=&quot;predefined&quot;&gt;array&lt;/span&gt;(
+            &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;,
+            &lt;span class=&quot;predefined-constant&quot;&gt;true&lt;/span&gt;,
+            &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;
+        )
+    );
 
-&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;comment&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;content&quot;&gt; default&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;class&quot;&gt;.logo&lt;/span&gt; {
-    &lt;span class=&quot;directive&quot;&gt;@extend&lt;/span&gt; .&lt;span class=&quot;value&quot;&gt;fadeIn&lt;/span&gt;;
+    &lt;span class=&quot;comment&quot;&gt;// Optional -  post type icons, e.g. unicode stripped to \f037&lt;/span&gt;
+    &lt;span class=&quot;local-variable&quot;&gt;$cpt_icon&lt;/span&gt; = &lt;span class=&quot;predefined&quot;&gt;array&lt;/span&gt;(
+        &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;\f&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;037&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;,
+    );
+
+    &lt;span class=&quot;local-variable&quot;&gt;$child_cpts&lt;/span&gt; = &lt;span class=&quot;predefined&quot;&gt;array&lt;/span&gt;(&lt;span class=&quot;local-variable&quot;&gt;$cpt_name&lt;/span&gt;, &lt;span class=&quot;local-variable&quot;&gt;$cpt_plural&lt;/span&gt;, &lt;span class=&quot;local-variable&quot;&gt;$cpt_tax&lt;/span&gt;, &lt;span class=&quot;local-variable&quot;&gt;$rewriteUrl&lt;/span&gt;, &lt;span class=&quot;local-variable&quot;&gt;$hide&lt;/span&gt;, &lt;span class=&quot;local-variable&quot;&gt;$cpt_icon&lt;/span&gt;);
+
+    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;local-variable&quot;&gt;$child_cpts&lt;/span&gt;;
+
 }
-&lt;span class=&quot;comment&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;content&quot;&gt; custom settings that would differ from global settings&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;class&quot;&gt;.headline&lt;/span&gt; {
-    &lt;span class=&quot;directive&quot;&gt;@include&lt;/span&gt; &lt;span class=&quot;error&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;error&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;error&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;error&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;error&quot;&gt;I&lt;/span&gt;&lt;span class=&quot;predefined&quot;&gt;n&lt;/span&gt;(&lt;span class=&quot;variable&quot;&gt;$duration&lt;/span&gt;, &lt;span class=&quot;variable&quot;&gt;$delay&lt;/span&gt;, &lt;span class=&quot;variable&quot;&gt;$delay&lt;/span&gt;, &lt;span class=&quot;variable&quot;&gt;$function&lt;/span&gt;, &lt;span class=&quot;variable&quot;&gt;$fill&lt;/span&gt;, &lt;span class=&quot;variable&quot;&gt;$visibility&lt;/span&gt;);
-}
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</description>
-        <pubDate>Tue, 21 Jul 2015 00:00:00 -0400</pubDate>
-        <link>/labs/s-animate/</link>
-        <guid isPermaLink="true">/labs/s-animate/</guid>
-        
-        <category>code</category>
-        
-        
-        <category>labs</category>
-        
-        <category></category>
-        
-      </item>
-    
-      <item>
-        <title>Anchors.</title>
-        <description>&lt;p&gt;SimpleAnchors takes a different approach to page scrolling utilizing data attributes. Packed with options, including custom autoBuild function for quick TOC style pages. Just under 2k minified. &lt;a href=&quot;http://github.com/kiriaze/simpleAnchors&quot;&gt;Get it here!&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;look-at&quot;&gt;Look at&lt;/h2&gt;
+&lt;script src=&quot;https://gist.github.com/kiriaze/1ba01fd6f4287766922f.js&quot;&gt; &lt;/script&gt;
+
+&lt;script src=&quot;https://gist.github.com/kiriaze/f4c4664889a21731fecf.js&quot;&gt; &lt;/script&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;to-dos&quot;&gt;To Do’s&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Optimize Code&lt;/li&gt;
+  &lt;li&gt;Some code is inconsistent, flush out.&lt;/li&gt;
+  &lt;li&gt;Nested forloops not ideal, look at index based comparison of arrays.&lt;/li&gt;
+  &lt;li&gt;Integrate new structure/philosophy into other simple plugins&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;comment&quot;&gt;// Example Usage&lt;/span&gt;
-&lt;span class=&quot;tag&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;attribute-name&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;attribute-name&quot;&gt;data-scroll-to&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;example-container&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;attribute-name&quot;&gt;data-scroll-offset&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;gt;&lt;/span&gt;Go to Section&lt;span class=&quot;tag&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;tag&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;attribute-name&quot;&gt;data-scroll-target&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;example-container&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;comment&quot;&gt;// note: look into passing array differently&lt;/span&gt;
+&lt;span class=&quot;comment&quot;&gt;// like so:&lt;/span&gt;
+[camper] =&amp;gt; &lt;span class=&quot;predefined&quot;&gt;Array&lt;/span&gt;
+    (
+        [cpt_plural] =&amp;gt; &lt;span class=&quot;constant&quot;&gt;Campers&lt;/span&gt;
+        [rewriteUrl] =&amp;gt; &lt;span class=&quot;constant&quot;&gt;Hikers&lt;/span&gt;
+        [cpt_tax] =&amp;gt; &lt;span class=&quot;predefined&quot;&gt;Array&lt;/span&gt;
+            (
+                [&lt;span class=&quot;integer&quot;&gt;0&lt;/span&gt;] =&amp;gt; &lt;span class=&quot;constant&quot;&gt;Level&lt;/span&gt;
+            )
 
-&lt;span class=&quot;comment&quot;&gt;// Can be called with default selector $.simpleAnchors();&lt;/span&gt;
-&lt;span class=&quot;comment&quot;&gt;// or set to one $(&#39;[data-scroll-to]&#39;).simpleAnchors();&lt;/span&gt;
+        [hide] =&amp;gt; &lt;span class=&quot;predefined&quot;&gt;Array&lt;/span&gt;
+            (
+                [&lt;span class=&quot;integer&quot;&gt;0&lt;/span&gt;] =&amp;gt;
+            )
 
-&lt;span class=&quot;comment&quot;&gt;// Options&lt;/span&gt;
-
-duration: &lt;span class=&quot;integer&quot;&gt;800&lt;/span&gt;,                      &lt;span class=&quot;comment&quot;&gt;// vary the speed depending the distance in future update&lt;/span&gt;
-&lt;span class=&quot;key&quot;&gt;easing&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;swing&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;,                    &lt;span class=&quot;comment&quot;&gt;// the easing function for animation; expo, cubic, circ, swing (if jquery easing included)&lt;/span&gt;
-&lt;span class=&quot;key&quot;&gt;activeClass&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;active&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;,              &lt;span class=&quot;comment&quot;&gt;// class given to the active nav element&lt;/span&gt;
-&lt;span class=&quot;key&quot;&gt;offset&lt;/span&gt;: &lt;span class=&quot;integer&quot;&gt;0&lt;/span&gt;,
-
-&lt;span class=&quot;key&quot;&gt;autoBuild&lt;/span&gt;: &lt;span class=&quot;predefined-constant&quot;&gt;false&lt;/span&gt;,                   &lt;span class=&quot;comment&quot;&gt;// if true, auto wraps elements to create TOC style&lt;/span&gt;
-&lt;span class=&quot;key&quot;&gt;sections&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;h2&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;,                     &lt;span class=&quot;comment&quot;&gt;// defaults to &amp;lt;h2&amp;gt; headings, can be anything&lt;/span&gt;
-&lt;span class=&quot;key&quot;&gt;sectionEl&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;section&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;,               &lt;span class=&quot;comment&quot;&gt;// scroll target, defaults to &amp;lt;section&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;key&quot;&gt;wrapper&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;article[role=&amp;quot;article&amp;quot;]&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;comment&quot;&gt;// outer wrapper, defaults to &amp;lt;article role=&amp;quot;article&amp;quot;&amp;gt;&lt;/span&gt;
+        [cpt_icon] =&amp;gt; \f0fc
+    )
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 </description>
-        <pubDate>Mon, 20 Jul 2015 00:00:00 -0400</pubDate>
-        <link>/labs/anchors/</link>
-        <guid isPermaLink="true">/labs/anchors/</guid>
+        <pubDate>Thu, 30 Jul 2015 00:00:00 -0400</pubDate>
+        <link>/labs/simple-multi-cpts/</link>
+        <guid isPermaLink="true">/labs/simple-multi-cpts/</guid>
         
         <category>code</category>
         
-        
-        <category>labs</category>
-        
-        <category></category>
-        
-      </item>
-    
-      <item>
-        <title>S-Grid.</title>
-        <description>&lt;section class=&quot;stripe&quot;&gt;
-	&lt;div class=&quot;container island&quot;&gt;
-
-&lt;div&gt;
-      &lt;h5 id=&quot;whats-this-all-about&quot;&gt;What’s this all about?&lt;/h5&gt;
-
-      &lt;p&gt;The Grid is a semantic grid framework built on top of Sass. Simply include it in your project and that’s it!&lt;/p&gt;
-
-      &lt;h5 id=&quot;why-another-grid-framework&quot;&gt;Why another grid framework?&lt;/h5&gt;
-
-      &lt;p&gt;Because every other framework is bloated. The Grid is simple, intuitive, extendable and lightweight. It was built to promote clean and semantic markup, with the option to use your own custom classes - you can even use data attributes.&lt;/p&gt;
-
-      &lt;h5 id=&quot;is-it-responsive&quot;&gt;Is it responsive?&lt;/h5&gt;
-
-      &lt;p&gt;Yes. You can specify your breakpoints with the included elegant breakpoint mixin.&lt;/p&gt;
-
-      &lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;class&quot;&gt;.element&lt;/span&gt; {
-    &lt;span class=&quot;directive&quot;&gt;@include&lt;/span&gt; &lt;span class=&quot;predefined&quot;&gt;breakpoint&lt;/span&gt;(&lt;span class=&quot;variable&quot;&gt;$small&lt;/span&gt;) {
-        &lt;span class=&quot;directive&quot;&gt;@include&lt;/span&gt; &lt;span class=&quot;predefined&quot;&gt;columns&lt;/span&gt;(&lt;span class=&quot;float&quot;&gt;2&lt;/span&gt;);
-    }
-}
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-      &lt;/div&gt;
-
-      &lt;h5 id=&quot;how-do-i-get-started&quot;&gt;How do I get started?&lt;/h5&gt;
-
-      &lt;p&gt;Install _grid.scss and _breakpoint.scss files and simply reference them in your project. Get them on &lt;a href=&quot;https://github.com/kiriaze/s-grid&quot;&gt;Github&lt;/a&gt;, or clone it &lt;span&gt;&lt;code&gt;git@github.com:kiriaze/s-grid.git&lt;/code&gt;&lt;/span&gt;. If you’re using &lt;a href=&quot;/labs/juice&quot;&gt;Juice&lt;/a&gt;, its already included in there.&lt;/p&gt;
-    &lt;/div&gt;
-
-	&lt;/div&gt;
-&lt;/section&gt;
-
-&lt;section class=&quot;example-grid text-align-center stripe&quot;&gt;
-
-	&lt;div class=&quot;container&quot;&gt;
-
-		&lt;h2 class=&quot;text-align-left&quot;&gt;Classic Floats yo.&lt;/h2&gt;
-
-		&lt;div class=&quot;row&quot;&gt;
-			&lt;div class=&quot;columns-12&quot;&gt;12&lt;/div&gt;
-			&lt;div class=&quot;columns-12&quot;&gt;12&lt;/div&gt;
-			&lt;div class=&quot;columns-12&quot;&gt;12&lt;/div&gt;
-			&lt;div class=&quot;columns-12&quot;&gt;12&lt;/div&gt;
-			&lt;div class=&quot;columns-12&quot;&gt;12&lt;/div&gt;
-			&lt;div class=&quot;columns-12&quot;&gt;12&lt;/div&gt;
-			&lt;div class=&quot;columns-12&quot;&gt;12&lt;/div&gt;
-			&lt;div class=&quot;columns-12&quot;&gt;12&lt;/div&gt;
-			&lt;div class=&quot;columns-12&quot;&gt;12&lt;/div&gt;
-			&lt;div class=&quot;columns-12&quot;&gt;12&lt;/div&gt;
-			&lt;div class=&quot;columns-12&quot;&gt;12&lt;/div&gt;
-			&lt;div class=&quot;columns-12&quot;&gt;12&lt;/div&gt;
-		&lt;/div&gt;
-
-		&lt;div class=&quot;row&quot;&gt;
-			&lt;div class=&quot;columns-6&quot;&gt;6&lt;/div&gt;
-			&lt;div class=&quot;columns-6&quot;&gt;6&lt;/div&gt;
-			&lt;div class=&quot;columns-6&quot;&gt;6&lt;/div&gt;
-			&lt;div class=&quot;columns-6&quot;&gt;6&lt;/div&gt;
-			&lt;div class=&quot;columns-6&quot;&gt;6&lt;/div&gt;
-			&lt;div class=&quot;columns-6&quot;&gt;6&lt;/div&gt;
-		&lt;/div&gt;
-
-		&lt;div class=&quot;row&quot;&gt;
-			&lt;div class=&quot;columns-4&quot;&gt;4&lt;/div&gt;
-			&lt;div class=&quot;columns-4&quot;&gt;4&lt;/div&gt;
-			&lt;div class=&quot;columns-4&quot;&gt;4&lt;/div&gt;
-			&lt;div class=&quot;columns-4&quot;&gt;4&lt;/div&gt;
-		&lt;/div&gt;
-
-		&lt;div class=&quot;row&quot;&gt;
-			&lt;div class=&quot;columns-10&quot;&gt;10&lt;/div&gt;
-			&lt;div class=&quot;columns-30&quot;&gt;30&lt;/div&gt;
-			&lt;div class=&quot;columns-40&quot;&gt;40&lt;/div&gt;
-			&lt;div class=&quot;columns-20&quot;&gt;20&lt;/div&gt;
-		&lt;/div&gt;
-
-		&lt;div class=&quot;row&quot;&gt;
-			&lt;div class=&quot;columns-2&quot;&gt;2
-				&lt;div class=&quot;row&quot;&gt;
-						&lt;div class=&quot;columns-2&quot;&gt;2&lt;/div&gt;
-						&lt;div class=&quot;columns-2&quot;&gt;2&lt;/div&gt;
-				&lt;/div&gt;
-			&lt;/div&gt;
-			&lt;div class=&quot;columns-2&quot;&gt;2
-				&lt;div class=&quot;row&quot;&gt;
-						&lt;div class=&quot;columns-70&quot;&gt;70&lt;/div&gt;
-						&lt;div class=&quot;columns-30&quot;&gt;30&lt;/div&gt;
-				&lt;/div&gt;
-			&lt;/div&gt;
-		&lt;/div&gt;
-
-	&lt;/div&gt;
-&lt;/section&gt;
-
-&lt;section class=&quot;example-grid stripe&quot;&gt;
-	&lt;div class=&quot;container&quot;&gt;
-		&lt;h2&gt;Extendable, of course.&lt;/h2&gt;
-		&lt;div class=&quot;row&quot;&gt;
-			&lt;article class=&quot;columns-70&quot;&gt;
-				&lt;h2&gt;Article&lt;/h2&gt;
-				&lt;p&gt;
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem architecto ipsam dolores ea quas ut dolorem libero reprehenderit est quibusdam ex aperiam, distinctio natus impedit mollitia veniam repellendus commodi atque!
-				&lt;/p&gt;
-			&lt;/article&gt;
-			&lt;aside class=&quot;columns-30&quot;&gt;
-				&lt;h2&gt;Sidebar&lt;/h2&gt;
-				&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, repudiandae aliquid fuga aperiam, vel veniam quae ipsa expedita magnam odio deserunt alias! Dolores aliquam eum quidem culpa quos, explicabo fugiat.&lt;/p&gt;
-			&lt;/aside&gt;
-		&lt;/div&gt;
-	&lt;/div&gt;
-&lt;/section&gt;
-
-&lt;section class=&quot;example-grid stripe&quot;&gt;
-	&lt;div class=&quot;container&quot;&gt;
-		&lt;h2&gt;Vertical Split. .valign &amp;amp; .no-gutter flexbox. Wut m8.&lt;/h2&gt;
-		&lt;div class=&quot;row valign no-gutter&quot;&gt;
-			&lt;div class=&quot;columns-2&quot;&gt;
-				&lt;h2&gt;Article&lt;/h2&gt;
-				&lt;p&gt;
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem architecto ipsam dolores ea quas ut dolorem libero reprehenderit est quibusdam ex aperiam, distinctio natus impedit mollitia veniam repellendus commodi atque!
-				&lt;/p&gt;
-			&lt;/div&gt;
-			&lt;div class=&quot;columns-2&quot;&gt;
-				&lt;img src=&quot;http://placehold.it/600x450&quot; alt=&quot;&quot; /&gt;
-			&lt;/div&gt;
-		&lt;/div&gt;
-	&lt;/div&gt;
-&lt;/section&gt;
-
-&lt;section class=&quot;example-grid stripe&quot;&gt;
-	&lt;div class=&quot;container&quot;&gt;
-		&lt;h2&gt;[Data Attributes FTW]&lt;/h2&gt;
-		&lt;div data-layout=&quot;grid&quot;&gt;
-			&lt;div data-columns=&quot;.3&quot;&gt;
-				&lt;p&gt;
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem architecto ipsam dolores ea quas ut dolorem libero reprehenderit est quibusdam ex aperiam, distinctio natus impedit mollitia veniam repellendus commodi atque!
-				&lt;/p&gt;
-			&lt;/div&gt;
-			&lt;div data-columns=&quot;.4&quot;&gt;
-				&lt;p&gt;
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem architecto ipsam dolores ea quas ut dolorem libero reprehenderit est quibusdam ex aperiam, distinctio natus impedit mollitia veniam repellendus commodi atque!
-				&lt;/p&gt;
-			&lt;/div&gt;
-			&lt;div data-columns=&quot;.3&quot;&gt;
-				&lt;p&gt;
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem architecto ipsam dolores ea quas ut dolorem libero reprehenderit est quibusdam ex aperiam, distinctio natus impedit mollitia veniam repellendus commodi atque!
-				&lt;/p&gt;
-			&lt;/div&gt;
-		&lt;/div&gt;
-	&lt;/div&gt;
-&lt;/section&gt;
-
-&lt;section class=&quot;example-grid stripe&quot;&gt;
-
-	&lt;div class=&quot;container&quot;&gt;
-		&lt;h3&gt;Full Width mannn.&lt;/h3&gt;
-	&lt;/div&gt;
-
-	&lt;ul class=&quot;row&quot;&gt;
-		&lt;li class=&quot;columns-70&quot;&gt;
-			&lt;h2&gt;Columns 7&lt;/h2&gt;
-		&lt;/li&gt;
-		&lt;li class=&quot;columns-30&quot;&gt;
-			&lt;h2&gt;Columns 3&lt;/h2&gt;
-		&lt;/li&gt;
-	&lt;/ul&gt;
-
-	&lt;ul class=&quot;row&quot;&gt;
-		&lt;li class=&quot;columns-3&quot;&gt;
-			&lt;h2&gt;Columns 3&lt;/h2&gt;
-		&lt;/li&gt;
-		&lt;li class=&quot;columns-3&quot;&gt;
-			&lt;h2&gt;Columns 3&lt;/h2&gt;
-		&lt;/li&gt;
-		&lt;li class=&quot;columns-3&quot;&gt;
-			&lt;h2&gt;Columns 3&lt;/h2&gt;
-		&lt;/li&gt;
-	&lt;/ul&gt;
-
-	&lt;hr /&gt;
-
-	&lt;div class=&quot;container&quot;&gt;
-		&lt;h3&gt;Full Width. No Gutter. Crazy.&lt;/h3&gt;
-	&lt;/div&gt;
-
-	&lt;ul class=&quot;row no-gutter&quot;&gt;
-		&lt;li class=&quot;columns-2&quot;&gt;
-			&lt;h2&gt;Columns 2&lt;/h2&gt;
-		&lt;/li&gt;
-		&lt;li class=&quot;columns-2&quot;&gt;
-			&lt;h2&gt;Columns 2&lt;/h2&gt;
-		&lt;/li&gt;
-	&lt;/ul&gt;
-
-	&lt;ul class=&quot;row no-gutter&quot;&gt;
-		&lt;li class=&quot;columns-3&quot;&gt;
-			&lt;h2&gt;Columns 3&lt;/h2&gt;
-		&lt;/li&gt;
-		&lt;li class=&quot;columns-3&quot;&gt;
-			&lt;h2&gt;Columns 3&lt;/h2&gt;
-		&lt;/li&gt;
-		&lt;li class=&quot;columns-3&quot;&gt;
-			&lt;h2&gt;Columns 3&lt;/h2&gt;
-		&lt;/li&gt;
-	&lt;/ul&gt;
-&lt;/section&gt;
-
-&lt;section class=&quot;stripe&quot;&gt;
-	&lt;div class=&quot;container&quot;&gt;
-		&lt;h2&gt;Example Usage&lt;/h2&gt;
-		&lt;script src=&quot;https://gist.github.com/kiriaze/2797fcba02a15200e89c.js&quot;&gt;&lt;/script&gt;
-	&lt;/div&gt;
-&lt;/section&gt;
-</description>
-        <pubDate>Sun, 19 Jul 2015 00:00:00 -0400</pubDate>
-        <link>/labs/grid/</link>
-        <guid isPermaLink="true">/labs/grid/</guid>
-        
-        <category>code</category>
+        <category>wordpress</category>
         
         
         <category>labs</category>
-        
-        <category></category>
-        
-      </item>
-    
-      <item>
-        <title>Hello World.</title>
-        <description>&lt;p&gt;hello world. hello, world?&lt;/p&gt;
-
-&lt;p&gt;its been a while since i’ve been on.&lt;br /&gt;
-three years exactly.&lt;/p&gt;
-
-&lt;p&gt;come take a peak inside my world - full of random thoughts, music, projects, experiments and other dope stuff.&lt;/p&gt;
-
-&lt;p&gt;hello? are you still there?&lt;/p&gt;
-
-&lt;p&gt;hold that thought. brb.&lt;/p&gt;
-</description>
-        <pubDate>Sat, 18 Jul 2015 00:00:00 -0400</pubDate>
-        <link>/blog/hello-world</link>
-        <guid isPermaLink="true">/blog/hello-world</guid>
-        
-        
-        <category></category>
-        
-      </item>
-    
-      <item>
-        <title>Yamaha</title>
-        <description>&lt;section class=&quot;grey-bg&quot; data-midnight=&quot;dark-bg&quot;&gt;
-	&lt;div class=&quot;container&quot;&gt;
-
-		&lt;h2 class=&quot;text-align-center&quot;&gt;Three Distinct Challenges&lt;/h2&gt;
-
-		&lt;ul&gt;
-			&lt;li class=&quot;columns-3&quot;&gt;
-				&lt;h6&gt;Challenge 1&lt;/h6&gt;
-				&lt;p&gt;
-					Design thinking; globalization vulnerable population activist, advancement sharing economy education, shift, fellows social analysis progress Medecins du Monde. Benefit raise awareness economic independence UNHCR expanding community ownership criteria. Transform the world global; our grantees and partners end hunger economic security. Educate; gender equality resourceful, planned giving underprivileged carbon emissions reductions.
-				&lt;/p&gt;
-			&lt;/li&gt;
-			&lt;li class=&quot;columns-3&quot;&gt;
-				&lt;h6&gt;Challenge 1&lt;/h6&gt;
-				&lt;p&gt;
-					Design thinking; globalization vulnerable population activist, advancement sharing economy education, shift, fellows social analysis progress Medecins du Monde. Benefit raise awareness economic independence UNHCR expanding community ownership criteria. Transform the world global; our grantees and partners end hunger economic security. Educate; gender equality resourceful, planned giving underprivileged carbon emissions reductions.
-				&lt;/p&gt;
-			&lt;/li&gt;
-			&lt;li class=&quot;columns-3&quot;&gt;
-				&lt;h6&gt;Challenge 1&lt;/h6&gt;
-				&lt;p&gt;
-					Design thinking; globalization vulnerable population activist, advancement sharing economy education, shift, fellows social analysis progress Medecins du Monde. Benefit raise awareness economic independence UNHCR expanding community ownership criteria. Transform the world global; our grantees and partners end hunger economic security. Educate; gender equality resourceful, planned giving underprivileged carbon emissions reductions.
-				&lt;/p&gt;
-			&lt;/li&gt;
-		&lt;/ul&gt;
-	&lt;/div&gt;
-&lt;/section&gt;
-
-&lt;section class=&quot;text-align-center&quot;&gt;
-	&lt;div class=&quot;container&quot;&gt;
-		&lt;img src=&quot;/assets/images/other/p77.png&quot; alt=&quot;&quot; /&gt;
-		&lt;img src=&quot;/assets/images/other/p777.png&quot; alt=&quot;&quot; /&gt;
-	&lt;/div&gt;
-&lt;/section&gt;
-
-&lt;section class=&quot;dark text-align-center post-content&quot; data-midnight=&quot;dark-bg&quot;&gt;
-	&lt;div class=&quot;container&quot;&gt;
-		&lt;h6&gt;Subheading&lt;/h6&gt;
-		&lt;h2&gt;Heading&lt;/h2&gt;
-		&lt;p&gt;
-			Design thinking; globalization vulnerable population activist, advancement sharing economy education, shift, fellows social analysis progress Medecins du Monde.
-		&lt;/p&gt;
-		&lt;a href=&quot;javascript:;&quot; class=&quot;btn&quot;&gt;Learn more about our&amp;nbsp;approach&lt;/a&gt;
-	&lt;/div&gt;
-&lt;/section&gt;
-
-&lt;section class=&quot;text-align-right&quot;&gt;
-	&lt;div class=&quot;container valign&quot;&gt;
-		&lt;div class=&quot;columns-2&quot;&gt;
-			&lt;img src=&quot;https://983a19dd0c368a4b1e57-0cb7d1946e41dc50c3f11b74195916fd.ssl.cf1.rackcdn.com/img/tour/all-in-one-events-oxfam-usa2.jpg&quot; alt=&quot;&quot; class=&quot;valign&quot; /&gt;
-		&lt;/div&gt;
-		&lt;div class=&quot;columns-2&quot;&gt;
-			&lt;h6&gt;Subheading&lt;/h6&gt;
-			&lt;h2&gt;Heading&lt;/h2&gt;
-			&lt;p&gt;
-				Design thinking; globalization vulnerable population activist, advancement sharing economy education, shift, fellows social analysis progress Medecins du Monde. Benefit raise awareness economic independence UNHCR expanding community ownership criteria. Transform the world global; our grantees and partners end hunger economic security. Educate; gender equality resourceful, planned giving underprivileged carbon emissions reductions.
-			&lt;/p&gt;
-			&lt;a href=&quot;javascript:;&quot; class=&quot;btn&quot;&gt;Learn more about our approach&lt;/a&gt;
-		&lt;/div&gt;
-	&lt;/div&gt;
-&lt;/section&gt;
-
-&lt;section class=&quot;dark text-align-center post-content bg-repeat&quot; data-midnight=&quot;dark-bg&quot; style=&quot;
-background-image: url(/assets/images/projects/p24.jpg);
-&quot;&gt;
-	&lt;div class=&quot;container&quot;&gt;
-		&lt;h6&gt;Subheading&lt;/h6&gt;
-		&lt;h2&gt;Heading&lt;/h2&gt;
-		&lt;p&gt;
-			Design thinking; globalization vulnerable population activist, advancement sharing economy education, shift, fellows social analysis progress Medecins du Monde.
-		&lt;/p&gt;
-		&lt;a href=&quot;javascript:;&quot; class=&quot;btn&quot;&gt;Learn more about our&amp;nbsp;approach&lt;/a&gt;
-	&lt;/div&gt;
-&lt;/section&gt;
-
-&lt;section&gt;
-	&lt;div class=&quot;container valign&quot;&gt;
-		&lt;div class=&quot;columns-2&quot;&gt;
-			&lt;h6&gt;Subheading&lt;/h6&gt;
-			&lt;h2&gt;Heading&lt;/h2&gt;
-			&lt;p&gt;
-				Design thinking; globalization vulnerable population activist, advancement sharing economy education, shift, fellows social analysis progress Medecins du Monde. Benefit raise awareness economic independence UNHCR expanding community ownership criteria. Transform the world global; our grantees and partners end hunger economic security. Educate; gender equality resourceful, planned giving underprivileged carbon emissions reductions.
-			&lt;/p&gt;
-			&lt;a href=&quot;javascript:;&quot; class=&quot;btn&quot;&gt;Learn more about our approach&lt;/a&gt;
-		&lt;/div&gt;
-		&lt;div class=&quot;columns-2&quot;&gt;
-			&lt;img src=&quot;https://983a19dd0c368a4b1e57-0cb7d1946e41dc50c3f11b74195916fd.ssl.cf1.rackcdn.com/img/tour/all-in-one-campaigns-barbells2.jpg&quot; alt=&quot;&quot; class=&quot;valign&quot; /&gt;
-		&lt;/div&gt;
-	&lt;/div&gt;
-&lt;/section&gt;
-
-&lt;section class=&quot;text-align-center post-content full-height bg-bottom-center padding-bottom-large&quot; style=&quot;
-background-image: url(/assets/images/other/graph.png);
-&quot;&gt;
-	&lt;div class=&quot;container&quot;&gt;
-		&lt;h6&gt;Subheading&lt;/h6&gt;
-		&lt;h2&gt;Heading&lt;/h2&gt;
-		&lt;p&gt;
-			Design thinking; globalization vulnerable population activist, advancement sharing economy education, shift, fellows social analysis progress Medecins du Monde.
-		&lt;/p&gt;
-	&lt;/div&gt;
-&lt;/section&gt;
-
-&lt;section class=&quot;secondary-bg text-align-center post-content&quot; data-midnight=&quot;dark-bg&quot;&gt;
-	&lt;div class=&quot;container&quot;&gt;
-		&lt;h6&gt;Subheading&lt;/h6&gt;
-		&lt;h2&gt;Heading&lt;/h2&gt;
-		&lt;p&gt;
-			Design thinking; globalization vulnerable population activist, advancement sharing economy education, shift, fellows social analysis progress Medecins du Monde. Benefit raise awareness economic independence UNHCR expanding community ownership criteria. Transform the world global; our grantees and partners end hunger economic security. Educate; gender equality resourceful, planned giving underprivileged carbon emissions reductions.
-		&lt;/p&gt;
-		&lt;a href=&quot;javascript:;&quot; class=&quot;btn&quot;&gt;Learn more about our approach&lt;/a&gt;
-	&lt;/div&gt;
-&lt;/section&gt;
-
-&lt;section class=&quot;no-padding split-content&quot;&gt;
-	&lt;div class=&quot;row no-gutter&quot;&gt;
-		&lt;div class=&quot;columns-50&quot;&gt;
-			&lt;img src=&quot;/assets/images/projects/p11.jpg&quot; alt=&quot;&quot; /&gt;
-		&lt;/div&gt;
-		&lt;div class=&quot;columns-50 valign&quot;&gt;
-			&lt;div class=&quot;content&quot;&gt;
-				&lt;h3&gt;
-					Transform the world global;
-					&lt;br /&gt;
-					our grantees and partners end hunger economic security.
-				&lt;/h3&gt;
-			&lt;/div&gt;
-		&lt;/div&gt;
-	&lt;/div&gt;
-&lt;/section&gt;
-
-&lt;section class=&quot;valign theme-bg text-align-center post-content full-height&quot; data-midnight=&quot;dark-bg&quot;&gt;
-	&lt;div class=&quot;container&quot;&gt;
-		&lt;h6&gt;Subheading&lt;/h6&gt;
-		&lt;h2&gt;Heading&lt;/h2&gt;
-		&lt;p&gt;
-			Design thinking; globalization vulnerable population activist, advancement sharing economy education, shift, fellows social analysis progress Medecins du Monde. Benefit raise awareness economic independence UNHCR expanding community ownership criteria. Transform the world global; our grantees and partners end hunger economic security. Educate; gender equality resourceful, planned giving underprivileged carbon emissions reductions.
-		&lt;/p&gt;
-		&lt;a href=&quot;javascript:;&quot; class=&quot;btn&quot;&gt;Learn more about our approach&lt;/a&gt;
-	&lt;/div&gt;
-&lt;/section&gt;
-
-&lt;section class=&quot;post-content no-padding-bottom&quot;&gt;
-	&lt;div class=&quot;container&quot;&gt;
-		&lt;h6&gt;Subheading&lt;/h6&gt;
-		&lt;h2&gt;Heading&lt;/h2&gt;
-		&lt;p class=&quot;lead&quot;&gt;
-			Design thinking; globalization vulnerable population activist, advancement sharing economy education, shift, fellows social analysis progress Medecins du Monde.
-		&lt;/p&gt;
-		&lt;p&gt;
-			Design thinking; globalization vulnerable population activist, advancement sharing economy education, shift, fellows social analysis progress Medecins du Monde.
-		&lt;/p&gt;
-		&lt;blockquote&gt;
-			&lt;p&gt;
-				Design thinking; globalization vulnerable population activist, advancement sharing economy education, shift, fellows social analysis progress Medecins du Monde.
-				&lt;cite&gt;John Doe - Managing Director&lt;/cite&gt;
-			&lt;/p&gt;
-		&lt;/blockquote&gt;
-		&lt;ul class=&quot;stats&quot;&gt;
-			&lt;li&gt;
-				&lt;span&gt;34&lt;/span&gt;
-				&lt;h6&gt;Client Meetings&lt;/h6&gt;
-			&lt;/li&gt;
-			&lt;li&gt;
-				&lt;span&gt;48&lt;/span&gt;
-				&lt;h6&gt;Cups of Coffee&lt;/h6&gt;
-			&lt;/li&gt;
-			&lt;li&gt;
-				&lt;span&gt;2&lt;/span&gt;
-				&lt;h6&gt;Developers&lt;/h6&gt;
-			&lt;/li&gt;
-			&lt;li&gt;
-				&lt;span&gt;7&lt;/span&gt;
-				&lt;h6&gt;Awards Won&lt;/h6&gt;
-			&lt;/li&gt;
-			&lt;li&gt;
-				&lt;span&gt;5369&lt;/span&gt;
-				&lt;h6&gt;Lines of Code&lt;/h6&gt;
-			&lt;/li&gt;
-		&lt;/ul&gt;
-	&lt;/div&gt;
-&lt;/section&gt;
-</description>
-        <pubDate>Tue, 03 Mar 2015 00:00:00 -0500</pubDate>
-        <link>/work/yamaha</link>
-        <guid isPermaLink="true">/work/yamaha</guid>
-        
-        
-        <category>work</category>
-        
-        <category></category>
-        
-      </item>
-    
-      <item>
-        <title>Unlabeled</title>
-        <description>&lt;section class=&quot;grey-bg&quot; data-midnight=&quot;dark-bg&quot;&gt;
-	&lt;div class=&quot;container&quot;&gt;
-
-		&lt;h2 class=&quot;text-align-center&quot;&gt;Three Distinct Challenges&lt;/h2&gt;
-
-		&lt;ul&gt;
-			&lt;li class=&quot;columns-3&quot;&gt;
-				&lt;h6&gt;Challenge 1&lt;/h6&gt;
-				&lt;p&gt;
-					Design thinking; globalization vulnerable population activist, advancement sharing economy education, shift, fellows social analysis progress Medecins du Monde. Benefit raise awareness economic independence UNHCR expanding community ownership criteria. Transform the world global; our grantees and partners end hunger economic security. Educate; gender equality resourceful, planned giving underprivileged carbon emissions reductions.
-				&lt;/p&gt;
-			&lt;/li&gt;
-			&lt;li class=&quot;columns-3&quot;&gt;
-				&lt;h6&gt;Challenge 1&lt;/h6&gt;
-				&lt;p&gt;
-					Design thinking; globalization vulnerable population activist, advancement sharing economy education, shift, fellows social analysis progress Medecins du Monde. Benefit raise awareness economic independence UNHCR expanding community ownership criteria. Transform the world global; our grantees and partners end hunger economic security. Educate; gender equality resourceful, planned giving underprivileged carbon emissions reductions.
-				&lt;/p&gt;
-			&lt;/li&gt;
-			&lt;li class=&quot;columns-3&quot;&gt;
-				&lt;h6&gt;Challenge 1&lt;/h6&gt;
-				&lt;p&gt;
-					Design thinking; globalization vulnerable population activist, advancement sharing economy education, shift, fellows social analysis progress Medecins du Monde. Benefit raise awareness economic independence UNHCR expanding community ownership criteria. Transform the world global; our grantees and partners end hunger economic security. Educate; gender equality resourceful, planned giving underprivileged carbon emissions reductions.
-				&lt;/p&gt;
-			&lt;/li&gt;
-		&lt;/ul&gt;
-	&lt;/div&gt;
-&lt;/section&gt;
-
-&lt;section class=&quot;text-align-center&quot;&gt;
-	&lt;div class=&quot;container&quot;&gt;
-		&lt;img src=&quot;/assets/images/other/p77.png&quot; alt=&quot;&quot; /&gt;
-		&lt;img src=&quot;/assets/images/other/p777.png&quot; alt=&quot;&quot; /&gt;
-	&lt;/div&gt;
-&lt;/section&gt;
-
-&lt;section class=&quot;dark text-align-center post-content&quot; data-midnight=&quot;dark-bg&quot;&gt;
-	&lt;div class=&quot;container&quot;&gt;
-		&lt;h6&gt;Subheading&lt;/h6&gt;
-		&lt;h2&gt;Heading&lt;/h2&gt;
-		&lt;p&gt;
-			Design thinking; globalization vulnerable population activist, advancement sharing economy education, shift, fellows social analysis progress Medecins du Monde.
-		&lt;/p&gt;
-		&lt;a href=&quot;javascript:;&quot; class=&quot;btn&quot;&gt;Learn more about our&amp;nbsp;approach&lt;/a&gt;
-	&lt;/div&gt;
-&lt;/section&gt;
-
-&lt;section class=&quot;text-align-right&quot;&gt;
-	&lt;div class=&quot;container valign&quot;&gt;
-		&lt;div class=&quot;columns-2&quot;&gt;
-			&lt;img src=&quot;https://983a19dd0c368a4b1e57-0cb7d1946e41dc50c3f11b74195916fd.ssl.cf1.rackcdn.com/img/tour/all-in-one-events-oxfam-usa2.jpg&quot; alt=&quot;&quot; class=&quot;valign&quot; /&gt;
-		&lt;/div&gt;
-		&lt;div class=&quot;columns-2&quot;&gt;
-			&lt;h6&gt;Subheading&lt;/h6&gt;
-			&lt;h2&gt;Heading&lt;/h2&gt;
-			&lt;p&gt;
-				Design thinking; globalization vulnerable population activist, advancement sharing economy education, shift, fellows social analysis progress Medecins du Monde. Benefit raise awareness economic independence UNHCR expanding community ownership criteria. Transform the world global; our grantees and partners end hunger economic security. Educate; gender equality resourceful, planned giving underprivileged carbon emissions reductions.
-			&lt;/p&gt;
-			&lt;a href=&quot;javascript:;&quot; class=&quot;btn&quot;&gt;Learn more about our approach&lt;/a&gt;
-		&lt;/div&gt;
-	&lt;/div&gt;
-&lt;/section&gt;
-
-&lt;section class=&quot;dark text-align-center post-content bg-repeat&quot; data-midnight=&quot;dark-bg&quot; style=&quot;
-background-image: url(/assets/images/projects/p24.jpg);
-&quot;&gt;
-	&lt;div class=&quot;container&quot;&gt;
-		&lt;h6&gt;Subheading&lt;/h6&gt;
-		&lt;h2&gt;Heading&lt;/h2&gt;
-		&lt;p&gt;
-			Design thinking; globalization vulnerable population activist, advancement sharing economy education, shift, fellows social analysis progress Medecins du Monde.
-		&lt;/p&gt;
-		&lt;a href=&quot;javascript:;&quot; class=&quot;btn&quot;&gt;Learn more about our&amp;nbsp;approach&lt;/a&gt;
-	&lt;/div&gt;
-&lt;/section&gt;
-
-&lt;section&gt;
-	&lt;div class=&quot;container valign&quot;&gt;
-		&lt;div class=&quot;columns-2&quot;&gt;
-			&lt;h6&gt;Subheading&lt;/h6&gt;
-			&lt;h2&gt;Heading&lt;/h2&gt;
-			&lt;p&gt;
-				Design thinking; globalization vulnerable population activist, advancement sharing economy education, shift, fellows social analysis progress Medecins du Monde. Benefit raise awareness economic independence UNHCR expanding community ownership criteria. Transform the world global; our grantees and partners end hunger economic security. Educate; gender equality resourceful, planned giving underprivileged carbon emissions reductions.
-			&lt;/p&gt;
-			&lt;a href=&quot;javascript:;&quot; class=&quot;btn&quot;&gt;Learn more about our approach&lt;/a&gt;
-		&lt;/div&gt;
-		&lt;div class=&quot;columns-2&quot;&gt;
-			&lt;img src=&quot;https://983a19dd0c368a4b1e57-0cb7d1946e41dc50c3f11b74195916fd.ssl.cf1.rackcdn.com/img/tour/all-in-one-campaigns-barbells2.jpg&quot; alt=&quot;&quot; class=&quot;valign&quot; /&gt;
-		&lt;/div&gt;
-	&lt;/div&gt;
-&lt;/section&gt;
-
-&lt;section class=&quot;text-align-center post-content full-height bg-bottom-center padding-bottom-large&quot; style=&quot;
-background-image: url(/assets/images/other/graph.png);
-&quot;&gt;
-	&lt;div class=&quot;container&quot;&gt;
-		&lt;h6&gt;Subheading&lt;/h6&gt;
-		&lt;h2&gt;Heading&lt;/h2&gt;
-		&lt;p&gt;
-			Design thinking; globalization vulnerable population activist, advancement sharing economy education, shift, fellows social analysis progress Medecins du Monde.
-		&lt;/p&gt;
-	&lt;/div&gt;
-&lt;/section&gt;
-
-&lt;section class=&quot;secondary-bg text-align-center post-content&quot; data-midnight=&quot;dark-bg&quot;&gt;
-	&lt;div class=&quot;container&quot;&gt;
-		&lt;h6&gt;Subheading&lt;/h6&gt;
-		&lt;h2&gt;Heading&lt;/h2&gt;
-		&lt;p&gt;
-			Design thinking; globalization vulnerable population activist, advancement sharing economy education, shift, fellows social analysis progress Medecins du Monde. Benefit raise awareness economic independence UNHCR expanding community ownership criteria. Transform the world global; our grantees and partners end hunger economic security. Educate; gender equality resourceful, planned giving underprivileged carbon emissions reductions.
-		&lt;/p&gt;
-		&lt;a href=&quot;javascript:;&quot; class=&quot;btn&quot;&gt;Learn more about our approach&lt;/a&gt;
-	&lt;/div&gt;
-&lt;/section&gt;
-
-&lt;section class=&quot;no-padding split-content&quot;&gt;
-	&lt;div class=&quot;row no-gutter&quot;&gt;
-		&lt;div class=&quot;columns-50&quot;&gt;
-			&lt;img src=&quot;/assets/images/projects/p11.jpg&quot; alt=&quot;&quot; /&gt;
-		&lt;/div&gt;
-		&lt;div class=&quot;columns-50 valign&quot;&gt;
-			&lt;div class=&quot;content&quot;&gt;
-				&lt;h3&gt;
-					Transform the world global;
-					&lt;br /&gt;
-					our grantees and partners end hunger economic security.
-				&lt;/h3&gt;
-			&lt;/div&gt;
-		&lt;/div&gt;
-	&lt;/div&gt;
-&lt;/section&gt;
-
-&lt;section class=&quot;valign theme-bg text-align-center post-content full-height&quot; data-midnight=&quot;dark-bg&quot;&gt;
-	&lt;div class=&quot;container&quot;&gt;
-		&lt;h6&gt;Subheading&lt;/h6&gt;
-		&lt;h2&gt;Heading&lt;/h2&gt;
-		&lt;p&gt;
-			Design thinking; globalization vulnerable population activist, advancement sharing economy education, shift, fellows social analysis progress Medecins du Monde. Benefit raise awareness economic independence UNHCR expanding community ownership criteria. Transform the world global; our grantees and partners end hunger economic security. Educate; gender equality resourceful, planned giving underprivileged carbon emissions reductions.
-		&lt;/p&gt;
-		&lt;a href=&quot;javascript:;&quot; class=&quot;btn&quot;&gt;Learn more about our approach&lt;/a&gt;
-	&lt;/div&gt;
-&lt;/section&gt;
-
-&lt;section class=&quot;post-content no-padding-bottom&quot;&gt;
-	&lt;div class=&quot;container&quot;&gt;
-		&lt;h6&gt;Subheading&lt;/h6&gt;
-		&lt;h2&gt;Heading&lt;/h2&gt;
-		&lt;p class=&quot;lead&quot;&gt;
-			Design thinking; globalization vulnerable population activist, advancement sharing economy education, shift, fellows social analysis progress Medecins du Monde.
-		&lt;/p&gt;
-		&lt;p&gt;
-			Design thinking; globalization vulnerable population activist, advancement sharing economy education, shift, fellows social analysis progress Medecins du Monde.
-		&lt;/p&gt;
-		&lt;blockquote&gt;
-			&lt;p&gt;
-				Design thinking; globalization vulnerable population activist, advancement sharing economy education, shift, fellows social analysis progress Medecins du Monde.
-				&lt;cite&gt;John Doe - Managing Director&lt;/cite&gt;
-			&lt;/p&gt;
-		&lt;/blockquote&gt;
-		&lt;ul class=&quot;stats&quot;&gt;
-			&lt;li&gt;
-				&lt;span&gt;34&lt;/span&gt;
-				&lt;h6&gt;Client Meetings&lt;/h6&gt;
-			&lt;/li&gt;
-			&lt;li&gt;
-				&lt;span&gt;48&lt;/span&gt;
-				&lt;h6&gt;Cups of Coffee&lt;/h6&gt;
-			&lt;/li&gt;
-			&lt;li&gt;
-				&lt;span&gt;2&lt;/span&gt;
-				&lt;h6&gt;Developers&lt;/h6&gt;
-			&lt;/li&gt;
-			&lt;li&gt;
-				&lt;span&gt;7&lt;/span&gt;
-				&lt;h6&gt;Awards Won&lt;/h6&gt;
-			&lt;/li&gt;
-			&lt;li&gt;
-				&lt;span&gt;5369&lt;/span&gt;
-				&lt;h6&gt;Lines of Code&lt;/h6&gt;
-			&lt;/li&gt;
-		&lt;/ul&gt;
-	&lt;/div&gt;
-&lt;/section&gt;
-</description>
-        <pubDate>Tue, 03 Mar 2015 00:00:00 -0500</pubDate>
-        <link>/work/unlabeled</link>
-        <guid isPermaLink="true">/work/unlabeled</guid>
-        
-        
-        <category>work</category>
         
         <category></category>
         
