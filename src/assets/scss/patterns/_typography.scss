@@ -18,6 +18,10 @@ h6 {
 	letter-spacing: -0.04rem;
 }
 
+ol li {
+	margin: 1rem 0 1rem 1.5rem;
+}
+
 p {
 	letter-spacing: 0.01rem;
 	@include font-size(18);

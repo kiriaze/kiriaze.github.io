@@ -1,6 +1,96 @@
 [
   
     {
+      "title"    : "Press Play.",
+      "category" : "labs",
+      "tags"     : "code and wordpress",
+      "url"      : "/labs/press-play/",
+      "date"     : "2015-08-03 00:00:00 -0400",
+      "desc"     : "Composer backed boilerplate project for dope as fuck WordPress sites."
+    } ,
+  
+    {
+      "title"    : "Simple Child.",
+      "category" : "labs",
+      "tags"     : "code and wordpress",
+      "url"      : "/labs/simple-child/",
+      "date"     : "2015-08-02 00:00:00 -0400",
+      "desc"     : "Simple Child Theme - requires Simple Framework"
+    } ,
+  
+    {
+      "title"    : "Simple Tweets.",
+      "category" : "labs",
+      "tags"     : "code and wordpress",
+      "url"      : "/labs/simple-tweets/",
+      "date"     : "2015-08-01 00:00:00 -0400",
+      "desc"     : "WP plugin Twitter feed, widget/shortcode."
+    } ,
+  
+    {
+      "title"    : "Simple Shots.",
+      "category" : "labs",
+      "tags"     : "code and wordpress",
+      "url"      : "/labs/simple-shots/",
+      "date"     : "2015-08-01 00:00:00 -0400",
+      "desc"     : "WP plugin the pulls in dribbble feed. Widget/Shortcode."
+    } ,
+  
+    {
+      "title"    : "Simple Shortcodes.",
+      "category" : "labs",
+      "tags"     : "code and wordpress",
+      "url"      : "/labs/simple-shortcodes/",
+      "date"     : "2015-08-01 00:00:00 -0400",
+      "desc"     : "An awesome WP shortcode plugin."
+    } ,
+  
+    {
+      "title"    : "Simple Newsletter.",
+      "category" : "labs",
+      "tags"     : "code and wordpress",
+      "url"      : "/labs/simple-newsletter/",
+      "date"     : "2015-08-01 00:00:00 -0400",
+      "desc"     : "Simple WP Mailchimp Newsletter List Plugin."
+    } ,
+  
+    {
+      "title"    : "Simple Framework.",
+      "category" : "labs",
+      "tags"     : "code and wordpress",
+      "url"      : "/labs/simple-framework/",
+      "date"     : "2015-08-01 00:00:00 -0400",
+      "desc"     : "A revolutionary wordpress theme framework for awesome websites."
+    } ,
+  
+    {
+      "title"    : "Simple Flickr.",
+      "category" : "labs",
+      "tags"     : "code and wordpress",
+      "url"      : "/labs/simple-flickr/",
+      "date"     : "2015-08-01 00:00:00 -0400",
+      "desc"     : "A simple flickr plugin that pulls in your flickr feed as a widget and a shortcode."
+    } ,
+  
+    {
+      "title"    : "S-Grams.",
+      "category" : "labs",
+      "tags"     : "code and wordpress",
+      "url"      : "/labs/s-grams/",
+      "date"     : "2015-08-01 00:00:00 -0400",
+      "desc"     : "WP plugin Instagram feed, widget/shortcode."
+    } ,
+  
+    {
+      "title"    : "Simple Multi CPT&#39;s.",
+      "category" : "labs",
+      "tags"     : "code and wordpress",
+      "url"      : "/labs/simple-multi-cpts/",
+      "date"     : "2015-07-30 00:00:00 -0400",
+      "desc"     : "A plugin that can handle multiple custom post types at once through an array, theme hookable yo."
+    } ,
+  
+    {
       "title"    : "Ghosts.",
       "category" : "labs",
       "tags"     : "code",
@@ -335,6 +425,28 @@
         "category" : "",
         "tags"     : "",
         "url"      : "/blog/page5/index.html",
+        "date"     : "",
+        "desc"     : ""
+     
+   } ,
+  
+   {
+     
+        "title"    : "Blog",
+        "category" : "",
+        "tags"     : "",
+        "url"      : "/blog/page6/index.html",
+        "date"     : "",
+        "desc"     : ""
+     
+   } ,
+  
+   {
+     
+        "title"    : "Blog",
+        "category" : "",
+        "tags"     : "",
+        "url"      : "/blog/page7/index.html",
         "date"     : "",
         "desc"     : ""
      
