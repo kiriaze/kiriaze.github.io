@@ -10,6 +10,15 @@
     } ,
   
     {
+      "title"    : "Code Syntax",
+      "category" : "code",
+      "tags"     : "sample post, code, highlighting, and random",
+      "url"      : "/blog/code/code-syntax",
+      "date"     : "2015-08-03 00:00:00 -0400",
+      "desc"     : ""
+    } ,
+  
+    {
       "title"    : "Simple Child.",
       "category" : "labs",
       "tags"     : "code and wordpress",
@@ -280,6 +289,15 @@
     } ,
   
     {
+      "title"    : "Schmidt Design Group",
+      "category" : "work",
+      "tags"     : "",
+      "url"      : "/work/schmidt-design-group/",
+      "date"     : "2015-01-01 00:00:00 -0500",
+      "desc"     : ""
+    } ,
+  
+    {
       "title"    : "Artists for Peace &amp;amp; Justice",
       "category" : "work",
       "tags"     : "",
@@ -318,23 +336,23 @@
   
    {
      
-        "title"    : "Blog",
-        "category" : "",
-        "tags"     : "",
-        "url"      : "/blog/index.html",
-        "date"     : "",
-        "desc"     : ""
-     
-   } ,
-  
-   {
-     
         "title"    : "Category Archive",
         "category" : "",
         "tags"     : "",
         "url"      : "/categories/index.html",
         "date"     : "",
         "desc"     : "An archive of posts sorted by category."
+     
+   } ,
+  
+   {
+     
+        "title"    : "Words.",
+        "category" : "",
+        "tags"     : "",
+        "url"      : "/blog/index.html",
+        "date"     : "",
+        "desc"     : ""
      
    } ,
   
@@ -388,7 +406,7 @@
   
    {
      
-        "title"    : "Blog",
+        "title"    : "Words.",
         "category" : "",
         "tags"     : "",
         "url"      : "/blog/page2/index.html",
@@ -399,7 +417,7 @@
   
    {
      
-        "title"    : "Blog",
+        "title"    : "Words.",
         "category" : "",
         "tags"     : "",
         "url"      : "/blog/page3/index.html",
@@ -410,7 +428,7 @@
   
    {
      
-        "title"    : "Blog",
+        "title"    : "Words.",
         "category" : "",
         "tags"     : "",
         "url"      : "/blog/page4/index.html",
@@ -421,7 +439,7 @@
   
    {
      
-        "title"    : "Blog",
+        "title"    : "Words.",
         "category" : "",
         "tags"     : "",
         "url"      : "/blog/page5/index.html",
@@ -432,7 +450,7 @@
   
    {
      
-        "title"    : "Blog",
+        "title"    : "Words.",
         "category" : "",
         "tags"     : "",
         "url"      : "/blog/page6/index.html",
@@ -443,7 +461,7 @@
   
    {
      
-        "title"    : "Blog",
+        "title"    : "Words.",
         "category" : "",
         "tags"     : "",
         "url"      : "/blog/page7/index.html",

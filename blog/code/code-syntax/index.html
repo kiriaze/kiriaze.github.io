@@ -1,0 +1,213 @@
+<!doctype html> <html class="no-js" lang="en"> <head>  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,300"> <meta charset="utf-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title>Code Syntax // Constantine Kiriaze // Web Engineer & Consultant</title> <meta name="description" content="Proper Code SyntaxMy ideal opinionated way to structure code. Borrowed and elaborated upon from Juice, which founded SOMA.Very much a work in progress :)"> <meta name="keywords" content="sample post, code, highlighting, random">  <meta name="viewport" content="width=device-width,initial-scale=1">   <meta name="twitter:card" content="summary"> <meta name="twitter:image" content="/assets/images/"> <meta name="twitter:title" content="Code Syntax"> <meta name="twitter:description" content="Constantine Kiriaze is a developer living in San Diego, CA. He develops solutions for businesses."> <meta name="twitter:creator" content="@kiriaze">  <link rel="icon" type="image/png" href="/favicon.ico"> <!--[if (gte IE 6)&(lte IE 8)]><p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script><![endif]-->   <link rel="stylesheet" href="/assets/css/main.min.css">  <link rel="canonical" href="/blog/code/code-syntax"> <link rel="alternate" type="application/rss+xml" title="Kiriaze" href="/feed.xml"> </head> <body class=""> <main id="main"> <header role="banner" id="header" class="wow fadeIn" data-wow-delay=".4s"> <div class="container"> <a href="/" class="logo js-ajax-link" data-body-class="home-page"> Kiriaze </a> <input type="checkbox" id="drawer-toggle" name="drawer-toggle" class="nav-trigger"> <a href="#navicon" id="navicon"> <div class="line line-one"></div> <div class="line line-two"></div> <div class="line line-three"></div> </a> </div> </header> <div class="menu-overlay"> <div class="container"> <nav> <ul class="site-nav"> <li class="site-nav-item"> <a href="/about" class="js-ajax-link">Bio.</a> </li> <li class="site-nav-item"> <a href="/labs" class="js-ajax-link">Labs.</a> </li> <li class="site-nav-item"> <a href="/work" class="js-ajax-link">Work.</a> </li> <li class="site-nav-item"> <a href="/blog" class="current js-ajax-link">Words.</a> </li> </ul> </nav> <div class="contact-details"> <ul class="contact-info"> <li><a href="javascript:;">Resume</a></li> <li> <span>Little Italy</span> <span>San Diego, CA</span> </li> <li><a href="mailto:hello@kiriaze.com">hello@kiriaze.com</a></li> </ul> <ul class="social-list"> <li><a href="http://github.com/kiriaze" target="new"><i class="fa fa-github"></i></a></li> <li><a href="http://dribbble.com/kiriaze" target="new"><i class="fa fa-dribbble"></i></a></li> <li><a href="http://twitter.com/kiriaze" target="new"><i class="fa fa-twitter"></i></a></li> <li><a href="https://www.linkedin.com/in/constantinekiriaze"><i class="fa fa-linkedin"></i></a></li> <li><a href="mailto:hello@kiriaze.com"><i class="fi fi-mail"></i></a></li> </ul> </div> </div> </div>     <section class="hero hero-mod has-hero" data-midnight="default"> <div class="hero-bg wow fadeIn" style="background-image:url(/assets/images/projects/p2.jpg)"></div> <div class="container hero-blurb"> <h1 class="title wow fadeIn" data-wow-delay=".6s">Code Syntax</h1> <h6 class="subtitle wow fadeIn" data-wow-delay=".8s"></h6> <div class="post-meta wow fadeIn" data-wow-delay="1s"> <span class="date">08.3.2015</span> <span class="categories"> <a href="/categories/#code" title="Pages categorized in code" class="cat"><span class="term">code</span></a> <a href="/categories/#" title="Pages categorized in " class="cat"><span class="term"></span></a> </span> <span class="tags"> <a href="/tags/#sample post" title="Pages tagged sample post" class="tag"><span class="term">sample post</span></a>, <a href="/tags/#code" title="Pages tagged code" class="tag"><span class="term">code</span></a>, <a href="/tags/#highlighting" title="Pages tagged highlighting" class="tag"><span class="term">highlighting</span></a>, <a href="/tags/#random" title="Pages tagged random" class="tag"><span class="term">random</span></a>. </span> <span class="entry-reading-time"> <i class="fa fa-clock-o"></i> 10 minutes </span> </div> </div> </section> <section class="post-content"> <div class="container"> <h1 id="proper-code-syntax">Proper Code Syntax</h1> <p>My ideal opinionated way to structure code. Borrowed and elaborated upon from Juice, which founded SOMA.<br> <em>Very much a work in progress :)</em></p> <h2 id="goal">Goal</h2> <p>To establish more consistency and readability across developers, teams and my<br> open source projects. This is aimed at html, css, js and php.</p> <h2 id="ideals">Ideals</h2> <ul> <li>We should always aim to write code that is clear and readable.</li> <li>Use whitespace. Add comments liberally where needed, but strive to write code that’s clear and self documenting</li> <li>Always try to write code that clearly demonstrates and communicates it’s intent.</li> </ul> <h2 id="table-of-contents">Table of Contents</h2> <p><em>TODO</em><br> - HTML<br> - CSS<br> - JS<br> - PHP</p> <p>##Naming Conventions</p> <p><em>TODO</em></p> <h2 id="indenting-and-line-length">Indenting and Line Length</h2> <p>Use an indent of one tabs character. This helps to avoid problems with diffs, patches, git history and annotations.<br> Try to keep line within 75-85 characters long for better code readability.<br> Use vertical space instead of horizontal space.</p> <h2 id="control-structures">Control Structures</h2> <p>These include <code>if</code>, <code>for</code>, <code>while</code>, <code>switch</code>, etc.<br> Here is an example if statement, since it is the most complicated of them:</p> <div class="highlighter-coderay"><div class="CodeRay"> <div class="code"><pre><span class="inline-delimiter">&lt;?php</span>
+<span class="keyword">if</span> ( (condition1) || (condition2) ) {
+    action1;
+} <span class="keyword">elseif</span> ( (condition3) &amp;&amp; (condition4) ) {
+    action2;
+} <span class="keyword">else</span> {
+    defaultaction;
+}
+<span class="inline-delimiter">?&gt;</span>
+</pre></div> </div> </div> <p>Control statements should have one space between the control keyword and opening parenthesis, to distinguish them from function calls. Curly braces should be used on new lines.<br> You are strongly encouraged to always use curly braces even in situations where they are technically optional. Having them increases readability and decreases the likelihood of logic errors being introduced when new lines are added.<br> For switch statements:</p> <div class="highlighter-coderay"><div class="CodeRay"> <div class="code"><pre><span class="inline-delimiter">&lt;?php</span>
+<span class="keyword">switch</span> (condition) {
+  <span class="keyword">case</span> <span class="integer">1</span>:
+      action1;
+      <span class="keyword">break</span>;
+
+  <span class="keyword">case</span> <span class="integer">2</span>:
+      action2;
+      <span class="keyword">break</span>;
+
+  <span class="keyword">default</span>:
+      defaultaction;
+      <span class="keyword">break</span>;
+}
+<span class="inline-delimiter">?&gt;</span>
+</pre></div> </div> </div> <p>Split long if statements onto several lines.<br> Long <code>if</code> statements may be split onto several lines when the character/line limit<br> would be exceeded. The conditions have to be positioned onto the following line,<br> and indented. The logical operators (<code>&amp;&amp;</code>, <code>||</code>, etc.) should be at the<br> beginning of the line to make it easier to comment (and exclude) the condition.<br> The closing parenthesis and opening brace get their own line at the end of the conditions.</p> <p>Keeping the operators at the beginning of the line has two advantages:<br> It is trivial to comment out a particular line during development while keeping<br> syntactically correct code (except of course the first line).<br> Further is the logic kept at the front where it’s not forgotten.<br> Scanning such conditions is very easy since they are aligned below each other.</p> <div class="highlighter-coderay"><div class="CodeRay"> <div class="code"><pre><span class="inline-delimiter">&lt;?php</span>
+
+<span class="keyword">if</span> ( (<span class="local-variable">$condition1</span>
+    || <span class="local-variable">$condition2</span>)
+    &amp;&amp; <span class="local-variable">$condition3</span>
+    &amp;&amp; <span class="local-variable">$condition4</span>
+) {
+    <span class="comment">//code here</span>
+}
+<span class="inline-delimiter">?&gt;</span>
+</pre></div> </div> </div> <p>The first condition may be aligned to the others.</p> <div class="highlighter-coderay"><div class="CodeRay"> <div class="code"><pre><span class="inline-delimiter">&lt;?php</span>
+
+<span class="keyword">if</span> (   <span class="local-variable">$condition1</span>
+    || <span class="local-variable">$condition2</span>
+    || <span class="local-variable">$condition3</span>
+) {
+    <span class="comment">//code here</span>
+}
+<span class="inline-delimiter">?&gt;</span>
+</pre></div> </div> </div> <p>The best case is of course when the line does not need to be split.<br> When the <code>if</code> clause is really long enough to be split, it might be better to<br> simplify it. In such cases, you could express conditions as variables and<br> compare them in the <code>if()</code> condition. This has the benefit of “naming” and<br> splitting the condition sets into smaller, better understandable chunks:</p> <div class="highlighter-coderay"><div class="CodeRay"> <div class="code"><pre><span class="inline-delimiter">&lt;?php</span>
+
+<span class="local-variable">$is_foo</span> = ( <span class="local-variable">$condition1</span> || <span class="local-variable">$condition2</span> );
+<span class="local-variable">$is_bar</span> = ( <span class="local-variable">$condition3</span> &amp;&amp; <span class="local-variable">$condtion4</span> );
+<span class="keyword">if</span> ( <span class="local-variable">$is_foo</span> &amp;&amp; <span class="local-variable">$is_bar</span> ) {
+    <span class="comment">// ....</span>
+}
+<span class="inline-delimiter">?&gt;</span>
+</pre></div> </div> </div> <p>In order to maximize the <strong>bias towards clarity</strong> value, it’s encouraged to keep those conditional expressions that depend on multiple conditions (being <em>multiple</em> more than one) on a boolean method.</p> <p>So, something like this:</p> <div class="highlighter-coderay"><div class="CodeRay"> <div class="code"><pre><span class="inline-delimiter">&lt;?php</span>
+    <span class="keyword">if</span> ( <span class="local-variable">$date</span>-&gt;before(<span class="predefined-constant">self</span>::<span class="constant">SUMMER_START</span>) || <span class="local-variable">$date</span>-&gt;before(<span class="predefined-constant">self</span>::<span class="constant">SUMMER_END</span> ) {
+        <span class="local-variable">$charge</span> = <span class="local-variable">$quantity</span> * <span class="local-variable">$this</span>-&gt;winterRate + <span class="local-variable">$this</span>-&gt;winterServiceCharge;
+    } <span class="keyword">else</span> {
+        <span class="local-variable">$charge</span> = <span class="local-variable">$quantity</span> * <span class="local-variable">$this</span>-&gt;summerRate;
+    }
+<span class="inline-delimiter">?&gt;</span>
+</pre></div> </div> </div> <p>Can be converted into:</p> <div class="highlighter-coderay"><div class="CodeRay"> <div class="code"><pre><span class="inline-delimiter">&lt;?php</span>
+    <span class="keyword">if</span> ( <span class="local-variable">$this</span>-&gt;notSummer(<span class="local-variable">$date</span>) ) {
+        <span class="local-variable">$charge</span> = <span class="local-variable">$this</span>-&gt;winterRate(<span class="local-variable">$quantity</span>);
+    } <span class="keyword">else</span> {
+        <span class="local-variable">$charge</span> = <span class="local-variable">$this</span>-&gt;summerRate(<span class="local-variable">$quantity</span>);
+    }
+<span class="inline-delimiter">?&gt;</span>
+</pre></div> </div> </div> <p>Which in turn should always be rewritten as this:</p> <div class="highlighter-coderay"><div class="CodeRay"> <div class="code"><pre><span class="inline-delimiter">&lt;?php</span>
+    <span class="local-variable">$charge</span> = <span class="local-variable">$this</span>-&gt;notSummer(<span class="local-variable">$date</span>) ? <span class="local-variable">$this</span>-&gt;winterRate(<span class="local-variable">$quantity</span>) : <span class="local-variable">$this</span>-&gt;summerRate(<span class="local-variable">$quantity</span>);
+<span class="inline-delimiter">?&gt;</span>
+</pre></div> </div> </div> <p>Of course, the multiline formatting proposed before would apply too in the extracted method:</p> <div class="highlighter-coderay"><div class="CodeRay"> <div class="code"><pre><span class="inline-delimiter">&lt;?php</span>
+    <span class="keyword">private</span> <span class="keyword">function</span> <span class="function">notSummer</span>(<span class="local-variable">$date</span>) {
+        <span class="keyword">return</span> <span class="local-variable">$date</span>-&gt;before(<span class="predefined-constant">self</span>::<span class="constant">SUMMER_START</span>)
+            || <span class="local-variable">$date</span>-&gt;before(<span class="predefined-constant">self</span>::<span class="constant">SUMMER_END</span>)
+        ;
+    }
+<span class="inline-delimiter">?&gt;</span>
+</pre></div> </div> </div> <p>Another way to make conditionals even clearer are by avoiding the <strong>if not / else</strong> form into a <em>positive</em> if conditional. The example code, by applying that, would be:</p> <div class="highlighter-coderay"><div class="CodeRay"> <div class="code"><pre><span class="inline-delimiter">&lt;?php</span>
+    <span class="keyword">if</span> ( <span class="local-variable">$this</span>-&gt;isSummer(<span class="local-variable">$date</span>) ) {
+        <span class="local-variable">$charge</span> = <span class="local-variable">$this</span>-&gt;summerRate(<span class="local-variable">$quantity</span>);
+    } <span class="keyword">else</span> {
+        <span class="local-variable">$charge</span> = <span class="local-variable">$this</span>-&gt;winterRate(<span class="local-variable">$quantity</span>);
+    }
+<span class="inline-delimiter">?&gt;</span>
+</pre></div> </div> </div> <p>Which again, should be rewritten as:</p> <div class="highlighter-coderay"><div class="CodeRay"> <div class="code"><pre><span class="inline-delimiter">&lt;?php</span>
+    <span class="local-variable">$charge</span> = <span class="local-variable">$this</span>-&gt;isSummer(<span class="local-variable">$date</span>) ? <span class="local-variable">$this</span>-&gt;summerRate(<span class="local-variable">$quantity</span>) : <span class="local-variable">$this</span>-&gt;winterRate(<span class="local-variable">$quantity</span>);
+<span class="inline-delimiter">?&gt;</span>
+</pre></div> </div> </div> <p>##Ternary operators<br> The same rule as for if clauses also applies for the ternary operator:<br> It may be split onto several lines, keeping the question mark and the colon at the front.</p> <div class="highlighter-coderay"><div class="CodeRay"> <div class="code"><pre><span class="inline-delimiter">&lt;?php</span>
+<span class="local-variable">$a</span> = <span class="local-variable">$condition1</span> &amp;&amp; <span class="local-variable">$condition2</span>
+    ? <span class="local-variable">$foo</span> : <span class="local-variable">$bar</span>;
+
+<span class="local-variable">$b</span> = <span class="local-variable">$condition3</span> &amp;&amp; <span class="local-variable">$condition4</span>
+    ? <span class="local-variable">$foo_man_this_is_too_long_what_should_i_do</span>
+    : <span class="local-variable">$bar</span>;
+<span class="inline-delimiter">?&gt;</span>
+</pre></div> </div> </div> <h2 id="function-calls">Function Calls</h2> <p>Functions should be called with no spaces between the function name, the opening<br> parenthesis, and the first parameter; spaces between commas and each parameter,<br> and no space between the last parameter, the closing parenthesis, and the semicolon.<br> Here’s an example:</p> <div class="highlighter-coderay"><div class="CodeRay"> <div class="code"><pre><span class="inline-delimiter">&lt;?php</span>
+<span class="local-variable">$var</span> = foo(<span class="local-variable">$bar</span>, <span class="local-variable">$baz</span>, <span class="local-variable">$quux</span>);
+<span class="inline-delimiter">?&gt;</span>
+</pre></div> </div> </div> <p>As displayed above, there should be one space on either side of an equals sign used to assign the return value of a function to a variable. In the case of a block of related assignments, more space may be inserted to promote readability:</p> <div class="highlighter-coderay"><div class="CodeRay"> <div class="code"><pre><span class="inline-delimiter">&lt;?php</span>
+<span class="local-variable">$short</span>         = foo(<span class="local-variable">$bar</span>);
+<span class="local-variable">$long_variable</span> = foo(<span class="local-variable">$baz</span>);
+<span class="inline-delimiter">?&gt;</span>
+</pre></div> </div> </div> <p>To support readability, parameters in subsequent calls to the same function/method may be aligned by parameter name:</p> <div class="highlighter-coderay"><div class="CodeRay"> <div class="code"><pre><span class="inline-delimiter">&lt;?php</span>
+<span class="local-variable">$this</span>-&gt;callSomeFunction(<span class="string"><span class="delimiter">'</span><span class="content">param1</span><span class="delimiter">'</span></span>,     <span class="string"><span class="delimiter">'</span><span class="content">second</span><span class="delimiter">'</span></span>,        <span class="predefined-constant">true</span>);
+<span class="local-variable">$this</span>-&gt;callSomeFunction(<span class="string"><span class="delimiter">'</span><span class="content">parameter2</span><span class="delimiter">'</span></span>, <span class="string"><span class="delimiter">'</span><span class="content">third</span><span class="delimiter">'</span></span>,         <span class="predefined-constant">false</span>);
+<span class="local-variable">$this</span>-&gt;callSomeFunction(<span class="string"><span class="delimiter">'</span><span class="content">3</span><span class="delimiter">'</span></span>,          <span class="string"><span class="delimiter">'</span><span class="content">verrrrrrylong</span><span class="delimiter">'</span></span>, <span class="predefined-constant">true</span>);
+<span class="inline-delimiter">?&gt;</span>
+</pre></div> </div> </div> <p>Split function call on several lines<br> The CS require lines to have a maximum length of 80 chars. Calling functions or methods with many parameters while adhering to CS is impossible in that cases. It is allowed to split parameters in function calls onto several lines.</p> <div class="highlighter-coderay"><div class="CodeRay"> <div class="code"><pre><span class="inline-delimiter">&lt;?php</span>
+<span class="local-variable">$this</span>-&gt;someObject-&gt;subObject-&gt;callThisFunctionWithALongName(
+    <span class="local-variable">$parameterOne</span>, <span class="local-variable">$parameterTwo</span>,
+    <span class="local-variable">$aVeryLongParameterThree</span>
+);
+<span class="inline-delimiter">?&gt;</span>
+</pre></div> </div> </div> <p>Several parameters per line are allowed. Parameters need to be indented 4 spaces compared to the level of the function call. The opening parenthesis is to be put at the end of the function call line, the closing parenthesis gets its own line at the end of the parameters. This shows a visual end to the parameter indentations and follows the opening/closing brace rules for functions and conditionals.</p> <p>The same applies not only for parameter variables, but also for nested function calls and for arrays.</p> <div class="highlighter-coderay"><div class="CodeRay"> <div class="code"><pre><span class="inline-delimiter">&lt;?php</span>
+<span class="local-variable">$this</span>-&gt;someObject-&gt;subObject-&gt;callThisFunctionWithALongName(
+    <span class="local-variable">$this</span>-&gt;someOtherFunc(
+        <span class="local-variable">$this</span>-&gt;someEvenOtherFunc(
+            <span class="string"><span class="delimiter">'</span><span class="content">Help me!</span><span class="delimiter">'</span></span>,
+            <span class="predefined">array</span>(
+                <span class="string"><span class="delimiter">'</span><span class="content">foo</span><span class="delimiter">'</span></span>  =&gt; <span class="string"><span class="delimiter">'</span><span class="content">bar</span><span class="delimiter">'</span></span>,
+                <span class="string"><span class="delimiter">'</span><span class="content">spam</span><span class="delimiter">'</span></span> =&gt; <span class="string"><span class="delimiter">'</span><span class="content">eggs</span><span class="delimiter">'</span></span>,
+            ),
+            <span class="integer">23</span>
+        ),
+        <span class="local-variable">$this</span>-&gt;someEvenOtherFunc()
+    ),
+    <span class="local-variable">$this</span>-&gt;wowowowowow(<span class="integer">12</span>)
+);
+<span class="inline-delimiter">?&gt;</span>
+</pre></div> </div> </div> <p>Nesting those function parameters is allowed if it helps to make the code more readable, not only when it is necessary when the characters per line limit is reached.</p> <p>Using fluent application programming interfaces often leads to many concatenated function calls. Those calls may be split onto several lines. When doing this, all subsequent lines are indented by 4 spaces and begin with the “-&gt;” arrow.</p> <div class="highlighter-coderay"><div class="CodeRay"> <div class="code"><pre><span class="inline-delimiter">&lt;?php</span>
+<span class="local-variable">$someObject</span>-&gt;someFunction(<span class="string"><span class="delimiter">&quot;</span><span class="content">some</span><span class="delimiter">&quot;</span></span>, <span class="string"><span class="delimiter">&quot;</span><span class="content">parameter</span><span class="delimiter">&quot;</span></span>)
+    -&gt;someOtherFunc(<span class="integer">23</span>, <span class="integer">42</span>)
+    -&gt;andAThirdFunction();
+<span class="inline-delimiter">?&gt;</span>
+</pre></div> </div> </div> <h2 id="alignment-of-assignments">Alignment of assignments</h2> <p>To support readability, the equal signs may be aligned in block-related assignments:</p> <div class="highlighter-coderay"><div class="CodeRay"> <div class="code"><pre><span class="inline-delimiter">&lt;?php</span>
+<span class="local-variable">$short</span>  = foo(<span class="local-variable">$bar</span>);
+<span class="local-variable">$longer</span> = foo(<span class="local-variable">$baz</span>);
+<span class="inline-delimiter">?&gt;</span>
+</pre></div> </div> </div> <p>The rule can be broken when the length of the variable name is at least 8 characters longer/shorter than the previous one:</p> <div class="highlighter-coderay"><div class="CodeRay"> <div class="code"><pre><span class="inline-delimiter">&lt;?php</span>
+<span class="local-variable">$short</span> = foo(<span class="local-variable">$bar</span>);
+<span class="local-variable">$thisVariableNameIsVeeeeeeeeeeryLong</span> = foo(<span class="local-variable">$baz</span>);
+<span class="inline-delimiter">?&gt;</span>
+</pre></div> </div> </div> <p>##Split long assigments onto several lines<br> Assigments may be split onto several lines when the character/line limit would be exceeded. The equal sign has to be positioned onto the following line, and indented by 4 characters.</p> <div class="highlighter-coderay"><div class="CodeRay"> <div class="code"><pre><span class="inline-delimiter">&lt;?php</span>
+<span class="predefined">$GLOBALS</span>[<span class="string"><span class="delimiter">'</span><span class="content">TSFE</span><span class="delimiter">'</span></span>]-&gt;additionalHeaderData[<span class="local-variable">$this</span>-&gt;strApplicationName]
+    = <span class="local-variable">$this</span>-&gt;xajax-&gt;getJavascript(t3lib_extMgm::siteRelPath(<span class="string"><span class="delimiter">'</span><span class="content">nr_xajax</span><span class="delimiter">'</span></span>));
+<span class="inline-delimiter">?&gt;</span>
+</pre></div> </div> </div> <p>##Class Definitions<br> Class declarations have their opening brace on a new line:</p> <div class="highlighter-coderay"><div class="CodeRay"> <div class="code"><pre><span class="inline-delimiter">&lt;?php</span>
+<span class="keyword">class</span> <span class="class">Foo_Bar</span> {
+
+    <span class="comment">//... code goes here</span>
+
+}
+<span class="inline-delimiter">?&gt;</span>
+</pre></div> </div> </div> <h2 id="css">CSS</h2> <ul> <li>No underscores, camelcasing, or double hyphens - umm did people forget proper naming conventions specific to each language? <ul> <li>Although I would prefer using camelcasing over many hypens</li> </ul> </li> <li>Scss only, less sucks donkey dick.</li> <li>Minimal ID’s, primarily for main elements, e.g. header,nav, main, footer, and for js manipulation.</li> <li>Placeholders galore. ( % incase you didn’t know )</li> <li>Prefix free, of source files. ( let your compiler handle that jazz )</li> <li>No super nesting, 3 levels deep - max.</li> <li>Tabs people, make code readable. ( In other words, 4 spaces instead of 2 )</li> </ul> <p>Space out your shit. Example:</p> <div class="highlighter-coderay"><div class="CodeRay"> <div class="code"><pre><span class="comment"><span class="delimiter">//</span><span class="content"> css - 1 space after selector name, 1 tab per property</span></span>
+<span class="class">.some-element</span> {
+    <span class="key">width</span>: <span class="float">80%</span>;
+    <span class="key">margin</span>: <span class="float">0</span> <span class="value">auto</span>;
+}
+
+<span class="comment"><span class="delimiter">//</span><span class="content"> js - see the spaces? get some glasses then.</span></span>
+<span class="tag">if</span> ( <span class="error">$</span>( <span class="string"><span class="delimiter">'</span><span class="content">.some-element</span><span class="delimiter">'</span></span> )<span class="class">.length</span> ) {
+    <span class="key">console</span>.<span class="predefined">log</span>(<span class="string"><span class="delimiter">'</span><span class="content">foo</span><span class="delimiter">'</span></span>);
+}
+
+<span class="comment"><span class="delimiter">//</span><span class="content"> php - ditto</span></span>
+<span class="tag">if</span> ( <span class="predefined">isset</span>( <span class="variable">$someElement</span> ) ) {
+    <span class="predefined">print_r</span>(<span class="variable">$someElement</span>);
+}
+</pre></div> </div> </div> <ul> <li>Keep syntax consistent - dont mix and match buddy.</li> </ul> <div class="highlighter-coderay"><div class="CodeRay"> <div class="code"><pre><span class="inline-delimiter">&lt;?php</span>
+    <span class="comment">// Traditional</span>
+    <span class="keyword">if</span> ( <span class="predefined">isset</span>( <span class="local-variable">$foo</span> ) ) {
+        <span class="local-variable">$someElement</span> = <span class="string"><span class="delimiter">'</span><span class="content">bar</span><span class="delimiter">'</span></span>;
+    } <span class="keyword">else</span> {
+        <span class="local-variable">$someElement</span> = <span class="string"><span class="delimiter">'</span><span class="delimiter">'</span></span>;
+    }
+
+    <span class="comment">// alternative syntax</span>
+    <span class="keyword">if</span> ( <span class="predefined">isset</span>( <span class="local-variable">$foo</span> ) ) :
+        <span class="local-variable">$someElement</span> = <span class="string"><span class="delimiter">'</span><span class="content">bar</span><span class="delimiter">'</span></span>;
+    <span class="keyword">else</span> :
+        <span class="local-variable">$someElement</span> = <span class="string"><span class="delimiter">'</span><span class="delimiter">'</span></span>;
+    <span class="keyword">endif</span>;
+
+    <span class="comment">// shorthand ternary operators</span>
+    <span class="local-variable">$someElement</span> = <span class="local-variable">$foo</span> ? <span class="string"><span class="delimiter">'</span><span class="content">bar</span><span class="delimiter">'</span></span> : <span class="string"><span class="delimiter">'</span><span class="delimiter">'</span></span>;
+<span class="inline-delimiter">?&gt;</span>
+</pre></div> </div> </div> <ul> <li>Scss example</li> </ul> <div class="highlighter-coderay"><div class="CodeRay"> <div class="code"><pre><span class="error">%</span><span class="tag">button</span> {
+  <span class="key">min-width</span>: <span class="float">100px</span>;
+  <span class="key">padding</span>: <span class="float">1em</span>;
+  <span class="key">border-radius</span>: <span class="float">1em</span>;
+}
+<span class="error">%</span><span class="tag">twitter-background</span> {
+  <span class="key">color</span>: <span class="color">#fff</span>;
+  <span class="key">background</span>: <span class="color">#55acee</span>;
+}
+<span class="error">%</span><span class="tag">facebook-background</span> {
+  <span class="key">color</span>: <span class="color">#fff</span>;
+  <span class="key">background</span>: <span class="color">#3b5998</span>;
+}
+
+<span class="class">.btn</span> {
+  <span class="local-variable">&amp;</span>-<span class="key">-twitter</span> {
+    <span class="directive">@extend</span> <span class="error">%</span><span class="value">button</span>;
+    <span class="directive">@extend</span> <span class="error">%</span><span class="value">twitter-background</span>;
+  }
+  <span class="local-variable">&amp;</span>-<span class="key">-facebook</span> {
+    <span class="directive">@extend</span> <span class="error">%</span><span class="value">button</span>;
+    <span class="directive">@extend</span> <span class="error">%</span><span class="value">facebook-background</span>;
+  }
+}
+
+<span class="error">&lt;</span><span class="tag">a</span> <span class="tag">href</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">#</span><span class="delimiter">&quot;</span></span> <span class="tag">class</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">btn--twitter</span><span class="delimiter">&quot;</span></span>&gt;<span class="tag">Twitter</span><span class="error">&lt;</span>/<span class="tag">a</span>&gt;
+<span class="error">&lt;</span><span class="tag">a</span> <span class="tag">href</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">#</span><span class="delimiter">&quot;</span></span> <span class="tag">class</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">btn--facebook</span><span class="delimiter">&quot;</span></span>&gt;<span class="tag">Facebook</span><span class="error">&lt;</span>/<span class="tag">a</span>&gt;
+</pre></div> </div> </div> <hr> <div id="disqus_thread"></div> <script type="text/javascript">var disqus_shortname="kiriaze",disqus_identifier="/blog/code/code-syntax";!function(){var e=document.createElement("script");e.type="text/javascript",e.async=!0,e.src="//"+disqus_shortname+".disqus.com/embed.js",(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(e)}(),function(){var e=document.createElement("script");e.async=!0,e.type="text/javascript",e.src="//"+disqus_shortname+".disqus.com/count.js",(document.getElementsByTagName("HEAD")[0]||document.getElementsByTagName("BODY")[0]).appendChild(e)}();</script><noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript> </div> </section> <a href="/labs/press-play/" title="next Post:Press Play." class="next-post-alt js-ajax-link"> <div class="container"> <h6>Explore Another Post</h6> <h2>Press Play.</h2> </div> <div class="hero-bg" style="background-image:url();background-position:center center"></div> </a> <footer role="contentinfo" id="footer"> <div class="container"> <div class="row"> <a href="/" class="logo js-ajax-link">K</a> <ul class="social-list"> <li><a href="http://github.com/kiriaze" target="new"><i class="fa fa-github"></i></a></li> <li><a href="http://dribbble.com/kiriaze" target="new"><i class="fa fa-dribbble"></i></a></li> <li><a href="http://twitter.com/kiriaze" target="new"><i class="fa fa-twitter"></i></a></li> <li><a href="mailto:hello@kiriaze.com"><i class="fi fi-mail"></i></a></li> </ul> </div> </div> </footer> <script src="/assets/js/app.min.js"></script><script type="text/javascript">var searchInput=document.getElementById("search-input");"undefined"!=typeof searchInput&&null!=searchInput&&SimpleJekyllSearch({searchInput:document.getElementById("search-input"),resultsContainer:document.getElementById("results-container"),json:"/search.json",searchResultTemplate:'<li><a href="{url}" title="{title}"><span>{category}</span>{title}<span>{desc}</span></a></li>',noResultsText:"No results found",limit:10,fuzzy:!0,exclude:[]});</script><script>!function(e,a,n,t,i,c,s){e.GoogleAnalyticsObject=i,e[i]=e[i]||function(){(e[i].q=e[i].q||[]).push(arguments)},e[i].l=1*new Date,c=a.createElement(n),s=a.getElementsByTagName(n)[0],c.async=1,c.src=t,s.parentNode.insertBefore(c,s)}(window,document,"script","//www.google-analytics.com/analytics.js","ga"),ga("create","UA-65559123-1","auto"),ga("require","linkid","linkid.js"),ga("send","pageview");</script></main></body></html>
