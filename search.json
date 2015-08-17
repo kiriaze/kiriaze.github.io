@@ -10,15 +10,6 @@
     } ,
   
     {
-      "title"    : "Code Syntax",
-      "category" : "code",
-      "tags"     : "sample post, code, highlighting, and random",
-      "url"      : "/blog/code/code-syntax",
-      "date"     : "2015-08-03 00:00:00 -0400",
-      "desc"     : ""
-    } ,
-  
-    {
       "title"    : "Simple Child.",
       "category" : "labs",
       "tags"     : "code and wordpress",
@@ -192,7 +183,7 @@
     {
       "title"    : "STOKE",
       "category" : "work",
-      "tags"     : "",
+      "tags"     : "wordpress, front-end, back-end, and rwd",
       "url"      : "/work/stoke/",
       "date"     : "2015-03-03 00:00:00 -0500",
       "desc"     : ""

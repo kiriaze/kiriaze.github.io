@@ -5,16 +5,19 @@
     <description>Constantine Kiriaze is a developer living in San Diego, CA. He develops solutions for businesses.</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 14 Aug 2015 23:46:43 -0400</pubDate>
-    <lastBuildDate>Fri, 14 Aug 2015 23:46:43 -0400</lastBuildDate>
+    <pubDate>Sun, 16 Aug 2015 23:20:51 -0400</pubDate>
+    <lastBuildDate>Sun, 16 Aug 2015 23:20:51 -0400</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
         <title>Press Play.</title>
-        <description>&lt;p&gt;Composer backed project for easy WordPress sites using the &lt;a href=&quot;http://github.com/kiriaze/simple-framework&quot;&gt;Simple Framework&lt;/a&gt;. Aimed at making efficient sites, that are as sexy on the outside as they are inside. And hella fast. Hella.&lt;/p&gt;
+        <description>&lt;p class=&quot;text-align-center&quot;&gt;Composer backed project for easy WordPress sites using the &lt;a href=&quot;http://github.com/kiriaze/simple-framework&quot;&gt;Simple Framework&lt;/a&gt;. Aimed at making efficient sites, that are as sexy on the outside as they are inside. And hella fast. Hella.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://github.com/kiriaze/PressPlay&quot;&gt;Get it here!&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;text-align-center&quot;&gt;&lt;a href=&quot;http://github.com/kiriaze/PressPlay&quot; class=&quot;btn&quot;&gt;Get it here!&lt;/a&gt;&lt;/p&gt;
 
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;about&quot;&gt;About&lt;/h2&gt;
 &lt;p&gt;Learn more about Simple and its components&lt;/p&gt;
 
 &lt;ul&gt;
@@ -252,502 +255,10 @@ $ sudo chmod -R g+w {Project-Name}
       </item>
     
       <item>
-        <title>Code Syntax</title>
-        <description>&lt;h1 id=&quot;proper-code-syntax&quot;&gt;Proper Code Syntax&lt;/h1&gt;
-&lt;p&gt;My ideal opinionated way to structure code. Borrowed and elaborated upon from Juice, which founded SOMA.&lt;br /&gt;
-&lt;em&gt;Very much a work in progress :)&lt;/em&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;goal&quot;&gt;Goal&lt;/h2&gt;
-
-&lt;p&gt;To establish more consistency and readability across developers, teams and my&lt;br /&gt;
-open source projects. This is aimed at html, css, js and php.&lt;/p&gt;
-
-&lt;h2 id=&quot;ideals&quot;&gt;Ideals&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;We should always aim to write code that is clear and readable.&lt;/li&gt;
-  &lt;li&gt;Use whitespace. Add comments liberally where needed, but strive to write code that’s clear and self documenting&lt;/li&gt;
-  &lt;li&gt;Always try to write code that clearly demonstrates and communicates it’s intent.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;table-of-contents&quot;&gt;Table of Contents&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;TODO&lt;/em&gt;&lt;br /&gt;
-  - HTML&lt;br /&gt;
-  - CSS&lt;br /&gt;
-  - JS&lt;br /&gt;
-  - PHP&lt;/p&gt;
-
-&lt;p&gt;##Naming Conventions&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;TODO&lt;/em&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;indenting-and-line-length&quot;&gt;Indenting and Line Length&lt;/h2&gt;
-&lt;p&gt;Use an indent of one tabs character. This helps to avoid problems with diffs, patches, git history and annotations.&lt;br /&gt;
-Try to keep line within 75-85 characters long for better code readability.&lt;br /&gt;
-Use vertical space instead of horizontal space.&lt;/p&gt;
-
-&lt;h2 id=&quot;control-structures&quot;&gt;Control Structures&lt;/h2&gt;
-&lt;p&gt;These include &lt;code&gt;if&lt;/code&gt;, &lt;code&gt;for&lt;/code&gt;, &lt;code&gt;while&lt;/code&gt;, &lt;code&gt;switch&lt;/code&gt;, etc.&lt;br /&gt;
-Here is an example if statement, since it is the most complicated of them:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;inline-delimiter&quot;&gt;&amp;lt;?php&lt;/span&gt;
-&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; ( (condition1) || (condition2) ) {
-    action1;
-} &lt;span class=&quot;keyword&quot;&gt;elseif&lt;/span&gt; ( (condition3) &amp;amp;&amp;amp; (condition4) ) {
-    action2;
-} &lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt; {
-    defaultaction;
-}
-&lt;span class=&quot;inline-delimiter&quot;&gt;?&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Control statements should have one space between the control keyword and opening parenthesis, to distinguish them from function calls. Curly braces should be used on new lines.&lt;br /&gt;
-You are strongly encouraged to always use curly braces even in situations where they are technically optional. Having them increases readability and decreases the likelihood of logic errors being introduced when new lines are added.&lt;br /&gt;
-For switch statements:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;inline-delimiter&quot;&gt;&amp;lt;?php&lt;/span&gt;
-&lt;span class=&quot;keyword&quot;&gt;switch&lt;/span&gt; (condition) {
-  &lt;span class=&quot;keyword&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;integer&quot;&gt;1&lt;/span&gt;:
-      action1;
-      &lt;span class=&quot;keyword&quot;&gt;break&lt;/span&gt;;
-
-  &lt;span class=&quot;keyword&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;integer&quot;&gt;2&lt;/span&gt;:
-      action2;
-      &lt;span class=&quot;keyword&quot;&gt;break&lt;/span&gt;;
-
-  &lt;span class=&quot;keyword&quot;&gt;default&lt;/span&gt;:
-      defaultaction;
-      &lt;span class=&quot;keyword&quot;&gt;break&lt;/span&gt;;
-}
-&lt;span class=&quot;inline-delimiter&quot;&gt;?&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Split long if statements onto several lines.&lt;br /&gt;
-Long &lt;code&gt;if&lt;/code&gt; statements may be split onto several lines when the character/line limit&lt;br /&gt;
-would be exceeded. The conditions have to be positioned onto the following line,&lt;br /&gt;
-and indented. The logical operators (&lt;code&gt;&amp;amp;&amp;amp;&lt;/code&gt;, &lt;code&gt;||&lt;/code&gt;, etc.) should be at the&lt;br /&gt;
-beginning of the line to make it easier to comment (and exclude) the condition.&lt;br /&gt;
-The closing parenthesis and opening brace get their own line at the end of the conditions.&lt;/p&gt;
-
-&lt;p&gt;Keeping the operators at the beginning of the line has two advantages:&lt;br /&gt;
-It is trivial to comment out a particular line during development while keeping&lt;br /&gt;
-syntactically correct code (except of course the first line).&lt;br /&gt;
-Further is the logic kept at the front where it’s not forgotten.&lt;br /&gt;
-Scanning such conditions is very easy since they are aligned below each other.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;inline-delimiter&quot;&gt;&amp;lt;?php&lt;/span&gt;
-
-&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; ( (&lt;span class=&quot;local-variable&quot;&gt;$condition1&lt;/span&gt;
-    || &lt;span class=&quot;local-variable&quot;&gt;$condition2&lt;/span&gt;)
-    &amp;amp;&amp;amp; &lt;span class=&quot;local-variable&quot;&gt;$condition3&lt;/span&gt;
-    &amp;amp;&amp;amp; &lt;span class=&quot;local-variable&quot;&gt;$condition4&lt;/span&gt;
-) {
-    &lt;span class=&quot;comment&quot;&gt;//code here&lt;/span&gt;
-}
-&lt;span class=&quot;inline-delimiter&quot;&gt;?&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;The first condition may be aligned to the others.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;inline-delimiter&quot;&gt;&amp;lt;?php&lt;/span&gt;
-
-&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (   &lt;span class=&quot;local-variable&quot;&gt;$condition1&lt;/span&gt;
-    || &lt;span class=&quot;local-variable&quot;&gt;$condition2&lt;/span&gt;
-    || &lt;span class=&quot;local-variable&quot;&gt;$condition3&lt;/span&gt;
-) {
-    &lt;span class=&quot;comment&quot;&gt;//code here&lt;/span&gt;
-}
-&lt;span class=&quot;inline-delimiter&quot;&gt;?&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;The best case is of course when the line does not need to be split.&lt;br /&gt;
-When the &lt;code&gt;if&lt;/code&gt; clause is really long enough to be split, it might be better to&lt;br /&gt;
-simplify it. In such cases, you could express conditions as variables and&lt;br /&gt;
-compare them in the &lt;code&gt;if()&lt;/code&gt; condition. This has the benefit of “naming” and&lt;br /&gt;
-splitting the condition sets into smaller, better understandable chunks:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;inline-delimiter&quot;&gt;&amp;lt;?php&lt;/span&gt;
-
-&lt;span class=&quot;local-variable&quot;&gt;$is_foo&lt;/span&gt; = ( &lt;span class=&quot;local-variable&quot;&gt;$condition1&lt;/span&gt; || &lt;span class=&quot;local-variable&quot;&gt;$condition2&lt;/span&gt; );
-&lt;span class=&quot;local-variable&quot;&gt;$is_bar&lt;/span&gt; = ( &lt;span class=&quot;local-variable&quot;&gt;$condition3&lt;/span&gt; &amp;amp;&amp;amp; &lt;span class=&quot;local-variable&quot;&gt;$condtion4&lt;/span&gt; );
-&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; ( &lt;span class=&quot;local-variable&quot;&gt;$is_foo&lt;/span&gt; &amp;amp;&amp;amp; &lt;span class=&quot;local-variable&quot;&gt;$is_bar&lt;/span&gt; ) {
-    &lt;span class=&quot;comment&quot;&gt;// ....&lt;/span&gt;
-}
-&lt;span class=&quot;inline-delimiter&quot;&gt;?&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;In order to maximize the &lt;strong&gt;bias towards clarity&lt;/strong&gt; value, it’s encouraged to keep those conditional expressions that depend on multiple conditions (being &lt;em&gt;multiple&lt;/em&gt; more than one) on a boolean method.&lt;/p&gt;
-
-&lt;p&gt;So, something like this:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;inline-delimiter&quot;&gt;&amp;lt;?php&lt;/span&gt;
-    &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; ( &lt;span class=&quot;local-variable&quot;&gt;$date&lt;/span&gt;-&amp;gt;before(&lt;span class=&quot;predefined-constant&quot;&gt;self&lt;/span&gt;::&lt;span class=&quot;constant&quot;&gt;SUMMER_START&lt;/span&gt;) || &lt;span class=&quot;local-variable&quot;&gt;$date&lt;/span&gt;-&amp;gt;before(&lt;span class=&quot;predefined-constant&quot;&gt;self&lt;/span&gt;::&lt;span class=&quot;constant&quot;&gt;SUMMER_END&lt;/span&gt; ) {
-        &lt;span class=&quot;local-variable&quot;&gt;$charge&lt;/span&gt; = &lt;span class=&quot;local-variable&quot;&gt;$quantity&lt;/span&gt; * &lt;span class=&quot;local-variable&quot;&gt;$this&lt;/span&gt;-&amp;gt;winterRate + &lt;span class=&quot;local-variable&quot;&gt;$this&lt;/span&gt;-&amp;gt;winterServiceCharge;
-    } &lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt; {
-        &lt;span class=&quot;local-variable&quot;&gt;$charge&lt;/span&gt; = &lt;span class=&quot;local-variable&quot;&gt;$quantity&lt;/span&gt; * &lt;span class=&quot;local-variable&quot;&gt;$this&lt;/span&gt;-&amp;gt;summerRate;
-    }
-&lt;span class=&quot;inline-delimiter&quot;&gt;?&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Can be converted into:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;inline-delimiter&quot;&gt;&amp;lt;?php&lt;/span&gt;
-    &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; ( &lt;span class=&quot;local-variable&quot;&gt;$this&lt;/span&gt;-&amp;gt;notSummer(&lt;span class=&quot;local-variable&quot;&gt;$date&lt;/span&gt;) ) {
-        &lt;span class=&quot;local-variable&quot;&gt;$charge&lt;/span&gt; = &lt;span class=&quot;local-variable&quot;&gt;$this&lt;/span&gt;-&amp;gt;winterRate(&lt;span class=&quot;local-variable&quot;&gt;$quantity&lt;/span&gt;);
-    } &lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt; {
-        &lt;span class=&quot;local-variable&quot;&gt;$charge&lt;/span&gt; = &lt;span class=&quot;local-variable&quot;&gt;$this&lt;/span&gt;-&amp;gt;summerRate(&lt;span class=&quot;local-variable&quot;&gt;$quantity&lt;/span&gt;);
-    }
-&lt;span class=&quot;inline-delimiter&quot;&gt;?&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Which in turn should always be rewritten as this:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;inline-delimiter&quot;&gt;&amp;lt;?php&lt;/span&gt;
-    &lt;span class=&quot;local-variable&quot;&gt;$charge&lt;/span&gt; = &lt;span class=&quot;local-variable&quot;&gt;$this&lt;/span&gt;-&amp;gt;notSummer(&lt;span class=&quot;local-variable&quot;&gt;$date&lt;/span&gt;) ? &lt;span class=&quot;local-variable&quot;&gt;$this&lt;/span&gt;-&amp;gt;winterRate(&lt;span class=&quot;local-variable&quot;&gt;$quantity&lt;/span&gt;) : &lt;span class=&quot;local-variable&quot;&gt;$this&lt;/span&gt;-&amp;gt;summerRate(&lt;span class=&quot;local-variable&quot;&gt;$quantity&lt;/span&gt;);
-&lt;span class=&quot;inline-delimiter&quot;&gt;?&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Of course, the multiline formatting proposed before would apply too in the extracted method:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;inline-delimiter&quot;&gt;&amp;lt;?php&lt;/span&gt;
-    &lt;span class=&quot;keyword&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;function&quot;&gt;notSummer&lt;/span&gt;(&lt;span class=&quot;local-variable&quot;&gt;$date&lt;/span&gt;) {
-        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;local-variable&quot;&gt;$date&lt;/span&gt;-&amp;gt;before(&lt;span class=&quot;predefined-constant&quot;&gt;self&lt;/span&gt;::&lt;span class=&quot;constant&quot;&gt;SUMMER_START&lt;/span&gt;)
-            || &lt;span class=&quot;local-variable&quot;&gt;$date&lt;/span&gt;-&amp;gt;before(&lt;span class=&quot;predefined-constant&quot;&gt;self&lt;/span&gt;::&lt;span class=&quot;constant&quot;&gt;SUMMER_END&lt;/span&gt;)
-        ;
-    }
-&lt;span class=&quot;inline-delimiter&quot;&gt;?&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Another way to make conditionals even clearer are by avoiding the &lt;strong&gt;if not / else&lt;/strong&gt; form into a &lt;em&gt;positive&lt;/em&gt; if conditional. The example code, by applying that, would be:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;inline-delimiter&quot;&gt;&amp;lt;?php&lt;/span&gt;
-    &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; ( &lt;span class=&quot;local-variable&quot;&gt;$this&lt;/span&gt;-&amp;gt;isSummer(&lt;span class=&quot;local-variable&quot;&gt;$date&lt;/span&gt;) ) {
-        &lt;span class=&quot;local-variable&quot;&gt;$charge&lt;/span&gt; = &lt;span class=&quot;local-variable&quot;&gt;$this&lt;/span&gt;-&amp;gt;summerRate(&lt;span class=&quot;local-variable&quot;&gt;$quantity&lt;/span&gt;);
-    } &lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt; {
-        &lt;span class=&quot;local-variable&quot;&gt;$charge&lt;/span&gt; = &lt;span class=&quot;local-variable&quot;&gt;$this&lt;/span&gt;-&amp;gt;winterRate(&lt;span class=&quot;local-variable&quot;&gt;$quantity&lt;/span&gt;);
-    }
-&lt;span class=&quot;inline-delimiter&quot;&gt;?&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Which again, should be rewritten as:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;inline-delimiter&quot;&gt;&amp;lt;?php&lt;/span&gt;
-    &lt;span class=&quot;local-variable&quot;&gt;$charge&lt;/span&gt; = &lt;span class=&quot;local-variable&quot;&gt;$this&lt;/span&gt;-&amp;gt;isSummer(&lt;span class=&quot;local-variable&quot;&gt;$date&lt;/span&gt;) ? &lt;span class=&quot;local-variable&quot;&gt;$this&lt;/span&gt;-&amp;gt;summerRate(&lt;span class=&quot;local-variable&quot;&gt;$quantity&lt;/span&gt;) : &lt;span class=&quot;local-variable&quot;&gt;$this&lt;/span&gt;-&amp;gt;winterRate(&lt;span class=&quot;local-variable&quot;&gt;$quantity&lt;/span&gt;);
-&lt;span class=&quot;inline-delimiter&quot;&gt;?&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;##Ternary operators&lt;br /&gt;
-The same rule as for if clauses also applies for the ternary operator:&lt;br /&gt;
-It may be split onto several lines, keeping the question mark and the colon at the front.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;inline-delimiter&quot;&gt;&amp;lt;?php&lt;/span&gt;
-&lt;span class=&quot;local-variable&quot;&gt;$a&lt;/span&gt; = &lt;span class=&quot;local-variable&quot;&gt;$condition1&lt;/span&gt; &amp;amp;&amp;amp; &lt;span class=&quot;local-variable&quot;&gt;$condition2&lt;/span&gt;
-    ? &lt;span class=&quot;local-variable&quot;&gt;$foo&lt;/span&gt; : &lt;span class=&quot;local-variable&quot;&gt;$bar&lt;/span&gt;;
-
-&lt;span class=&quot;local-variable&quot;&gt;$b&lt;/span&gt; = &lt;span class=&quot;local-variable&quot;&gt;$condition3&lt;/span&gt; &amp;amp;&amp;amp; &lt;span class=&quot;local-variable&quot;&gt;$condition4&lt;/span&gt;
-    ? &lt;span class=&quot;local-variable&quot;&gt;$foo_man_this_is_too_long_what_should_i_do&lt;/span&gt;
-    : &lt;span class=&quot;local-variable&quot;&gt;$bar&lt;/span&gt;;
-&lt;span class=&quot;inline-delimiter&quot;&gt;?&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;function-calls&quot;&gt;Function Calls&lt;/h2&gt;
-&lt;p&gt;Functions should be called with no spaces between the function name, the opening&lt;br /&gt;
-parenthesis, and the first parameter; spaces between commas and each parameter,&lt;br /&gt;
-and no space between the last parameter, the closing parenthesis, and the semicolon.&lt;br /&gt;
-Here’s an example:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;inline-delimiter&quot;&gt;&amp;lt;?php&lt;/span&gt;
-&lt;span class=&quot;local-variable&quot;&gt;$var&lt;/span&gt; = foo(&lt;span class=&quot;local-variable&quot;&gt;$bar&lt;/span&gt;, &lt;span class=&quot;local-variable&quot;&gt;$baz&lt;/span&gt;, &lt;span class=&quot;local-variable&quot;&gt;$quux&lt;/span&gt;);
-&lt;span class=&quot;inline-delimiter&quot;&gt;?&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;As displayed above, there should be one space on either side of an equals sign used to assign the return value of a function to a variable. In the case of a block of related assignments, more space may be inserted to promote readability:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;inline-delimiter&quot;&gt;&amp;lt;?php&lt;/span&gt;
-&lt;span class=&quot;local-variable&quot;&gt;$short&lt;/span&gt;         = foo(&lt;span class=&quot;local-variable&quot;&gt;$bar&lt;/span&gt;);
-&lt;span class=&quot;local-variable&quot;&gt;$long_variable&lt;/span&gt; = foo(&lt;span class=&quot;local-variable&quot;&gt;$baz&lt;/span&gt;);
-&lt;span class=&quot;inline-delimiter&quot;&gt;?&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;To support readability, parameters in subsequent calls to the same function/method may be aligned by parameter name:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;inline-delimiter&quot;&gt;&amp;lt;?php&lt;/span&gt;
-&lt;span class=&quot;local-variable&quot;&gt;$this&lt;/span&gt;-&amp;gt;callSomeFunction(&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;param1&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;,     &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;second&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;,        &lt;span class=&quot;predefined-constant&quot;&gt;true&lt;/span&gt;);
-&lt;span class=&quot;local-variable&quot;&gt;$this&lt;/span&gt;-&amp;gt;callSomeFunction(&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;parameter2&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;third&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;,         &lt;span class=&quot;predefined-constant&quot;&gt;false&lt;/span&gt;);
-&lt;span class=&quot;local-variable&quot;&gt;$this&lt;/span&gt;-&amp;gt;callSomeFunction(&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;,          &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;verrrrrrylong&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;predefined-constant&quot;&gt;true&lt;/span&gt;);
-&lt;span class=&quot;inline-delimiter&quot;&gt;?&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Split function call on several lines&lt;br /&gt;
-The CS require lines to have a maximum length of 80 chars. Calling functions or methods with many parameters while adhering to CS is impossible in that cases. It is allowed to split parameters in function calls onto several lines.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;inline-delimiter&quot;&gt;&amp;lt;?php&lt;/span&gt;
-&lt;span class=&quot;local-variable&quot;&gt;$this&lt;/span&gt;-&amp;gt;someObject-&amp;gt;subObject-&amp;gt;callThisFunctionWithALongName(
-    &lt;span class=&quot;local-variable&quot;&gt;$parameterOne&lt;/span&gt;, &lt;span class=&quot;local-variable&quot;&gt;$parameterTwo&lt;/span&gt;,
-    &lt;span class=&quot;local-variable&quot;&gt;$aVeryLongParameterThree&lt;/span&gt;
-);
-&lt;span class=&quot;inline-delimiter&quot;&gt;?&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Several parameters per line are allowed. Parameters need to be indented 4 spaces compared to the level of the function call. The opening parenthesis is to be put at the end of the function call line, the closing parenthesis gets its own line at the end of the parameters. This shows a visual end to the parameter indentations and follows the opening/closing brace rules for functions and conditionals.&lt;/p&gt;
-
-&lt;p&gt;The same applies not only for parameter variables, but also for nested function calls and for arrays.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;inline-delimiter&quot;&gt;&amp;lt;?php&lt;/span&gt;
-&lt;span class=&quot;local-variable&quot;&gt;$this&lt;/span&gt;-&amp;gt;someObject-&amp;gt;subObject-&amp;gt;callThisFunctionWithALongName(
-    &lt;span class=&quot;local-variable&quot;&gt;$this&lt;/span&gt;-&amp;gt;someOtherFunc(
-        &lt;span class=&quot;local-variable&quot;&gt;$this&lt;/span&gt;-&amp;gt;someEvenOtherFunc(
-            &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;Help me!&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;,
-            &lt;span class=&quot;predefined&quot;&gt;array&lt;/span&gt;(
-                &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;  =&amp;gt; &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;bar&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;,
-                &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;spam&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt; =&amp;gt; &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;eggs&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;,
-            ),
-            &lt;span class=&quot;integer&quot;&gt;23&lt;/span&gt;
-        ),
-        &lt;span class=&quot;local-variable&quot;&gt;$this&lt;/span&gt;-&amp;gt;someEvenOtherFunc()
-    ),
-    &lt;span class=&quot;local-variable&quot;&gt;$this&lt;/span&gt;-&amp;gt;wowowowowow(&lt;span class=&quot;integer&quot;&gt;12&lt;/span&gt;)
-);
-&lt;span class=&quot;inline-delimiter&quot;&gt;?&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Nesting those function parameters is allowed if it helps to make the code more readable, not only when it is necessary when the characters per line limit is reached.&lt;/p&gt;
-
-&lt;p&gt;Using fluent application programming interfaces often leads to many concatenated function calls. Those calls may be split onto several lines. When doing this, all subsequent lines are indented by 4 spaces and begin with the “-&amp;gt;” arrow.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;inline-delimiter&quot;&gt;&amp;lt;?php&lt;/span&gt;
-&lt;span class=&quot;local-variable&quot;&gt;$someObject&lt;/span&gt;-&amp;gt;someFunction(&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;some&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;parameter&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;)
-    -&amp;gt;someOtherFunc(&lt;span class=&quot;integer&quot;&gt;23&lt;/span&gt;, &lt;span class=&quot;integer&quot;&gt;42&lt;/span&gt;)
-    -&amp;gt;andAThirdFunction();
-&lt;span class=&quot;inline-delimiter&quot;&gt;?&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;alignment-of-assignments&quot;&gt;Alignment of assignments&lt;/h2&gt;
-&lt;p&gt;To support readability, the equal signs may be aligned in block-related assignments:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;inline-delimiter&quot;&gt;&amp;lt;?php&lt;/span&gt;
-&lt;span class=&quot;local-variable&quot;&gt;$short&lt;/span&gt;  = foo(&lt;span class=&quot;local-variable&quot;&gt;$bar&lt;/span&gt;);
-&lt;span class=&quot;local-variable&quot;&gt;$longer&lt;/span&gt; = foo(&lt;span class=&quot;local-variable&quot;&gt;$baz&lt;/span&gt;);
-&lt;span class=&quot;inline-delimiter&quot;&gt;?&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;The rule can be broken when the length of the variable name is at least 8 characters longer/shorter than the previous one:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;inline-delimiter&quot;&gt;&amp;lt;?php&lt;/span&gt;
-&lt;span class=&quot;local-variable&quot;&gt;$short&lt;/span&gt; = foo(&lt;span class=&quot;local-variable&quot;&gt;$bar&lt;/span&gt;);
-&lt;span class=&quot;local-variable&quot;&gt;$thisVariableNameIsVeeeeeeeeeeryLong&lt;/span&gt; = foo(&lt;span class=&quot;local-variable&quot;&gt;$baz&lt;/span&gt;);
-&lt;span class=&quot;inline-delimiter&quot;&gt;?&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;##Split long assigments onto several lines&lt;br /&gt;
-Assigments may be split onto several lines when the character/line limit would be exceeded. The equal sign has to be positioned onto the following line, and indented by 4 characters.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;inline-delimiter&quot;&gt;&amp;lt;?php&lt;/span&gt;
-&lt;span class=&quot;predefined&quot;&gt;$GLOBALS&lt;/span&gt;[&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;TSFE&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;]-&amp;gt;additionalHeaderData[&lt;span class=&quot;local-variable&quot;&gt;$this&lt;/span&gt;-&amp;gt;strApplicationName]
-    = &lt;span class=&quot;local-variable&quot;&gt;$this&lt;/span&gt;-&amp;gt;xajax-&amp;gt;getJavascript(t3lib_extMgm::siteRelPath(&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;nr_xajax&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;));
-&lt;span class=&quot;inline-delimiter&quot;&gt;?&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;##Class Definitions&lt;br /&gt;
-Class declarations have their opening brace on a new line:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;inline-delimiter&quot;&gt;&amp;lt;?php&lt;/span&gt;
-&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;Foo_Bar&lt;/span&gt; {
-
-    &lt;span class=&quot;comment&quot;&gt;//... code goes here&lt;/span&gt;
-
-}
-&lt;span class=&quot;inline-delimiter&quot;&gt;?&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;css&quot;&gt;CSS&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;No underscores, camelcasing, or double hyphens - umm did people forget proper naming conventions specific to each language?
-    &lt;ul&gt;
-      &lt;li&gt;Although I would prefer using camelcasing over many hypens&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Scss only, less sucks donkey dick.&lt;/li&gt;
-  &lt;li&gt;Minimal ID’s, primarily for main elements, e.g. header,nav, main, footer, and for js manipulation.&lt;/li&gt;
-  &lt;li&gt;Placeholders galore. ( % incase you didn’t know )&lt;/li&gt;
-  &lt;li&gt;Prefix free, of source files. ( let your compiler handle that jazz )&lt;/li&gt;
-  &lt;li&gt;No super nesting, 3 levels deep - max.&lt;/li&gt;
-  &lt;li&gt;Tabs people, make code readable. ( In other words, 4 spaces instead of 2 )&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Space out your shit. Example:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;comment&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;content&quot;&gt; css - 1 space after selector name, 1 tab per property&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;class&quot;&gt;.some-element&lt;/span&gt; {
-    &lt;span class=&quot;key&quot;&gt;width&lt;/span&gt;: &lt;span class=&quot;float&quot;&gt;80%&lt;/span&gt;;
-    &lt;span class=&quot;key&quot;&gt;margin&lt;/span&gt;: &lt;span class=&quot;float&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;value&quot;&gt;auto&lt;/span&gt;;
-}
-
-&lt;span class=&quot;comment&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;content&quot;&gt; js - see the spaces? get some glasses then.&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;tag&quot;&gt;if&lt;/span&gt; ( &lt;span class=&quot;error&quot;&gt;$&lt;/span&gt;( &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;.some-element&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt; )&lt;span class=&quot;class&quot;&gt;.length&lt;/span&gt; ) {
-    &lt;span class=&quot;key&quot;&gt;console&lt;/span&gt;.&lt;span class=&quot;predefined&quot;&gt;log&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;);
-}
-
-&lt;span class=&quot;comment&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;content&quot;&gt; php - ditto&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;tag&quot;&gt;if&lt;/span&gt; ( &lt;span class=&quot;predefined&quot;&gt;isset&lt;/span&gt;( &lt;span class=&quot;variable&quot;&gt;$someElement&lt;/span&gt; ) ) {
-    &lt;span class=&quot;predefined&quot;&gt;print_r&lt;/span&gt;(&lt;span class=&quot;variable&quot;&gt;$someElement&lt;/span&gt;);
-}
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Keep syntax consistent - dont mix and match buddy.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;inline-delimiter&quot;&gt;&amp;lt;?php&lt;/span&gt;
-    &lt;span class=&quot;comment&quot;&gt;// Traditional&lt;/span&gt;
-    &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; ( &lt;span class=&quot;predefined&quot;&gt;isset&lt;/span&gt;( &lt;span class=&quot;local-variable&quot;&gt;$foo&lt;/span&gt; ) ) {
-        &lt;span class=&quot;local-variable&quot;&gt;$someElement&lt;/span&gt; = &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;bar&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;;
-    } &lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt; {
-        &lt;span class=&quot;local-variable&quot;&gt;$someElement&lt;/span&gt; = &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;;
-    }
-
-    &lt;span class=&quot;comment&quot;&gt;// alternative syntax&lt;/span&gt;
-    &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; ( &lt;span class=&quot;predefined&quot;&gt;isset&lt;/span&gt;( &lt;span class=&quot;local-variable&quot;&gt;$foo&lt;/span&gt; ) ) :
-        &lt;span class=&quot;local-variable&quot;&gt;$someElement&lt;/span&gt; = &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;bar&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;;
-    &lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt; :
-        &lt;span class=&quot;local-variable&quot;&gt;$someElement&lt;/span&gt; = &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;;
-    &lt;span class=&quot;keyword&quot;&gt;endif&lt;/span&gt;;
-
-    &lt;span class=&quot;comment&quot;&gt;// shorthand ternary operators&lt;/span&gt;
-    &lt;span class=&quot;local-variable&quot;&gt;$someElement&lt;/span&gt; = &lt;span class=&quot;local-variable&quot;&gt;$foo&lt;/span&gt; ? &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;bar&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt; : &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;;
-&lt;span class=&quot;inline-delimiter&quot;&gt;?&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Scss example&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;error&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;button&lt;/span&gt; {
-  &lt;span class=&quot;key&quot;&gt;min-width&lt;/span&gt;: &lt;span class=&quot;float&quot;&gt;100px&lt;/span&gt;;
-  &lt;span class=&quot;key&quot;&gt;padding&lt;/span&gt;: &lt;span class=&quot;float&quot;&gt;1em&lt;/span&gt;;
-  &lt;span class=&quot;key&quot;&gt;border-radius&lt;/span&gt;: &lt;span class=&quot;float&quot;&gt;1em&lt;/span&gt;;
-}
-&lt;span class=&quot;error&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;twitter-background&lt;/span&gt; {
-  &lt;span class=&quot;key&quot;&gt;color&lt;/span&gt;: &lt;span class=&quot;color&quot;&gt;#fff&lt;/span&gt;;
-  &lt;span class=&quot;key&quot;&gt;background&lt;/span&gt;: &lt;span class=&quot;color&quot;&gt;#55acee&lt;/span&gt;;
-}
-&lt;span class=&quot;error&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;facebook-background&lt;/span&gt; {
-  &lt;span class=&quot;key&quot;&gt;color&lt;/span&gt;: &lt;span class=&quot;color&quot;&gt;#fff&lt;/span&gt;;
-  &lt;span class=&quot;key&quot;&gt;background&lt;/span&gt;: &lt;span class=&quot;color&quot;&gt;#3b5998&lt;/span&gt;;
-}
-
-&lt;span class=&quot;class&quot;&gt;.btn&lt;/span&gt; {
-  &lt;span class=&quot;local-variable&quot;&gt;&amp;amp;&lt;/span&gt;-&lt;span class=&quot;key&quot;&gt;-twitter&lt;/span&gt; {
-    &lt;span class=&quot;directive&quot;&gt;@extend&lt;/span&gt; &lt;span class=&quot;error&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;value&quot;&gt;button&lt;/span&gt;;
-    &lt;span class=&quot;directive&quot;&gt;@extend&lt;/span&gt; &lt;span class=&quot;error&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;value&quot;&gt;twitter-background&lt;/span&gt;;
-  }
-  &lt;span class=&quot;local-variable&quot;&gt;&amp;amp;&lt;/span&gt;-&lt;span class=&quot;key&quot;&gt;-facebook&lt;/span&gt; {
-    &lt;span class=&quot;directive&quot;&gt;@extend&lt;/span&gt; &lt;span class=&quot;error&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;value&quot;&gt;button&lt;/span&gt;;
-    &lt;span class=&quot;directive&quot;&gt;@extend&lt;/span&gt; &lt;span class=&quot;error&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;value&quot;&gt;facebook-background&lt;/span&gt;;
-  }
-}
-
-&lt;span class=&quot;error&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;tag&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;tag&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;btn--twitter&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&amp;gt;&lt;span class=&quot;tag&quot;&gt;Twitter&lt;/span&gt;&lt;span class=&quot;error&quot;&gt;&amp;lt;&lt;/span&gt;/&lt;span class=&quot;tag&quot;&gt;a&lt;/span&gt;&amp;gt;
-&lt;span class=&quot;error&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;tag&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;tag&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;btn--facebook&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&amp;gt;&lt;span class=&quot;tag&quot;&gt;Facebook&lt;/span&gt;&lt;span class=&quot;error&quot;&gt;&amp;lt;&lt;/span&gt;/&lt;span class=&quot;tag&quot;&gt;a&lt;/span&gt;&amp;gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Mon, 03 Aug 2015 00:00:00 -0400</pubDate>
-        <link>/blog/code/code-syntax</link>
-        <guid isPermaLink="true">/blog/code/code-syntax</guid>
-        
-        <category>sample post</category>
-        
-        <category>code</category>
-        
-        <category>highlighting</category>
-        
-        <category>random</category>
-        
-        
-        <category>code</category>
-        
-        <category></category>
-        
-      </item>
-    
-      <item>
         <title>Simple Child.</title>
-        <description>&lt;p&gt;Simple Child Theme - requires Simple Framework. &lt;a href=&quot;http://github.com/kiriaze/simple-child&quot;&gt;Get it here!&lt;/a&gt;&lt;/p&gt;
+        <description>&lt;p class=&quot;text-align-center&quot;&gt;Simple Child Theme - requires Simple Framework.&lt;/p&gt;
+
+&lt;p class=&quot;text-align-center&quot;&gt;&lt;a href=&quot;http://github.com/kiriaze/simple-child&quot; class=&quot;btn&quot;&gt;Get it here!&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 02 Aug 2015 00:00:00 -0400</pubDate>
         <link>/labs/simple-child/</link>
@@ -766,9 +277,11 @@ Class declarations have their opening brace on a new line:&lt;/p&gt;
     
       <item>
         <title>Simple Tweets.</title>
-        <description>&lt;p&gt;A simple twitter plugin that pulls in your twitter feed as a shortcode. Requires twitter username.&lt;/p&gt;
+        <description>&lt;p class=&quot;text-align-center&quot;&gt;A simple twitter plugin that pulls in your twitter feed as a shortcode. Requires twitter username.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://github.com/kiriaze/simple-tweets&quot;&gt;Get it here!&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;text-align-center&quot;&gt;&lt;a href=&quot;http://github.com/kiriaze/simple-tweets&quot; class=&quot;btn&quot;&gt;Get it here!&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
 
 &lt;p&gt;Shortcode Params: &lt;code&gt;[tweets before=&#39;&#39; after=&#39;&#39; wrapper=&#39;&#39; class=&#39;&#39; attr=&#39;&#39;]&lt;/code&gt;&lt;/p&gt;
 </description>
@@ -789,9 +302,11 @@ Class declarations have their opening brace on a new line:&lt;/p&gt;
     
       <item>
         <title>Simple Shots.</title>
-        <description>&lt;p&gt;A simple dribbble plugin that pulls in your dribbble feed as a widget and a shortcode. Requires dribbble username.&lt;/p&gt;
+        <description>&lt;p class=&quot;text-align-center&quot;&gt;A simple dribbble plugin that pulls in your dribbble feed as a widget and a shortcode. Requires dribbble username.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://github.com/kiriaze/simple-shots&quot;&gt;Get it here!&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;text-align-center&quot;&gt;&lt;a href=&quot;http://github.com/kiriaze/simple-shots&quot; class=&quot;btn&quot;&gt;Get it here!&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
 
 &lt;p&gt;Widget options: Title, username, count, and cache.&lt;/p&gt;
 
@@ -814,9 +329,38 @@ Class declarations have their opening brace on a new line:&lt;/p&gt;
     
       <item>
         <title>Simple Shortcodes.</title>
-        <description>&lt;p&gt;Just the best damn shortcodes out there.&lt;/p&gt;
+        <description>&lt;p class=&quot;text-align-center&quot;&gt;Just the best damn shortcodes out there.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://github.com/kiriaze/simple-shortcodes&quot;&gt;Get it here!&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;text-align-center&quot;&gt;&lt;a href=&quot;http://github.com/kiriaze/simple-shortcodes&quot; class=&quot;btn&quot;&gt;Get it here!&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Consists of:&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li class=&quot;columns-4&quot;&gt;Button&lt;/li&gt;
+	&lt;li class=&quot;columns-4&quot;&gt;Lightbox&lt;/li&gt;
+	&lt;li class=&quot;columns-4&quot;&gt;Callout&lt;/li&gt;
+	&lt;li class=&quot;columns-4&quot;&gt;Accordions&lt;/li&gt;
+	&lt;li class=&quot;columns-4&quot;&gt;Toggles&lt;/li&gt;
+	&lt;li class=&quot;columns-4&quot;&gt;Alerts&lt;/li&gt;
+	&lt;li class=&quot;columns-4&quot;&gt;Pre&lt;/li&gt;
+	&lt;li class=&quot;columns-4&quot;&gt;Grid&lt;/li&gt;
+	&lt;li class=&quot;columns-4&quot;&gt;Tabs&lt;/li&gt;
+	&lt;li class=&quot;columns-4&quot;&gt;Video&lt;/li&gt;
+	&lt;li class=&quot;columns-4&quot;&gt;Audio&lt;/li&gt;
+	&lt;li class=&quot;columns-4&quot;&gt;Icons&lt;/li&gt;
+	&lt;li class=&quot;columns-4&quot;&gt;Map&lt;/li&gt;
+	&lt;li class=&quot;columns-4&quot;&gt;Lists&lt;/li&gt;
+	&lt;li class=&quot;columns-4&quot;&gt;Packages&lt;/li&gt;
+	&lt;li class=&quot;columns-4&quot;&gt;Section&lt;/li&gt;
+	&lt;li class=&quot;columns-4&quot;&gt;Stats&lt;/li&gt;
+	&lt;li class=&quot;columns-4&quot;&gt;Client List&lt;/li&gt;
+	&lt;li class=&quot;columns-4&quot;&gt;Post Carousel&lt;/li&gt;
+	&lt;li class=&quot;columns-4&quot;&gt;Hr&lt;/li&gt;
+	&lt;li class=&quot;columns-4&quot;&gt;Br&lt;/li&gt;
+	&lt;li class=&quot;columns-4&quot;&gt;Bloginfo&lt;/li&gt;
+	&lt;li class=&quot;columns-4&quot;&gt;Raw&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         <pubDate>Sat, 01 Aug 2015 00:00:00 -0400</pubDate>
         <link>/labs/simple-shortcodes/</link>
@@ -835,9 +379,11 @@ Class declarations have their opening brace on a new line:&lt;/p&gt;
     
       <item>
         <title>Simple Newsletter.</title>
-        <description>&lt;p&gt;A simple mailchimp newsletter plugin that hooks up to your mailchimp list and displays a newsletter form as a widget and a shortcode.&lt;/p&gt;
+        <description>&lt;p class=&quot;text-align-center&quot;&gt;A simple mailchimp newsletter plugin that hooks up to your mailchimp list and displays a newsletter form as a widget and a shortcode.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://github.com/kiriaze/simple-newsletter&quot;&gt;Get it here!&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;text-align-center&quot;&gt;&lt;a href=&quot;http://github.com/kiriaze/simple-newsletter&quot; class=&quot;btn&quot;&gt;Get it here!&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
 
 &lt;p&gt;Widget options: Title, Intro, Placeholder text, api key and list ID.&lt;/p&gt;
 
@@ -860,7 +406,9 @@ Class declarations have their opening brace on a new line:&lt;/p&gt;
     
       <item>
         <title>Simple Framework.</title>
-        <description>&lt;p&gt;A revolutionary wordpress theme framework. Needs Simple-Child. &lt;a href=&quot;http://github.com/kiriaze/simple-framework&quot;&gt;Get it here!&lt;/a&gt;&lt;/p&gt;
+        <description>&lt;p class=&quot;text-align-center&quot;&gt;A revolutionary wordpress theme framework. Needs Simple-Child.&lt;/p&gt;
+
+&lt;p class=&quot;text-align-center&quot;&gt;&lt;a href=&quot;http://github.com/kiriaze/simple-framework&quot; class=&quot;btn&quot;&gt;Get it here!&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Sat, 01 Aug 2015 00:00:00 -0400</pubDate>
         <link>/labs/simple-framework/</link>
@@ -879,7 +427,11 @@ Class declarations have their opening brace on a new line:&lt;/p&gt;
     
       <item>
         <title>Simple Flickr.</title>
-        <description>&lt;p&gt;A simple flickr plugin that pulls in your flickr feed as a widget and a shortcode. Requires flickr ID. &lt;a href=&quot;http://github.com/kiriaze/simple-flickr&quot;&gt;Get it here!&lt;/a&gt;&lt;/p&gt;
+        <description>&lt;p class=&quot;text-align-center&quot;&gt;A simple flickr plugin that pulls in your flickr feed as a widget and a shortcode. Requires flickr ID.&lt;/p&gt;
+
+&lt;p class=&quot;text-align-center&quot;&gt;&lt;a href=&quot;http://github.com/kiriaze/simple-flickr&quot; class=&quot;btn&quot;&gt;Get it here!&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
 
 &lt;p&gt;Widget options: Title, id ( idgettr ), type ( user/group ), and display ( random/latest ).&lt;/p&gt;
 
@@ -906,7 +458,11 @@ Class declarations have their opening brace on a new line:&lt;/p&gt;
     
       <item>
         <title>S-Grams.</title>
-        <description>&lt;p&gt;A simple instagram plugin that pulls in your instagram feed as a widget and a shortcode. Requires instagram username. &lt;a href=&quot;http://github.com/kiriaze/s-grams&quot;&gt;Get it here!&lt;/a&gt;&lt;/p&gt;
+        <description>&lt;p class=&quot;text-align-center&quot;&gt;A simple instagram plugin that pulls in your instagram feed as a widget and a shortcode. Requires instagram username.&lt;/p&gt;
+
+&lt;p class=&quot;text-align-center&quot;&gt;&lt;a href=&quot;http://github.com/kiriaze/s-grams&quot; class=&quot;btn&quot;&gt;Get it here!&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
 
 &lt;p&gt;Widget options: Title, username, count, and cache.&lt;/p&gt;
 
@@ -915,6 +471,170 @@ Class declarations have their opening brace on a new line:&lt;/p&gt;
         <pubDate>Sat, 01 Aug 2015 00:00:00 -0400</pubDate>
         <link>/labs/s-grams/</link>
         <guid isPermaLink="true">/labs/s-grams/</guid>
+        
+        <category>code</category>
+        
+        <category>wordpress</category>
+        
+        
+        <category>labs</category>
+        
+        <category></category>
+        
+      </item>
+    
+      <item>
+        <title>Simple Multi CPT&#39;s.</title>
+        <description>&lt;p class=&quot;text-align-center&quot;&gt;Simple Multi Custom Post Types - A plugin that can handle multiple custom post types at once through an array, theme hookable yo.&lt;/p&gt;
+
+&lt;p class=&quot;text-align-center&quot;&gt;&lt;a href=&quot;http://github.com/kiriaze/simple-multi-cpts&quot; class=&quot;btn&quot;&gt;Get it here!&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;updates-galore&quot;&gt;Updates Galore!&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Multiple taxonomies can now be passed to each cpt, supports arrays.&lt;/li&gt;
+  &lt;li&gt;Ability to filter/sort them, as well as post type term count.&lt;/li&gt;
+  &lt;li&gt;Hide taxonomies backend table row header and filter/sort dropdowns through $hide[];&lt;/li&gt;
+  &lt;li&gt;Custom post type icons from FontAwesome!&lt;/li&gt;
+  &lt;li&gt;ACF Settings integration, now managable from wp admin instead of through functions file, or both if desired! Woot woot!&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;what&quot;&gt;What?&lt;/h2&gt;
+
+&lt;p&gt;A plugin that can handle multiple custom post types at once, requires atleast the singular and plural name of each cpt you would like to add, and optionally a custom taxonomy, slug rewrite, hide options, and icon.&lt;/p&gt;
+
+&lt;p&gt;Following the philosophy of keeping custom post types theme agnostic, this plugin is lightweight and efficient and allows for adding infinite custom post types/taxonomies through wp admin ( Requires ACF ) or by hooking into the function within your theme, look at example below. This chunk is small enough to be easily placed within any theme - and is preferred over having multiple cpt plugins cluttering and slowing down your project.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;why&quot;&gt;Why?&lt;/h2&gt;
+
+&lt;p&gt;Came across a project requiring a ridiculous amount of custom post types, and didn’t think that having over 10 separate plugins for handling those post types were ideal - so I made one to rule them all. ba-dum-dum-tshh.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;how&quot;&gt;How?&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Download/Clone/Composer that ish, install and activate plugin.&lt;/li&gt;
+  &lt;li&gt;ACF active? ( And it should be guys! )&lt;/li&gt;
+  &lt;li&gt;Skip the rest and head to the plugin settings page, else continue.&lt;/li&gt;
+  &lt;li&gt;If not, place hook into theme functions. ( Preferably into abstracted module, look @ simple. ) Note: Capitalise first letter.&lt;/li&gt;
+  &lt;li&gt;Notice how not every post type needs a tax or rewrite, however since this plugin works in array association, you will need to add an empty string for that relation. Allows for an array of multiple taxonomies to be passed to each cpt.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;comment&quot;&gt;// hook into simple multi cpts&lt;/span&gt;
+add_filter( &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;simple_multi_cpts_plugin_init&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;simple_child_cpts&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt; );
+&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;function&quot;&gt;simple_child_cpts&lt;/span&gt;() {
+
+    &lt;span class=&quot;keyword&quot;&gt;global&lt;/span&gt; &lt;span class=&quot;local-variable&quot;&gt;$child_cpts&lt;/span&gt;;
+
+    &lt;span class=&quot;comment&quot;&gt;// Required&lt;/span&gt;
+    &lt;span class=&quot;local-variable&quot;&gt;$cpt_name&lt;/span&gt; = &lt;span class=&quot;predefined&quot;&gt;array&lt;/span&gt;(
+        &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;Agency&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;,
+        &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;Client&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;,
+        &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;Project&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;
+    );
+
+    &lt;span class=&quot;comment&quot;&gt;// Required&lt;/span&gt;
+    &lt;span class=&quot;local-variable&quot;&gt;$cpt_plural&lt;/span&gt; = &lt;span class=&quot;predefined&quot;&gt;array&lt;/span&gt;(
+        &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;Agencies&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;,
+        &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;Clients&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;,
+        &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;Projects&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;
+    );
+
+    &lt;span class=&quot;comment&quot;&gt;// Optional&lt;/span&gt;
+    &lt;span class=&quot;local-variable&quot;&gt;$cpt_tax&lt;/span&gt; = &lt;span class=&quot;predefined&quot;&gt;array&lt;/span&gt;(
+        &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;Locations&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;,
+        &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;,
+        &lt;span class=&quot;predefined&quot;&gt;array&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;Type&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;Url&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;Skills&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;)
+    );
+
+    &lt;span class=&quot;comment&quot;&gt;// Optional&lt;/span&gt;
+    &lt;span class=&quot;local-variable&quot;&gt;$rewriteUrl&lt;/span&gt; = &lt;span class=&quot;predefined&quot;&gt;array&lt;/span&gt;(
+        &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;Agencies&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;,
+        &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;,
+        &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;Work&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;
+    );
+
+    &lt;span class=&quot;comment&quot;&gt;// Optional - set to true to hide from backend&lt;/span&gt;
+    &lt;span class=&quot;local-variable&quot;&gt;$hide&lt;/span&gt; = &lt;span class=&quot;predefined&quot;&gt;array&lt;/span&gt;(
+        &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;,
+        &lt;span class=&quot;predefined-constant&quot;&gt;true&lt;/span&gt;,
+        &lt;span class=&quot;predefined&quot;&gt;array&lt;/span&gt;(
+            &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;,
+            &lt;span class=&quot;predefined-constant&quot;&gt;true&lt;/span&gt;,
+            &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;
+        )
+    );
+
+    &lt;span class=&quot;comment&quot;&gt;// Optional -  post type icons, e.g. unicode stripped to \f037&lt;/span&gt;
+    &lt;span class=&quot;local-variable&quot;&gt;$cpt_icon&lt;/span&gt; = &lt;span class=&quot;predefined&quot;&gt;array&lt;/span&gt;(
+        &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;\f&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;037&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;,
+    );
+
+    &lt;span class=&quot;local-variable&quot;&gt;$child_cpts&lt;/span&gt; = &lt;span class=&quot;predefined&quot;&gt;array&lt;/span&gt;(&lt;span class=&quot;local-variable&quot;&gt;$cpt_name&lt;/span&gt;, &lt;span class=&quot;local-variable&quot;&gt;$cpt_plural&lt;/span&gt;, &lt;span class=&quot;local-variable&quot;&gt;$cpt_tax&lt;/span&gt;, &lt;span class=&quot;local-variable&quot;&gt;$rewriteUrl&lt;/span&gt;, &lt;span class=&quot;local-variable&quot;&gt;$hide&lt;/span&gt;, &lt;span class=&quot;local-variable&quot;&gt;$cpt_icon&lt;/span&gt;);
+
+    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;local-variable&quot;&gt;$child_cpts&lt;/span&gt;;
+
+}
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;look-at&quot;&gt;Look at&lt;/h2&gt;
+&lt;script src=&quot;https://gist.github.com/kiriaze/1ba01fd6f4287766922f.js&quot;&gt; &lt;/script&gt;
+
+&lt;script src=&quot;https://gist.github.com/kiriaze/f4c4664889a21731fecf.js&quot;&gt; &lt;/script&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;to-dos&quot;&gt;To Do’s&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Optimize Code&lt;/li&gt;
+  &lt;li&gt;Some code is inconsistent, flush out.&lt;/li&gt;
+  &lt;li&gt;Nested forloops not ideal, look at index based comparison of arrays.&lt;/li&gt;
+  &lt;li&gt;Integrate new structure/philosophy into other simple plugins&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;comment&quot;&gt;// note: look into passing array differently&lt;/span&gt;
+&lt;span class=&quot;comment&quot;&gt;// like so:&lt;/span&gt;
+[camper] =&amp;gt; &lt;span class=&quot;predefined&quot;&gt;Array&lt;/span&gt;
+    (
+        [cpt_plural] =&amp;gt; &lt;span class=&quot;constant&quot;&gt;Campers&lt;/span&gt;
+        [rewriteUrl] =&amp;gt; &lt;span class=&quot;constant&quot;&gt;Hikers&lt;/span&gt;
+        [cpt_tax] =&amp;gt; &lt;span class=&quot;predefined&quot;&gt;Array&lt;/span&gt;
+            (
+                [&lt;span class=&quot;integer&quot;&gt;0&lt;/span&gt;] =&amp;gt; &lt;span class=&quot;constant&quot;&gt;Level&lt;/span&gt;
+            )
+
+        [hide] =&amp;gt; &lt;span class=&quot;predefined&quot;&gt;Array&lt;/span&gt;
+            (
+                [&lt;span class=&quot;integer&quot;&gt;0&lt;/span&gt;] =&amp;gt;
+            )
+
+        [cpt_icon] =&amp;gt; \f0fc
+    )
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Thu, 30 Jul 2015 00:00:00 -0400</pubDate>
+        <link>/labs/simple-multi-cpts/</link>
+        <guid isPermaLink="true">/labs/simple-multi-cpts/</guid>
         
         <category>code</category>
         
