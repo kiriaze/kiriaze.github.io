@@ -318,23 +318,23 @@
   
    {
      
-        "title"    : "Blog",
-        "category" : "",
-        "tags"     : "",
-        "url"      : "/blog/index.html",
-        "date"     : "",
-        "desc"     : ""
-     
-   } ,
-  
-   {
-     
         "title"    : "Category Archive",
         "category" : "",
         "tags"     : "",
         "url"      : "/categories/index.html",
         "date"     : "",
         "desc"     : "An archive of posts sorted by category."
+     
+   } ,
+  
+   {
+     
+        "title"    : "Blog",
+        "category" : "",
+        "tags"     : "",
+        "url"      : "/blog/index.html",
+        "date"     : "",
+        "desc"     : ""
      
    } ,
   
