@@ -30,15 +30,13 @@ p {
 	line-height: 2rem;
 	font-size: 1rem;
 
-	& + p {
-		margin-bottom: 5%;
-	}
 	&.lead {
 		display: block;
 		@include font-size(16);
 		@include breakpoint($small) {
 			@include font-size(21);
 			line-height: 1.5;
+			line-height: 2;
 		}
 		font-weight: 400;
 		line-height: 200%;

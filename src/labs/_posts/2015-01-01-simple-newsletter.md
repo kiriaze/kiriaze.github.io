@@ -9,13 +9,17 @@ subheading: Simple WP Mailchimp Newsletter List Plugin.
 heroText: true
 heroClasses: grey-bg
 image: null
-
+download: http://github.com/kiriaze/simple-newsletter
 tags: [code, wordpress]
 ---
 
+{:.text-align-center}
 A simple mailchimp newsletter plugin that hooks up to your mailchimp list and displays a newsletter form as a widget and a shortcode.
 
-[Get it here!](http://github.com/kiriaze/simple-newsletter)
+{:.text-align-center}
+[Get it here!]({{ page.download }}){: .btn}
+
+---
 
 Widget options: Title, Intro, Placeholder text, api key and list ID.
 

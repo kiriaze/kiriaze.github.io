@@ -9,13 +9,17 @@ subheading: WP plugin the pulls in dribbble feed. Widget/Shortcode.
 heroText: true
 heroClasses: grey-bg
 image: null
-
+download: http://github.com/kiriaze/simple-shots
 tags: [code, wordpress]
 ---
 
+{:.text-align-center}
 A simple dribbble plugin that pulls in your dribbble feed as a widget and a shortcode. Requires dribbble username.
 
-[Get it here!](http://github.com/kiriaze/simple-shots)
+{:.text-align-center}
+[Get it here!]({{ page.download }}){: .btn}
+
+---
 
 Widget options: Title, username, count, and cache.
 

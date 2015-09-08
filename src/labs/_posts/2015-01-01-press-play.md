@@ -10,13 +10,20 @@ heroText: true
 heroClasses: grey-bg
 image: null
 
+download: http://github.com/kiriaze/PressPlay
+
 tags: [code, wordpress]
 ---
 
+{:.text-align-center}
 Composer backed project for easy WordPress sites using the [Simple Framework](http://github.com/kiriaze/simple-framework). Aimed at making efficient sites, that are as sexy on the outside as they are inside. And hella fast. Hella.
 
-[Get it here!](http://github.com/kiriaze/PressPlay)
+{:.text-align-center}
+[Get it here!]({{ page.download }}){: .btn}
 
+---
+
+## About
 Learn more about Simple and its components
 
 - [Simple Framework](https://github.com/kiriaze/simple-framework) ( parent framework )

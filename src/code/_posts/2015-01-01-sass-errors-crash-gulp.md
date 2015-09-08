@@ -43,7 +43,7 @@ To fix the problem, we can open up our gulpfile CSS task and pass in an option.
 gulp.task('css', function(){
 	return gulp.src('PATH/TO/SRC')
 			.pipe(sass({
-				errLogToConsole: true // this doesnt seem to work
+				// errLogToConsole: true // this doesnt seem to work
 			}))
 			.on('error', onError)
 		.pipe(gulp.dest('PATH/TO/DEST'))

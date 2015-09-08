@@ -17,10 +17,16 @@
 			color: $dark;
 		}
 	}
+	.social-list {
+		float: right;
+		margin: 0;
+	}
 }
 .social-list {
-	float: right;
-	margin: 0;
+	margin-top: 1rem;
+	@include breakpoint($tiny) {
+		margin: 0;
+	}
 	li {
 		display: inline-block;
 		@include font-size(22);
@@ -39,6 +45,9 @@
 			}
 			&:hover {
 				color: $dark;
+				.menu-overlay & {
+					color: $primary-color;
+				}
 			}
 		}
 	}

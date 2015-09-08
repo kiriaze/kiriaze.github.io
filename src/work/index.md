@@ -8,6 +8,33 @@ permalink: /work/
 	<div class="container">
 
 		{% assign counter = '0.1' %}
+		{% assign works = site.data.work | sort:'order' %}
+
+		{% for work in works %}
+
+			{% capture counter %}{{ counter | plus:'0.125' }}{% endcapture %}
+
+			<a href="{{ work.url | prepend: site.baseurl }}" class="js-ajax-link wow fadeIn {{ work.status }}" data-wow-delay='{{ counter }}s'>{{ work.name }}.</a>
+			{% if work.status == 'completed' %}
+				{% if work.video %}
+					<video class="work-title-bg work-title-video" preload="auto" poster="{{ work.image }}" autoplay="" loop="" muted="">
+						<source src="{{ work.video }}" type="video/mp4">
+					</video>
+				{% else %}
+					<div class="work-title-bg" style="background-image:url({{ work.image }})"></div>
+				{% endif %}
+			{% endif %}
+		{% endfor %}
+
+	</div>
+</section>
+
+
+{% comment %}
+<section class="work-title-list" data-midnight="dark-bg" data-scroll-target="work">
+	<div class="container">
+
+		{% assign counter = '0.1' %}
 
 		{% assign sorted_pages = site.categories.work | sort:'order' %}
 
@@ -27,9 +54,11 @@ permalink: /work/
 
 	</div>
 </section>
+{% endcomment %}
+
 
 {% comment %}
-<!-- commenting out the old work page layout for now, using the home page style work title list above instead -->
+<!-- grid view like blog/labs -->
 
 {% for project in site.categories.work limit:1 %}
 {% include hero.html %}
@@ -53,6 +82,5 @@ permalink: /work/
 	</article>
 	{% endfor %}
 </div>
-
 
 {% endcomment %}

@@ -9,11 +9,17 @@ subheading: A simple flickr plugin that pulls in your flickr feed as a widget an
 heroText: true
 heroClasses: grey-bg
 image: null
-
+download: http://github.com/kiriaze/simple-flickr
 tags: [code, wordpress]
 ---
 
-A simple flickr plugin that pulls in your flickr feed as a widget and a shortcode. Requires flickr ID. [Get it here!](http://github.com/kiriaze/simple-flickr)
+{:.text-align-center}
+A simple flickr plugin that pulls in your flickr feed as a widget and a shortcode. Requires flickr ID.
+
+{:.text-align-center}
+[Get it here!]({{ page.download }}){: .btn}
+
+---
 
 Widget options: Title, id ( idgettr ), type ( user/group ), and display ( random/latest ).
 

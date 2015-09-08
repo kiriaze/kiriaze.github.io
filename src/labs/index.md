@@ -16,7 +16,7 @@ midnight: dark-bg
 
 <div class="post-list">
 	{% for lab in site.categories.labs %}
-	<article class="post dark">
+	<article class="post dark {% if lab.tags.size > 0 %}{{ lab.tags | join:" " }}{% endif %}">
 		<a href="{{ lab.url | prepend: site.baseurl }}">
 			<div class="post-bg" style="background-image: url({{ lab.image }});"></div>
 			<div class="container">
@@ -24,7 +24,7 @@ midnight: dark-bg
 				<div class="post-meta">
 					<!-- 1.30.2015 -->
 					<span class="date">{{ lab.date | date: "%m.%d.%Y" }}</span>
-					{% if lab.categories.size > 0 %}<span class="categories">{{ lab.categories | join:" / " }}</span>{% endif %}
+					{% if lab.tags.size > 0 %}<span class="tags">{{ lab.tags | join:" / " }}</span>{% endif %}
 				</div>
 				<p>{{ lab.description }}</p>
 			</div>

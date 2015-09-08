@@ -32,10 +32,69 @@ body {
 }
 .giflinks-overlay {
 	z-index: 0 !important;
-	.about-page & {
-		opacity: .5;
+	.about-page &,
+	.home-page & {
+		opacity: .2;
 	}
 }
+
+// about page stack icon list
+.stack-list {
+	list-style-type: none;
+	font-size: 0;
+	text-align: center;
+	margin: 4% 0;
+	@include breakpoint($medium) {
+		max-width: 200%;
+		margin: 8% -50%;
+	}
+	&:after {
+		content: '';
+		display: inline-block;
+		width: 100%;
+	}
+	li {
+		display: inline-block;
+		vertical-align: middle;
+		padding: 0;
+		margin: 1rem 0;
+		width: 20%;
+		@include breakpoint($medium) {
+			margin: 2rem 0;
+			height: 150px;
+		}
+		img {
+			width: 50%;
+			margin: 0 !important; // override post img styles
+			height: 100%;
+		}
+	}
+}
+
+// tag/cat archives
+.tag-heading {
+	padding: 2rem;
+	margin: 0;
+}
+.entry-title {
+	margin: 0;
+	border-bottom: 1px solid #eee;
+	a {
+		display: block;
+		color: $dark;
+		padding: 2rem;
+		border-left: 0px solid $primary-color;
+		font-family: $header-font;
+		font-weight: 600;
+		text-decoration: underline;
+		&:hover {
+			border-width: 5px;
+			color: $primary-color;
+			background-color: rgb(250, 250, 250);
+		}
+	}
+}
+
 
 // js class for random on load
 .random {
@@ -141,12 +200,6 @@ body,
 		width: 100% !important;
 	}
 	.lead {
-		@include breakpoint($small) {
-			max-width: 80%;
-		}
-		@include breakpoint($large) {
-			max-width: 60%;
-		}
 		span {
 			@include fadeIn(.35s, .2s, ease-in-out, $fill, $visibility);
 			&:nth-child(1) {
@@ -164,6 +217,19 @@ body,
 		}
 		a {
 			padding-bottom: 0;
+		}
+	}
+	h1 {
+		@include breakpoint($large) {
+			max-width: 80%;
+		}
+	}
+	br {
+		display: none;
+	}
+	@include breakpoint($small) {
+		br {
+			display: inline;
 		}
 	}
 }
@@ -190,16 +256,17 @@ body,
 }
 
 .btn {
+	@include font-size(12);
+	font-family: $header-font;
+	font-weight: 600;
+	color: $dark;
+	line-height: 1;
+	padding: 1rem 2rem;
+	margin-top: 1rem;
+	letter-spacing: 1px;
 	display: inline-block;
 	border: 2px solid $dark;
-	padding: 1rem 2rem;
-	color: $dark;
-	font-weight: 600;
-	font-family: $header-font;
 	text-transform: uppercase;
-	letter-spacing: 1px;
-	font-size: 12px;
-	margin-top: 1.5rem;
 	.dark &,
 	.cover-bg & {
 		color: white;
@@ -457,6 +524,13 @@ body,
 	p {
 		// display: none;
 	}
+	// work in progress lab post tag
+	&.wip {
+		border-left: 5px solid $primary-color;
+		&:hover {
+			border-left-color: $primary-color;
+		}
+	}
 	&:hover {
 		border-color: $dark;
 		&:before {
@@ -583,14 +657,13 @@ body,
 	h1 {
 		font-size: 1.7rem;
 		letter-spacing: -.1rem;
-		// line-height: 1.2;
 		line-height: 1;
 
 		@include breakpoint($tiny) {
 			font-size: 1.9rem;
 		}
 		@include breakpoint($small) {
-			max-width: 80%;
+			// max-width: 80%;
 			font-size: 3.5rem;
 			letter-spacing: -.3rem;
 		}
@@ -602,10 +675,16 @@ body,
 		}
 
 		a {
+			text-decoration: underline;
+		}
+	}
+	h6 {
+		margin-top: 1rem;
+	}
+	a:not(.btn) {
+		color: $primary-color;
+		&:hover {
 			color: $dark;
-			&:hover {
-				color: $primary-color;
-			}
 		}
 	}
 	&.has-hero {
@@ -616,9 +695,7 @@ body,
 			}
 		}
 	}
-	h6 {
-		margin-top: 1rem;
-	}
+
 }
 
 .about-page {
@@ -639,13 +716,6 @@ body,
 					margin: 0;
 				}
 			}
-			a {
-				color: $primary-color;
-				&:hover {
-					color: $dark;
-					text-decoration: underline;
-				}
-			}
 		}
 	}
 }
@@ -653,7 +723,7 @@ body,
 .post-content {
 	.container {
 		overflow: visible;
-		@include breakpoint($small) {
+		@include breakpoint($medium) {
 			width: 100%;
 			max-width: 800px;
 			margin: 0 auto;
@@ -753,6 +823,64 @@ body,
 		}
 
 	}
+}
+
+.instagram-feed,
+.dribbble-feed {
+	@include grid();
+	.instagram-item,
+	.dribbble-item {
+		@include columns(4);
+		.block {
+			@extend .ratio-4-3;
+			display: block;
+			.content {
+				display: none;
+			}
+		}
+	}
+}
+
+// example
+// <div class='block'>
+//     <div class='content'>Aspect ratio of 1:1</div>
+// </div>
+.block {
+    overflow: hidden;
+    position: relative;
+    background: #fff;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: $transition;
+    @extend %no-flick;
+
+    &:after {
+        content: '';
+        display: block;
+        padding-bottom: 100%;  /* initial ratio of 1:1*/
+    }
+
+    @include breakpoint($small) {
+
+        /* Other ratios */
+        &.ratio-2-1:after {
+            padding-bottom: 50%;
+        }
+        &.ratio-16-9:after {
+            padding-bottom: 56.25%;
+        }
+        &.ratio-4-3:after {
+            padding-bottom: 75%;
+        }
+        &.ratio-2-3:after {
+            padding-bottom: 150%;
+        }
+        &.ratio-1-2:after {
+            padding-bottom: 200%;
+        }
+
+    }
+
 }
 
 .grey-bg {

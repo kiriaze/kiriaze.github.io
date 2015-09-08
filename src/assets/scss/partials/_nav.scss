@@ -6,16 +6,26 @@
 	.container {
 		height: 100%;
 		overflow: visible;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		@include breakpoint($tiny) {
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: flex-end;
+		}
 	}
 	nav {
-		position: absolute;
-		bottom: 2vw;
+		@include breakpoint($tiny) {
+			margin-bottom: 1rem;
+		}
 		ul {
 			margin: 0;
 			li {
 				margin: 0;
 				line-height: 1;
 				// transform: translateX(-500px);
+				transform: translateZ(0); // chrome bug fix
 				opacity: 0;
 				@for $i from 1 through 6 {
 					&:nth-child(#{$i}) {
@@ -41,7 +51,7 @@
 						font-size: 8vw;
 					}
 
-					// bg red anim width
+					// bg anim width
 					&:before {
 						content: '';
 						position: absolute;
@@ -50,11 +60,11 @@
 						left: -105%;
 						bottom: 0;
 						width: 0px;
-						background: $white;
+						background: $primary-color;
 						transition: $transition;
 					}
 					&:hover {
-						color: $primary-color;
+						color: white;
 						&:before {
 							width: 215%;
 						}
@@ -75,15 +85,14 @@
 		}
 	}
 	.contact-details {
-		position: absolute;
-		bottom: 2vw;
 		font-family: $header-font;
 		font-weight: 800;
 		color: white;
-		text-align: right;
-		right: 8%; // container padding
-		@include breakpoint($small) {
-			right: 1.5%; // .container padding
+		margin: 2rem 0;
+		@include breakpoint($tiny) {
+			text-align: right;
+			margin: 0 0 1rem;
+			flex: 1;
 		}
 		a {
 			color: white;
@@ -198,14 +207,17 @@
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background: $primary-color;
+	background: $dark;
 	opacity: 0;
-	transition: $transition;
+	transition: opacity 0.5s, visibility 0s 0.5s;
+	visibility: hidden;
+	z-index: 2;
 }
 #drawer-toggle:checked ~ .menu-overlay,
 .menu-overlay.nav-open {
+	transition: opacity .35s ease;
+	visibility: visible;
 	opacity: 1;
-	z-index: 2;
 }
 
 

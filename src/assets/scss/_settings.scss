@@ -122,7 +122,7 @@ $dark:							#222;
 // Animation Property Variables
 $duration:						.35s; // was .15, upped for hero transition - or change via js
 $delay:							.2s;
-$transition:					all $duration cubic-bezier(0.2, .4, .1, 1); // thumbnail animations
+$transition:					all $duration cubic-bezier(0.2, .4, .1, 1);
 $function:						ease;
 $fill:							both;
 $visibility:					visible;

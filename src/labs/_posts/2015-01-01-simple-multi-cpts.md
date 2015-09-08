@@ -9,13 +9,17 @@ subheading: A plugin that can handle multiple custom post types at once through 
 heroText: true
 heroClasses: grey-bg
 image: null
-
+download: http://github.com/kiriaze/simple-multi-cpts
 tags: [code, wordpress]
 ---
 
-Simple Multi Custom Post Types - A plugin that can handle multiple custom post types at once through an array, theme hookable yo. [Get it here!](http://github.com/kiriaze/simple-multi-cpts)
+{:.text-align-center}
+Simple Multi Custom Post Types - A plugin that can handle multiple custom post types at once through an array, theme hookable yo.
 
-<br>
+{:.text-align-center}
+[Get it here!]({{ page.download }}){: .btn}
+
+---
 
 ## Updates Galore!
 

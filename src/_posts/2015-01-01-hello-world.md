@@ -4,6 +4,7 @@ date: 2015-07-18
 image:
 heroClasses: grey-bg
 description: Is this thing on?
+image:
 tags: []
 ---
 

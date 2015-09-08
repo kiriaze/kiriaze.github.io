@@ -10,7 +10,13 @@ heroText: true
 heroClasses: grey-bg
 image: null
 
+download: http://github.com/kiriaze/simple-child
+
 tags: [code, wordpress]
 ---
 
-Simple Child Theme - requires Simple Framework. [Get it here!](http://github.com/kiriaze/simple-child)
+{:.text-align-center}
+Simple Child Theme - requires Simple Framework.
+
+{:.text-align-center}
+[Get it here!]({{ page.download }}){: .btn}

@@ -1,6 +1,7 @@
-# Site settings - reference http://ben.balter.com/2015/02/20/jekyll-collections/
-title: Kiriaze
-description: The online portfolio of Constantine Kiriaze.
+# Site settings
+title: Constantine Kiriaze
+description: Helping businesses solve problems in the digital landscape.
+#Web consultant based in SoCal developing solutions for businesses.
 
 disqus_shortname: kiriaze
 
@@ -106,7 +107,6 @@ defaults:
       author: ""
       layout: "post"
       heroText: true
-      image:  /assets/images/projects/p2.jpg
       midnight: default
       is_post: true # automatically set is_post=true for all posts, for simple conditional checks
 

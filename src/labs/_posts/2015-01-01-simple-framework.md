@@ -10,7 +10,13 @@ heroText: true
 heroClasses: grey-bg
 image: null
 
+download: http://github.com/kiriaze/simple-framework
+
 tags: [code, wordpress]
 ---
 
-A revolutionary wordpress theme framework. Needs Simple-Child. [Get it here!](http://github.com/kiriaze/simple-framework)
+{:.text-align-center}
+A revolutionary wordpress theme framework. Needs Simple-Child.
+
+{:.text-align-center}
+[Get it here!]({{ page.download }}){: .btn}

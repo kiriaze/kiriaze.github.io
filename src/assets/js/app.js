@@ -17,6 +17,8 @@
 		SHORTNAME.colors();
 		SHORTNAME.basics();
 		SHORTNAME.nav();
+		// SHORTNAME.instagram();
+		SHORTNAME.dribbble();
 
 	};
 
@@ -94,7 +96,7 @@
 		SHORTNAME.elems.main.find('.post-list .post').matchHeight();
 
 		// wow
-		SHORTNAME.elems.main.find('.post-content .container > *, img, h6, h5, h4, h3, h2, p, .btn').addClass('wow fadeIn');
+		SHORTNAME.elems.main.find('.post-content .container > *, img, h6, h5, h4, h3, h2, p, span, .btn').addClass('wow fadeIn');
 
 		// shoutouts
 		console.log('psst..i give a shit. =)');
@@ -113,6 +115,38 @@
 		// 	var src = $holder.data('preload-bg');
 		// 	$holder.css('background-image', 'url("'+ src +'")');
 		// });
+
+	};
+
+	SHORTNAME.instagram = function() {
+
+		var	user_id = '24765686', //userid
+			num_to_display = '20', //instagram limits to max 20, but you can do less for your layout.
+			access_token = '695497474.45e59c8.a618fb95f14947b08d2137fd66797bbd';
+
+		$.ajax({
+			type: 'GET',
+			dataType: 'jsonp',
+			cache: false,
+			url: 'https://api.instagram.com/v1/users/'+user_id+'/media/recent/?access_token='+access_token,
+			success: function(data) {
+				for (var i = 0; i < num_to_display; i++) {
+					// console.log(data.data[i].caption.text);
+					$('.instagram-feed').append('<li class="instagram-item"><a target="_blank" href="' + data.data[i].link +'" class="instagram-image overlay block" style="background-image: url('+data.data[i].images.low_resolution.url+')"><div class="content"><h5>' + data.data[i].caption.text + '</h5></div></a></li>');
+				}
+			}
+		});
+
+	};
+
+	SHORTNAME.dribbble = function() {
+
+		$.getJSON("http://dribbble.com/kiriaze/shots.json?callback=?", function(data){
+			$.each(data.shots, function(i,shot){
+				// console.log(shot);
+				$('.dribbble-feed').append('<li class="dribbble-item"><a target="_blank" href="' + shot.url +'" class="dribbble-image overlay block" style="background-image: url('+ shot.image_teaser_url +')"><div class="content"><h5>' + shot.title + '</h5></div></a></li>');
+			});
+		});
 
 	};
 
@@ -138,7 +172,7 @@
 
 		var elements = $( '.giflinks' );
 		if ( elements.length ) {
-    		GifLinks( elements );
+			GifLinks( elements );
 		}
 
 	});

@@ -9,15 +9,18 @@ subheading: Set up an ideal mac development environment on a fresh install of OS
 heroText: true
 heroClasses: grey-bg
 image: null
-
+download: http://github.com/kiriaze/mac-dev-env
 tags: [code]
 ---
 
+{:.text-align-center}
 Get your development game on point with this automated script, or cherry pick through readme and script.
+**Ideal for fresh installs of OSX yosemite**
 
-**ideal for fresh installs of OSX yosemite**
+{:.text-align-center}
+[Get it here!]({{ page.download }}){: .btn}
 
-[Get it here!](http://github.com/kiriaze/mac-dev-env)
+---
 
 ### Self executing script v.1.
 
