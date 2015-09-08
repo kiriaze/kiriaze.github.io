@@ -338,7 +338,11 @@
   
    {
      
+<<<<<<< HEAD
         "title"    : "Words.",
+=======
+        "title"    : "Blog",
+>>>>>>> master
         "category" : "",
         "tags"     : "",
         "url"      : "/blog/index.html",

@@ -5,8 +5,13 @@
     <description>Helping businesses solve problems in the digital landscape.</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+<<<<<<< HEAD
     <pubDate>Tue, 08 Sep 2015 04:08:05 -0400</pubDate>
     <lastBuildDate>Tue, 08 Sep 2015 04:08:05 -0400</lastBuildDate>
+=======
+    <pubDate>Tue, 08 Sep 2015 04:15:36 -0400</pubDate>
+    <lastBuildDate>Tue, 08 Sep 2015 04:15:36 -0400</lastBuildDate>
+>>>>>>> master
     <generator>Jekyll v2.5.3</generator>
     
       <item>
