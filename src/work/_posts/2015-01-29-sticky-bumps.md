@@ -170,6 +170,13 @@ background-image: url(/assets/images/projects/stickybumps/scent.jpg);
 				"Every time you see a dramatic shift in the performance paradigm you see the need for better traction, and as such, Wax Research’s offerings have been in a perpetual state of evolution."
 				<cite>JOHN DAHL</cite>
 			</p>
+			<!-- <p>
+				"We want to thank the guys at Grizzly for putting together an awesome website for Sticky Bumps. Everyone at Wax Research is excited with the results. You definitely captured the flavor of the brand and our company. The whole site really pops and lends itself to a great experience for our customers."
+				<cite>
+					JOHN DAHL
+					<em>President/Owner</em>
+				</cite>
+			</p> -->
 		</blockquote>
 
 	</div>
