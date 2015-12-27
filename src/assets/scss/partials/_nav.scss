@@ -55,18 +55,20 @@
 					&:before {
 						content: '';
 						position: absolute;
-						z-index: -1;
 						top: 0;
-						left: -105%;
+						left: 0%;
 						bottom: 0;
-						width: 0px;
+						z-index: -1;
+						transform: translatex(calc(-50vw));
 						background: $primary-color;
 						transition: $transition;
+						width: 0;
 					}
 					&:hover {
 						color: white;
 						&:before {
-							width: 215%;
+							width: calc(100vw + 100%);
+							transform: translateX(calc(-100vw + 1rem));
 						}
 					}
 					&.current {
