@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Constantine Kiriaze</title>
+    <description>Helping businesses solve problems in the digital landscape.</description>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 01 Oct 2015 12:48:03 -0400</pubDate>
+    <lastBuildDate>Thu, 01 Oct 2015 12:48:03 -0400</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Press Play.</title>
+        <description>&lt;p class=&quot;text-align-center&quot;&gt;Composer backed project for easy WordPress sites using the &lt;a href=&quot;http://github.com/kiriaze/simple-framework&quot;&gt;Simple Framework&lt;/a&gt;. Aimed at making efficient sites, that are as sexy on the outside as they are inside. And hella fast. Hella.&lt;/p&gt;
+
+&lt;p class=&quot;text-align-center&quot;&gt;&lt;a href=&quot;http://github.com/kiriaze/PressPlay&quot; class=&quot;btn&quot;&gt;Get it here!&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;about&quot;&gt;About&lt;/h2&gt;
+&lt;p&gt;Learn more about Simple and its components&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/kiriaze/simple-framework&quot;&gt;Simple Framework&lt;/a&gt; ( parent framework )&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/kiriaze/simple-child&quot;&gt;Simple Child&lt;/a&gt; ( child framework )&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/kiriaze/vvv-simple&quot;&gt;VVV Simple&lt;/a&gt; ( an alternative to PressPlay, if you have vagrant setup, run this instead, a one click solution so to speak )&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/kiriaze/Simple-Grid&quot;&gt;Simple Grid&lt;/a&gt; ( and stupid simple grid thats semantic, extendable, and actually makes sense )&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/kiriaze/SimpleAnchors&quot;&gt;Simple Anchors&lt;/a&gt; ( a data attr scrolling plugin with some awesomeness baked in )&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/kiriaze/animate.scss&quot;&gt;Animate Scss&lt;/a&gt; ( fork of Dan Edens Animate.css )&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;requirements&quot;&gt;Requirements&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://getcomposer.org/&quot;&gt;Composer&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://brew.sh/&quot;&gt;Git/Brews&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://bringvictory.com/&quot;&gt;Skills&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Open Mind. It’s hella opinionated, cuz its awesome. Get with it already.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;optional--but-highly-encouraged-&quot;&gt;Optional ( But highly encouraged.. )&lt;/h2&gt;
+&lt;p&gt;Want your mac to dev fly shit all day? &lt;a href=&quot;https://github.com/kiriaze/mac-dev-env&quot;&gt;check it homie.&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;assumptions&quot;&gt;Assumptions&lt;/h2&gt;
+
+&lt;p&gt;You have a similar setup to the link above. OSX. Codekit. SequelPro.&lt;/p&gt;
+
+&lt;p&gt;Currently depends on Codekit for theme dev right out the box, cuz it just works like butter. Its possible to work with guard if you dont wanna deal with having a carefree life, but gets messy if both are used in a team environment. Guard shits on grunt, gulps alright too - but codekit takes the gold.&lt;/p&gt;
+
+&lt;p&gt;And if you’re using a wysiwyg editor or mamp or a bloated ide like coda, &lt;strong&gt;&lt;em&gt;go back to school, kid.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;consists-of&quot;&gt;Consists of&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Latest WP from&lt;/li&gt;
+  &lt;li&gt;Composer
+    &lt;ol&gt;
+      &lt;li&gt;themes
+        &lt;ol&gt;
+          &lt;li&gt;simple framework&lt;/li&gt;
+          &lt;li&gt;simple parent framework&lt;/li&gt;
+          &lt;li&gt;simple child theme&lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+      &lt;li&gt;plugins
+        &lt;ol&gt;
+          &lt;li&gt;See full list within composer.json file.&lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://gist.github.com/kiriaze/89799d8a31a8084920bc&quot;&gt;.htaccess&lt;/a&gt; ( Currently ignored from repo )
+        &lt;ol&gt;
+          &lt;li&gt;permalinks&lt;/li&gt;
+          &lt;li&gt;media redirection to remote&lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+      &lt;li&gt;project repo should also house a db dump&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;installation&quot;&gt;Installation&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Clone repo and run composer.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;$ git clone https://raw.github.com/kiriaze/PressPlay {Project-Name}
+$ cd {Project-Name}
+$ composer install
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Run &lt;a href=&quot;https://github.com/kiriaze/ghost&quot;&gt;ghost&lt;/a&gt;. ( Follow instructions through cli )&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;curl -s https://raw.githubusercontent.com/kiriaze/ghost/master/ghost.sh &amp;gt; /tmp; bash /tmp/ghost
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Create your database. ( Will move this into ghost.sh soon )&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;# Default
+$ mysql -u {username} -p {password} -e &amp;quot;create database {databasename};&amp;quot;
+# If dev env setup with mac-dev-env/homebrew, use the line below instead
+$ mysql -u root -p  -e &amp;quot;create database foo;&amp;quot;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Update git remote in root of project and subsequent files.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;# Remove git from root of your project
+$ rm -rf {Project-Name}/.git
+# Add your new remote to the root of your project
+$ git remote add origin https://path-to-repo.com/repo.git
+# Remove git from project theme
+$ rm -rf {Project-Name}/wp-content/themes/{project-theme}/.git
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Update Naming Conventions&lt;/p&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;Rename Simple-child to {Project-Name} ( Or Simple-Framwork depending on which you choose to use )&lt;/li&gt;
+      &lt;li&gt;Update wp-content/themes/{Project-Name}/style.css naming refs, and should reflect the code block below.&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;comment&quot;&gt;/*
+Theme Name:   Project Name
+Theme URI:    http://projectname.com
+Author:       Project Author
+Author URI:   http://projectauthor.com
+Description:      An awesome description.
+Template:       simple
+Version:          1.0.0
+License:      GNU General Public License v2 or later
+License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain:  simple
+*/&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;pre&gt;&lt;code&gt;3. Update wp-content/themes/{Project-Name}/assets/js/app.js naming refs
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;error&quot;&gt;#&lt;/span&gt; Update all THEMENAME/SHORTNAME refs within file
+&lt;span class=&quot;error&quot;&gt;#&lt;/span&gt; THEMENAME is the full name of your project, e.g. MyAwesomeProject
+&lt;span class=&quot;error&quot;&gt;#&lt;/span&gt; SHORTNAME is the acronym of the THEMENAME, e.g. MAP
+&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; SHORTNAME = window.THEMENAME; &lt;span class=&quot;comment&quot;&gt;// example before&lt;/span&gt;
+&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; MAP = window.MyAwesomeProject; &lt;span class=&quot;comment&quot;&gt;// example after&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Set permissions to project directory ( WP Updates Specific )&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;$ sudo chown -R _www {Project-Name}
+$ sudo chmod -R g+w {Project-Name}
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Update wp-config.php credentials to connect to your db.&lt;/li&gt;
+  &lt;li&gt;Direct browser to {Project-Name}.dev/wp/wp-admin&lt;/li&gt;
+  &lt;li&gt;Activate Project Theme.&lt;/li&gt;
+  &lt;li&gt;Update Site URL in WP Admin. ( And other settings through theme options )&lt;/li&gt;
+  &lt;li&gt;Drag your project Theme into codekit. ( comes with preconfigured codekit.conf )&lt;/li&gt;
+  &lt;li&gt;Make dope shit yo.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;notes&quot;&gt;Notes:&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;When updating gitignore, run &lt;code&gt;$ git rm -r --cached .&lt;/code&gt; then re add/commit&lt;/li&gt;
+  &lt;li&gt;Add acf-pro license into wp admin.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;If you add other plugins to your project, you have two options to keep them in sync.&lt;/p&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;Exclude from .gitignore with &lt;code&gt;!wp-content/plugins/{plugin-name}&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;Add plugin to composer.json and run &lt;code&gt;composer update&lt;/code&gt;&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;DB search/replace mysql query { When importing/exporting local/remote dbs }&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;class&quot;&gt;update&lt;/span&gt; wp_posts &lt;span class=&quot;class&quot;&gt;set&lt;/span&gt; guid = &lt;span class=&quot;class&quot;&gt;replace&lt;/span&gt;(guid, &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;OLD&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;NEW&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;);
+&lt;span class=&quot;class&quot;&gt;update&lt;/span&gt; wp_options &lt;span class=&quot;class&quot;&gt;set&lt;/span&gt; option_value = &lt;span class=&quot;class&quot;&gt;replace&lt;/span&gt;(option_value, &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;OLD&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;NEW&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;);
+&lt;span class=&quot;class&quot;&gt;update&lt;/span&gt; wp_posts &lt;span class=&quot;class&quot;&gt;set&lt;/span&gt; post_content = &lt;span class=&quot;class&quot;&gt;replace&lt;/span&gt;(post_content, &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;OLD&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;NEW&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;);
+&lt;span class=&quot;class&quot;&gt;update&lt;/span&gt; wp_postmeta &lt;span class=&quot;class&quot;&gt;set&lt;/span&gt; meta_value = &lt;span class=&quot;class&quot;&gt;replace&lt;/span&gt;(meta_value, &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;OLD&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;NEW&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;);
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;to-do&quot;&gt;To Do:&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Add mysql db creation to ghost.sh&lt;/li&gt;
+  &lt;li&gt;Write db creds to wp-config.php from ghost.sh&lt;/li&gt;
+  &lt;li&gt;Convert ghost.sh to ruby script&lt;/li&gt;
+  &lt;li&gt;Integrate bower within simple-html&lt;/li&gt;
+  &lt;li&gt;Debug wp-setup within theme options on activation&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        <pubDate>Mon, 03 Aug 2015 00:00:00 -0400</pubDate>
+        <link>/labs/press-play/</link>
+        <guid isPermaLink="true">/labs/press-play/</guid>
+        
+        <category>code</category>
+        
+        <category>wordpress</category>
+        
+        
+        <category>labs</category>
+        
+        <category></category>
+        
+      </item>
+    
+      <item>
+        <title>Simple Child.</title>
+        <description>&lt;p class=&quot;text-align-center&quot;&gt;Simple Child Theme - requires Simple Framework.&lt;/p&gt;
+
+&lt;p class=&quot;text-align-center&quot;&gt;&lt;a href=&quot;http://github.com/kiriaze/simple-child&quot; class=&quot;btn&quot;&gt;Get it here!&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 02 Aug 2015 00:00:00 -0400</pubDate>
+        <link>/labs/simple-child/</link>
+        <guid isPermaLink="true">/labs/simple-child/</guid>
+        
+        <category>code</category>
+        
+        <category>wordpress</category>
+        
+        
+        <category>labs</category>
+        
+        <category></category>
+        
+      </item>
+    
+      <item>
+        <title>Simple Tweets.</title>
+        <description>&lt;p class=&quot;text-align-center&quot;&gt;A simple twitter plugin that pulls in your twitter feed as a shortcode. Requires twitter username.&lt;/p&gt;
+
+&lt;p class=&quot;text-align-center&quot;&gt;&lt;a href=&quot;http://github.com/kiriaze/simple-tweets&quot; class=&quot;btn&quot;&gt;Get it here!&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Shortcode Params: &lt;code&gt;[tweets before=&#39;&#39; after=&#39;&#39; wrapper=&#39;&#39; class=&#39;&#39; attr=&#39;&#39;]&lt;/code&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 01 Aug 2015 00:00:00 -0400</pubDate>
+        <link>/labs/simple-tweets/</link>
+        <guid isPermaLink="true">/labs/simple-tweets/</guid>
+        
+        <category>code</category>
+        
+        <category>wordpress</category>
+        
+        
+        <category>labs</category>
+        
+        <category></category>
+        
+      </item>
+    
+      <item>
+        <title>Simple Shots.</title>
+        <description>&lt;p class=&quot;text-align-center&quot;&gt;A simple dribbble plugin that pulls in your dribbble feed as a widget and a shortcode. Requires dribbble username.&lt;/p&gt;
+
+&lt;p class=&quot;text-align-center&quot;&gt;&lt;a href=&quot;http://github.com/kiriaze/simple-shots&quot; class=&quot;btn&quot;&gt;Get it here!&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Widget options: Title, username, count, and cache.&lt;/p&gt;
+
+&lt;p&gt;Shortcode Params: [shots player=’’ shots=’’]&lt;/p&gt;
+</description>
+        <pubDate>Sat, 01 Aug 2015 00:00:00 -0400</pubDate>
+        <link>/labs/simple-shots/</link>
+        <guid isPermaLink="true">/labs/simple-shots/</guid>
+        
+        <category>code</category>
+        
+        <category>wordpress</category>
+        
+        
+        <category>labs</category>
+        
+        <category></category>
+        
+      </item>
+    
+      <item>
+        <title>Simple Shortcodes.</title>
+        <description>&lt;p class=&quot;text-align-center&quot;&gt;Just the best damn shortcodes out there.&lt;/p&gt;
+
+&lt;p class=&quot;text-align-center&quot;&gt;&lt;a href=&quot;http://github.com/kiriaze/simple-shortcodes&quot; class=&quot;btn&quot;&gt;Get it here!&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Consists of:&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li class=&quot;columns-4&quot;&gt;Button&lt;/li&gt;
+	&lt;li class=&quot;columns-4&quot;&gt;Lightbox&lt;/li&gt;
+	&lt;li class=&quot;columns-4&quot;&gt;Callout&lt;/li&gt;
+	&lt;li class=&quot;columns-4&quot;&gt;Accordions&lt;/li&gt;
+	&lt;li class=&quot;columns-4&quot;&gt;Toggles&lt;/li&gt;
+	&lt;li class=&quot;columns-4&quot;&gt;Alerts&lt;/li&gt;
+	&lt;li class=&quot;columns-4&quot;&gt;Pre&lt;/li&gt;
+	&lt;li class=&quot;columns-4&quot;&gt;Grid&lt;/li&gt;
+	&lt;li class=&quot;columns-4&quot;&gt;Tabs&lt;/li&gt;
+	&lt;li class=&quot;columns-4&quot;&gt;Video&lt;/li&gt;
+	&lt;li class=&quot;columns-4&quot;&gt;Audio&lt;/li&gt;
+	&lt;li class=&quot;columns-4&quot;&gt;Icons&lt;/li&gt;
+	&lt;li class=&quot;columns-4&quot;&gt;Map&lt;/li&gt;
+	&lt;li class=&quot;columns-4&quot;&gt;Lists&lt;/li&gt;
+	&lt;li class=&quot;columns-4&quot;&gt;Packages&lt;/li&gt;
+	&lt;li class=&quot;columns-4&quot;&gt;Section&lt;/li&gt;
+	&lt;li class=&quot;columns-4&quot;&gt;Stats&lt;/li&gt;
+	&lt;li class=&quot;columns-4&quot;&gt;Client List&lt;/li&gt;
+	&lt;li class=&quot;columns-4&quot;&gt;Post Carousel&lt;/li&gt;
+	&lt;li class=&quot;columns-4&quot;&gt;Hr&lt;/li&gt;
+	&lt;li class=&quot;columns-4&quot;&gt;Br&lt;/li&gt;
+	&lt;li class=&quot;columns-4&quot;&gt;Bloginfo&lt;/li&gt;
+	&lt;li class=&quot;columns-4&quot;&gt;Raw&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sat, 01 Aug 2015 00:00:00 -0400</pubDate>
+        <link>/labs/simple-shortcodes/</link>
+        <guid isPermaLink="true">/labs/simple-shortcodes/</guid>
+        
+        <category>code</category>
+        
+        <category>wordpress</category>
+        
+        
+        <category>labs</category>
+        
+        <category></category>
+        
+      </item>
+    
+      <item>
+        <title>Simple Newsletter.</title>
+        <description>&lt;p class=&quot;text-align-center&quot;&gt;A simple mailchimp newsletter plugin that hooks up to your mailchimp list and displays a newsletter form as a widget and a shortcode.&lt;/p&gt;
+
+&lt;p class=&quot;text-align-center&quot;&gt;&lt;a href=&quot;http://github.com/kiriaze/simple-newsletter&quot; class=&quot;btn&quot;&gt;Get it here!&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Widget options: Title, Intro, Placeholder text, api key and list ID.&lt;/p&gt;
+
+&lt;p&gt;Shortcode Params: &lt;code&gt;[newsletter before=&#39;&#39; after=&#39;&#39; wrapper=&#39;&#39; class=&#39;&#39;]&lt;/code&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 01 Aug 2015 00:00:00 -0400</pubDate>
+        <link>/labs/simple-newsletter/</link>
+        <guid isPermaLink="true">/labs/simple-newsletter/</guid>
+        
+        <category>code</category>
+        
+        <category>wordpress</category>
+        
+        
+        <category>labs</category>
+        
+        <category></category>
+        
+      </item>
+    
+      <item>
+        <title>Simple Framework.</title>
+        <description>&lt;p class=&quot;text-align-center&quot;&gt;A revolutionary wordpress theme framework. Needs Simple-Child.&lt;/p&gt;
+
+&lt;p class=&quot;text-align-center&quot;&gt;&lt;a href=&quot;http://github.com/kiriaze/simple-framework&quot; class=&quot;btn&quot;&gt;Get it here!&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 01 Aug 2015 00:00:00 -0400</pubDate>
+        <link>/labs/simple-framework/</link>
+        <guid isPermaLink="true">/labs/simple-framework/</guid>
+        
+        <category>code</category>
+        
+        <category>wordpress</category>
+        
+        
+        <category>labs</category>
+        
+        <category></category>
+        
+      </item>
+    
+      <item>
+        <title>Simple Flickr.</title>
+        <description>&lt;p class=&quot;text-align-center&quot;&gt;A simple flickr plugin that pulls in your flickr feed as a widget and a shortcode. Requires flickr ID.&lt;/p&gt;
+
+&lt;p class=&quot;text-align-center&quot;&gt;&lt;a href=&quot;http://github.com/kiriaze/simple-flickr&quot; class=&quot;btn&quot;&gt;Get it here!&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Widget options: Title, id ( idgettr ), type ( user/group ), and display ( random/latest ).&lt;/p&gt;
+
+&lt;p&gt;Shortcode Params: &lt;code&gt;[flickr before=&#39;&#39; after=&#39;&#39; wrapper=&#39;&#39; class=&#39;&#39;]&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;todo&quot;&gt;Todo:&lt;/h2&gt;
+
+&lt;p&gt;Add &lt;code&gt;Simple_Flickr_Widget::display_cached_content();&lt;/code&gt; function for shortcode to pull from.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 01 Aug 2015 00:00:00 -0400</pubDate>
+        <link>/labs/simple-flickr/</link>
+        <guid isPermaLink="true">/labs/simple-flickr/</guid>
+        
+        <category>code</category>
+        
+        <category>wordpress</category>
+        
+        
+        <category>labs</category>
+        
+        <category></category>
+        
+      </item>
+    
+      <item>
+        <title>S-Grams.</title>
+        <description>&lt;p class=&quot;text-align-center&quot;&gt;A simple instagram plugin that pulls in your instagram feed as a widget and a shortcode. Requires instagram username.&lt;/p&gt;
+
+&lt;p class=&quot;text-align-center&quot;&gt;&lt;a href=&quot;http://github.com/kiriaze/s-grams&quot; class=&quot;btn&quot;&gt;Get it here!&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Widget options: Title, username, count, and cache.&lt;/p&gt;
+
+&lt;p&gt;Shortcode Params: &lt;code&gt;[grams account=&#39;&#39; count=&#39;&#39; tag=&#39;&#39; class=&#39;&#39; effects=&#39;&#39;]&lt;/code&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 01 Aug 2015 00:00:00 -0400</pubDate>
+        <link>/labs/s-grams/</link>
+        <guid isPermaLink="true">/labs/s-grams/</guid>
+        
+        <category>code</category>
+        
+        <category>wordpress</category>
+        
+        
+        <category>labs</category>
+        
+        <category></category>
+        
+      </item>
+    
+      <item>
+        <title>Simple Multi CPT&#39;s.</title>
+        <description>&lt;p class=&quot;text-align-center&quot;&gt;Simple Multi Custom Post Types - A plugin that can handle multiple custom post types at once through an array, theme hookable yo.&lt;/p&gt;
+
+&lt;p class=&quot;text-align-center&quot;&gt;&lt;a href=&quot;http://github.com/kiriaze/simple-multi-cpts&quot; class=&quot;btn&quot;&gt;Get it here!&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;updates-galore&quot;&gt;Updates Galore!&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Multiple taxonomies can now be passed to each cpt, supports arrays.&lt;/li&gt;
+  &lt;li&gt;Ability to filter/sort them, as well as post type term count.&lt;/li&gt;
+  &lt;li&gt;Hide taxonomies backend table row header and filter/sort dropdowns through $hide[];&lt;/li&gt;
+  &lt;li&gt;Custom post type icons from FontAwesome!&lt;/li&gt;
+  &lt;li&gt;ACF Settings integration, now managable from wp admin instead of through functions file, or both if desired! Woot woot!&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;what&quot;&gt;What?&lt;/h2&gt;
+
+&lt;p&gt;A plugin that can handle multiple custom post types at once, requires atleast the singular and plural name of each cpt you would like to add, and optionally a custom taxonomy, slug rewrite, hide options, and icon.&lt;/p&gt;
+
+&lt;p&gt;Following the philosophy of keeping custom post types theme agnostic, this plugin is lightweight and efficient and allows for adding infinite custom post types/taxonomies through wp admin ( Requires ACF ) or by hooking into the function within your theme, look at example below. This chunk is small enough to be easily placed within any theme - and is preferred over having multiple cpt plugins cluttering and slowing down your project.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;why&quot;&gt;Why?&lt;/h2&gt;
+
+&lt;p&gt;Came across a project requiring a ridiculous amount of custom post types, and didn’t think that having over 10 separate plugins for handling those post types were ideal - so I made one to rule them all. ba-dum-dum-tshh.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;how&quot;&gt;How?&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Download/Clone/Composer that ish, install and activate plugin.&lt;/li&gt;
+  &lt;li&gt;ACF active? ( And it should be guys! )&lt;/li&gt;
+  &lt;li&gt;Skip the rest and head to the plugin settings page, else continue.&lt;/li&gt;
+  &lt;li&gt;If not, place hook into theme functions. ( Preferably into abstracted module, look @ simple. ) Note: Capitalise first letter.&lt;/li&gt;
+  &lt;li&gt;Notice how not every post type needs a tax or rewrite, however since this plugin works in array association, you will need to add an empty string for that relation. Allows for an array of multiple taxonomies to be passed to each cpt.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;comment&quot;&gt;// hook into simple multi cpts&lt;/span&gt;
+add_filter( &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;simple_multi_cpts_plugin_init&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;simple_child_cpts&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt; );
+&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;function&quot;&gt;simple_child_cpts&lt;/span&gt;() {
+
+    &lt;span class=&quot;keyword&quot;&gt;global&lt;/span&gt; &lt;span class=&quot;local-variable&quot;&gt;$child_cpts&lt;/span&gt;;
+
+    &lt;span class=&quot;comment&quot;&gt;// Required&lt;/span&gt;
+    &lt;span class=&quot;local-variable&quot;&gt;$cpt_name&lt;/span&gt; = &lt;span class=&quot;predefined&quot;&gt;array&lt;/span&gt;(
+        &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;Agency&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;,
+        &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;Client&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;,
+        &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;Project&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;
+    );
+
+    &lt;span class=&quot;comment&quot;&gt;// Required&lt;/span&gt;
+    &lt;span class=&quot;local-variable&quot;&gt;$cpt_plural&lt;/span&gt; = &lt;span class=&quot;predefined&quot;&gt;array&lt;/span&gt;(
+        &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;Agencies&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;,
+        &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;Clients&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;,
+        &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;Projects&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;
+    );
+
+    &lt;span class=&quot;comment&quot;&gt;// Optional&lt;/span&gt;
+    &lt;span class=&quot;local-variable&quot;&gt;$cpt_tax&lt;/span&gt; = &lt;span class=&quot;predefined&quot;&gt;array&lt;/span&gt;(
+        &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;Locations&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;,
+        &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;,
+        &lt;span class=&quot;predefined&quot;&gt;array&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;Type&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;Url&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;Skills&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;)
+    );
+
+    &lt;span class=&quot;comment&quot;&gt;// Optional&lt;/span&gt;
+    &lt;span class=&quot;local-variable&quot;&gt;$rewriteUrl&lt;/span&gt; = &lt;span class=&quot;predefined&quot;&gt;array&lt;/span&gt;(
+        &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;Agencies&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;,
+        &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;,
+        &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;Work&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;
+    );
+
+    &lt;span class=&quot;comment&quot;&gt;// Optional - set to true to hide from backend&lt;/span&gt;
+    &lt;span class=&quot;local-variable&quot;&gt;$hide&lt;/span&gt; = &lt;span class=&quot;predefined&quot;&gt;array&lt;/span&gt;(
+        &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;,
+        &lt;span class=&quot;predefined-constant&quot;&gt;true&lt;/span&gt;,
+        &lt;span class=&quot;predefined&quot;&gt;array&lt;/span&gt;(
+            &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;,
+            &lt;span class=&quot;predefined-constant&quot;&gt;true&lt;/span&gt;,
+            &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;
+        )
+    );
+
+    &lt;span class=&quot;comment&quot;&gt;// Optional -  post type icons, e.g. unicode stripped to \f037&lt;/span&gt;
+    &lt;span class=&quot;local-variable&quot;&gt;$cpt_icon&lt;/span&gt; = &lt;span class=&quot;predefined&quot;&gt;array&lt;/span&gt;(
+        &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;\f&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;037&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;,
+    );
+
+    &lt;span class=&quot;local-variable&quot;&gt;$child_cpts&lt;/span&gt; = &lt;span class=&quot;predefined&quot;&gt;array&lt;/span&gt;(&lt;span class=&quot;local-variable&quot;&gt;$cpt_name&lt;/span&gt;, &lt;span class=&quot;local-variable&quot;&gt;$cpt_plural&lt;/span&gt;, &lt;span class=&quot;local-variable&quot;&gt;$cpt_tax&lt;/span&gt;, &lt;span class=&quot;local-variable&quot;&gt;$rewriteUrl&lt;/span&gt;, &lt;span class=&quot;local-variable&quot;&gt;$hide&lt;/span&gt;, &lt;span class=&quot;local-variable&quot;&gt;$cpt_icon&lt;/span&gt;);
+
+    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;local-variable&quot;&gt;$child_cpts&lt;/span&gt;;
+
+}
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;look-at&quot;&gt;Look at&lt;/h2&gt;
+&lt;script src=&quot;https://gist.github.com/kiriaze/1ba01fd6f4287766922f.js&quot;&gt; &lt;/script&gt;
+
+&lt;script src=&quot;https://gist.github.com/kiriaze/f4c4664889a21731fecf.js&quot;&gt; &lt;/script&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;to-dos&quot;&gt;To Do’s&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Optimize Code&lt;/li&gt;
+  &lt;li&gt;Some code is inconsistent, flush out.&lt;/li&gt;
+  &lt;li&gt;Nested forloops not ideal, look at index based comparison of arrays.&lt;/li&gt;
+  &lt;li&gt;Integrate new structure/philosophy into other simple plugins&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;comment&quot;&gt;// note: look into passing array differently&lt;/span&gt;
+&lt;span class=&quot;comment&quot;&gt;// like so:&lt;/span&gt;
+[camper] =&amp;gt; &lt;span class=&quot;predefined&quot;&gt;Array&lt;/span&gt;
+    (
+        [cpt_plural] =&amp;gt; &lt;span class=&quot;constant&quot;&gt;Campers&lt;/span&gt;
+        [rewriteUrl] =&amp;gt; &lt;span class=&quot;constant&quot;&gt;Hikers&lt;/span&gt;
+        [cpt_tax] =&amp;gt; &lt;span class=&quot;predefined&quot;&gt;Array&lt;/span&gt;
+            (
+                [&lt;span class=&quot;integer&quot;&gt;0&lt;/span&gt;] =&amp;gt; &lt;span class=&quot;constant&quot;&gt;Level&lt;/span&gt;
+            )
+
+        [hide] =&amp;gt; &lt;span class=&quot;predefined&quot;&gt;Array&lt;/span&gt;
+            (
+                [&lt;span class=&quot;integer&quot;&gt;0&lt;/span&gt;] =&amp;gt;
+            )
+
+        [cpt_icon] =&amp;gt; \f0fc
+    )
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Thu, 30 Jul 2015 00:00:00 -0400</pubDate>
+        <link>/labs/simple-multi-cpts/</link>
+        <guid isPermaLink="true">/labs/simple-multi-cpts/</guid>
+        
+        <category>code</category>
+        
+        <category>wordpress</category>
+        
+        
+        <category>labs</category>
+        
+        <category></category>
+        
+      </item>
+    
+  </channel>
+</rss>
