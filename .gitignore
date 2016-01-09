@@ -3,7 +3,7 @@ npm-debug*
 .DS_STORE
 public/
 bower_components/
-vendor/
+src/assets/vendor/
 .publish/
 .psd
 dist/
