@@ -53,7 +53,7 @@ Clone or Download Juice into directory.
 
 Run Bower Package Manager to install all bower dependencies.
 
-	$ bower install
+	$  npm install -g bower && bower install
 
 Run Node Package Manager
 

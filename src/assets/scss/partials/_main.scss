@@ -237,6 +237,8 @@ body,
 // full height sections
 .full-height {
 	min-height: 100%;
+	display: flex;
+	align-items: center;
 }
 
 // also used for equal heights within app.js

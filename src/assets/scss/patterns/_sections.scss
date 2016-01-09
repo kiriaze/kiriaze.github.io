@@ -49,27 +49,61 @@ section {
 		}
 	}
 
-	@include breakpoint($small) {
-		&.half-width-left {
+	&.half-width-left {
+		@include breakpoint($small) {
 			background-size: 50%;
-			.container {
-				padding-right: 50%;
+		}
+		.container {
+			@include breakpoint($small) {
+				padding-right: calc(#{$small} / 2);
+			}
+			@include breakpoint($medium) {
+				padding-right: calc(#{$medium} / 2);
+			}
+			@include breakpoint($large) {
+				padding-right: calc(#{$large} / 2);
 			}
 		}
-		&.half-width-right {
+	}
+	&.half-width-right {
+		@include breakpoint($small) {
 			background-size: 50%;
-			.container {
-				padding-left: 50%;
+		}
+		.container {
+			@include breakpoint($small) {
+				padding-left: calc(#{$small} / 2);
+			}
+			@include breakpoint($medium) {
+				padding-left: calc(#{$medium} / 2);
+			}
+			@include breakpoint($large) {
+				padding-left: calc(#{$large} / 2);
 			}
 		}
-		&.three-quarter-width-left {
-			.container {
-				padding-right: 25%;
+	}
+	&.three-quarter-width-left {
+		.container {
+			@include breakpoint($small) {
+				padding-right: calc(#{$small} / 4);
+			}
+			@include breakpoint($medium) {
+				padding-right: calc(#{$medium} / 4);
+			}
+			@include breakpoint($large) {
+				padding-right: calc(#{$large} / 4);
 			}
 		}
-		&.three-quarter-width-right {
-			.container {
-				padding-left: 25%;
+	}
+	&.three-quarter-width-right {
+		.container {
+			@include breakpoint($small) {
+				padding-left: calc(#{$small} / 4);
+			}
+			@include breakpoint($medium) {
+				padding-left: calc(#{$medium} / 4);
+			}
+			@include breakpoint($large) {
+				padding-left: calc(#{$large} / 4);
 			}
 		}
 	}
