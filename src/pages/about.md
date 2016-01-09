@@ -16,7 +16,8 @@ With over eight years of experience as a developer, I have had the pleasure of w
 
 I've lead many successful projects from start to launch, developed hosting solutions for their products, mentored team members, lead the vision in and outside the team, and have helped brands/agencies/organizations with their strategy, process, design, and development.
 
-I'm a Full Stack developer, specializing in WordPress, application development, RWD and API integrations. Below are a few of the technologies that I use daily.
+I'm a Full Stack developer, specializing in WordPress, application development, RWD and API integrations. Below are just a few of the technologies that I'm familiar with.
+<!-- Below are a few of the technologies that I use daily. -->
 <!-- I'm a Full Stack developer, specializing in WordPress & application development. -->
 
 <!-- <img src="/assets/images/posts/p3-2.png" alt=""> -->

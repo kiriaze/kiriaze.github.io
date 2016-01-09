@@ -2,7 +2,7 @@
 
 module.exports = {
 
-	'serverport': 3000,
+	'serverport': 4000,
 
 	// URL TO YOUR SITEMAP.XML
 	'sitemapURL': 'http://kiriaze.com/sitemap.xml',

@@ -236,7 +236,6 @@ Paragraph styles
 
 ======================================================*/
 p {
-	font-family: $body-font;
 	@include font-size($paragraph-font-size);
 	line-height: $paragraph-line-height;
 	margin-bottom: $paragraph-bottom-margin;
