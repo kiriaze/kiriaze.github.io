@@ -5,8 +5,8 @@
     <description>Helping businesses solve problems in the digital landscape.</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 01 Oct 2015 12:48:03 -0400</pubDate>
-    <lastBuildDate>Thu, 01 Oct 2015 12:48:03 -0400</lastBuildDate>
+    <pubDate>Sat, 09 Jan 2016 18:43:16 -0500</pubDate>
+    <lastBuildDate>Sat, 09 Jan 2016 18:43:16 -0500</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -93,51 +93,39 @@
   &lt;li&gt;Clone repo and run composer.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;$ git clone https://raw.github.com/kiriaze/PressPlay {Project-Name}
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;$ git clone https://raw.github.com/kiriaze/PressPlay {Project-Name}
 $ cd {Project-Name}
 $ composer install
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Run &lt;a href=&quot;https://github.com/kiriaze/ghost&quot;&gt;ghost&lt;/a&gt;. ( Follow instructions through cli )&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;curl -s https://raw.githubusercontent.com/kiriaze/ghost/master/ghost.sh &amp;gt; /tmp; bash /tmp/ghost
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;curl -s https://raw.githubusercontent.com/kiriaze/ghost/master/ghost.sh &amp;gt; /tmp; bash /tmp/ghost
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Create your database. ( Will move this into ghost.sh soon )&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;# Default
-$ mysql -u {username} -p {password} -e &amp;quot;create database {databasename};&amp;quot;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;# Default
+$ mysql -u {username} -p {password} -e &quot;create database {databasename};&quot;
 # If dev env setup with mac-dev-env/homebrew, use the line below instead
-$ mysql -u root -p  -e &amp;quot;create database foo;&amp;quot;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
+$ mysql -u root -p  -e &quot;create database foo;&quot;
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Update git remote in root of project and subsequent files.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;# Remove git from root of your project
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;# Remove git from root of your project
 $ rm -rf {Project-Name}/.git
 # Add your new remote to the root of your project
 $ git remote add origin https://path-to-repo.com/repo.git
 # Remove git from project theme
 $ rm -rf {Project-Name}/wp-content/themes/{project-theme}/.git
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;ol&gt;
   &lt;li&gt;
@@ -150,8 +138,7 @@ $ rm -rf {Project-Name}/wp-content/themes/{project-theme}/.git
   &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;comment&quot;&gt;/*
+&lt;pre&gt;&lt;code class=&quot;language-css&quot;&gt;/*
 Theme Name:   Project Name
 Theme URI:    http://projectname.com
 Author:       Project Author
@@ -162,34 +149,26 @@ Version:          1.0.0
 License:      GNU General Public License v2 or later
 License URI:  http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain:  simple
-*/&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
+*/
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;pre&gt;&lt;code&gt;3. Update wp-content/themes/{Project-Name}/assets/js/app.js naming refs
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;error&quot;&gt;#&lt;/span&gt; Update all THEMENAME/SHORTNAME refs within file
-&lt;span class=&quot;error&quot;&gt;#&lt;/span&gt; THEMENAME is the full name of your project, e.g. MyAwesomeProject
-&lt;span class=&quot;error&quot;&gt;#&lt;/span&gt; SHORTNAME is the acronym of the THEMENAME, e.g. MAP
-&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; SHORTNAME = window.THEMENAME; &lt;span class=&quot;comment&quot;&gt;// example before&lt;/span&gt;
-&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; MAP = window.MyAwesomeProject; &lt;span class=&quot;comment&quot;&gt;// example after&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
+&lt;pre&gt;&lt;code class=&quot;language-js&quot;&gt;# Update all THEMENAME/SHORTNAME refs within file
+# THEMENAME is the full name of your project, e.g. MyAwesomeProject
+# SHORTNAME is the acronym of the THEMENAME, e.g. MAP
+var SHORTNAME = window.THEMENAME; // example before
+var MAP = window.MyAwesomeProject; // example after
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Set permissions to project directory ( WP Updates Specific )&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;$ sudo chown -R _www {Project-Name}
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;$ sudo chown -R _www {Project-Name}
 $ sudo chmod -R g+w {Project-Name}
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Update wp-config.php credentials to connect to your db.&lt;/li&gt;
@@ -218,14 +197,11 @@ $ sudo chmod -R g+w {Project-Name}
   &lt;li&gt;DB search/replace mysql query { When importing/exporting local/remote dbs }&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;class&quot;&gt;update&lt;/span&gt; wp_posts &lt;span class=&quot;class&quot;&gt;set&lt;/span&gt; guid = &lt;span class=&quot;class&quot;&gt;replace&lt;/span&gt;(guid, &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;OLD&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;NEW&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;);
-&lt;span class=&quot;class&quot;&gt;update&lt;/span&gt; wp_options &lt;span class=&quot;class&quot;&gt;set&lt;/span&gt; option_value = &lt;span class=&quot;class&quot;&gt;replace&lt;/span&gt;(option_value, &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;OLD&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;NEW&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;);
-&lt;span class=&quot;class&quot;&gt;update&lt;/span&gt; wp_posts &lt;span class=&quot;class&quot;&gt;set&lt;/span&gt; post_content = &lt;span class=&quot;class&quot;&gt;replace&lt;/span&gt;(post_content, &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;OLD&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;NEW&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;);
-&lt;span class=&quot;class&quot;&gt;update&lt;/span&gt; wp_postmeta &lt;span class=&quot;class&quot;&gt;set&lt;/span&gt; meta_value = &lt;span class=&quot;class&quot;&gt;replace&lt;/span&gt;(meta_value, &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;OLD&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;NEW&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;);
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
+&lt;pre&gt;&lt;code class=&quot;language-sql&quot;&gt;update wp_posts set guid = replace(guid, &quot;OLD&quot;, &quot;NEW&quot;);
+update wp_options set option_value = replace(option_value, &quot;OLD&quot;, &quot;NEW&quot;);
+update wp_posts set post_content = replace(post_content, &quot;OLD&quot;, &quot;NEW&quot;);
+update wp_postmeta set meta_value = replace(meta_value, &quot;OLD&quot;, &quot;NEW&quot;);
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;hr /&gt;
 
@@ -529,71 +505,153 @@ $ sudo chmod -R g+w {Project-Name}
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;comment&quot;&gt;// hook into simple multi cpts&lt;/span&gt;
-add_filter( &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;simple_multi_cpts_plugin_init&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;simple_child_cpts&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt; );
-&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;function&quot;&gt;simple_child_cpts&lt;/span&gt;() {
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;// hook into simple multi cpts
+add_filter( &#39;simple_multi_cpts_plugin_init&#39;, &#39;simple_child_cpts&#39; );
+function simple_child_cpts() {
 
-    &lt;span class=&quot;keyword&quot;&gt;global&lt;/span&gt; &lt;span class=&quot;local-variable&quot;&gt;$child_cpts&lt;/span&gt;;
+    global $child_cpts;
 
-    &lt;span class=&quot;comment&quot;&gt;// Required&lt;/span&gt;
-    &lt;span class=&quot;local-variable&quot;&gt;$cpt_name&lt;/span&gt; = &lt;span class=&quot;predefined&quot;&gt;array&lt;/span&gt;(
-        &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;Agency&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;,
-        &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;Client&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;,
-        &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;Project&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;
+    // Required
+    $cpt_name = array(
+        &#39;Agency&#39;,
+        &#39;Client&#39;,
+        &#39;Project&#39;
     );
 
-    &lt;span class=&quot;comment&quot;&gt;// Required&lt;/span&gt;
-    &lt;span class=&quot;local-variable&quot;&gt;$cpt_plural&lt;/span&gt; = &lt;span class=&quot;predefined&quot;&gt;array&lt;/span&gt;(
-        &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;Agencies&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;,
-        &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;Clients&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;,
-        &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;Projects&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;
+    // Required
+    $cpt_plural = array(
+        &#39;Agencies&#39;,
+        &#39;Clients&#39;,
+        &#39;Projects&#39;
     );
 
-    &lt;span class=&quot;comment&quot;&gt;// Optional&lt;/span&gt;
-    &lt;span class=&quot;local-variable&quot;&gt;$cpt_tax&lt;/span&gt; = &lt;span class=&quot;predefined&quot;&gt;array&lt;/span&gt;(
-        &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;Locations&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;,
-        &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;,
-        &lt;span class=&quot;predefined&quot;&gt;array&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;Type&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;Url&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;Skills&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;)
+    // Optional
+    $cpt_tax = array(
+        &#39;Locations&#39;,
+        &#39;&#39;,
+        array(&#39;Type&#39;, &#39;Url&#39;, &#39;Skills&#39;)
     );
 
-    &lt;span class=&quot;comment&quot;&gt;// Optional&lt;/span&gt;
-    &lt;span class=&quot;local-variable&quot;&gt;$rewriteUrl&lt;/span&gt; = &lt;span class=&quot;predefined&quot;&gt;array&lt;/span&gt;(
-        &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;Agencies&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;,
-        &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;,
-        &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;Work&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;
+    // Optional
+    $rewriteUrl = array(
+        &#39;Agencies&#39;,
+        &#39;&#39;,
+        &#39;Work&#39;
     );
 
-    &lt;span class=&quot;comment&quot;&gt;// Optional - set to true to hide from backend&lt;/span&gt;
-    &lt;span class=&quot;local-variable&quot;&gt;$hide&lt;/span&gt; = &lt;span class=&quot;predefined&quot;&gt;array&lt;/span&gt;(
-        &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;,
-        &lt;span class=&quot;predefined-constant&quot;&gt;true&lt;/span&gt;,
-        &lt;span class=&quot;predefined&quot;&gt;array&lt;/span&gt;(
-            &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;,
-            &lt;span class=&quot;predefined-constant&quot;&gt;true&lt;/span&gt;,
-            &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;
+    // Optional - set to true to hide from backend
+    $hide = array(
+        &#39;&#39;,
+        true,
+        array(
+            &#39;&#39;,
+            true,
+            &#39;&#39;
         )
     );
 
-    &lt;span class=&quot;comment&quot;&gt;// Optional -  post type icons, e.g. unicode stripped to \f037&lt;/span&gt;
-    &lt;span class=&quot;local-variable&quot;&gt;$cpt_icon&lt;/span&gt; = &lt;span class=&quot;predefined&quot;&gt;array&lt;/span&gt;(
-        &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;\f&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;037&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;,
+    // Optional -  post type icons, e.g. unicode stripped to \f037
+    $cpt_icon = array(
+        &#39;\f037&#39;,
     );
 
-    &lt;span class=&quot;local-variable&quot;&gt;$child_cpts&lt;/span&gt; = &lt;span class=&quot;predefined&quot;&gt;array&lt;/span&gt;(&lt;span class=&quot;local-variable&quot;&gt;$cpt_name&lt;/span&gt;, &lt;span class=&quot;local-variable&quot;&gt;$cpt_plural&lt;/span&gt;, &lt;span class=&quot;local-variable&quot;&gt;$cpt_tax&lt;/span&gt;, &lt;span class=&quot;local-variable&quot;&gt;$rewriteUrl&lt;/span&gt;, &lt;span class=&quot;local-variable&quot;&gt;$hide&lt;/span&gt;, &lt;span class=&quot;local-variable&quot;&gt;$cpt_icon&lt;/span&gt;);
+    $child_cpts = array($cpt_name, $cpt_plural, $cpt_tax, $rewriteUrl, $hide, $cpt_icon);
 
-    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;local-variable&quot;&gt;$child_cpts&lt;/span&gt;;
+    return $child_cpts;
 
 }
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;hr /&gt;
 
 &lt;h2 id=&quot;look-at&quot;&gt;Look at&lt;/h2&gt;
+&lt;noscript&gt;&lt;pre&gt;// Creates shared global tazonomies from an array,
+// and assigns them to all cpts
+add_action( &amp;#39;init&amp;#39;, &amp;#39;create_shared_taxonomies&amp;#39;, 11 );
+function create_shared_taxonomies() {
+
+	global $taxonomies;
+
+	$sharedTaxonomies = array(
+		&amp;#39;vertical&amp;#39;,
+		&amp;#39;solutions&amp;#39;,
+		&amp;#39;region&amp;#39;,
+		&amp;#39;product&amp;#39;
+	);
+
+	$taxonomies = array();
+	foreach ( $sharedTaxonomies as $tax ) :
+		$taxonomies[] = array(
+	        $tax         =&amp;gt; array(
+	            &amp;#39;object_type&amp;#39;                   =&amp;gt; &amp;#39;post&amp;#39;, // set them all to post
+	            &amp;#39;label&amp;#39;                         =&amp;gt; ucfirst($tax),
+	            &amp;#39;labels&amp;#39;                        =&amp;gt; array(
+	                    &amp;#39;name&amp;#39;                      =&amp;gt; ucfirst($tax),
+	                    &amp;#39;singluar_name&amp;#39;             =&amp;gt; ucfirst($tax),
+	                ),
+	            &amp;#39;public&amp;#39;                        =&amp;gt; true,
+	            &amp;#39;show_in_nav_menus&amp;#39;             =&amp;gt; false,
+	            &amp;#39;show_ui&amp;#39;                       =&amp;gt; true,
+	            &amp;#39;show_tagcloud&amp;#39;                 =&amp;gt; false,
+	            &amp;#39;hierarchical&amp;#39;                  =&amp;gt; true,
+	            &amp;#39;rewrite&amp;#39;                       =&amp;gt; array(&amp;#39;slug&amp;#39; =&amp;gt; $tax),
+	            &amp;#39;link_to_post_type&amp;#39;             =&amp;gt; false,
+	            &amp;#39;post_type_link&amp;#39;                =&amp;gt; null,
+	            &amp;#39;has_archive&amp;#39;                   =&amp;gt; true
+	        )
+	    );
+	endforeach;
+
+	// sp($taxonomies);
+
+    global $association_array;
+    $association_array = array();
+
+    foreach ( $taxonomies as $taxonmy ) {
+
+    	// sp($taxonmy);
+    	foreach ($taxonmy as $key =&amp;gt; $value) {
+    		// sp($value);
+    		register_taxonomy( $key, $value[&amp;#39;object_type&amp;#39;], $value );
+
+	        if ( $value[&amp;#39;link_to_post_type&amp;#39;] )
+	        $association_array[$key] = $value[&amp;#39;post_type_link&amp;#39;];
+
+		    $post_types = get_post_types( array(
+		        &amp;#39;_builtin&amp;#39;  =&amp;gt;  false // only custom post types
+		    ), &amp;#39;names&amp;#39; );
+
+		    foreach ( $post_types as $post_type ) {
+				if ( $post_type == &amp;#39;acf-field-group&amp;#39; || $post_type == &amp;#39;acf-field&amp;#39; ) {
+					unset($post_type); // removes acf from array
+					continue;
+				} else {
+					register_taxonomy_for_object_type( $key, $post_type );
+
+					// remove category and post tags from all custom post types
+		    			global $wp_taxonomies;
+					$wp_taxonomies[&amp;#39;category&amp;#39;]-&amp;gt;object_type = array_diff( $wp_taxonomies[&amp;#39;category&amp;#39;]-&amp;gt;object_type, array($post_type) );
+					$wp_taxonomies[&amp;#39;post_tag&amp;#39;]-&amp;gt;object_type = array_diff( $wp_taxonomies[&amp;#39;post_tag&amp;#39;]-&amp;gt;object_type, array($post_type) );
+				}
+			}
+    	}
+
+    }
+
+
+}&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/kiriaze/1ba01fd6f4287766922f.js&quot;&gt; &lt;/script&gt;
 
+&lt;noscript&gt;&lt;pre&gt;// remove tags/categories for &amp;#39;post&amp;#39; post type
+add_action( &amp;#39;init&amp;#39;, &amp;#39;my_taxonomy_cleanup&amp;#39;, 11 );
+function my_taxonomy_cleanup() {
+	global $wp_taxonomies;
+	$cpts = array(
+		&amp;#39;post&amp;#39;, // individual cpt names
+	);
+	$wp_taxonomies[&amp;#39;category&amp;#39;]-&amp;gt;object_type = array_diff( $wp_taxonomies[&amp;#39;category&amp;#39;]-&amp;gt;object_type, $cpts );
+	$wp_taxonomies[&amp;#39;post_tag&amp;#39;]-&amp;gt;object_type = array_diff( $wp_taxonomies[&amp;#39;post_tag&amp;#39;]-&amp;gt;object_type, $cpts );
+}&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/kiriaze/f4c4664889a21731fecf.js&quot;&gt; &lt;/script&gt;
 
 &lt;hr /&gt;
@@ -609,28 +667,25 @@ add_filter( &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;comment&quot;&gt;// note: look into passing array differently&lt;/span&gt;
-&lt;span class=&quot;comment&quot;&gt;// like so:&lt;/span&gt;
-[camper] =&amp;gt; &lt;span class=&quot;predefined&quot;&gt;Array&lt;/span&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;// note: look into passing array differently
+// like so:
+[camper] =&amp;gt; Array
     (
-        [cpt_plural] =&amp;gt; &lt;span class=&quot;constant&quot;&gt;Campers&lt;/span&gt;
-        [rewriteUrl] =&amp;gt; &lt;span class=&quot;constant&quot;&gt;Hikers&lt;/span&gt;
-        [cpt_tax] =&amp;gt; &lt;span class=&quot;predefined&quot;&gt;Array&lt;/span&gt;
+        [cpt_plural] =&amp;gt; Campers
+        [rewriteUrl] =&amp;gt; Hikers
+        [cpt_tax] =&amp;gt; Array
             (
-                [&lt;span class=&quot;integer&quot;&gt;0&lt;/span&gt;] =&amp;gt; &lt;span class=&quot;constant&quot;&gt;Level&lt;/span&gt;
+                [0] =&amp;gt; Level
             )
 
-        [hide] =&amp;gt; &lt;span class=&quot;predefined&quot;&gt;Array&lt;/span&gt;
+        [hide] =&amp;gt; Array
             (
-                [&lt;span class=&quot;integer&quot;&gt;0&lt;/span&gt;] =&amp;gt;
+                [0] =&amp;gt;
             )
 
         [cpt_icon] =&amp;gt; \f0fc
     )
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;
 </description>
         <pubDate>Thu, 30 Jul 2015 00:00:00 -0400</pubDate>
         <link>/labs/simple-multi-cpts/</link>
