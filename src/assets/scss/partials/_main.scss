@@ -186,6 +186,13 @@ body,
 	}
 }
 
+.home-page {
+	.hero.full-height {
+		min-height: calc(100% - 95px);
+		padding: 0;
+	}
+}
+
 // home page headline
 .cd-intro {
 	.lead {
