@@ -22,7 +22,7 @@ title: Home
 				<b>I'm a caffeine junky.</b>
 			</span>
 		</h1>
-		<p class="lead wow fadeIn"><span>Interaction.</span> <span>Development.</span> <span>San Diego.</span> <span> Check out my <a href="/work">work</a>.</span></p>
+		<p class="lead wow fadeIn"><span>Interaction.</span> <span>Development.</span> <span>San Diego.</span> <span> Check out my <a href="javascript:;" data-scroll-to="work">work below</a>.</span></p>
 	</div>
 	<div class="container hero-blurb cd-intro random">
 		<!-- 2nd variation -->
@@ -35,23 +35,27 @@ title: Home
 	</div>
 </section>
 
-{% comment %}
-<!-- commenting out the old work page layout for now, using the home page style work title list above instead -->
 <section class="work-title-list" data-midnight="dark-bg" data-scroll-target="work">
 	<div class="container">
+
 		{% assign counter = '0.1' %}
-		{% assign sorted_pages = site.categories.work | sort:'order' %}
-		{% for project in sorted_pages %}
-			{% capture counter %}{{ counter | plus:'0.1' }}{% endcapture %}
-			<a href="{{ project.url | prepend: site.baseurl }}" class="js-ajax-link {{ project.status }}" data-sr='enter left wait {{ counter }}s'>{{ project.title }}.</a>
-			{% if project.video %}
-				<video class="work-title-bg work-title-video" preload="auto" poster="{{ project.image }}" autoplay="" loop="" muted="">
-					<source src="{{ project.video }}" type="video/mp4">
-				</video>
-			{% else %}
-				<div class="work-title-bg" style="background-image:url({{ project.image }})"></div>
+		{% assign works = site.data.work %}
+
+		{% for work in works %}
+
+			{% capture counter %}{{ counter | plus:'0.125' }}{% endcapture %}
+
+			<a href="{{ work.url | prepend: site.baseurl }}" class="js-ajax-link wow fadeIn {{ work.status }}" data-wow-delay='{{ counter }}s'>{{ work.name }}.</a>
+			{% if work.status == 'completed' %}
+				{% if work.video %}
+					<video class="work-title-bg work-title-video" preload="auto" poster="{{ work.image }}" autoplay="" loop="" muted="">
+						<source src="{{ work.video }}" type="video/mp4">
+					</video>
+				{% else %}
+					<div class="work-title-bg" style="background-image:url({{ work.image }})"></div>
+				{% endif %}
 			{% endif %}
 		{% endfor %}
+
 	</div>
 </section>
-{% endcomment %}

@@ -3,11 +3,8 @@ layout: post-custom-content
 title: EQ Culture
 permalink: /work/eqculture/
 
-status: null
-order: 5
-
-heading: heading
-subheading: subheading
+heading: EQ Culture
+subheading: Where passion meets expression.
 
 heroText: true
 heroClasses: dark
@@ -15,13 +12,13 @@ image: /assets/images/projects/p19.png
 video: /assets/video/eq-promo.mp4
 midnight: dark-bg
 
-blurb: A complete rebranding.
-lead: Hello, IT. Have you tried turning it off and on again? Uh... okay, well, the button on the side, is it glowing? Yeah, you need to turn it on... uh, the button turns it on... yeah, you do know how a button works don't you? No, not on clothes.
-employer: Google
-client: Invisible Children
-projectURL: http://google.com
-
-tags: []
+blurb: Establishing a culture of artisans.
+lead: Eclectique Culture, or EQ Culture, is a mind-set, a lifestyle, a passion. They are a cultural movement, distinguishing the best in everything and supporting a community of artists, visionaries and innovators. They are an Eclectique group passionate about art, people, culture, film and media - embracing each day as a new experience to be explored and remembered.
+employer: EQ Culture
+client: EQ Culture
+projectURL:
+roles: Founder, Creative Director, Producer, Editor
+tags: [creative direction, branding, identity, web, video, print]
 ---
 
 <section class="grey-bg" data-midnight="dark-bg">

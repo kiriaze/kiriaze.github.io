@@ -1,104 +1,90 @@
 - name: Stickybumps
-  order: 2
   status: completed
   url: /work/stickybumps
   image: /assets/images/projects/p13.jpg
   video:
 
-- name: Yamaha
-  order: 1
+- name: NMSS
   status: null
-  url: /work/yamaha/
-  image: /assets/images/projects/p2.jpg
-  video:
-
-- name: CAKE
-  order: 3
-  status: null
-  url: /work/cake/
-  image: /assets/images/projects/p2.jpg
+  url: /work/nmss/
+  image: /assets/images/projects/p10.png
   video:
 
 - name: Donately
-  order: 4
   status: null
   url: /work/donately/
   image: /assets/images/projects/p2.jpg
   video:
 
 - name: EQ Culture
-  order: 5
-  status: null
-  url: /work/eq-culture/
-  image: /assets/images/projects/p2.jpg
-  video:
+  status: completed
+  url: /work/eqculture/
+  image: /assets/images/projects/p19.png
+  video: /assets/video/eq-promo.mp4
 
 - name: Nutanix
-  order: 6
-  status: null
+  status: completed
   url: /work/nutanix/
-  image: /assets/images/projects/p2.jpg
-  video:
-
-- name: Plant with Purpose
-  order: 7
-  status: null
-  url: /work/plant-with-purpose/
-  image: /assets/images/projects/p2.jpg
-  video:
-
-- name: Unlabeled
-  order: 8
-  status: null
-  url: /work/unlabeled/
-  image: /assets/images/projects/p2.jpg
-  video:
-
-- name: NMSS
-  order: 9
-  status: null
-  url: /work/nmss/
-  image: /assets/images/projects/p2.jpg
-  video:
-
-- name: Invisible Children
-  order: 10
-  status: null
-  url: /work/invisible-children/
-  image: /assets/images/projects/p2.jpg
-  video:
-
-- name: STOKE
-  order: 11
-  status: null
-  url: /work/stoke/
-  image: /assets/images/projects/p2.jpg
-  video:
-
-- name: Andy Davis
-  order: 12
-  status: null
-  url: /work/andydavis/
-  image: /assets/images/projects/p23.jpg
-  video:
-
-- name: Liberty in North Korea
-  order: 13
-  status: null
-  url: /work/link/
-  image: /assets/images/projects/p2.jpg
-  video:
+  image: /assets/images/projects/p6.jpg
+  video: http://www.nutanix.com/wp-content/uploads/2014/11/vbg_company_charcoal.mp4
 
 - name: Schmidt Design
-  order: 15
   status: null
   url: /work/schmidt-design/
   image: /assets/images/projects/p2.jpg
   video:
 
+- name: Liberty in North Korea
+  status: null
+  url: /work/link/
+  image: /assets/images/projects/p11.jpg
+  video:
+
+- name: STOKE
+  status: completed
+  url: /work/stoke/
+  image: /assets/images/projects/p2.jpg
+  video:
+
+- name: Invisible Children
+  status: null
+  url: /work/invisible-children/
+  image: /assets/images/projects/p15.jpg
+  video:
+
+- name: Ryot
+  status: null
+  url: /work/
+  image: /assets/images/projects/p2.jpg
+  video:
+
+- name: Andy Davis
+  status: completed
+  url: /work/andydavis/
+  image: /assets/images/projects/p23.jpg
+  video:
+
+- name: CAKE
+  status: null
+  url: /work/cake/
+  image: /assets/images/projects/p8.jpg
+  # http://getcake.com/wp-content/uploads/2014/09/Home-Hero-Kirsten4.jpg
+  video:
+
 - name: Artists for Peace & Justice
-  order: 14
   status: null
   url: /work/apj/
   image: /assets/images/projects/p2.jpg
   video:
+
+# - name: Yamaha
+#   status: null
+#   url: /work/yamaha/
+#   image: /assets/images/projects/p2.jpg
+#   video:
+
+# - name: Unlabeled
+#   status: null
+#   url: /work/unlabeled/
+#   image: /assets/images/projects/p2.jpg
+#   video:

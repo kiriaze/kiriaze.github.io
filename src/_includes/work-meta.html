@@ -11,8 +11,8 @@
 			<li class="wow fadeIn" data-wow-delay=".2s">
 				<h6>My Role</h6>
 				<span>
-					{% for tag in page.tags %}
-						<span class="term">{{ tag | capitalize }}</span>{% unless forloop.last %}/{% endunless %}
+					{% for role in page.roles %}
+						<span class="term">{{ role | capitalize }}</span>{% unless forloop.last %}/{% endunless %}
 					{% endfor %}
 				</span>
 			</li>
@@ -26,7 +26,9 @@
 			</li>
 		</ul>
 
+		{% if page.projectURL %}
 		<a href="{{ page.projectURL }}" class="btn project-link wow fadeInUp" data-wow-delay=".6s">Launch Website</a>
+		{% endif %}
 
 	</div>
 </section>

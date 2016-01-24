@@ -188,7 +188,7 @@ body,
 
 .home-page {
 	.hero.full-height {
-		min-height: calc(100% - 95px);
+		// min-height: calc(100% - 95px);
 		padding: 0;
 	}
 }
@@ -655,7 +655,7 @@ body,
 		}
 	}
 	&.video-bg {
-		background-color: white;
+		// background-color: white;
 		.work-title-video {
 			opacity: .3;
 		}
@@ -765,6 +765,8 @@ body,
 
 .work-title-list {
 	background-color: $tertiary-color;
+	background: #222;
+	padding: 100px 0 50px;
 	background-size: cover;
 	overflow: hidden;
 	min-height: 100%;
@@ -779,11 +781,12 @@ body,
 
 	a {
 		color: rgba(255,255,255,.3);
-		font-size: 1.7rem;
-		letter-spacing: -.1rem;
-		line-height: 1;
-		font-weight: 800;
 		font-family: $header-font;
+		text-transform: uppercase;
+		letter-spacing: -.1rem;
+		font-size: 1.7rem;
+		font-weight: 800;
+		line-height: 1;
 		position: relative;
 		z-index: 1;
 
@@ -798,7 +801,7 @@ body,
 
 		@include breakpoint($small) {
 			font-size: 3.5rem;
-			letter-spacing: -.3rem;
+			// letter-spacing: -.3rem;
 		}
 		@include breakpoint($medium) {
 			font-size: 4.2rem;
@@ -822,7 +825,8 @@ body,
 
 			&.completed {
 				& + .work-title-bg {
-					opacity: 1;
+					// opacity: 1;
+					opacity: 0.3;
 					&.work-title-video {
 						opacity: 0.3;
 					}
