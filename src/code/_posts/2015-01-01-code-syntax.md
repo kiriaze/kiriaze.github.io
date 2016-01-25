@@ -1,7 +1,7 @@
 ---
 title:  Code Syntax
 date: 2015-08-03
-published: false
+published: true
 description:
 image: /assets/images/projects/p2.jpg
 tags: [sample post, code, highlighting, random]
@@ -18,18 +18,18 @@ open source projects. This is aimed at html, css, js and php.
 
 ## Ideals
 
-	- We should always aim to write code that is clear and readable.
-	- Use whitespace. Add comments liberally where needed, but strive to write code that's clear and self documenting
-	- Always try to write code that clearly demonstrates and communicates it's intent.
+  - We should always aim to write code that is clear and readable.
+  - Use whitespace. Add comments liberally where needed, but strive to write code that's clear and self documenting
+  - Always try to write code that clearly demonstrates and communicates it's intent.
 
 ## Table of Contents
 *TODO*
-	- HTML
-	- CSS
-	- JS
-	- PHP
+  - HTML
+  - CSS
+  - JS
+  - PHP
 
-##Naming Conventions
+## Naming Conventions
 
 *TODO*
 
@@ -45,11 +45,11 @@ Here is an example if statement, since it is the most complicated of them:
 ~~~ php
 <?php
 if ( (condition1) || (condition2) ) {
-		action1;
+    action1;
 } elseif ( (condition3) && (condition4) ) {
-		action2;
+    action2;
 } else {
-		defaultaction;
+    defaultaction;
 }
 ?>
 ~~~
@@ -61,31 +61,26 @@ For switch statements:
 ~~~ php
 <?php
 switch (condition) {
-	case 1:
-			action1;
-			break;
+  case 1:
+      action1;
+      break;
 
-	case 2:
-			action2;
-			break;
+  case 2:
+      action2;
+      break;
 
-	default:
-			defaultaction;
-			break;
+  default:
+      defaultaction;
+      break;
 }
 ?>
 ~~~
 
-Split long if statements onto several lines.
-Long ``if`` statements may be split onto several lines when the character/line limit
-would be exceeded. The conditions have to be positioned onto the following line,
-and indented. The logical operators (``&&``, ``||``, etc.) should be at the
-beginning of the line to make it easier to comment (and exclude) the condition.
-The closing parenthesis and opening brace get their own line at the end of the conditions.
+#### Split long if statements onto several lines.
+Long ``if`` statements may be split onto several lines when the character/line limit would be exceeded. The conditions have to be positioned onto the following line, and indented. The logical operators (``&&``, ``||``, etc.) should be at the beginning of the line to make it easier to comment (and exclude) the condition. The closing parenthesis and opening brace get their own line at the end of the conditions.
 
-Keeping the operators at the beginning of the line has two advantages:
-It is trivial to comment out a particular line during development while keeping
-syntactically correct code (except of course the first line).
+#### Keeping the operators at the beginning of the line has two advantages:
+It is trivial to comment out a particular line during development while keeping syntactically correct code (except of course the first line).
 Further is the logic kept at the front where it's not forgotten.
 Scanning such conditions is very easy since they are aligned below each other.
 
@@ -93,11 +88,11 @@ Scanning such conditions is very easy since they are aligned below each other.
 <?php
 
 if ( ($condition1
-		|| $condition2)
-		&& $condition3
-		&& $condition4
+    || $condition2)
+    && $condition3
+    && $condition4
 ) {
-		//code here
+    //code here
 }
 ?>
 ~~~
@@ -108,19 +103,16 @@ The first condition may be aligned to the others.
 <?php
 
 if (   $condition1
-		|| $condition2
-		|| $condition3
+    || $condition2
+    || $condition3
 ) {
-		//code here
+    //code here
 }
 ?>
 ~~~
 
 The best case is of course when the line does not need to be split.
-When the ``if`` clause is really long enough to be split, it might be better to
-simplify it. In such cases, you could express conditions as variables and
-compare them in the ``if()`` condition. This has the benefit of "naming" and
-splitting the condition sets into smaller, better understandable chunks:
+When the ``if`` clause is really long enough to be split, it might be better to simplify it. In such cases, you could express conditions as variables and compare them in the ``if()`` condition. This has the benefit of "naming" and splitting the condition sets into smaller, better understandable chunks:
 
 ~~~ php
 <?php
@@ -128,7 +120,7 @@ splitting the condition sets into smaller, better understandable chunks:
 $is_foo = ( $condition1 || $condition2 );
 $is_bar = ( $condition3 && $condtion4 );
 if ( $is_foo && $is_bar ) {
-		// ....
+    // ....
 }
 ?>
 ~~~
@@ -139,11 +131,11 @@ So, something like this:
 
 ~~~ php
 <?php
-		if ( $date->before(self::SUMMER_START) || $date->before(self::SUMMER_END ) {
-				$charge = $quantity * $this->winterRate + $this->winterServiceCharge;
-		} else {
-				$charge = $quantity * $this->summerRate;
-		}
+    if ( $date->before(self::SUMMER_START) || $date->before(self::SUMMER_END ) {
+        $charge = $quantity * $this->winterRate + $this->winterServiceCharge;
+    } else {
+        $charge = $quantity * $this->summerRate;
+    }
 ?>
 ~~~
 
@@ -151,11 +143,11 @@ Can be converted into:
 
 ~~~ php
 <?php
-		if ( $this->notSummer($date) ) {
-				$charge = $this->winterRate($quantity);
-		} else {
-				$charge = $this->summerRate($quantity);
-		}
+    if ( $this->notSummer($date) ) {
+        $charge = $this->winterRate($quantity);
+    } else {
+        $charge = $this->summerRate($quantity);
+    }
 ?>
 ~~~
 
@@ -163,7 +155,7 @@ Which in turn should always be rewritten as this:
 
 ~~~ php
 <?php
-		$charge = $this->notSummer($date) ? $this->winterRate($quantity) : $this->summerRate($quantity);
+    $charge = $this->notSummer($date) ? $this->winterRate($quantity) : $this->summerRate($quantity);
 ?>
 ~~~
 
@@ -171,11 +163,11 @@ Of course, the multiline formatting proposed before would apply too in the extra
 
 ~~~ php
 <?php
-		private function notSummer($date) {
-				return $date->before(self::SUMMER_START)
-						|| $date->before(self::SUMMER_END)
-				;
-		}
+    private function notSummer($date) {
+        return $date->before(self::SUMMER_START)
+            || $date->before(self::SUMMER_END)
+        ;
+    }
 ?>
 ~~~
 
@@ -183,11 +175,11 @@ Another way to make conditionals even clearer are by avoiding the **if not / els
 
 ~~~ php
 <?php
-		if ( $this->isSummer($date) ) {
-				$charge = $this->summerRate($quantity);
-		} else {
-				$charge = $this->winterRate($quantity);
-		}
+    if ( $this->isSummer($date) ) {
+        $charge = $this->summerRate($quantity);
+    } else {
+        $charge = $this->winterRate($quantity);
+    }
 ?>
 ~~~
 
@@ -195,22 +187,22 @@ Which again, should be rewritten as:
 
 ~~~ php
 <?php
-		$charge = $this->isSummer($date) ? $this->summerRate($quantity) : $this->winterRate($quantity);
+    $charge = $this->isSummer($date) ? $this->summerRate($quantity) : $this->winterRate($quantity);
 ?>
 ~~~
 
-##Ternary operators
+## Ternary operators
 The same rule as for if clauses also applies for the ternary operator:
 It may be split onto several lines, keeping the question mark and the colon at the front.
 
 ~~~ php
 <?php
 $a = $condition1 && $condition2
-		? $foo : $bar;
+    ? $foo : $bar;
 
 $b = $condition3 && $condition4
-		? $foo_man_this_is_too_long_what_should_i_do
-		: $bar;
+    ? $foo_man_this_is_too_long_what_should_i_do
+    : $bar;
 ?>
 ~~~
 
@@ -251,8 +243,8 @@ The CS require lines to have a maximum length of 80 chars. Calling functions or 
 ~~~ php
 <?php
 $this->someObject->subObject->callThisFunctionWithALongName(
-		$parameterOne, $parameterTwo,
-		$aVeryLongParameterThree
+    $parameterOne, $parameterTwo,
+    $aVeryLongParameterThree
 );
 ?>
 ~~~
@@ -264,18 +256,18 @@ The same applies not only for parameter variables, but also for nested function 
 ~~~ php
 <?php
 $this->someObject->subObject->callThisFunctionWithALongName(
-		$this->someOtherFunc(
-				$this->someEvenOtherFunc(
-						'Help me!',
-						array(
-								'foo'  => 'bar',
-								'spam' => 'eggs',
-						),
-						23
-				),
-				$this->someEvenOtherFunc()
-		),
-		$this->wowowowowow(12)
+    $this->someOtherFunc(
+        $this->someEvenOtherFunc(
+            'Help me!',
+            array(
+                'foo'  => 'bar',
+                'spam' => 'eggs',
+            ),
+            23
+        ),
+        $this->someEvenOtherFunc()
+    ),
+    $this->wowowowowow(12)
 );
 ?>
 ~~~
@@ -287,8 +279,8 @@ Using fluent application programming interfaces often leads to many concatenated
 ~~~ php
 <?php
 $someObject->someFunction("some", "parameter")
-		->someOtherFunc(23, 42)
-		->andAThirdFunction();
+    ->someOtherFunc(23, 42)
+    ->andAThirdFunction();
 ?>
 ~~~
 
@@ -311,56 +303,56 @@ $thisVariableNameIsVeeeeeeeeeeryLong = foo($baz);
 ?>
 ~~~
 
-##Split long assigments onto several lines
+## Split long assigments onto several lines
 Assigments may be split onto several lines when the character/line limit would be exceeded. The equal sign has to be positioned onto the following line, and indented by 4 characters.
 
 ~~~ php
 <?php
 $GLOBALS['TSFE']->additionalHeaderData[$this->strApplicationName]
-		= $this->xajax->getJavascript(t3lib_extMgm::siteRelPath('nr_xajax'));
+    = $this->xajax->getJavascript(t3lib_extMgm::siteRelPath('nr_xajax'));
 ?>
 ~~~
 
-##Class Definitions
+## Class Definitions
 Class declarations have their opening brace on a new line:
 
 ~~~ php
 <?php
 class Foo_Bar {
 
-		//... code goes here
+    //... code goes here
 
 }
 ?>
 ~~~
 
 ## CSS
-	- No underscores, camelcasing, or double hyphens - umm did people forget proper naming conventions specific to each language?
-		- Although I would prefer using camelcasing over many hypens
-	- Scss only, less sucks donkey dick.
-	- Minimal ID's, primarily for main elements, e.g. header,nav, main, footer, and for js manipulation.
-	- Placeholders galore. ( % incase you didn't know )
-	- Prefix free, of source files. ( let your compiler handle that jazz )
-	- No super nesting, 3 levels deep - max.
-	- Tabs people, make code readable. ( In other words, 4 spaces instead of 2 )
+  - No underscores, camelcasing, or double hyphens - umm did people forget proper naming conventions specific to each language?
+    - Although I would prefer using camelcasing over many hypens
+  - Scss only, less sucks donkey dick.
+  - Minimal ID's, primarily for main elements, e.g. header,nav, main, footer, and for js manipulation.
+  - Placeholders galore. ( % incase you didn't know )
+  - Prefix free, of source files. ( let your compiler handle that jazz )
+  - No super nesting, 3 levels deep - max.
+  - Tabs people, make code readable. ( In other words, 4 spaces instead of 2 )
 
 Space out your shit. Example:
 
 ~~~ sass
 // css - 1 space after selector name, 1 tab per property
 .some-element {
-		width: 80%;
-		margin: 0 auto;
+    width: 80%;
+    margin: 0 auto;
 }
 
 // js - see the spaces? get some glasses then.
 if ( $( '.some-element' ).length ) {
-		console.log('foo');
+    console.log('foo');
 }
 
 // php - ditto
 if ( isset( $someElement ) ) {
-		print_r($someElement);
+    print_r($someElement);
 }
 ~~~
 
@@ -368,22 +360,22 @@ if ( isset( $someElement ) ) {
 
 ~~~ php
 <?php
-		// Traditional
-		if ( isset( $foo ) ) {
-				$someElement = 'bar';
-		} else {
-				$someElement = '';
-		}
+  // Traditional
+  if ( isset( $foo ) ) {
+    $someElement = 'bar';
+  } else {
+    $someElement = '';
+  }
 
-		// alternative syntax
-		if ( isset( $foo ) ) :
-				$someElement = 'bar';
-		else :
-				$someElement = '';
-		endif;
+  // alternative syntax
+  if ( isset( $foo ) ) :
+    $someElement = 'bar';
+  else :
+    $someElement = '';
+  endif;
 
-		// shorthand ternary operators
-		$someElement = $foo ? 'bar' : '';
+  // shorthand ternary operators
+  $someElement = $foo ? 'bar' : '';
 ?>
 ~~~
 
@@ -391,28 +383,28 @@ if ( isset( $someElement ) ) {
 
 ~~~ sass
 %button {
-	min-width: 100px;
-	padding: 1em;
-	border-radius: 1em;
+  min-width: 100px;
+  padding: 1em;
+  border-radius: 1em;
 }
 %twitter-background {
-	color: #fff;
-	background: #55acee;
+  color: #fff;
+  background: #55acee;
 }
 %facebook-background {
-	color: #fff;
-	background: #3b5998;
+  color: #fff;
+  background: #3b5998;
 }
 
 .btn {
-	&--twitter {
-		@extend %button;
-		@extend %twitter-background;
-	}
-	&--facebook {
-		@extend %button;
-		@extend %facebook-background;
-	}
+  &--twitter {
+    @extend %button;
+    @extend %twitter-background;
+  }
+  &--facebook {
+    @extend %button;
+    @extend %facebook-background;
+  }
 }
 
 <a href="#" class="btn--twitter">Twitter</a>

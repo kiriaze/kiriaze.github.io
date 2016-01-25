@@ -92,8 +92,8 @@
 		// split columns equal height, valign
 		SHORTNAME.elems.main.find('.split-content .columns-50').matchHeight();
 
-		// post list
-		SHORTNAME.elems.main.find('.post-list .post').matchHeight();
+		// // post list
+		// SHORTNAME.elems.main.find('.post-list .post').matchHeight();
 
 		// wow
 		SHORTNAME.elems.main.find('.post-content .container > *, img, h6, h5, h4, h3, h2, p, span, .btn').addClass('wow fadeIn');

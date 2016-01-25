@@ -7,19 +7,17 @@
 	margin-bottom: 1.5em;
 	@include font-size(12);
 	color: #d0d0d0;
-	border: 1px solid darken($dark, 5);
 	background-color: #272822;
+	pre,
+	code {
+		background-color: transparent;
+	}
 	pre {
 		position: relative;
 		margin: 0;
 		padding: 1em;
 		color: white;
 		overflow-x: scroll;
-		code {
-			background: none;
-			border: none;
-			white-space: nowrap;
-		}
 	}
 	.lineno { padding-right: 24px; color: #8f908a;}
 	.hll { background-color: #49483e }
@@ -92,210 +90,210 @@
 
 .gist {
 
-  .pre {
-  	overflow: hidden;
-  }
+	.pre {
+		overflow: hidden;
+	}
 
-  .highlight {
-    color:#000;
-    border: none;
-  }
+	.highlight {
+		color:#000;
+		border: none;
+	}
 
-  .render-container .render-viewer-error,
-  .render-container .render-viewer-fatal,
-  .render-container .octospinner {
-    display:none;
-  }
+	.render-container .render-viewer-error,
+	.render-container .render-viewer-fatal,
+	.render-container .octospinner {
+		display:none;
+	}
 
-  .gist-file {
-  	border: none;
-  }
+	.gist-file {
+		border: none;
+	}
 
-  .gist-data {
-  	border: none !important;
-  	overflow: hidden !important;
-  }
+	.gist-data {
+		border: none !important;
+		overflow: hidden !important;
+	}
 
-  .line-pre {
-	overflow: hidden !important;
-  }
+	.line-pre {
+		overflow: hidden !important;
+	}
 
-  .file-data {
-  	overflow: auto;
-  }
+	.file-data {
+		overflow: auto;
+	}
 
-  .gist-render iframe {
-    width:100%;
-  }
+	.gist-render iframe {
+		width:100%;
+	}
 
-  .gist-file.gist-render .highlight {
-    border:none;
-  }
+	.gist-file.gist-render .highlight {
+		border:none;
+	}
 
-  .gist-file .gist-meta .highlight a {
-    font-weight:700;
-    color:#666;
-    text-decoration:none;
-  }
+	.gist-file .gist-meta .highlight a {
+		font-weight:700;
+		color:#666;
+		text-decoration:none;
+	}
 
-  .highlight {
-    background:#fff;
-  }
+	.highlight {
+		background:#fff;
+	}
 
-  .highlight .err {
-    color:#a61717;
-    background-color:#e3d2d2;
-  }
+	.highlight .err {
+		color:#a61717;
+		background-color:#e3d2d2;
+	}
 
-  .highlight .cp {
-    color:#999;
-    font-weight:700;
-  }
+	.highlight .cp {
+		color:#999;
+		font-weight:700;
+	}
 
-  .highlight .cs {
-    color:#999;
-    font-weight:700;
-    font-style:italic;
-  }
+	.highlight .cs {
+		color:#999;
+		font-weight:700;
+		font-style:italic;
+	}
 
-  .highlight .gd {
-    color:#000;
-    background-color:#fdd;
-  }
+	.highlight .gd {
+		color:#000;
+		background-color:#fdd;
+	}
 
-  .highlight .gd .x {
-    color:#000;
-    background-color:#faa;
-  }
+	.highlight .gd .x {
+		color:#000;
+		background-color:#faa;
+	}
 
-  .highlight .ge {
-    color:#000;
-    font-style:italic;
-  }
+	.highlight .ge {
+		color:#000;
+		font-style:italic;
+	}
 
-  .highlight .gi {
-    color:#000;
-    background-color:#dfd;
-  }
+	.highlight .gi {
+		color:#000;
+		background-color:#dfd;
+	}
 
-  .highlight .gi .x {
-    color:#000;
-    background-color:#afa;
-  }
+	.highlight .gi .x {
+		color:#000;
+		background-color:#afa;
+	}
 
-  .highlight .go {
-    color:#888;
-  }
+	.highlight .go {
+		color:#888;
+	}
 
-  .highlight .gs {
-    font-weight:700;
-  }
+	.highlight .gs {
+		font-weight:700;
+	}
 
-  .highlight .gu {
-    color:#aaa;
-  }
+	.highlight .gu {
+		color:#aaa;
+	}
 
-  .highlight .nb {
-    color:#0086b3;
-  }
+	.highlight .nb {
+		color:#0086b3;
+	}
 
-  .highlight .ni {
-    color:purple;
-  }
+	.highlight .ni {
+		color:purple;
+	}
 
-  .highlight .nt {
-    color:navy;
-  }
+	.highlight .nt {
+		color:navy;
+	}
 
-  .highlight .w {
-    color:#bbb;
-  }
+	.highlight .w {
+		color:#bbb;
+	}
 
-  .highlight .sr {
-    color:#009926;
-  }
+	.highlight .sr {
+		color:#009926;
+	}
 
-  .highlight .ss {
-    color:#990073;
-  }
+	.highlight .ss {
+		color:#990073;
+	}
 
-  .highlight .c,
-  .highlight .cm,
-  .highlight .c1 {
-    color:#998;
-    font-style:italic;
-  }
+	.highlight .c,
+	.highlight .cm,
+	.highlight .c1 {
+		color:#998;
+		font-style:italic;
+	}
 
-  .highlight .k,
-  .highlight .o,
-  .highlight .kc,
-  .highlight .kd,
-  .highlight .kp,
-  .highlight .kr,
-  .highlight .ow,
-  .highlight .n,
-  .highlight .p {
-    color:#000;
-    font-weight:700;
-  }
+	.highlight .k,
+	.highlight .o,
+	.highlight .kc,
+	.highlight .kd,
+	.highlight .kp,
+	.highlight .kr,
+	.highlight .ow,
+	.highlight .n,
+	.highlight .p {
+		color:#000;
+		font-weight:700;
+	}
 
-  .highlight .gr,
-  .highlight .gt {
-    color:#a00;
-  }
+	.highlight .gr,
+	.highlight .gt {
+		color:#a00;
+	}
 
-  .highlight .gh,
-  .highlight .bp {
-    color:#999;
-  }
+	.highlight .gh,
+	.highlight .bp {
+		color:#999;
+	}
 
-  .highlight .gp,
-  .highlight .nn {
-    color:#555;
-  }
+	.highlight .gp,
+	.highlight .nn {
+		color:#555;
+	}
 
-  .highlight .kt,
-  .highlight .nc {
-    color:#458;
-    font-weight:700;
-  }
+	.highlight .kt,
+	.highlight .nc {
+		color:#458;
+		font-weight:700;
+	}
 
-  .highlight .m,
-  .highlight .mf,
-  .highlight .mh,
-  .highlight .mi,
-  .highlight .mo,
-  .highlight .il {
-    color:#099;
-  }
+	.highlight .m,
+	.highlight .mf,
+	.highlight .mh,
+	.highlight .mi,
+	.highlight .mo,
+	.highlight .il {
+		color:#099;
+	}
 
-  .highlight .s,
-  .highlight .sb,
-  .highlight .sc,
-  .highlight .sd,
-  .highlight .s2,
-  .highlight .se,
-  .highlight .sh,
-  .highlight .si,
-  .highlight .sx,
-  .highlight .s1 {
-    color:#d14;
-  }
+	.highlight .s,
+	.highlight .sb,
+	.highlight .sc,
+	.highlight .sd,
+	.highlight .s2,
+	.highlight .se,
+	.highlight .sh,
+	.highlight .si,
+	.highlight .sx,
+	.highlight .s1 {
+		color:#d14;
+	}
 
-  .highlight .na,
-  .highlight .no,
-  .highlight .nv,
-  .highlight .vc,
-  .highlight .vg,
-  .highlight .vi {
-    color:teal;
-  }
+	.highlight .na,
+	.highlight .no,
+	.highlight .nv,
+	.highlight .vc,
+	.highlight .vg,
+	.highlight .vi {
+		color:teal;
+	}
 
-  .highlight .ne,
-  .highlight .nf {
-    color:#900;
-    font-weight:700;
-  }
+	.highlight .ne,
+	.highlight .nf {
+		color:#900;
+		font-weight:700;
+	}
 
 }
 
@@ -307,20 +305,20 @@
 
 // Coderay
 .CodeRay {
-  font-family: Monaco;
-  @include font-size(12);
-  line-height: 1.5;
-  color: #d0d0d0;
-  margin-bottom: 1.5em;
-  border-radius: 3px;
-  word-wrap: normal;
+	font-family: Monaco;
+	@include font-size(12);
+	line-height: 1.5;
+	color: #d0d0d0;
+	margin-bottom: 1.5em;
+	border-radius: 3px;
+	word-wrap: normal;
 }
 
 .CodeRay .code pre {
-  margin: 0;
-  padding: 1em;
-  background-color: #272822;
-  border: 1px solid darken($dark, 5);
+	margin: 0;
+	padding: 1em;
+	background-color: #272822;
+	border: 1px solid darken($dark, 5);
 }
 
 div.CodeRay { }
@@ -328,17 +326,17 @@ span.CodeRay { white-space: pre; border: 0px; padding: 2px }
 
 table.CodeRay { border-collapse: collapse; width: 100%; padding: 2px }
 table.CodeRay td {
-  padding: 1em 0.5em;
-  vertical-align: top;
+	padding: 1em 0.5em;
+	vertical-align: top;
 }
 
 .CodeRay .line-numbers, .CodeRay .no {
-  color: #8f908a;
-  text-align: right;
+	color: #8f908a;
+	text-align: right;
 }
 
 .CodeRay .line-numbers a {
-  color: #8f908a;
+	color: #8f908a;
 }
 
 .CodeRay .line-numbers tt { font-weight: bold }

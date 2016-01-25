@@ -20,13 +20,14 @@ employer: Made by Grizzly
 client: Stickybumps
 projectURL: http://stickybumps.com
 
+roles: [Front end, Back end, WordPress integration, Magento Integration, Server Setup &amp; Optimizations]
 tags: [wordpress, front-end, magento, ecommerce]
 ---
 
 <section class="stickybumps-bg text-align-center post-content" data-midnight="dark-bg">
 	<div class="container">
 		<h6>Seamless Integration</h6>
-		<h2>Custom WordPress/Magento Experience.</h2>
+		<h2>Custom WordPress / Magento Experience.</h2>
 		<p>
 			We built an intuitive custom website running on Wordpress and an enterprise web store running on Magento. The WP marketing site was integrated into the shop through the Magento API, and the whole experience was customized for Sticky Bumps' ease of use.
 		</p>
@@ -167,16 +168,9 @@ background-image: url(/assets/images/projects/stickybumps/scent.jpg);
 
 		<blockquote>
 			<p>
-				"Every time you see a dramatic shift in the performance paradigm you see the need for better traction, and as such, Wax Research’s offerings have been in a perpetual state of evolution."
-				<cite>JOHN DAHL</cite>
-			</p>
-			<!-- <p>
 				"We want to thank the guys at Grizzly for putting together an awesome website for Sticky Bumps. Everyone at Wax Research is excited with the results. You definitely captured the flavor of the brand and our company. The whole site really pops and lends itself to a great experience for our customers."
-				<cite>
-					JOHN DAHL
-					<em>President/Owner</em>
-				</cite>
-			</p> -->
+				<cite>JOHN DAHL<br><span>President / Owner</span></cite>
+			</p>
 		</blockquote>
 
 	</div>

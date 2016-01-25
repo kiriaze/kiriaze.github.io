@@ -1,9 +1,10 @@
 ---
 layout: page
-title: Category Archive
+title: Category Archives
 description: "An archive of posts sorted by category."
 comments: false
-heroClasses: dark
+bodyClass: page-categories
+heroClasses: dark text-align-center
 midnight: dark-bg
 ---
 
@@ -22,14 +23,14 @@ midnight: dark-bg
 
 {% for item in (0..site.categories.size) %}{% unless forloop.last %}
 {% capture this_word %}{{ cats_list[item] | strip_newlines }}{% endcapture %}
+{% if this_word != '' %}
 <article>
-	<h2 id="{{ this_word }}" class="cat-heading">
-	{{ this_word | capitalize }}
-	</h2>
+	<h2 id="{{ this_word }}" class="cat-heading">{{ this_word | capitalize }}</h2>
 	<ul>
-    {% for post in site.categories[this_word] %}{% if this_word != '' %}
+    {% for post in site.categories[this_word] %}
 		<li class="entry-title"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-    {% endif %}{% endfor %}
+    {% endfor %}
 	</ul>
 </article><!-- /.hentry -->
+{% endif %}
 {% endunless %}{% endfor %}

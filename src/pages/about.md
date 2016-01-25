@@ -1,7 +1,7 @@
 ---
 title: About
 permalink: /about/
-heading: Constantine is the former Technical Director of <a href="http://madebygrizzly.com" target="new" class="giflinks" data-src="/assets/images/gifs/fur-sure-2.gif">Grizzly</a> and is now consulting for companies around the world, building <a href="/labs" class="giflinks" data-src="/assets/images/gifs/kitten-mittens-always-sunny.gif">solutions</a> to problems, writing <a href="http://github.com/kiriaze" target="new" class="giflinks" data-src="/assets/images/gifs/it-crowd-maurice-moss-frustration-fuck-this.gif">code</a>, posting <a href="/blog" class="giflinks" data-src="/assets/images/gifs/typing.gif">articles</a> and listening to <a href="/blog/music" target="new" class="giflinks" data-src="/assets/images/gifs/funny-gifs-just-let-the-music-caress-you.gif">music</a>.<br>Based in San Diego, CA.
+heading: Constantine is the former Technical Director of <a href="http://madebygrizzly.com" target="new" class="giflinks" data-src="/assets/images/gifs/fur-sure-2.gif">Grizzly</a> and is now consulting for companies around the world, building <a href="/labs" class="giflinks" data-src="/assets/images/gifs/kitten-mittens-always-sunny.gif">solutions</a> to problems, writing <a href="http://github.com/kiriaze" target="new" class="giflinks" data-src="/assets/images/gifs/it-crowd-maurice-moss-frustration-fuck-this.gif">code</a>, posting <a href="/blog" class="giflinks" data-src="/assets/images/gifs/typing.gif">articles</a> and listening to <a href="/categories/#music" class="giflinks" data-src="/assets/images/gifs/funny-gifs-just-let-the-music-caress-you.gif">music</a>.<br>Based in San Diego, CA.
 
 bodyClass: about-page
 heroClasses: grey-bg

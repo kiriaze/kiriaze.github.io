@@ -18,12 +18,12 @@ owner:
   # Social networking links used in footer. Update and remove as you like.
   twitter:        kiriaze
   facebook:
-  github:
+  github:         kiriaze
   stackexchange:
-  linkedin:
-  instagram:
+  linkedin:       constantinekiriaze
+  instagram:      ckiriaaze
   flickr:
-  tumblr:
+  tumblr:         kiriaze
   # google plus id, include the '+', eg +mmistakes
   google_plus:    +yourid
 
@@ -52,23 +52,25 @@ paginate_path: blog/page:num
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    America/New_York
 future:      true
-highlighter: true # syntax highlighting
-markdown:    kramdown
+incremental: true # experimental
 
+# Markdown Code Settings
+markdown:    kramdown
+highlighter: pygments
 kramdown:
   auto_ids: true
   footnote_nr: 1
   entity_output: as_char
   toc_levels: 1..6
-  use_coderay: true
   input: GFM # github flavored markdown
+  use_coderay: true
 
   coderay:
     coderay_line_numbers: nil
     coderay_line_numbers_start: 1
     coderay_tab_width: 4
     coderay_bold_every: 10
-    coderay_css: class
+    coderay_css: class # style
 
 # Analytics and webmaster tools stuff goes here
 google_analytics: UA-65559123-1

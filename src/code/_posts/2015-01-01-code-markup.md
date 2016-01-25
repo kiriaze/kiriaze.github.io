@@ -60,6 +60,7 @@ end
 ### Standard Code Block
 
 {% raw %}
+```
 <nav class="pagination" role="navigation">
     {% if page.previous %}
         <a href="{{ site.url }}{{ page.previous.url }}" class="btn" title="{{ page.previous.title }}">Previous article</a>
@@ -68,6 +69,7 @@ end
         <a href="{{ site.url }}{{ page.next.url }}" class="btn" title="{{ page.next.title }}">Next article</a>
     {% endif %}
 </nav><!-- /.pagination -->
+```
 {% endraw %}
 
 

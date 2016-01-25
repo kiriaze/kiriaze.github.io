@@ -26,7 +26,7 @@
   status: completed
   url: /work/nutanix/
   image: /assets/images/projects/p6.jpg
-  video: http://www.nutanix.com/wp-content/uploads/2014/11/vbg_company_charcoal.mp4
+  video: /assets/video/nutanix.mp4
 
 - name: Schmidt Design
   status: null
@@ -60,7 +60,7 @@
 
 - name: Andy Davis
   status: completed
-  url: /work/andydavis/
+  url: /work/andy-davis/
   image: /assets/images/projects/p23.jpg
   video:
 

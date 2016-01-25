@@ -104,27 +104,33 @@ textarea {
 	padding: 0.2em 0;
 }
 
+code,
 pre {
-	font-family: Monaco;
+	font-family: monospace, serif;
+	@include font-size(12);
+	word-wrap: normal;
+	border: 1px solid lighten($black, 85);
+	background-color: lighten($black, 90);
+}
+
+pre {
 	padding: 0.5em 1em;
 	margin: 0 0 1rem;
+	font-family: Monaco, monospace, sans-serif;
+	overflow-x: auto;
 	border-radius: 2px;
-	overflow-x: scroll;
-	code {
-		overflow-x: scroll;
-		border: none;
-		word-wrap: initial;
-		background-color: transparent;
-	}
 }
 
 code {
-	@include font-size(12);
-	line-height: 1.5;
 	margin: 0 2px;
 	padding: 0 5px;
-	border: 1px solid lighten($black, 85);
-	background-color: lighten($black, 90);
+	font-family: Monaco, monospace, sans-serif;
+	line-height: 1.5;
+}
+
+pre code {
+	background-color: none;
+	border: none;
 }
 
 html,

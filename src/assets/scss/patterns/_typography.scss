@@ -95,9 +95,14 @@ blockquote:after {
 }
 
 blockquote cite {
-	color: #BBB;
+	color: #bbb;
 	font-size: 16px;
 	font-size: 1.6rem;
 	font-style: normal;
 	margin-top: 2%;
+	span {
+		@include font-size(12);
+		font-weight: 800;
+		text-transform: uppercase;
+	}
 }

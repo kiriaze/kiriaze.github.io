@@ -19,15 +19,12 @@ midnight: dark-bg
 	<article class="post dark {% if lab.tags.size > 0 %}{{ lab.tags | join:" " }}{% endif %}">
 		<a href="{{ lab.url | prepend: site.baseurl }}">
 			<div class="post-bg" style="background-image: url({{ lab.image }});"></div>
-			<div class="container">
 				<h2>{{ lab.title }}</h2>
 				<div class="post-meta">
-					<!-- 1.30.2015 -->
 					<span class="date">{{ lab.date | date: "%m.%d.%Y" }}</span>
 					{% if lab.tags.size > 0 %}<span class="tags">{{ lab.tags | join:" / " }}</span>{% endif %}
 				</div>
 				<p>{{ lab.description }}</p>
-			</div>
 		</a>
 	</article>
 	{% endfor %}
