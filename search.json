@@ -1,12 +1,30 @@
 [
   
     {
+      "title"    : "Styleguides",
+      "category" : "code",
+      "tags"     : "code, styleguides, wordpress, and git",
+      "url"      : "/blog/code/styleguides",
+      "date"     : "2016-01-24 00:00:00 -0500",
+      "desc"     : "Styleguides in a WordPress project builds"
+    } ,
+  
+    {
       "title"    : "Press Play.",
       "category" : "labs",
       "tags"     : "code and wordpress",
       "url"      : "/labs/press-play/",
       "date"     : "2015-08-03 00:00:00 -0400",
       "desc"     : "Composer backed boilerplate project for dope as fuck WordPress sites."
+    } ,
+  
+    {
+      "title"    : "Code Syntax",
+      "category" : "code",
+      "tags"     : "sample post, code, highlighting, and random",
+      "url"      : "/blog/code/code-syntax",
+      "date"     : "2015-08-03 00:00:00 -0400",
+      "desc"     : ""
     } ,
   
     {
@@ -190,18 +208,9 @@
     } ,
   
     {
-      "title"    : "Plant with Purpose",
-      "category" : "work",
-      "tags"     : "",
-      "url"      : "/work/plant-with-purpose/",
-      "date"     : "2015-03-03 00:00:00 -0500",
-      "desc"     : ""
-    } ,
-  
-    {
       "title"    : "Nutanix",
       "category" : "work",
-      "tags"     : "",
+      "tags"     : "wordpress, systems, servers, and networks",
       "url"      : "/work/nutanix/",
       "date"     : "2015-03-03 00:00:00 -0500",
       "desc"     : ""
@@ -237,7 +246,7 @@
     {
       "title"    : "EQ Culture",
       "category" : "work",
-      "tags"     : "",
+      "tags"     : "creative direction, branding, identity, web, video, and print",
       "url"      : "/work/eqculture/",
       "date"     : "2015-03-03 00:00:00 -0500",
       "desc"     : ""
@@ -273,7 +282,7 @@
     {
       "title"    : "Andy Davis",
       "category" : "work",
-      "tags"     : "",
+      "tags"     : "wordpress, e-commerce, woocommerce, front-end, and back-end",
       "url"      : "/work/andy-davis/",
       "date"     : "2015-01-29 00:00:00 -0500",
       "desc"     : ""
@@ -327,7 +336,7 @@
   
    {
      
-        "title"    : "Category Archive",
+        "title"    : "Category Archives",
         "category" : "",
         "tags"     : "",
         "url"      : "/categories/index.html",

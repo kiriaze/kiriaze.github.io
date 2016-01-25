@@ -5,9 +5,78 @@
     <description>Helping businesses solve problems in the digital landscape.</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 09 Jan 2016 18:43:16 -0500</pubDate>
-    <lastBuildDate>Sat, 09 Jan 2016 18:43:16 -0500</lastBuildDate>
+    <pubDate>Sun, 24 Jan 2016 21:46:56 -0500</pubDate>
+    <lastBuildDate>Sun, 24 Jan 2016 21:46:56 -0500</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Styleguides</title>
+        <description>&lt;p&gt;I’ve been a big advocate of styleguides and properly abstracted code for sustainability, maintainability and a sane life for quite some time now. But up until recently, I’ve had them housed separately - both locally and in their respective repositories online - although the latter has obvious advantages, the former is a real bitch to deal with.&lt;/p&gt;
+
+&lt;p&gt;In a recent WordPress project, I setup a remote repo for the WP code base (using my &lt;a href=&quot;http://github.com/kiriaze/PressPlay&quot;&gt;PressPlay&lt;/a&gt; system) with a webhook for automated deployments on my custom server stack ( which I’ll be offering hopefully soon ) based on the git workflow I’ve talked about &lt;a href=&quot;/blog/git-workflow&quot;&gt;before&lt;/a&gt; and everything was running smoothly as always…that is, until I had to integrate the assets of the styleguide build into the project.&lt;/p&gt;
+
+&lt;p&gt;What happens when the assets required are located locally outside the WordPress build? You might think to reference the remote assets say from styleguide.domain.com or wherever we’re currently hosting it, but thats just incredibly inefficient while building or debugging the app, not to mention the styleguide would have to be on the same domain remotely or then we’re dealing with CORS headers and what not.&lt;/p&gt;
+
+&lt;p&gt;So what do we do?&lt;/p&gt;
+
+&lt;p&gt;Rather than adding more build logic into Gulp thats completely use case, since this is a pluggable framework, I wanted something that would work with relative ease on everyones part - and as long as the workflow below is followed, then all is good. Ofcourse, we could add some yaml params and have gulp read that conditionally, but again, just trying to keep it simple, and definitely trying to avoid any server side builds.&lt;/p&gt;
+
+&lt;p&gt;I added the styleguide to the WP project build repo as a submodule, although some shutter at the thought of submodules, I’ve had good results. I do have one grind, it’s nessecary for the styleguide repo to include the formerly excluded dist directory in order for both local and remote builds to properly enqueue the processed assets - kinda making the styleguide repo a bit bloated.&lt;/p&gt;
+
+&lt;h5 id=&quot;workflow&quot;&gt;Workflow&lt;/h5&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Install Prerequisites&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://nodejs.org&quot;&gt;Node.js&lt;/a&gt;&lt;br /&gt;
+      &lt;em&gt;Bring up a terminal and type &lt;code&gt;node --version&lt;/code&gt;.&lt;br /&gt;
+      Node should respond with a version at or above 0.10.x.&lt;br /&gt;
+      If you require Node, go to &lt;a href=&quot;https://nodejs.org&quot;&gt;nodejs.org&lt;/a&gt; and click on the big green Install button.&lt;/em&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Clone repo ( with submods if present ), install dependencies and run package managers.&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt; $ git clone --recursive {ProjectPath} {Project-Name}
+ $ cd {Project-Name}
+ $ composer install
+ $ cd styleguide
+ $ npm install -g bower &amp;amp;&amp;amp; bower install
+ $ npm install --global gulp &amp;amp;&amp;amp; npm install
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Git Add/Commit/Pull/Push from styleguide first, then from WordPress project directory.&lt;br /&gt;
+ • You should have two windows open in your CLI, one for the styleguide and the other for the WordPress repo.&lt;br /&gt;
+ • The order is crucial to prevent conflicts between users, repos, and servers.&lt;br /&gt;
+ • It’s recommended to &lt;code&gt;git pull --rebase {remote} {branch}&lt;/code&gt; to keep your branch current.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;If repo was cloned without the –recursive option, then run &lt;code&gt;$ git submodule update --init --recursive&lt;/code&gt; to correctly setup submods.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Anyways, just my 2 cents, maybe I’m the only one that’s encountered this and perhaps theres a simpler solution. What do you guys think? How do you deal with this?&lt;/p&gt;
+</description>
+        <pubDate>Sun, 24 Jan 2016 00:00:00 -0500</pubDate>
+        <link>/blog/code/styleguides</link>
+        <guid isPermaLink="true">/blog/code/styleguides</guid>
+        
+        <category>code</category>
+        
+        <category>styleguides</category>
+        
+        <category>wordpress</category>
+        
+        <category>git</category>
+        
+        
+        <category>code</category>
+        
+        <category></category>
+        
+      </item>
     
       <item>
         <title>Press Play.</title>
@@ -231,6 +300,417 @@ update wp_postmeta set meta_value = replace(meta_value, &quot;OLD&quot;, &quot;N
       </item>
     
       <item>
+        <title>Code Syntax</title>
+        <description>&lt;h1 id=&quot;proper-code-syntax&quot;&gt;Proper Code Syntax&lt;/h1&gt;
+&lt;p&gt;My ideal opinionated way to structure code. Borrowed and elaborated upon from Juice, which founded SOMA.&lt;br /&gt;
+&lt;em&gt;Very much a work in progress :)&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;goal&quot;&gt;Goal&lt;/h2&gt;
+
+&lt;p&gt;To establish more consistency and readability across developers, teams and my&lt;br /&gt;
+open source projects. This is aimed at html, css, js and php.&lt;/p&gt;
+
+&lt;h2 id=&quot;ideals&quot;&gt;Ideals&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;We should always aim to write code that is clear and readable.&lt;/li&gt;
+  &lt;li&gt;Use whitespace. Add comments liberally where needed, but strive to write code that’s clear and self documenting&lt;/li&gt;
+  &lt;li&gt;Always try to write code that clearly demonstrates and communicates it’s intent.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;table-of-contents&quot;&gt;Table of Contents&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;TODO&lt;/em&gt;&lt;br /&gt;
+  - HTML&lt;br /&gt;
+  - CSS&lt;br /&gt;
+  - JS&lt;br /&gt;
+  - PHP&lt;/p&gt;
+
+&lt;h2 id=&quot;naming-conventions&quot;&gt;Naming Conventions&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;TODO&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;indenting-and-line-length&quot;&gt;Indenting and Line Length&lt;/h2&gt;
+&lt;p&gt;Use an indent of one tabs character. This helps to avoid problems with diffs, patches, git history and annotations.&lt;br /&gt;
+Try to keep line within 75-85 characters long for better code readability.&lt;br /&gt;
+Use vertical space instead of horizontal space.&lt;/p&gt;
+
+&lt;h2 id=&quot;control-structures&quot;&gt;Control Structures&lt;/h2&gt;
+&lt;p&gt;These include &lt;code&gt;if&lt;/code&gt;, &lt;code&gt;for&lt;/code&gt;, &lt;code&gt;while&lt;/code&gt;, &lt;code&gt;switch&lt;/code&gt;, etc.&lt;br /&gt;
+Here is an example if statement, since it is the most complicated of them:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
+if ( (condition1) || (condition2) ) {
+    action1;
+} elseif ( (condition3) &amp;amp;&amp;amp; (condition4) ) {
+    action2;
+} else {
+    defaultaction;
+}
+?&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Control statements should have one space between the control keyword and opening parenthesis, to distinguish them from function calls. Curly braces should be used on new lines.&lt;br /&gt;
+You are strongly encouraged to always use curly braces even in situations where they are technically optional. Having them increases readability and decreases the likelihood of logic errors being introduced when new lines are added.&lt;br /&gt;
+For switch statements:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
+switch (condition) {
+  case 1:
+      action1;
+      break;
+
+  case 2:
+      action2;
+      break;
+
+  default:
+      defaultaction;
+      break;
+}
+?&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&quot;split-long-if-statements-onto-several-lines&quot;&gt;Split long if statements onto several lines.&lt;/h4&gt;
+&lt;p&gt;Long &lt;code&gt;if&lt;/code&gt; statements may be split onto several lines when the character/line limit would be exceeded. The conditions have to be positioned onto the following line, and indented. The logical operators (&lt;code&gt;&amp;amp;&amp;amp;&lt;/code&gt;, &lt;code&gt;||&lt;/code&gt;, etc.) should be at the beginning of the line to make it easier to comment (and exclude) the condition. The closing parenthesis and opening brace get their own line at the end of the conditions.&lt;/p&gt;
+
+&lt;h4 id=&quot;keeping-the-operators-at-the-beginning-of-the-line-has-two-advantages&quot;&gt;Keeping the operators at the beginning of the line has two advantages:&lt;/h4&gt;
+&lt;p&gt;It is trivial to comment out a particular line during development while keeping syntactically correct code (except of course the first line).&lt;br /&gt;
+Further is the logic kept at the front where it’s not forgotten.&lt;br /&gt;
+Scanning such conditions is very easy since they are aligned below each other.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
+
+if ( ($condition1
+    || $condition2)
+    &amp;amp;&amp;amp; $condition3
+    &amp;amp;&amp;amp; $condition4
+) {
+    //code here
+}
+?&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The first condition may be aligned to the others.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
+
+if (   $condition1
+    || $condition2
+    || $condition3
+) {
+    //code here
+}
+?&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The best case is of course when the line does not need to be split.&lt;br /&gt;
+When the &lt;code&gt;if&lt;/code&gt; clause is really long enough to be split, it might be better to simplify it. In such cases, you could express conditions as variables and compare them in the &lt;code&gt;if()&lt;/code&gt; condition. This has the benefit of “naming” and splitting the condition sets into smaller, better understandable chunks:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
+
+$is_foo = ( $condition1 || $condition2 );
+$is_bar = ( $condition3 &amp;amp;&amp;amp; $condtion4 );
+if ( $is_foo &amp;amp;&amp;amp; $is_bar ) {
+    // ....
+}
+?&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In order to maximize the &lt;strong&gt;bias towards clarity&lt;/strong&gt; value, it’s encouraged to keep those conditional expressions that depend on multiple conditions (being &lt;em&gt;multiple&lt;/em&gt; more than one) on a boolean method.&lt;/p&gt;
+
+&lt;p&gt;So, something like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
+    if ( $date-&amp;gt;before(self::SUMMER_START) || $date-&amp;gt;before(self::SUMMER_END ) {
+        $charge = $quantity * $this-&amp;gt;winterRate + $this-&amp;gt;winterServiceCharge;
+    } else {
+        $charge = $quantity * $this-&amp;gt;summerRate;
+    }
+?&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Can be converted into:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
+    if ( $this-&amp;gt;notSummer($date) ) {
+        $charge = $this-&amp;gt;winterRate($quantity);
+    } else {
+        $charge = $this-&amp;gt;summerRate($quantity);
+    }
+?&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Which in turn should always be rewritten as this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
+    $charge = $this-&amp;gt;notSummer($date) ? $this-&amp;gt;winterRate($quantity) : $this-&amp;gt;summerRate($quantity);
+?&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Of course, the multiline formatting proposed before would apply too in the extracted method:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
+    private function notSummer($date) {
+        return $date-&amp;gt;before(self::SUMMER_START)
+            || $date-&amp;gt;before(self::SUMMER_END)
+        ;
+    }
+?&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Another way to make conditionals even clearer are by avoiding the &lt;strong&gt;if not / else&lt;/strong&gt; form into a &lt;em&gt;positive&lt;/em&gt; if conditional. The example code, by applying that, would be:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
+    if ( $this-&amp;gt;isSummer($date) ) {
+        $charge = $this-&amp;gt;summerRate($quantity);
+    } else {
+        $charge = $this-&amp;gt;winterRate($quantity);
+    }
+?&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Which again, should be rewritten as:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
+    $charge = $this-&amp;gt;isSummer($date) ? $this-&amp;gt;summerRate($quantity) : $this-&amp;gt;winterRate($quantity);
+?&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;ternary-operators&quot;&gt;Ternary operators&lt;/h2&gt;
+&lt;p&gt;The same rule as for if clauses also applies for the ternary operator:&lt;br /&gt;
+It may be split onto several lines, keeping the question mark and the colon at the front.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
+$a = $condition1 &amp;amp;&amp;amp; $condition2
+    ? $foo : $bar;
+
+$b = $condition3 &amp;amp;&amp;amp; $condition4
+    ? $foo_man_this_is_too_long_what_should_i_do
+    : $bar;
+?&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;function-calls&quot;&gt;Function Calls&lt;/h2&gt;
+&lt;p&gt;Functions should be called with no spaces between the function name, the opening&lt;br /&gt;
+parenthesis, and the first parameter; spaces between commas and each parameter,&lt;br /&gt;
+and no space between the last parameter, the closing parenthesis, and the semicolon.&lt;br /&gt;
+Here’s an example:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
+$var = foo($bar, $baz, $quux);
+?&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;As displayed above, there should be one space on either side of an equals sign used to assign the return value of a function to a variable. In the case of a block of related assignments, more space may be inserted to promote readability:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
+$short         = foo($bar);
+$long_variable = foo($baz);
+?&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;To support readability, parameters in subsequent calls to the same function/method may be aligned by parameter name:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
+$this-&amp;gt;callSomeFunction(&#39;param1&#39;,     &#39;second&#39;,        true);
+$this-&amp;gt;callSomeFunction(&#39;parameter2&#39;, &#39;third&#39;,         false);
+$this-&amp;gt;callSomeFunction(&#39;3&#39;,          &#39;verrrrrrylong&#39;, true);
+?&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Split function call on several lines&lt;br /&gt;
+The CS require lines to have a maximum length of 80 chars. Calling functions or methods with many parameters while adhering to CS is impossible in that cases. It is allowed to split parameters in function calls onto several lines.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
+$this-&amp;gt;someObject-&amp;gt;subObject-&amp;gt;callThisFunctionWithALongName(
+    $parameterOne, $parameterTwo,
+    $aVeryLongParameterThree
+);
+?&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Several parameters per line are allowed. Parameters need to be indented 4 spaces compared to the level of the function call. The opening parenthesis is to be put at the end of the function call line, the closing parenthesis gets its own line at the end of the parameters. This shows a visual end to the parameter indentations and follows the opening/closing brace rules for functions and conditionals.&lt;/p&gt;
+
+&lt;p&gt;The same applies not only for parameter variables, but also for nested function calls and for arrays.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
+$this-&amp;gt;someObject-&amp;gt;subObject-&amp;gt;callThisFunctionWithALongName(
+    $this-&amp;gt;someOtherFunc(
+        $this-&amp;gt;someEvenOtherFunc(
+            &#39;Help me!&#39;,
+            array(
+                &#39;foo&#39;  =&amp;gt; &#39;bar&#39;,
+                &#39;spam&#39; =&amp;gt; &#39;eggs&#39;,
+            ),
+            23
+        ),
+        $this-&amp;gt;someEvenOtherFunc()
+    ),
+    $this-&amp;gt;wowowowowow(12)
+);
+?&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Nesting those function parameters is allowed if it helps to make the code more readable, not only when it is necessary when the characters per line limit is reached.&lt;/p&gt;
+
+&lt;p&gt;Using fluent application programming interfaces often leads to many concatenated function calls. Those calls may be split onto several lines. When doing this, all subsequent lines are indented by 4 spaces and begin with the “-&amp;gt;” arrow.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
+$someObject-&amp;gt;someFunction(&quot;some&quot;, &quot;parameter&quot;)
+    -&amp;gt;someOtherFunc(23, 42)
+    -&amp;gt;andAThirdFunction();
+?&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;alignment-of-assignments&quot;&gt;Alignment of assignments&lt;/h2&gt;
+&lt;p&gt;To support readability, the equal signs may be aligned in block-related assignments:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
+$short  = foo($bar);
+$longer = foo($baz);
+?&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The rule can be broken when the length of the variable name is at least 8 characters longer/shorter than the previous one:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
+$short = foo($bar);
+$thisVariableNameIsVeeeeeeeeeeryLong = foo($baz);
+?&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;split-long-assigments-onto-several-lines&quot;&gt;Split long assigments onto several lines&lt;/h2&gt;
+&lt;p&gt;Assigments may be split onto several lines when the character/line limit would be exceeded. The equal sign has to be positioned onto the following line, and indented by 4 characters.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
+$GLOBALS[&#39;TSFE&#39;]-&amp;gt;additionalHeaderData[$this-&amp;gt;strApplicationName]
+    = $this-&amp;gt;xajax-&amp;gt;getJavascript(t3lib_extMgm::siteRelPath(&#39;nr_xajax&#39;));
+?&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;class-definitions&quot;&gt;Class Definitions&lt;/h2&gt;
+&lt;p&gt;Class declarations have their opening brace on a new line:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
+class Foo_Bar {
+
+    //... code goes here
+
+}
+?&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;css&quot;&gt;CSS&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;No underscores, camelcasing, or double hyphens - umm did people forget proper naming conventions specific to each language?
+    &lt;ul&gt;
+      &lt;li&gt;Although I would prefer using camelcasing over many hypens&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Scss only, less sucks donkey dick.&lt;/li&gt;
+  &lt;li&gt;Minimal ID’s, primarily for main elements, e.g. header,nav, main, footer, and for js manipulation.&lt;/li&gt;
+  &lt;li&gt;Placeholders galore. ( % incase you didn’t know )&lt;/li&gt;
+  &lt;li&gt;Prefix free, of source files. ( let your compiler handle that jazz )&lt;/li&gt;
+  &lt;li&gt;No super nesting, 3 levels deep - max.&lt;/li&gt;
+  &lt;li&gt;Tabs people, make code readable. ( In other words, 4 spaces instead of 2 )&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Space out your shit. Example:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-sass&quot;&gt;// css - 1 space after selector name, 1 tab per property
+.some-element {
+    width: 80%;
+    margin: 0 auto;
+}
+
+// js - see the spaces? get some glasses then.
+if ( $( &#39;.some-element&#39; ).length ) {
+    console.log(&#39;foo&#39;);
+}
+
+// php - ditto
+if ( isset( $someElement ) ) {
+    print_r($someElement);
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Keep syntax consistent - dont mix and match buddy.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
+  // Traditional
+  if ( isset( $foo ) ) {
+    $someElement = &#39;bar&#39;;
+  } else {
+    $someElement = &#39;&#39;;
+  }
+
+  // alternative syntax
+  if ( isset( $foo ) ) :
+    $someElement = &#39;bar&#39;;
+  else :
+    $someElement = &#39;&#39;;
+  endif;
+
+  // shorthand ternary operators
+  $someElement = $foo ? &#39;bar&#39; : &#39;&#39;;
+?&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Scss example&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-sass&quot;&gt;%button {
+  min-width: 100px;
+  padding: 1em;
+  border-radius: 1em;
+}
+%twitter-background {
+  color: #fff;
+  background: #55acee;
+}
+%facebook-background {
+  color: #fff;
+  background: #3b5998;
+}
+
+.btn {
+  &amp;amp;--twitter {
+    @extend %button;
+    @extend %twitter-background;
+  }
+  &amp;amp;--facebook {
+    @extend %button;
+    @extend %facebook-background;
+  }
+}
+
+&amp;lt;a href=&quot;#&quot; class=&quot;btn--twitter&quot;&amp;gt;Twitter&amp;lt;/a&amp;gt;
+&amp;lt;a href=&quot;#&quot; class=&quot;btn--facebook&quot;&amp;gt;Facebook&amp;lt;/a&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+        <pubDate>Mon, 03 Aug 2015 00:00:00 -0400</pubDate>
+        <link>/blog/code/code-syntax</link>
+        <guid isPermaLink="true">/blog/code/code-syntax</guid>
+        
+        <category>sample post</category>
+        
+        <category>code</category>
+        
+        <category>highlighting</category>
+        
+        <category>random</category>
+        
+        
+        <category>code</category>
+        
+        <category></category>
+        
+      </item>
+    
+      <item>
         <title>Simple Child.</title>
         <description>&lt;p class=&quot;text-align-center&quot;&gt;Simple Child Theme - requires Simple Framework.&lt;/p&gt;
 
@@ -420,276 +900,6 @@ update wp_postmeta set meta_value = replace(meta_value, &quot;OLD&quot;, &quot;N
         <pubDate>Sat, 01 Aug 2015 00:00:00 -0400</pubDate>
         <link>/labs/simple-flickr/</link>
         <guid isPermaLink="true">/labs/simple-flickr/</guid>
-        
-        <category>code</category>
-        
-        <category>wordpress</category>
-        
-        
-        <category>labs</category>
-        
-        <category></category>
-        
-      </item>
-    
-      <item>
-        <title>S-Grams.</title>
-        <description>&lt;p class=&quot;text-align-center&quot;&gt;A simple instagram plugin that pulls in your instagram feed as a widget and a shortcode. Requires instagram username.&lt;/p&gt;
-
-&lt;p class=&quot;text-align-center&quot;&gt;&lt;a href=&quot;http://github.com/kiriaze/s-grams&quot; class=&quot;btn&quot;&gt;Get it here!&lt;/a&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Widget options: Title, username, count, and cache.&lt;/p&gt;
-
-&lt;p&gt;Shortcode Params: &lt;code&gt;[grams account=&#39;&#39; count=&#39;&#39; tag=&#39;&#39; class=&#39;&#39; effects=&#39;&#39;]&lt;/code&gt;&lt;/p&gt;
-</description>
-        <pubDate>Sat, 01 Aug 2015 00:00:00 -0400</pubDate>
-        <link>/labs/s-grams/</link>
-        <guid isPermaLink="true">/labs/s-grams/</guid>
-        
-        <category>code</category>
-        
-        <category>wordpress</category>
-        
-        
-        <category>labs</category>
-        
-        <category></category>
-        
-      </item>
-    
-      <item>
-        <title>Simple Multi CPT&#39;s.</title>
-        <description>&lt;p class=&quot;text-align-center&quot;&gt;Simple Multi Custom Post Types - A plugin that can handle multiple custom post types at once through an array, theme hookable yo.&lt;/p&gt;
-
-&lt;p class=&quot;text-align-center&quot;&gt;&lt;a href=&quot;http://github.com/kiriaze/simple-multi-cpts&quot; class=&quot;btn&quot;&gt;Get it here!&lt;/a&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;updates-galore&quot;&gt;Updates Galore!&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Multiple taxonomies can now be passed to each cpt, supports arrays.&lt;/li&gt;
-  &lt;li&gt;Ability to filter/sort them, as well as post type term count.&lt;/li&gt;
-  &lt;li&gt;Hide taxonomies backend table row header and filter/sort dropdowns through $hide[];&lt;/li&gt;
-  &lt;li&gt;Custom post type icons from FontAwesome!&lt;/li&gt;
-  &lt;li&gt;ACF Settings integration, now managable from wp admin instead of through functions file, or both if desired! Woot woot!&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;what&quot;&gt;What?&lt;/h2&gt;
-
-&lt;p&gt;A plugin that can handle multiple custom post types at once, requires atleast the singular and plural name of each cpt you would like to add, and optionally a custom taxonomy, slug rewrite, hide options, and icon.&lt;/p&gt;
-
-&lt;p&gt;Following the philosophy of keeping custom post types theme agnostic, this plugin is lightweight and efficient and allows for adding infinite custom post types/taxonomies through wp admin ( Requires ACF ) or by hooking into the function within your theme, look at example below. This chunk is small enough to be easily placed within any theme - and is preferred over having multiple cpt plugins cluttering and slowing down your project.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;why&quot;&gt;Why?&lt;/h2&gt;
-
-&lt;p&gt;Came across a project requiring a ridiculous amount of custom post types, and didn’t think that having over 10 separate plugins for handling those post types were ideal - so I made one to rule them all. ba-dum-dum-tshh.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;how&quot;&gt;How?&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Download/Clone/Composer that ish, install and activate plugin.&lt;/li&gt;
-  &lt;li&gt;ACF active? ( And it should be guys! )&lt;/li&gt;
-  &lt;li&gt;Skip the rest and head to the plugin settings page, else continue.&lt;/li&gt;
-  &lt;li&gt;If not, place hook into theme functions. ( Preferably into abstracted module, look @ simple. ) Note: Capitalise first letter.&lt;/li&gt;
-  &lt;li&gt;Notice how not every post type needs a tax or rewrite, however since this plugin works in array association, you will need to add an empty string for that relation. Allows for an array of multiple taxonomies to be passed to each cpt.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;// hook into simple multi cpts
-add_filter( &#39;simple_multi_cpts_plugin_init&#39;, &#39;simple_child_cpts&#39; );
-function simple_child_cpts() {
-
-    global $child_cpts;
-
-    // Required
-    $cpt_name = array(
-        &#39;Agency&#39;,
-        &#39;Client&#39;,
-        &#39;Project&#39;
-    );
-
-    // Required
-    $cpt_plural = array(
-        &#39;Agencies&#39;,
-        &#39;Clients&#39;,
-        &#39;Projects&#39;
-    );
-
-    // Optional
-    $cpt_tax = array(
-        &#39;Locations&#39;,
-        &#39;&#39;,
-        array(&#39;Type&#39;, &#39;Url&#39;, &#39;Skills&#39;)
-    );
-
-    // Optional
-    $rewriteUrl = array(
-        &#39;Agencies&#39;,
-        &#39;&#39;,
-        &#39;Work&#39;
-    );
-
-    // Optional - set to true to hide from backend
-    $hide = array(
-        &#39;&#39;,
-        true,
-        array(
-            &#39;&#39;,
-            true,
-            &#39;&#39;
-        )
-    );
-
-    // Optional -  post type icons, e.g. unicode stripped to \f037
-    $cpt_icon = array(
-        &#39;\f037&#39;,
-    );
-
-    $child_cpts = array($cpt_name, $cpt_plural, $cpt_tax, $rewriteUrl, $hide, $cpt_icon);
-
-    return $child_cpts;
-
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;look-at&quot;&gt;Look at&lt;/h2&gt;
-&lt;noscript&gt;&lt;pre&gt;// Creates shared global tazonomies from an array,
-// and assigns them to all cpts
-add_action( &amp;#39;init&amp;#39;, &amp;#39;create_shared_taxonomies&amp;#39;, 11 );
-function create_shared_taxonomies() {
-
-	global $taxonomies;
-
-	$sharedTaxonomies = array(
-		&amp;#39;vertical&amp;#39;,
-		&amp;#39;solutions&amp;#39;,
-		&amp;#39;region&amp;#39;,
-		&amp;#39;product&amp;#39;
-	);
-
-	$taxonomies = array();
-	foreach ( $sharedTaxonomies as $tax ) :
-		$taxonomies[] = array(
-	        $tax         =&amp;gt; array(
-	            &amp;#39;object_type&amp;#39;                   =&amp;gt; &amp;#39;post&amp;#39;, // set them all to post
-	            &amp;#39;label&amp;#39;                         =&amp;gt; ucfirst($tax),
-	            &amp;#39;labels&amp;#39;                        =&amp;gt; array(
-	                    &amp;#39;name&amp;#39;                      =&amp;gt; ucfirst($tax),
-	                    &amp;#39;singluar_name&amp;#39;             =&amp;gt; ucfirst($tax),
-	                ),
-	            &amp;#39;public&amp;#39;                        =&amp;gt; true,
-	            &amp;#39;show_in_nav_menus&amp;#39;             =&amp;gt; false,
-	            &amp;#39;show_ui&amp;#39;                       =&amp;gt; true,
-	            &amp;#39;show_tagcloud&amp;#39;                 =&amp;gt; false,
-	            &amp;#39;hierarchical&amp;#39;                  =&amp;gt; true,
-	            &amp;#39;rewrite&amp;#39;                       =&amp;gt; array(&amp;#39;slug&amp;#39; =&amp;gt; $tax),
-	            &amp;#39;link_to_post_type&amp;#39;             =&amp;gt; false,
-	            &amp;#39;post_type_link&amp;#39;                =&amp;gt; null,
-	            &amp;#39;has_archive&amp;#39;                   =&amp;gt; true
-	        )
-	    );
-	endforeach;
-
-	// sp($taxonomies);
-
-    global $association_array;
-    $association_array = array();
-
-    foreach ( $taxonomies as $taxonmy ) {
-
-    	// sp($taxonmy);
-    	foreach ($taxonmy as $key =&amp;gt; $value) {
-    		// sp($value);
-    		register_taxonomy( $key, $value[&amp;#39;object_type&amp;#39;], $value );
-
-	        if ( $value[&amp;#39;link_to_post_type&amp;#39;] )
-	        $association_array[$key] = $value[&amp;#39;post_type_link&amp;#39;];
-
-		    $post_types = get_post_types( array(
-		        &amp;#39;_builtin&amp;#39;  =&amp;gt;  false // only custom post types
-		    ), &amp;#39;names&amp;#39; );
-
-		    foreach ( $post_types as $post_type ) {
-				if ( $post_type == &amp;#39;acf-field-group&amp;#39; || $post_type == &amp;#39;acf-field&amp;#39; ) {
-					unset($post_type); // removes acf from array
-					continue;
-				} else {
-					register_taxonomy_for_object_type( $key, $post_type );
-
-					// remove category and post tags from all custom post types
-		    			global $wp_taxonomies;
-					$wp_taxonomies[&amp;#39;category&amp;#39;]-&amp;gt;object_type = array_diff( $wp_taxonomies[&amp;#39;category&amp;#39;]-&amp;gt;object_type, array($post_type) );
-					$wp_taxonomies[&amp;#39;post_tag&amp;#39;]-&amp;gt;object_type = array_diff( $wp_taxonomies[&amp;#39;post_tag&amp;#39;]-&amp;gt;object_type, array($post_type) );
-				}
-			}
-    	}
-
-    }
-
-
-}&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/kiriaze/1ba01fd6f4287766922f.js&quot;&gt; &lt;/script&gt;
-
-&lt;noscript&gt;&lt;pre&gt;// remove tags/categories for &amp;#39;post&amp;#39; post type
-add_action( &amp;#39;init&amp;#39;, &amp;#39;my_taxonomy_cleanup&amp;#39;, 11 );
-function my_taxonomy_cleanup() {
-	global $wp_taxonomies;
-	$cpts = array(
-		&amp;#39;post&amp;#39;, // individual cpt names
-	);
-	$wp_taxonomies[&amp;#39;category&amp;#39;]-&amp;gt;object_type = array_diff( $wp_taxonomies[&amp;#39;category&amp;#39;]-&amp;gt;object_type, $cpts );
-	$wp_taxonomies[&amp;#39;post_tag&amp;#39;]-&amp;gt;object_type = array_diff( $wp_taxonomies[&amp;#39;post_tag&amp;#39;]-&amp;gt;object_type, $cpts );
-}&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/kiriaze/f4c4664889a21731fecf.js&quot;&gt; &lt;/script&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;to-dos&quot;&gt;To Do’s&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Optimize Code&lt;/li&gt;
-  &lt;li&gt;Some code is inconsistent, flush out.&lt;/li&gt;
-  &lt;li&gt;Nested forloops not ideal, look at index based comparison of arrays.&lt;/li&gt;
-  &lt;li&gt;Integrate new structure/philosophy into other simple plugins&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;// note: look into passing array differently
-// like so:
-[camper] =&amp;gt; Array
-    (
-        [cpt_plural] =&amp;gt; Campers
-        [rewriteUrl] =&amp;gt; Hikers
-        [cpt_tax] =&amp;gt; Array
-            (
-                [0] =&amp;gt; Level
-            )
-
-        [hide] =&amp;gt; Array
-            (
-                [0] =&amp;gt;
-            )
-
-        [cpt_icon] =&amp;gt; \f0fc
-    )
-&lt;/code&gt;&lt;/pre&gt;
-</description>
-        <pubDate>Thu, 30 Jul 2015 00:00:00 -0400</pubDate>
-        <link>/labs/simple-multi-cpts/</link>
-        <guid isPermaLink="true">/labs/simple-multi-cpts/</guid>
         
         <category>code</category>
         
