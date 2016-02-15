@@ -24,15 +24,15 @@ title: Home
 		</h1>
 		<p class="lead wow fadeIn"><span>Interaction.</span> <span>Development.</span> <span>San Diego.</span> <span> Check out my <a href="javascript:;" data-scroll-to="work">work below</a>.</span></p>
 	</div>
-	<div class="container hero-blurb cd-intro random">
-		<!-- 2nd variation -->
+	<!-- 2nd variation -->
+  <!-- <div class="container hero-blurb cd-intro random">
 		<h1 class="wow fadeIn" data-wow-delay=".7s">
 			Constantine Kiriaze is a <br>Web Engineer &amp; Technical Director based in <a href="javascript:;" class="highlight-text giflinks" data-src="http://media.giphy.com/media/YFCzJPNoDnMEo/giphy.gif">San Diego.</a>
 		</h1>
 		<p class="lead wow fadeIn" data-wow-delay="1.1s">
 			Check out his <a href="javascript:;" data-scroll-to="work">work below</a> as well as on <a href="http://dribbble.com/kiriaze">Dribbble</a> and <a href="http://github.com/kiriaze">Github</a>, random thoughts on <br><a href="http://twitter.com/kiriaze">Twitter</a> and the <a href="/blog">blog</a>, and resume on <a href="https://www.linkedin.com/in/constantinekiriaze">LinkedIn</a>.
 		</p>
-	</div>
+	</div> -->
 </section>
 
 <section class="work-title-list" data-midnight="dark-bg" data-scroll-target="work">

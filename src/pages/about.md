@@ -10,16 +10,19 @@ midnight: dark-bg
 ---
 
 {:.lead}
-Hello! My name is Constantine Kiriaze &amp; I am a web engineer with a passion for creating memorable experiences. I focus on helping organizations effectively connect with their audience through strategy driven innovation, allowing them to focus on what they love most, their business.
+Hello! My name is Constantine Kiriaze &amp; I am an experienced creative developer specializing in front-end web interactivity with a passion for creating memorable experiences. I focus on helping startups, entrepreneurs and organizations effectively connect with their audience through strategy driven innovation; allowing them to take control of their online presence with ease.
+
+I love working on challenging, experimental, beautiful and ambitious projects, ideally within a creative team made of passionate individuals. I strive to engineer and create great experiences for myself and those around me through best practices, innovative thinking and execution.
+
+---
 
 With over eight years of experience as a developer, I have had the pleasure of working with a diverse group of clients, ranging from but not limited to non profits, startups, agencies, resorts, small and large shops, news portals and even marketing sites.
 
 I've lead many successful projects from start to launch, developed hosting solutions for their products, mentored team members, lead the vision in and outside the team, and have helped brands/agencies/organizations with their strategy, process, design, and development.
 
 I'm a Full Stack developer, specializing in WordPress, application development, RWD and API integrations. Below are just a few of the technologies that I'm familiar with.
-<!-- Below are a few of the technologies that I use daily. -->
-<!-- I'm a Full Stack developer, specializing in WordPress & application development. -->
 
+<!-- npm, bower, gulp, sass & jekyll image -->
 <!-- <img src="/assets/images/posts/p3-2.png" alt=""> -->
 
 <ul class="stack-list">

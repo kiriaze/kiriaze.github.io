@@ -62,7 +62,7 @@ tags: [wordpress, e-commerce, woocommerce, front-end, back-end]
 </section>
 -->
 
-<section class="text-align-center">
+<section class="text-align-center dark">
 	<div class="container">
 		<img src="/assets/images/projects/andydavis/home.png" alt="" class="wow fadeIn">
 		<img src="/assets/images/projects/andydavis/shop.png" alt="" class="wow fadeIn">
@@ -72,6 +72,9 @@ tags: [wordpress, e-commerce, woocommerce, front-end, back-end]
 		<img src="/assets/images/projects/andydavis/news.png" alt="" class="wow fadeIn">
 	</div>
 </section>
+
+<!-- hiding for now -->
+{% comment %}
 
 <section class="dark text-align-center post-content" data-midnight="dark-bg">
   <div class="container">
@@ -154,3 +157,5 @@ tags: [wordpress, e-commerce, woocommerce, front-end, back-end]
 
 	</div>
 </section>
+
+{% endcomment %}
