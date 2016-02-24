@@ -10,7 +10,7 @@ midnight: dark-bg
 ---
 
 {:.lead}
-Hello! My name is Constantine Kiriaze &amp; I am an experienced creative developer specializing in front-end web interactivity with a passion for creating memorable experiences. I focus on helping startups, entrepreneurs and organizations effectively connect with their audience through strategy driven innovation; allowing them to take control of their online presence with ease.
+Hello! My name is Constantine Kiriaze &amp; I am a creative developer specializing in front-end web interactivity with a passion for creating memorable experiences. I focus on helping startups, entrepreneurs and organizations effectively connect with their audience through strategy driven innovation; allowing them to take control of their online presence with ease.
 
 I love working on challenging, experimental, beautiful and ambitious projects, ideally within a creative team made of passionate individuals. I strive to engineer and create great experiences for myself and those around me through best practices, innovative thinking and execution.
 
@@ -70,14 +70,16 @@ I'm currently consulting full-time, but I'm always looking forward to new projec
 <img src="/assets/images/logos/clients-3.jpg" alt="" style="margin-top: 0; margin-bottom: 0;">
 <!-- <img src="/assets/images/posts/clients.png" alt="" style="margin-top: 0; margin-bottom: 0;"> -->
 
-<hr>
+<!-- <hr> -->
 
+{% comment %}
 <div class="text-align-center">
 	<h6>Work in progress</h6>
 	<p>Pushing pixels for the masses, live at <a href="http://dribbble.com/kiriaze">dribbble.com/kiriaze</a></p>
-	<ul class="dribbble-feed"></ul>
+	<ul class="dribbble-feed"></ul> -->
 	<!-- <ul class="instagram-feed"></ul> -->
 </div>
+{% endcomment %}
 
 <!-- I started tinkering in web design in 2005 and I’m basically self-taught. Back then I was making myspace band pages - that’s right =) - and sites for small businesses. In 2008 I began taking a multimedia degree at Platt College in San Diego, recieving my Bachelors in Multimedia Design &amp; Communication.
 
@@ -91,10 +93,10 @@ After my fill of the non profit world, I returned to the agency life where I was
  -->
 
 
-> I'm pretty sure there's a lot more to life than being really, really, ridiculously good looking.
+<!-- > I'm pretty sure there's a lot more to life than being really, really, ridiculously good looking.
 > And I plan on finding out what that is.
 > <cite>Zoolander (2001)</cite>
-
+ -->
 <!--
 > Man who catch fly with chopstick accomplish anything.
 > <cite>Mr. Miyagi (1984)</cite>
